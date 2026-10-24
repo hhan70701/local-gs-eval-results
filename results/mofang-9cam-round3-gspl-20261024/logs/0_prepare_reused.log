@@ -1,0 +1,9 @@
+cam 0: inliers 388/423, raw->aligned PSNR 55.34 dB
+cam 1: inliers 411/456, raw->aligned PSNR 53.45 dB
+cam 2: inliers 466/491, raw->aligned PSNR 55.88 dB
+cam 3: inliers 378/411, raw->aligned PSNR 53.84 dB
+cam 4: inliers 484/520, raw->aligned PSNR 53.54 dB
+cam 5: inliers 488/527, raw->aligned PSNR 54.59 dB
+cam 6: inliers 387/423, raw->aligned PSNR 55.30 dB
+cam 7: inliers 478/515, raw->aligned PSNR 54.20 dB
+cam 8: inliers 485/541, raw->aligned PSNR 52.99 dB

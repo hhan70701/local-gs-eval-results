@@ -1,0 +1,9 @@
+board corners found in all 9 cameras (88 each)
+stage 1 (board only, shared K): rms=0.209px  f=1835.7  k1=-0.0862 k2=0.2613
+scene matches: 26 pairs, 4488 two-view points
+  BA (linear): nfev=600 status=0 median reproj=0.1598px
+  BA (huber): nfev=600 status=0 median reproj=0.1597px
+stage 2 (BA): board rms=0.353px  scene median=0.15195381686299625  p90=0.4476562942359593  f=[1820.5]  k1=-0.1151 k2=0.3475
+adjacent camera spacing (board squares): [2.188, 2.148, 1.91, 0.946, 1.768, 2.341, 1.689, 2.549]
+[cam3] t_pose (calibrated): {1: 0.304, 2: 0.603, 3: 0.87, 5: 0.211, 6: 0.492, 7: 0.696}
+[cam5] t_pose (calibrated): {1: 0.505, 3: 0.669, 5: 0.43, 7: 0.398}

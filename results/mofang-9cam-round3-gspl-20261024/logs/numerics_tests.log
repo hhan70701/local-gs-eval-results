@@ -1,0 +1,15 @@
+test_auc_ties_and_order (test_numerics.NumericsTests) ... ok
+test_bundle_adjust_recovers_synthetic_rig (test_numerics.NumericsTests) ... ok
+test_distort_maps_match_opencv_projection (test_numerics.NumericsTests) ... ok
+test_ecc_registration_recovers_shift (test_numerics.NumericsTests) ... ok
+test_mip_filter3d_matches_formula (test_numerics.NumericsTests) ... ok
+test_python39_type_backport_preserves_bitwise (test_numerics.NumericsTests) ... ok
+test_sim3_known_transform (test_numerics.NumericsTests) ... ok
+test_target_poses_calib_identity_frame (test_numerics.NumericsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.426s
+
+OK
+  BA (linear): nfev=15 status=3 median reproj=0.0000px
+  BA (huber): nfev=2 status=3 median reproj=0.0000px

@@ -1,0 +1,151 @@
+{
+  "completeness_status": "PASS",
+  "expected_metric_rows": 6240,
+  "registration_rows": 120,
+  "risk_sweep_rows": 90,
+  "all_unregistered_object_coverage": 1.0,
+  "all_hybrid_coverage": 1.0,
+  "partial_registered_object_regions": [
+    {
+      "setup": "cam5",
+      "target": "7",
+      "method": "gs_roi448_nat_dil_calK+reg",
+      "coverage": "0.8024243864757264"
+    },
+    {
+      "setup": "cam5",
+      "target": "7",
+      "method": "gs_roi448_nat_mip_calK+reg",
+      "coverage": "0.8035533899815794"
+    }
+  ],
+  "pose_alignment_threshold_flags": [
+    {
+      "setup": "cam3",
+      "variant": "gs_center448_nat_dil_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.7667457640242992",
+      "max_center_error_rel_baseline": "0.028665039500493306"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_center448_nat_dil_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.7667457640242992",
+      "max_center_error_rel_baseline": "0.028665039500493306"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_center448_nat_mip_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.7667457640242992",
+      "max_center_error_rel_baseline": "0.028665039500493306"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_center448_nat_mip_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.7667457640242992",
+      "max_center_error_rel_baseline": "0.028665039500493306"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_roi448_nat_dil_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.1343750053376354",
+      "max_center_error_rel_baseline": "0.11472309319042574"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_roi448_nat_dil_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.1343750053376354",
+      "max_center_error_rel_baseline": "0.11472309319042574"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_roi448_nat_mip_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.1343750053376354",
+      "max_center_error_rel_baseline": "0.11472309319042574"
+    },
+    {
+      "setup": "cam3",
+      "variant": "gs_roi448_nat_mip_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.1343750053376354",
+      "max_center_error_rel_baseline": "0.11472309319042574"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_center448_nat_dil_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.3531531902377045",
+      "max_center_error_rel_baseline": "0.04466252965018068"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_center448_nat_dil_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.3531531902377045",
+      "max_center_error_rel_baseline": "0.04466252965018068"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_center448_nat_mip_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "1.3531531902377045",
+      "max_center_error_rel_baseline": "0.04466252965018068"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_center448_nat_mip_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "1.3531531902377045",
+      "max_center_error_rel_baseline": "0.04466252965018068"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_roi448_nat_dil_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "0.8645002361435955",
+      "max_center_error_rel_baseline": "0.13121831952244417"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_roi448_nat_dil_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "0.8645002361435955",
+      "max_center_error_rel_baseline": "0.13121831952244417"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_roi448_nat_mip_cal",
+      "pose_source": "calib",
+      "max_rot_deg": "0.8645002361435955",
+      "max_center_error_rel_baseline": "0.13121831952244417"
+    },
+    {
+      "setup": "cam5",
+      "variant": "gs_roi448_nat_mip_calK",
+      "pose_source": "calibK",
+      "max_rot_deg": "0.8645002361435955",
+      "max_center_error_rel_baseline": "0.13121831952244417"
+    }
+  ],
+  "upstream_validation_limitation": "validate_results checks meta ctx_* (VGGT consistency), not pose_diag for calibrated sources",
+  "BA_stages": [
+    {
+      "loss": "linear",
+      "nfev": 600,
+      "status": 0,
+      "meaning": "maximum function evaluations reached; not formal convergence"
+    },
+    {
+      "loss": "huber",
+      "nfev": 600,
+      "status": 0,
+      "meaning": "maximum function evaluations reached; not formal convergence"
+    }
+  ]
+}

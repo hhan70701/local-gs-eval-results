@@ -1,0 +1,39 @@
+{
+  "num_gaussians": 432640,
+  "time_encode_s": 0.8233745098114014,
+  "sim3_scale": 0.9513932523844829,
+  "ctx_center_err_rel_baseline": [
+    0.009948367097607061,
+    0.003569950883333432,
+    0.006535976056904819
+  ],
+  "ctx_rot_err_deg": [
+    0.38154867935700887,
+    0.027976455118293345,
+    0.38052162477887846
+  ],
+  "ctx_self_psnr": [
+    28.334130768026,
+    30.289501111358042,
+    29.164857429214763
+  ],
+  "window": [
+    420,
+    0,
+    1080
+  ],
+  "size": 448,
+  "crop": "center",
+  "render": {
+    "name": "nat_dil",
+    "res": "native",
+    "mode": "classic",
+    "eps2d": "auto",
+    "filter3d": false
+  },
+  "render_res": 1080,
+  "eps2d_used": 1.7434630102040813,
+  "time_render_per_view_s": 0.01163343588511149,
+  "pose_source": "vggt",
+  "pose_diag": null
+}

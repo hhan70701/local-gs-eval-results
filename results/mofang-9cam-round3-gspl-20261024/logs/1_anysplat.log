@@ -1,0 +1,66 @@
+Python 3.9 annotation compatibility copy: /home/han/linux-han/local-gs-eval/work/round3/anysplat_py39
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[cam3] gs_center448: window x0=420 y0=0 side=1080 (x2.41 upsampling)
+scene scale: 1.033, pixel-wise num: 602112, after voxelize: 432640, voxelize ratio: 0.719
+Gaussians attributes: 
+opacities: mean: 0.6479197144508362, min: 6.615921392949531e-07, max: 0.9993714690208435 
+scales: mean: 0.0016075769672170281, min: 1.332320994280226e-18, max: 0.2179155945777893
+B: 1 V: 3 H: 448 W: 448
+  gaussians=432640  encode=0.823s  ctx self-PSNR=29.26dB  pose align rot err=0.38deg
+  gs_center448_nat_dil: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=11.6ms
+  gs_center448_nat_mip: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=14.0ms
+  pose source calib: ctx rot err after Sim3=1.77deg center err/baseline=0.029
+  gs_center448_nat_dil_cal: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=9.7ms
+  gs_center448_nat_mip_cal: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=10.3ms
+  pose source calibK: ctx rot err after Sim3=1.77deg center err/baseline=0.029
+  gs_center448_nat_dil_calK: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=9.0ms
+  gs_center448_nat_mip_calK: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=18.2ms
+  t_pose: {1: 0.305, 2: 0.551, 3: 0.802, 5: 0.194, 6: 0.462, 7: 0.742}
+[cam3] gs_roi448: window x0=519 y0=228 side=543 (x1.21 upsampling)
+scene scale: 1.011, pixel-wise num: 602112, after voxelize: 183447, voxelize ratio: 0.305
+Gaussians attributes: 
+opacities: mean: 0.5326647162437439, min: 5.17983062309213e-06, max: 0.9987267851829529 
+scales: mean: 0.0019107027910649776, min: 9.73778298800224e-16, max: 0.15964064002037048
+B: 1 V: 3 H: 448 W: 448
+  gaussians=183447  encode=0.336s  ctx self-PSNR=26.67dB  pose align rot err=0.54deg
+  gs_roi448_nat_dil: res=543 mode=classic eps2d=0.441 filter3d=False render/view=3.1ms
+  gs_roi448_nat_mip: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=2.6ms
+  pose source calib: ctx rot err after Sim3=1.13deg center err/baseline=0.115
+  gs_roi448_nat_dil_cal: res=543 mode=classic eps2d=0.441 filter3d=False render/view=2.5ms
+  gs_roi448_nat_mip_cal: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=2.8ms
+  pose source calibK: ctx rot err after Sim3=1.13deg center err/baseline=0.115
+  gs_roi448_nat_dil_calK: res=543 mode=classic eps2d=0.441 filter3d=False render/view=2.3ms
+  gs_roi448_nat_mip_calK: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=2.9ms
+  t_pose: {1: 0.307, 2: 0.546, 3: 0.793, 5: 0.19, 6: 0.455, 7: 0.738}
+[cam5] gs_center448: window x0=420 y0=0 side=1080 (x2.41 upsampling)
+scene scale: 1.024, pixel-wise num: 1003520, after voxelize: 637973, voxelize ratio: 0.636
+Gaussians attributes: 
+opacities: mean: 0.5577594637870789, min: 2.253067577839829e-06, max: 0.9992842078208923 
+scales: mean: 0.0015518177533522248, min: 3.644416827332261e-17, max: 0.18423284590244293
+B: 1 V: 5 H: 448 W: 448
+  gaussians=637973  encode=0.521s  ctx self-PSNR=29.82dB  pose align rot err=0.14deg
+  gs_center448_nat_dil: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=10.7ms
+  gs_center448_nat_mip: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=20.0ms
+  pose source calib: ctx rot err after Sim3=1.35deg center err/baseline=0.045
+  gs_center448_nat_dil_cal: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=13.9ms
+  gs_center448_nat_mip_cal: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=19.1ms
+  pose source calibK: ctx rot err after Sim3=1.35deg center err/baseline=0.045
+  gs_center448_nat_dil_calK: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=18.6ms
+  gs_center448_nat_mip_calK: res=1080 mode=antialiased eps2d=0.100 filter3d=True render/view=25.3ms
+  t_pose: {1: 0.553, 3: 0.559, 5: 0.421, 7: 0.52}
+[cam5] gs_roi448: window x0=519 y0=207 side=543 (x1.21 upsampling)
+scene scale: 1.007, pixel-wise num: 1003520, after voxelize: 269851, voxelize ratio: 0.269
+Gaussians attributes: 
+opacities: mean: 0.43635061383247375, min: 2.8463639409892494e-06, max: 0.9978419542312622 
+scales: mean: 0.001987246097996831, min: 5.07179142054764e-17, max: 0.1536107361316681
+B: 1 V: 5 H: 448 W: 448
+  gaussians=269851  encode=0.500s  ctx self-PSNR=27.42dB  pose align rot err=0.17deg
+  gs_roi448_nat_dil: res=543 mode=classic eps2d=0.441 filter3d=False render/view=3.5ms
+  gs_roi448_nat_mip: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=3.5ms
+  pose source calib: ctx rot err after Sim3=0.86deg center err/baseline=0.131
+  gs_roi448_nat_dil_cal: res=543 mode=classic eps2d=0.441 filter3d=False render/view=3.2ms
+  gs_roi448_nat_mip_cal: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=3.4ms
+  pose source calibK: ctx rot err after Sim3=0.86deg center err/baseline=0.131
+  gs_roi448_nat_dil_calK: res=543 mode=classic eps2d=0.441 filter3d=False render/view=3.0ms
+  gs_roi448_nat_mip_calK: res=543 mode=antialiased eps2d=0.100 filter3d=True render/view=3.2ms
+  t_pose: {1: 0.548, 3: 0.539, 5: 0.385, 7: 0.519}
