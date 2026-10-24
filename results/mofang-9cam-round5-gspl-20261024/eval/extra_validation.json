@@ -1,0 +1,18 @@
+{
+  "rows_per_target": {
+    "cam3/1": 432,
+    "cam3/2": 432,
+    "cam3/3": 432,
+    "cam3/5": 432,
+    "cam3/6": 432,
+    "cam3/7": 432,
+    "cam5/1": 432,
+    "cam5/3": 432,
+    "cam5/5": 432,
+    "cam5/7": 432
+  },
+  "paste_rows": 180,
+  "local_count_order": "0 < core <= recon <= total; count check only",
+  "hybrid_coverage_min": 1.0,
+  "shared_t_exact": true
+}

@@ -1,0 +1,27 @@
+diff --git a/lgs/anysplat_wrap.py b/lgs/anysplat_wrap.py
+index fb0c12c..200fe9d 100644
+--- a/lgs/anysplat_wrap.py
++++ b/lgs/anysplat_wrap.py
+@@ -188,7 +188,7 @@ class AnySplatRunner:
+             out, alpha, _ = self.rasterization(
+                 means, quats, scales, op, feat, viewmat, k[None], int(width), int(height),
+                 sh_degree=sh_degree, render_mode="RGB+ED" if depth else "RGB", packed=False, near_plane=1e-10,
+-                backgrounds=torch.cat([bg, bg.new_zeros(1, 1)], 1) if depth else bg,
++                backgrounds=bg,
+                 radius_clip=0.1, covars=cov, rasterize_mode=mode, eps2d=float(eps2d))
+             colors.append(out[0, ..., :3].clamp(0, 1).cpu().numpy())
+             alphas.append(alpha[0, ..., 0].cpu().numpy())
+diff --git a/scripts/evaluate.py b/scripts/evaluate.py
+index 1596250..494159a 100644
+--- a/scripts/evaluate.py
++++ b/scripts/evaluate.py
+@@ -177,7 +177,8 @@ def main():
+             gs_rows.append([setup, gv, m.get("pose_source", "vggt"), m["window"][2], m["render_res"], m["render"]["mode"],
+                             m["eps2d_used"], m["render"]["filter3d"], m["num_gaussians"], m["time_encode_s"],
+                             m["time_render_per_view_s"], float(np.mean(m["ctx_self_psnr"])),
+-                            max(pd["ctx_rot_err_deg"]), max(pd["ctx_center_err_rel_baseline"])])
++                            max(pd.get("ctx_rot_err_deg", m["ctx_rot_err_deg"])),
++                            max(pd.get("ctx_center_err_rel_baseline", m["ctx_center_err_rel_baseline"]))])
+         full_frame = [gv for gv in gs_vars if gs_meta[gv]["crop"] in ("center", "fg")]
+         flow_meta = {fv: load_json(flow_dir / fv / "meta.json") for fv in flow_vars}
+         for k in targets:

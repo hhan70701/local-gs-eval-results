@@ -1,0 +1,128 @@
+{
+  "0": {
+    "matches": 423,
+    "inliers": 388,
+    "warp_psnr_db": 55.33515181588455,
+    "fg_frac_aligned": 0.1826292438271605,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "1": {
+    "matches": 456,
+    "inliers": 411,
+    "warp_psnr_db": 53.44900397348658,
+    "fg_frac_aligned": 0.1854200424382716,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "2": {
+    "matches": 491,
+    "inliers": 466,
+    "warp_psnr_db": 55.877915400166536,
+    "fg_frac_aligned": 0.18855082947530863,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "3": {
+    "matches": 411,
+    "inliers": 378,
+    "warp_psnr_db": 53.83889572950235,
+    "fg_frac_aligned": 0.19203944830246913,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "4": {
+    "matches": 520,
+    "inliers": 484,
+    "warp_psnr_db": 53.542678369468376,
+    "fg_frac_aligned": 0.19593219521604938,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "5": {
+    "matches": 527,
+    "inliers": 488,
+    "warp_psnr_db": 54.59101550275153,
+    "fg_frac_aligned": 0.20031346450617285,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "6": {
+    "matches": 423,
+    "inliers": 387,
+    "warp_psnr_db": 55.296685878030026,
+    "fg_frac_aligned": 0.205844425154321,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "7": {
+    "matches": 515,
+    "inliers": 478,
+    "warp_psnr_db": 54.202259825930085,
+    "fg_frac_aligned": 0.20967206790123458,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  },
+  "8": {
+    "matches": 541,
+    "inliers": 485,
+    "warp_psnr_db": 52.9904501969356,
+    "fg_frac_aligned": 0.2137601273148148,
+    "raw_size": [
+      1080,
+      1920
+    ],
+    "aligned_size": [
+      1080,
+      1920
+    ]
+  }
+}

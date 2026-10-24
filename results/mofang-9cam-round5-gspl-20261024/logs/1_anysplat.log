@@ -1,0 +1,66 @@
+Python 3.9 annotation compatibility copy: /home/han/linux-han/local-gs-eval/work/round5/anysplat_py39
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[cam3] gs_token448: window x0=455 y0=140 side=911 (x2.03 upsampling)
+scene scale: 1.032, pixel-wise num: 602112, after voxelize: 368407, voxelize ratio: 0.612
+Gaussians attributes: 
+opacities: mean: 0.6061173677444458, min: 2.2647884634352522e-07, max: 0.9989621639251709 
+scales: mean: 0.0018168204696848989, min: 8.597284248228847e-20, max: 0.23659460246562958
+B: 1 V: 3 H: 448 W: 448
+  gaussians=368407  encode=0.812s  ctx self-PSNR=29.15dB  pose align rot err=0.33deg
+  t_pose (this encode): {1: 0.304, 2: 0.542, 3: 0.801, 5: 0.189, 6: 0.468, 7: 0.759}  t shared with flow: {1: 0.305, 2: 0.551, 3: 0.802, 5: 0.194, 6: 0.463, 7: 0.742}
+  local GS (visible): recon=143741 core=44542 of 368407 Gaussians
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.212px
+  gs_token448_nat_dil: res=911 mode=classic eps2d=1.241 filter3d=False render/view=23.2ms
+  gs_token448_nat_dil_local: res=911 mode=classic eps2d=1.241 filter3d=False render/view=37.0ms
+  gs_token448_nat_dil_al: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=41.0ms
+  gs_token448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=44.9ms
+  gs_token448_nat_dil_alv: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=34.7ms
+  gs_token448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=42.3ms
+[cam3] gs_center448: window x0=420 y0=0 side=1080 (x2.41 upsampling)
+scene scale: 1.032, pixel-wise num: 602112, after voxelize: 432956, voxelize ratio: 0.719
+Gaussians attributes: 
+opacities: mean: 0.6481422781944275, min: 6.705388386762934e-07, max: 0.9994113445281982 
+scales: mean: 0.0016093889717012644, min: 1.4796190105114985e-18, max: 0.21707890927791595
+B: 1 V: 3 H: 448 W: 448
+  gaussians=432956  encode=0.333s  ctx self-PSNR=29.17dB  pose align rot err=0.37deg
+  t_pose (this encode): {1: 0.304, 2: 0.55, 3: 0.802, 5: 0.194, 6: 0.464, 7: 0.742}  t shared with flow: {1: 0.305, 2: 0.551, 3: 0.802, 5: 0.194, 6: 0.463, 7: 0.742}
+  local GS (visible): recon=116463 core=34484 of 432956 Gaussians
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.779px
+  gs_center448_nat_dil: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=20.7ms
+  gs_center448_nat_dil_local: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=35.8ms
+  gs_center448_nat_dil_al: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=42.7ms
+  gs_center448_nat_dil_al_local: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=42.4ms
+  gs_center448_nat_dil_alv: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=32.9ms
+  gs_center448_nat_dil_alv_local: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=42.6ms
+[cam5] gs_token448: window x0=457 y0=134 side=917 (x2.05 upsampling)
+scene scale: 1.024, pixel-wise num: 1003520, after voxelize: 528340, voxelize ratio: 0.526
+Gaussians attributes: 
+opacities: mean: 0.5207669138908386, min: 8.897141583474877e-07, max: 0.9987553358078003 
+scales: mean: 0.0017999785486608744, min: 1.0006291425189457e-19, max: 0.20294763147830963
+B: 1 V: 5 H: 448 W: 448
+  gaussians=528340  encode=0.517s  ctx self-PSNR=29.47dB  pose align rot err=0.12deg
+  t_pose (this encode): {1: 0.551, 3: 0.544, 5: 0.403, 7: 0.533}  t shared with flow: {1: 0.554, 3: 0.559, 5: 0.419, 7: 0.522}
+  local GS (visible): recon=207042 core=44185 of 528340 Gaussians
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.298px
+  gs_token448_nat_dil: res=917 mode=classic eps2d=1.257 filter3d=False render/view=18.3ms
+  gs_token448_nat_dil_local: res=917 mode=classic eps2d=1.257 filter3d=False render/view=32.3ms
+  gs_token448_nat_dil_al: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=23.6ms
+  gs_token448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=43.4ms
+  gs_token448_nat_dil_alv: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=22.5ms
+  gs_token448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=42.6ms
+[cam5] gs_center448: window x0=420 y0=0 side=1080 (x2.41 upsampling)
+scene scale: 1.024, pixel-wise num: 1003520, after voxelize: 638686, voxelize ratio: 0.636
+Gaussians attributes: 
+opacities: mean: 0.5575917959213257, min: 2.202061978096026e-06, max: 0.9993143081665039 
+scales: mean: 0.0015512562822550535, min: 3.4966747598686547e-17, max: 0.18448661267757416
+B: 1 V: 5 H: 448 W: 448
+  gaussians=638686  encode=0.504s  ctx self-PSNR=29.83dB  pose align rot err=0.15deg
+  t_pose (this encode): {1: 0.552, 3: 0.559, 5: 0.419, 7: 0.521}  t shared with flow: {1: 0.554, 3: 0.559, 5: 0.419, 7: 0.522}
+  local GS (visible): recon=171981 core=35490 of 638686 Gaussians
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.451px
+  gs_center448_nat_dil: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=20.2ms
+  gs_center448_nat_dil_local: res=1080 mode=classic eps2d=1.743 filter3d=False render/view=34.6ms
+  gs_center448_nat_dil_al: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=24.2ms
+  gs_center448_nat_dil_al_local: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=42.9ms
+  gs_center448_nat_dil_alv: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=26.8ms
+  gs_center448_nat_dil_alv_local: res=aligned mode=classic eps2d=2.724 filter3d=False render/view=43.4ms
