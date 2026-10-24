@@ -1,0 +1,14 @@
+{
+  "completeness_status": "PASS",
+  "metric_rows": 3000,
+  "paste_rows": 120,
+  "token_ringreg_rows": 40,
+  "GT_registration_rows": 40,
+  "risk_sweep_rows": 90,
+  "hybrid_coverage_all_regions": 1.0,
+  "exact_shared_t_matches_reference_flow": true,
+  "finite_paste_metrics": true,
+  "local_gaussian_subset_counts_valid": true,
+  "rejected_ring_displacement_rows": 18,
+  "paste_region_definition": "alpha_core > .5 within window, includes background; area denominator is fg, so ratio can exceed 1"
+}
