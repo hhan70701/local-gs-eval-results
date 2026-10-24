@@ -1,0 +1,17 @@
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[cam3] 风险阈值扫描最优（IoU）: warp=0.2 col=4.0
+[cam3] cam1: oracle_fail=0.200 risk=0.402 risk_tuned=0.214 object=0.067
+[cam3] cam2: oracle_fail=0.156 risk=0.349 risk_tuned=0.182 object=0.054
+[cam3] cam3: oracle_fail=0.101 risk=0.416 risk_tuned=0.221 object=0.044
+[cam3] cam5: oracle_fail=0.091 risk=0.408 risk_tuned=0.120 object=0.039
+[cam3] cam6: oracle_fail=0.115 risk=0.349 risk_tuned=0.112 object=0.039
+[cam3] cam7: oracle_fail=0.051 risk=0.387 risk_tuned=0.111 object=0.039
+[cam5] 风险阈值扫描最优（IoU）: warp=0.12 col=2.0
+[cam5] cam1: oracle_fail=0.109 risk=0.224 risk_tuned=0.154 object=0.067
+[cam5] cam3: oracle_fail=0.050 risk=0.159 risk_tuned=0.106 object=0.044
+[cam5] cam5: oracle_fail=0.050 risk=0.157 risk_tuned=0.110 object=0.039
+[cam5] cam7: oracle_fail=0.042 risk=0.131 risk_tuned=0.049 object=0.039
+done -> /home/han/linux-han/local-gs-eval/work/round2/eval/summary.md

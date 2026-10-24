@@ -1,0 +1,10 @@
+test_auc_ties_and_order (test_numerics.NumericsTests) ... ok
+test_ecc_registration_recovers_shift (test_numerics.NumericsTests) ... ok
+test_mip_filter3d_matches_formula (test_numerics.NumericsTests) ... ok
+test_python39_type_backport_preserves_bitwise (test_numerics.NumericsTests) ... ok
+test_sim3_known_transform (test_numerics.NumericsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.364s
+
+OK

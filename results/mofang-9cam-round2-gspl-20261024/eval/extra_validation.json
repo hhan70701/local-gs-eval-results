@@ -1,0 +1,41 @@
+{
+  "completeness_status": "PASS",
+  "expected_metric_rows": 3960,
+  "registration_rows": 100,
+  "sweep_rows": 90,
+  "object_coverage_all_unregistered_methods": 1.0,
+  "hybrid_coverage_all_regions": 1.0,
+  "partial_registered_object_regions": [
+    {
+      "setup": "cam3",
+      "target": "1",
+      "method": "gs_center448_nat_mip+reg",
+      "coverage": "0.31460849240358396"
+    },
+    {
+      "setup": "cam3",
+      "target": "3",
+      "method": "gs_center448_nat_mip+reg",
+      "coverage": "0.15299856527977043"
+    },
+    {
+      "setup": "cam3",
+      "target": "5",
+      "method": "gs_center448_nat_mip+reg",
+      "coverage": "0.9991371340523882"
+    },
+    {
+      "setup": "cam5",
+      "target": "1",
+      "method": "gs_center448_nat_mip+reg",
+      "coverage": "0.2342033502142579"
+    },
+    {
+      "setup": "cam5",
+      "target": "3",
+      "method": "gs_center448_nat_mip+reg",
+      "coverage": "0.9880631276901004"
+    }
+  ],
+  "interpretation": "nat_mip+reg contains degenerate registration and incomplete object coverage; do not interpret displacement as camera pose error"
+}
