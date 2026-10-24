@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "metric_rows": 1100,
+  "auc_rows": 50,
+  "gs_renders": 40,
+  "flow_renders": 60,
+  "montages": 10
+}
