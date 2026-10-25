@@ -1,0 +1,9 @@
+{
+  "metrics.csv": 20520,
+  "auc.csv": 50,
+  "registration.csv": 120,
+  "risk_sweep.csv": 90,
+  "paste.csv": 1368,
+  "tokchk.csv": 600,
+  "token_ringreg.csv": 600
+}

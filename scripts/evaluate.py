@@ -162,6 +162,7 @@ def main():
     lp = LPIPSRegion("cuda" if torch.cuda.is_available() else "cpu")
     rows, auc_rows, t_rows, gs_rows, reg_rows, sweep_rows, tuned = [], [], [], [], [], [], {}
     paste_rows, token_rows, chk_rows = [], [], []
+    tto_info = {}  # setup -> meta["tto"] (one optimisation per encode, shared by all variants)
     checks = ecfg.get("target_check")  # None: no target-side check; []: oracle only
     ref = ecfg["ref_flow"]
 
@@ -179,6 +180,7 @@ def main():
             print(f"[{setup}] 跳过第一轮的旧 GS 目录（无渲染变体信息）: {stale}")
             gs_vars = [gv for gv in gs_vars if gv not in stale]
             gs_meta = {gv: gs_meta[gv] for gv in gs_vars}
+        tto_info.update({setup: m["tto"] for m in gs_meta.values() if m.get("tto")})
         for gv, m in gs_meta.items():
             pd = m.get("pose_diag") or m
             gs_rows.append([setup, gv, m.get("pose_source", "vggt"), m["window"][2], m["render_res"], m["render"]["mode"],
@@ -411,8 +413,56 @@ def main():
     tok_json = work / "tokens" / "tokens.json"
     token_report = load_json(tok_json) if tok_json.exists() else None
     write_summary(out_dir / "summary.md", rows, auc_rows, t_rows, gs_rows, reg_rows, sweep_rows, tuned, rcfg, ref,
-                  paste_rows, token_rows, token_report, chk_rows)
+                  paste_rows, token_rows, token_report, chk_rows, tto_info,
+                  ecfg.get("tto_main_variant", "rife"))
     print(f"done -> {out_dir / 'summary.md'}")
+
+
+def tto_speed_table(rows, ref, tto_info, variant):
+    """Round 11: quality vs. wall time of the test-time optimisation for one fixed token variant, aligned
+    domain with interpolated centre, direct paste (no ground truth)."""
+    if not tto_info:
+        return []
+    fgm = {(r[0], int(r[1]), r[2]): (r[4], r[6]) for r in rows if r[3] == "fg"}
+    obj = {(r[0], int(r[1]), r[2]): (r[4], r[6]) for r in rows if r[3] == "object"}
+    pat = re.compile(rf"^hyb_token\[gs_tok{re.escape(variant)}(\d+_.+)_al_local\]$")
+    out = ["", f"### 测试时优化：步数–耗时–质量（第十一轮；token 变体 {variant}，_al，直接贴回，不用真值）", "",
+           "| 设置 | 步数 | TTO 累计耗时 | 监督区域 | 输入 PSNR | fg PSNR / LPIPS | object PSNR / LPIPS | 不差目标数 |",
+           "|---|---:|---:|---|---:|---:|---:|---:|"]
+    for s in sorted(tto_info):
+        ks = sorted({k for (ss, k, m) in fgm if ss == s and m == ref})
+        ff = sorted({m for (ss, _, m) in fgm if ss == s and pat.match(m)})
+        if not ks or not ff:
+            continue
+        mid = pat.match(ff[0]).group(1)
+        info = tto_info[s]
+        log = {e["iter"]: e for e in info.get("log", [])}
+        box = (log.get(1) or {}).get("box")
+        area = f"{box['w']}×{box['h']}（{box['area_frac'] * 100:.0f}%）" if box else f"全图 {info.get('res')}²"
+
+        def avg(d, m):
+            v = [d.get((s, k, m)) for k in ks]
+            return None if any(x is None for x in v) else (np.mean([x[0] for x in v]), np.mean([x[1] for x in v]))
+        f0 = avg(fgm, ref)
+        o0 = avg(obj, ref)
+        out.append(f"| {s} | 纯光流 | — | — | — | {fmt(f0[0])} / {fmt(f0[1], 4)} | "
+                   f"{fmt(o0[0]) if o0 else '—'} / {fmt(o0[1], 4) if o0 else '—'} | — |")
+        steps = [0] + sorted(it for it, e in log.items() if "time_s" in e)
+        for it in steps:
+            m = f"hyb_token[gs_tok{variant}{mid}_al{'' if it == 0 else f'_tto{it}'}_local]"
+            f, o = avg(fgm, m), avg(obj, m)
+            if f is None:
+                continue
+            ok = sum(fgm[(s, k, m)][0] >= fgm[(s, k, ref)][0] - 1e-6 and fgm[(s, k, m)][1] <= fgm[(s, k, ref)][1] + 1e-6
+                     for k in ks)
+            e = log.get(it if it else 1, {})
+            t = "0（前馈）" if it == 0 else f"{e['time_s']:.2f} s"
+            psnr = fmt(np.mean(e["ctx_psnr"])) if e.get("ctx_psnr") else "—"
+            out.append(f"| {s} | {it if it else 'FF'} | {t} | {area} | {psnr} | {fmt(f[0])} / {fmt(f[1], 4)} | "
+                       f"{fmt(o[0]) if o else '—'} / {fmt(o[1], 4) if o else '—'} | {ok}/{len(ks)} |")
+    out += ["", "TTO 累计耗时 = 从优化开始到该检查点的墙钟时间（GPU 同步），不含前馈编码与目标视点渲染；"
+                "输入 PSNR 只在监督区域内计算，FF 行为第 1 步优化前的值。"]
+    return out
 
 
 def reproject_table(rows, ref):
@@ -451,7 +501,7 @@ def reproject_table(rows, ref):
         out.append(line("—", "纯光流", "—", ref))
         for hm in rp:
             gv = hm[len("hyb_token["):-1]
-            name = gv.replace("gs_tok", "").split("448")[0]
+            name = gv.replace("gs_tok", "").split("448")[0] + (" (alv)" if "_alv" in gv else "")
             for suf, kind in kinds:
                 g = gv[:-len("_local")] + suf + "_local"
                 for how, m in (("直接", f"hyb_token[{g}]"), ("oracle", f"hyb_tokchk_oracle[{g}]")):
@@ -501,7 +551,8 @@ def target_check_table(rows, chk_rows, ref):
 
 
 def write_summary(path, rows, auc_rows, t_rows, gs_rows, reg_rows, sweep_rows, tuned, rcfg, ref,
-                  paste_rows=(), token_rows=(), token_report=None, chk_rows=()):
+                  paste_rows=(), token_rows=(), token_report=None, chk_rows=(),
+                  tto_info=None, tto_main_variant="rife"):
     agg = defaultdict(list)
     area = defaultdict(list)
     for s, k, meth, r, p, ss, l, apx, afr, cov in rows:
@@ -608,6 +659,7 @@ def write_summary(path, rows, auc_rows, t_rows, gs_rows, reg_rows, sweep_rows, t
                 lines.append(f"| {s} | {k} | {a}-{b} | {fmt(fp)} / {fmt(fl, 4)} | " + " | ".join(cells) + " |")
         if chk_rows:
             lines += target_check_table(rows, chk_rows, ref)
+        lines += tto_speed_table(rows, ref, tto_info or {}, tto_main_variant)
         lines += reproject_table(rows, ref)
         lines += ["", "## 其余诊断（整窗口 GS、用真值配准的上限等）", ""]
     def pose_src(m):

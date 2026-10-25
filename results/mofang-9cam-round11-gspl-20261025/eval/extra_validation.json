@@ -1,0 +1,31 @@
+{
+  "rows_per_target": {
+    "cam3/1": 2052,
+    "cam3/2": 2052,
+    "cam3/3": 2052,
+    "cam3/5": 2052,
+    "cam3/6": 2052,
+    "cam3/7": 2052,
+    "cam5/1": 2052,
+    "cam5/3": 2052,
+    "cam5/5": 2052,
+    "cam5/7": 2052
+  },
+  "tto_local_views_explicitly_checked": 500,
+  "tto_full_views_explicitly_checked": 100,
+  "tto_core_masks_unchanged_count": 120,
+  "parallel_csvs_equal_worker_concatenation": true,
+  "tto_core_masks_changed_count": 380,
+  "max_core_changed_pixels": 49708,
+  "gaussian_membership_counts_equal": true,
+  "target_camera_validity_equal": true,
+  "tokchk_rows": 600,
+  "zero_paste_identity_checks": 144,
+  "hybrid_coverage_min": 1.0,
+  "reference_vs_round10_max_abs_difference": {
+    "psnr": 0.0,
+    "lpips": 0.0,
+    "area_px": 0.0
+  },
+  "gs_reprojection_disabled": true
+}
