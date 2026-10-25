@@ -1,0 +1,104 @@
+Python 3.9 annotation compatibility copy: /home/han/linux-han/local-gs-eval/work/round10/anysplat_py39
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[cam3] gs_tok448: window x0=455 y0=140 side=911 (x2.03 upsampling)
+scene scale: 1.032, pixel-wise num: 602112, after voxelize: 368192, voxelize ratio: 0.612
+Gaussians attributes: 
+opacities: mean: 0.6061386466026306, min: 2.3635166712665523e-07, max: 0.9989745616912842 
+scales: mean: 0.0018134331330657005, min: 1.1248573241106615e-19, max: 0.23493771255016327
+B: 1 V: 3 H: 448 W: 448
+  gaussians=368192  encode=0.821s  ctx self-PSNR=29.11dB  pose align rot err=0.33deg
+  t_pose (this encode): {1: 0.304, 2: 0.542, 3: 0.8, 5: 0.189, 6: 0.468, 7: 0.761}  t shared with flow: {1: 0.305, 2: 0.551, 3: 0.802, 5: 0.194, 6: 0.463, 7: 0.742}
+  local GS tokr5 (visible, of 368192): 0-4 recon=103027 core=33158, 4-8 recon=123667 core=30344
+  local GS tokrife (visible, of 368192): 0-4 recon=40065 core=14790, 4-8 recon=30054 core=4794
+  local GS tokstrict (visible, of 368192): 0-4 recon=28033 core=12303, 4-8 recon=9399 core=834
+  local GS tokrife_g (visible, of 368192): 0-4 recon=40065 core=14790, 4-8 recon=0 core=0
+  local GS tokstrict_g (visible, of 368192): 0-4 recon=28033 core=12303, 4-8 recon=0 core=0
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.198px
+  TTO: 143160 of 368192 Gaussians at 911px, 74.9s; ctx PSNR it1=28.75, it300=36.71, it1000=40.48
+  gs_tok448_nat_dil_al: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=45.2ms
+  gs_tokr5448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=69.4ms
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=66.2ms
+  gs_tokstrict448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=46.4ms
+  gs_tokrife_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=35.5ms
+  gs_tokstrict_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=37.2ms
+  gs_tok448_nat_dil_alv: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=28.4ms
+  gs_tokr5448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=59.9ms
+  gs_tokrife448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=79.5ms
+  gs_tokstrict448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=54.7ms
+  gs_tokrife_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=42.9ms
+  gs_tokstrict_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=35.3ms
+  gs_tok448_nat_dil_al_tto300: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=25.4ms
+  gs_tokr5448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=42.1ms
+  gs_tokrife448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=55.1ms
+  gs_tokstrict448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=52.7ms
+  gs_tokrife_g448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=48.1ms
+  gs_tokstrict_g448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=41.7ms
+  gs_tok448_nat_dil_alv_tto300: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=26.1ms
+  gs_tokr5448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=42.6ms
+  gs_tokrife448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=54.3ms
+  gs_tokstrict448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=48.5ms
+  gs_tokrife_g448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=39.4ms
+  gs_tokstrict_g448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=34.1ms
+  gs_tok448_nat_dil_al_tto1000: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=29.6ms
+  gs_tokr5448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=42.0ms
+  gs_tokrife448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=47.5ms
+  gs_tokstrict448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=51.3ms
+  gs_tokrife_g448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=36.6ms
+  gs_tokstrict_g448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=36.8ms
+  gs_tok448_nat_dil_alv_tto1000: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=26.1ms
+  gs_tokr5448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=41.9ms
+  gs_tokrife448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=64.1ms
+  gs_tokstrict448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=50.4ms
+  gs_tokrife_g448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=44.0ms
+  gs_tokstrict_g448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=36.5ms
+[cam5] gs_tok448: window x0=457 y0=134 side=917 (x2.05 upsampling)
+scene scale: 1.024, pixel-wise num: 1003520, after voxelize: 526799, voxelize ratio: 0.525
+Gaussians attributes: 
+opacities: mean: 0.5205322504043579, min: 9.406885510543361e-07, max: 0.9987666606903076 
+scales: mean: 0.0017998492112383246, min: 1.1823081195797663e-19, max: 0.20232811570167542
+B: 1 V: 5 H: 448 W: 448
+  gaussians=526799  encode=0.523s  ctx self-PSNR=29.45dB  pose align rot err=0.13deg
+  t_pose (this encode): {1: 0.55, 3: 0.544, 5: 0.401, 7: 0.531}  t shared with flow: {1: 0.554, 3: 0.559, 5: 0.419, 7: 0.522}
+  local GS tokr5 (visible, of 526799): 0-2 recon=114530 core=26037, 2-4 recon=103214 core=19961, 4-6 recon=106163 core=17886, 6-8 recon=128807 core=12265
+  local GS tokrife (visible, of 526799): 0-2 recon=27442 core=8758, 2-4 recon=30783 core=7496, 4-6 recon=8810 core=1463, 6-8 recon=10121 core=1149
+  local GS tokstrict (visible, of 526799): 0-2 recon=18224 core=5516, 2-4 recon=21320 core=4003, 4-6 recon=5276 core=420, 6-8 recon=0 core=0
+  local GS tokrife_g (visible, of 526799): 0-2 recon=27442 core=8758, 2-4 recon=30783 core=7496, 4-6 recon=0 core=0, 6-8 recon=0 core=0
+  local GS tokstrict_g (visible, of 526799): 0-2 recon=18224 core=5516, 2-4 recon=0 core=0, 4-6 recon=0 core=0, 6-8 recon=0 core=0
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.293px
+  TTO: 206291 of 526799 Gaussians at 917px, 137.7s; ctx PSNR it1=29.07, it300=35.55, it1000=38.72
+  gs_tok448_nat_dil_al: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=45.7ms
+  gs_tokr5448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=43.5ms
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=44.9ms
+  gs_tokstrict448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=50.1ms
+  gs_tokrife_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=43.5ms
+  gs_tokstrict_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=30.6ms
+  gs_tok448_nat_dil_alv: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=38.5ms
+  gs_tokr5448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=42.9ms
+  gs_tokrife448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=55.7ms
+  gs_tokstrict448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=46.1ms
+  gs_tokrife_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=52.7ms
+  gs_tokstrict_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=31.1ms
+  gs_tok448_nat_dil_al_tto300: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=30.8ms
+  gs_tokr5448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=45.3ms
+  gs_tokrife448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=68.1ms
+  gs_tokstrict448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=50.8ms
+  gs_tokrife_g448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=41.4ms
+  gs_tokstrict_g448_nat_dil_al_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=30.5ms
+  gs_tok448_nat_dil_alv_tto300: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=25.5ms
+  gs_tokr5448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=47.2ms
+  gs_tokrife448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=52.1ms
+  gs_tokstrict448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=45.3ms
+  gs_tokrife_g448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=51.4ms
+  gs_tokstrict_g448_nat_dil_alv_tto300_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=31.5ms
+  gs_tok448_nat_dil_al_tto1000: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=29.9ms
+  gs_tokr5448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=47.7ms
+  gs_tokrife448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=68.0ms
+  gs_tokstrict448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=56.5ms
+  gs_tokrife_g448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=44.2ms
+  gs_tokstrict_g448_nat_dil_al_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=31.1ms
+  gs_tok448_nat_dil_alv_tto1000: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=26.1ms
+  gs_tokr5448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=43.4ms
+  gs_tokrife448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=65.0ms
+  gs_tokstrict448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=48.6ms
+  gs_tokrife_g448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=52.0ms
+  gs_tokstrict_g448_nat_dil_alv_tto1000_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=35.1ms

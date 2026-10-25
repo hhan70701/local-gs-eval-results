@@ -1,0 +1,3 @@
+setup,total_tto_time_s,train_gaussians,total_gaussians,supervision_res,window,checkpoints
+cam3,74.8786928653717,143160,368192,911,911,"[300, 1000]"
+cam5,137.68879532814026,206291,526799,917,917,"[300, 1000]"
