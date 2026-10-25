@@ -1,0 +1,30 @@
+{
+  "rows_per_target": {
+    "cam3/1": 492,
+    "cam3/2": 492,
+    "cam3/3": 492,
+    "cam3/5": 492,
+    "cam3/6": 492,
+    "cam3/7": 492,
+    "cam5/1": 492,
+    "cam5/3": 492,
+    "cam5/5": 492,
+    "cam5/7": 492
+  },
+  "tokchk_rows": 300,
+  "tokchk_methods": 30,
+  "zero_paste_identity_checks": 72,
+  "old_round7_rows_compared": 3120,
+  "old_round7_max_abs_difference": {
+    "psnr": 0.0,
+    "ssim": 0.0,
+    "lpips": 0.0,
+    "area_px": 0.0,
+    "coverage": 0.0
+  },
+  "hybrid_coverage_min": 1.0,
+  "target_check_only_al_local": true,
+  "paste_area_bounded_by_core": true,
+  "source_code_modified": false,
+  "gs_or_tokens_rerun": false
+}
