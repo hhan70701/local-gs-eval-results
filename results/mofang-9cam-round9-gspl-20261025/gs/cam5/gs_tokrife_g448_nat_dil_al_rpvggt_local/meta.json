@@ -1,0 +1,106 @@
+{
+  "num_gaussians": 528829,
+  "time_encode_s": 0.5237421989440918,
+  "sim3_scale": 0.9883970397949209,
+  "ctx_center_err_rel_baseline": [
+    0.007821911288178603,
+    0.003010959317249712,
+    0.006570345255783633,
+    0.003942800044766468,
+    0.004026477593089871
+  ],
+  "ctx_rot_err_deg": [
+    0.11869406681127799,
+    0.027976455118293345,
+    0.0,
+    0.06852804325551864,
+    0.0625572578997782
+  ],
+  "ctx_self_psnr": [
+    28.84611955812955,
+    30.941167949368356,
+    30.40932587784927,
+    29.065036055138837,
+    28.045756781652752
+  ],
+  "vggt_vs_gs_depth_rel": [
+    0.007222920656204224,
+    0.005873262882232666,
+    0.003039628267288208,
+    0.0030843615531921387,
+    0.0033041536808013916
+  ],
+  "window": [
+    457,
+    134,
+    917
+  ],
+  "size": 448,
+  "crop": "token",
+  "token_variant": "rife_g",
+  "token_window": "fixed",
+  "local_gaussians": {
+    "0-2": {
+      "recon": 27575,
+      "core": 8808
+    },
+    "2-4": {
+      "recon": 30912,
+      "core": 7512
+    },
+    "4-6": {
+      "recon": 0,
+      "core": 0
+    },
+    "6-8": {
+      "recon": 0,
+      "core": 0
+    }
+  },
+  "render": {
+    "name": "nat_dil",
+    "res": "native",
+    "mode": "classic",
+    "eps2d": "auto",
+    "filter3d": false
+  },
+  "render_res": null,
+  "eps2d_used": 1.9644672199945703,
+  "time_render_per_view_s": 0.9728514552116394,
+  "pose_source": "aligned_int",
+  "pose_diag": {
+    "plane_rms_px": 2.3409863095836743
+  },
+  "local": true,
+  "reproject": "vggt",
+  "reproject_stats": [
+    {
+      "target": 1,
+      "depth_valid_px": 1608244,
+      "seen_by_both": 0.6939525345656505,
+      "seen_by_one": 0.2625447382362378,
+      "seen_by_none": 0.043502727198111726
+    },
+    {
+      "target": 3,
+      "depth_valid_px": 1494791,
+      "seen_by_both": 0.7466274549418614,
+      "seen_by_one": 0.2096380029047539,
+      "seen_by_none": 0.04373454215338465
+    },
+    {
+      "target": 5,
+      "depth_valid_px": 1447338,
+      "seen_by_both": 0.7661672670792863,
+      "seen_by_one": 0.1996789968894619,
+      "seen_by_none": 0.03415373603125186
+    },
+    {
+      "target": 7,
+      "depth_valid_px": 1632953,
+      "seen_by_both": 0.6119459653768357,
+      "seen_by_one": 0.35244860078642803,
+      "seen_by_none": 0.03560543383673627
+    }
+  ]
+}

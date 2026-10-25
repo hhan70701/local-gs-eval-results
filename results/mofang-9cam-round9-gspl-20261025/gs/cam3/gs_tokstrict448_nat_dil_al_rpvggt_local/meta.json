@@ -1,0 +1,104 @@
+{
+  "num_gaussians": 368197,
+  "time_encode_s": 0.8415846824645996,
+  "sim3_scale": 0.9556759819766033,
+  "ctx_center_err_rel_baseline": [
+    0.010988596186409969,
+    0.010221371332706845,
+    0.005997160171739231
+  ],
+  "ctx_rot_err_deg": [
+    0.3286493810354792,
+    0.0625572578997782,
+    0.2934198544058264
+  ],
+  "ctx_self_psnr": [
+    28.896433764203987,
+    29.670330996602104,
+    28.864310946832674
+  ],
+  "vggt_vs_gs_depth_rel": [
+    0.007035762071609497,
+    0.0038318932056427,
+    0.0025207996368408203
+  ],
+  "window": [
+    455,
+    140,
+    911
+  ],
+  "size": 448,
+  "crop": "token",
+  "token_variant": "strict",
+  "token_window": "fixed",
+  "local_gaussians": {
+    "0-4": {
+      "recon": 27935,
+      "core": 12202
+    },
+    "4-8": {
+      "recon": 9342,
+      "core": 809
+    }
+  },
+  "render": {
+    "name": "nat_dil",
+    "res": "native",
+    "mode": "classic",
+    "eps2d": "auto",
+    "filter3d": false
+  },
+  "render_res": null,
+  "eps2d_used": 1.9388755637688746,
+  "time_render_per_view_s": 0.9659937222798666,
+  "pose_source": "aligned_int",
+  "pose_diag": {
+    "plane_rms_px": 2.203934776534165
+  },
+  "local": true,
+  "reproject": "vggt",
+  "reproject_stats": [
+    {
+      "target": 1,
+      "depth_valid_px": 1670341,
+      "seen_by_both": 0.5506426532067404,
+      "seen_by_one": 0.40624938261109556,
+      "seen_by_none": 0.043107964182164
+    },
+    {
+      "target": 2,
+      "depth_valid_px": 1643756,
+      "seen_by_both": 0.5486331304646188,
+      "seen_by_one": 0.4082917415966847,
+      "seen_by_none": 0.0430751279386965
+    },
+    {
+      "target": 3,
+      "depth_valid_px": 1617918,
+      "seen_by_both": 0.5484289067801953,
+      "seen_by_one": 0.4085682957974384,
+      "seen_by_none": 0.043002797422366276
+    },
+    {
+      "target": 5,
+      "depth_valid_px": 1599234,
+      "seen_by_both": 0.5847893428979124,
+      "seen_by_one": 0.3722263283546998,
+      "seen_by_none": 0.042984328747387814
+    },
+    {
+      "target": 6,
+      "depth_valid_px": 1609512,
+      "seen_by_both": 0.5836775370422836,
+      "seen_by_one": 0.37096896450601174,
+      "seen_by_none": 0.04535349845170462
+    },
+    {
+      "target": 7,
+      "depth_valid_px": 1620854,
+      "seen_by_both": 0.5895904257878871,
+      "seen_by_one": 0.36541971084378977,
+      "seen_by_none": 0.04498986336832312
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "rows_per_target": {
+    "cam3/1": 672,
+    "cam3/2": 672,
+    "cam3/3": 672,
+    "cam3/5": 672,
+    "cam3/6": 672,
+    "cam3/7": 672,
+    "cam5/1": 672,
+    "cam5/3": 672,
+    "cam5/5": 672,
+    "cam5/7": 672
+  },
+  "reprojection_views_explicitly_checked": 100,
+  "core_identity_checks": 100,
+  "core_and_valid_png_byte_identical": true,
+  "tokchk_rows": 300,
+  "zero_paste_identity_checks": 72,
+  "visibility_stats_rows": 20,
+  "hybrid_coverage_min": 1.0,
+  "reference_vs_round8_max_abs_difference": {
+    "psnr": 0.0,
+    "lpips": 0.0,
+    "area_px": 0.0
+  },
+  "actual_blend_weights_identical_for_all_pairs": false,
+  "gs_rerun": true,
+  "tokens_rerun": false
+}
