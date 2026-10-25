@@ -1,0 +1,27 @@
+{
+  "rows_per_target": {
+    "cam3/1": 432,
+    "cam3/2": 432,
+    "cam3/3": 432,
+    "cam3/5": 432,
+    "cam3/6": 432,
+    "cam3/7": 432,
+    "cam5/1": 432,
+    "cam5/3": 432,
+    "cam5/5": 432,
+    "cam5/7": 432
+  },
+  "paste_rows": 180,
+  "ring_rows": 60,
+  "hybrid_coverage_min": 1.0,
+  "r5_input_masks_byte_identical_round5": false,
+  "r5_max_mask_pixel_difference": 53,
+  "shared_t_exact": true,
+  "local_count_order": "0 < core <= recon <= total (count check only)",
+  "evaluation_domain": "No center/fg crop variants; validity intersection is whole image before foreground masking",
+  "reference_vs_round5_max_abs_difference": {
+    "psnr": 0.0,
+    "lpips": 0.0,
+    "area_px": 0.0
+  }
+}
