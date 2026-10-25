@@ -1,5 +1,3 @@
-> 本机第十一轮实测：[报告](results/mofang-9cam-round11-gspl-20261025/REPORT.md) · [完整汇总](results/mofang-9cam-round11-gspl-20261025/eval/summary.md) · [第十轮](results/mofang-9cam-round10-gspl-20261025/REPORT.md)。源提交fa4bbbd，裁剪监督与25/50/100/200/300步检查点：本帧最早满足两组既定条件为200步，TTO累计14.11/24.54秒；仅修复报告参数传递。
-
 # local-gs-eval：大基线下局部前馈 GS 补全质量验证（实验 3）
 
 本仓库用于回答一个问题：**在光流插视点失败的区域，前馈 3DGS（AnySplat）渲染的结果能不能比光流更好，并且好到值得做"光流为主 + 局部 GS 补全"的混合方案？**
@@ -16,7 +14,215 @@
 
 ---
 
-## 0. 第十一轮：测试时优化提速（当前主实验）
+## ★ 新主机（RTX 4090，Linux）从零部署并运行六路数据集实验
+
+本节是完整的操作清单，可以交给自动执行的 AI 按顺序完成。每一步都有检查方法；不满足时停下来报告，不要跳过。
+
+### 第 1 步：确认用户已经手动拷贝的数据（网上下载不到）
+
+`DATA_ROOT` 默认是 `/home/han/linux-han`。如果数据在别处，先执行 `export LGS_DATA_ROOT=<实际路径>`，下面的 `$DATA_ROOT` 都指这个目录。
+
+```bash
+DATA_ROOT=${LGS_DATA_ROOT:-/home/han/linux-han}
+for s in changjing/shot_0007 changjing/shot_0003 changjing1/shot_0012 changjing1/shot_0032 changjing2/shot_0000; do
+  for v in 0 1 2 3 4 5; do test -f "$DATA_ROOT/datasets/$s/view_$v.png" || echo "缺少 $DATA_ROOT/datasets/$s/view_$v.png"; done
+done
+test -f "$DATA_ROOT/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy" || echo "缺少单应矩阵"
+test -f "$DATA_ROOT/datasets_1080/calib/calib_1920x1080.json" || echo "缺少标定 json"
+test -f "$DATA_ROOT/Practical-RIFE/train_log/flownet.pkl" || echo "缺少 RIFE 权重"
+test -f "$DATA_ROOT/Practical-RIFE/train_log/IFNet_HDv3.py" || echo "缺少 RIFE 网络定义"
+test -f "$DATA_ROOT/Practical-RIFE/model/warplayer.py" || echo "缺少 RIFE model/warplayer.py"
+```
+
+如果上面有输出，说明数据没拷全，需要用户从 Windows 主机拷贝（`D:\hb` 对应 `$DATA_ROOT`）：
+- `datasets/` 下的 5 组场景原图（2304×1296，每组约 52 MB）；
+- `datasets_1080/calib/`；
+- `Practical-RIFE/train_log/` 和 `Practical-RIFE/model/`。
+
+`train_log` 和 `flownet.pkl` 必须是同一版本，不要用网上下载的替换。
+
+### 第 2 步：克隆代码
+
+```bash
+cd $DATA_ROOT
+git clone https://github.com/luckyhan-mike/local-gs-eval.git
+git clone https://github.com/InternRobotics/AnySplat.git      # 放在 $DATA_ROOT/AnySplat（配置 anysplat_dir）
+```
+
+### 第 3 步：Python 环境（按 AnySplat 官方方式，Python 3.10 + torch 2.2 + CUDA 12.1，支持 4090）
+
+```bash
+conda create -n gspl python=3.10 -y
+conda activate gspl
+pip install torch==2.2.0 torchvision==0.17.0 --index-url https://download.pytorch.org/whl/cu121
+cd $DATA_ROOT/AnySplat && pip install -r requirements.txt     # 含 gsplat 预编译包、lpips、e3nn、xformers 等
+pip install pyyaml scipy scikit-image opencv-python
+```
+
+- `requirements.txt` 里的 pytorch3d 需要从源码编译。如果失败可以先跳过，本实验不调用 pytorch3d：删掉那一行后重新安装。
+- 不要让 pip 把 torch 升级到别的版本。若被升级，重新执行上面安装 torch 的那一行。
+
+检查：
+
+```bash
+python -c "import torch, gsplat, lpips; print(torch.cuda.get_device_name(0), torch.__version__, gsplat.__version__)"
+```
+
+应打印出 4090 和版本号。
+
+### 第 4 步：单元测试
+
+```bash
+cd $DATA_ROOT/local-gs-eval
+python -m unittest discover -s tests -v       # 17 项应全部通过
+```
+
+### 第 5 步：运行实验（5 组场景，每组依次跑 prepare → token → GS+TTO → 光流 → 评估 → 验证）
+
+```bash
+cd $DATA_ROOT/local-gs-eval
+export PYTHONUNBUFFERED=1            # 第一次运行不要设置 HF_HUB_OFFLINE，让 AnySplat 权重自动下载
+mkdir -p work
+python scripts/run_scenes.py --config configs/dataset6_lean.yaml 2>&1 | tee work/dataset6_run.log
+```
+
+- 中途失败：看 `work/dataset6/<场景>_<shot>/logs/<步骤>.log`。修好后可以从失败的步骤接着跑，例如 `--shots changjing/shot_0007 --steps anysplat flow evaluate validate`。
+- 只重新生成汇总：加 `--summary-only`。
+- 如果 TTO 一步报错，或者显存不足，把日志交给用户，不要擅自改算法参数。
+
+### 第 6 步：上传结果
+
+结果汇总在 `work/dataset6/summary_all.md`。上传到结果仓库 https://github.com/hhan70701/local-gs-eval-results 的新分支 `experiment/dataset6-in035-<日期>`，放在目录 `results/dataset6-in035-<日期>/` 下。
+
+要上传的内容：
+- `summary_all.md`、`dataset6_run.log`；
+- 每组场景目录下的 `config.yaml`、`timing.json`、`poses/`、`logs/`、`eval/`（包括 `eval/in035/cam*_montage.png`）、`prepare/prepare.json`、`tokens/tokens.json`；
+- `gs/in035/*/meta.json`（含 TTO 耗时与监督框）；
+- 本机环境信息：GPU、驱动、torch、gsplat 版本。
+
+不用上传：`aligned/`、`flow/`、`gs/` 里的大图。
+
+## 0. 六路新数据集上的局部 GS 验证（配置 `configs/dataset6_lean.yaml`，脚本 `scripts/run_scenes.py`）
+
+方法和第十二轮的精简流程完全相同：token 变体 rife，`_al` 对齐域，直接贴回并附 oracle 上限，前馈 + TTO 50 / 100 / 200 步，逐视图裁剪监督。只把数据换成六路阵列数据集（2304×1296 原图 `datasets/`，标定在 `datasets_1080/calib/`，灰墙背景）。
+
+**相机组合**：输入 0 / 3 / 5（间距约 359 / 233 mm），真值是 1、2、4 号。
+
+**场景**：从宫格图里挑了 5 组，手、抱枕、小物件挡在人前，或人离相机很近，写在 `dataset6.shots` 里，可以增删：
+- `changjing/shot_0007`：抱枕举在脸前
+- `changjing/shot_0003`：双手挡在脸前
+- `changjing1/shot_0012`：手拿小物件挡在脸前
+- `changjing1/shot_0032`：书挡在脸前
+- `changjing2/shot_0000`：人离相机很近
+
+**和魔方数据的差别（都写在配置里）**：
+- **对齐图**：和 video-tell 的几何一致（见 `datasets_1080/README.md` 第 6 节）。`prepare.py` 在 **2304×1296 原图**上以 cam3 为参考做单应对齐，再中心裁出 **1920×1088**，用的矩阵是 `homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy`：6 路的裁剪窗口一起平移半个像素，让 cam3 也经过一次重采样。否则 cam3 只是整数平移、没有插值，会比其他几路更锐，人为抬高光流的失败率（见 `datasets_1080/README.md`）。
+  - 不先缩小，像素尺度与原图相同；cam0、cam1 只有约 0.3% 的黑边。
+  - cam3 是输入相机，`H_3` 只是平移裁剪，所以对齐域相机不会出现斜切。
+  - 没有去畸变。
+  - AnySplat 的输入是 2304 原图上的裁剪窗口。
+- **前景**：用背景墙抠像代替绿幕。`chroma` 设为墙面的蓝灰色、低饱和区间，新增 `s_max`。
+- **object 区域**：真值中最大的高饱和色块（抱枕、水果、书）膨胀 40 px；没有彩色物体的场景（只有手或人）该区域为空。
+- **插值时刻 t**：由标定的相机光心计算，即目标光心在两侧输入光心连线上的投影位置，写入每组的 `poses/in035.json`。不用目标图，也不用 VGGT 联合估计。
+
+**跑法**：需要的数据是 `data_root/datasets/<场景>/<shot>/view_0..5.png`（原图，可以只拷选中的 shot）和 `data_root/datasets_1080/calib/`，不需要第七轮的复用目录。每组场景依次运行 prepare → token 检测 → GS（含 TTO）→ 参考光流 → 评估 → 验证，各自的工作目录在 `work/dataset6/<场景>_<shot>/`。
+
+```bash
+cd local-gs-eval && git pull
+export HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1      # 第一次运行、权重还没缓存时不要设 HF_HUB_OFFLINE
+python -m unittest discover -s tests -v
+python scripts/run_scenes.py --config configs/dataset6_lean.yaml 2>&1 | tee work/dataset6_run.log
+```
+
+- 只跑某几组：加 `--shots changjing1/shot_0012 changjing/shot_0007`。
+- 某一步失败后重跑：从失败的步骤开始，例如 `--steps anysplat flow evaluate validate`。
+- 只重新汇总：加 `--summary-only`。
+
+**结果**：
+- 汇总在 `work/dataset6/summary_all.md`：逐场景、全部场景合计两张表（纯光流 / 前馈 / TTO 各步数 × 直接 / oracle），以及耗时。
+- 每组场景的完整 `eval/summary.md`、对比图和日志在各自的工作目录里。
+
+上传结果时，把 `work/dataset6/` 下除 `aligned/`、`gs/`、`flow/` 大图以外的内容打包，即 `summary_all.md`，以及各组的 `eval/`、`logs/`、`timing.json`、`config.yaml`、`poses/`、`prepare/prepare.json`、`tokens/tokens.json`。另外附上每组 `eval/<setup>/cam*_montage.png`。
+
+**判断标准**：
+1. 光流在这组数据上是否真的失败：纯光流的 fg / object 指标，以及 oracle_fail 面积。如果光流几乎不失败，GS 也就没有用武之地。
+2. 局部 GS 能否超过光流：直接贴回的 fg 两项指标和不差目标数，前馈与 TTO 分开看。
+3. 和魔方数据的结论是否一致：前馈单独不够，TTO 50–100 步后超过光流。
+4. 耗时：编码时间、监督框面积、各检查点的累计时间。
+
+## 0.1 第十二轮：精简实验 + 逐视图裁剪 TTO（配置 `configs/mofang_9cam_lean.yaml`）
+
+第十一轮结论：
+- **质量**：TTO 在 100 步左右就基本到顶。cam3 只要 50 步（3.5 s）就 6/6 不差；cam5 要 200 步（24.5 s）才 3/4 不差。300 步的质量与第十轮持平，说明裁剪监督不掉质量。
+- **速度**：裁剪框仍占视图的 96% / 91%，每步耗时没有下降，提速只来自少跑步数。框这么大，是因为可训练高斯取的是全部 5 个 token 变体（含很松的 r5）重建区的并集；另外所有视图共用同一个框尺寸。
+
+**精简**：前十一轮已经有结论的对照分支和诊断不再跑，只保留部署方法和必要的对照。完整配置 `mofang_9cam.yaml` 及其代码不动，换新 token 等情况下仍可跑全套。
+
+| 去掉的内容 | 依据 |
+|---|---|
+| token 变体 r5 / strict / rife_g / strict_g 的局部渲染与 TTO | rife 最好；gate 变体在有 TTO 后反而切掉增益；r5 太松（编码窗口仍按全部变体的并集，与前几轮相同） |
+| `_alv` 位姿（用目标图估计） | 只是对照，部署时不可用 |
+| 整窗口 GS 渲染、真值配准（+reg）、环带配准（ringreg） | 早期诊断，已有结论 |
+| w20 目标侧复核 | 第八轮：与不复核几乎相同（oracle 上限保留） |
+| 其余光流变体（s0.5、uniform、oracle t）的评估、风险阈值扫描 | 光流与 token 自第七轮起固定 |
+| TTO 25 / 300 步 | 第十一轮：25 步不够，100 步后几乎不再提升 |
+
+保留的内容：
+- 两组相机 cam3 / cam5；
+- 参考光流；
+- 方法：rife、`_al`、直接贴回，阶段为前馈和 TTO 50 / 100 / 200 步，每个都附 oracle 上限；
+- 指标：fg / object / rest 等区域的 PSNR 和 LPIPS、不差目标数、逐目标明细、耗时。
+
+TTO 输入 PSNR 只在监督框内计算；SSIM 指标仍照常计算。
+
+**提速**（`gs.tto.crop.per_view: true`）：
+- 可训练高斯只来自 rife（`gs.local_variants: [rife]`）。
+- 每个输入视图按自己的投影外接框（加 32 px 余量）单独光栅化和监督，不再共用一个框尺寸。
+- 日志中 `supervised box` 打印的是最大框尺寸和各视图平均面积占比；各视图的框写在 `meta.json` 的 `tto.log[0].box.per_view`。
+
+跑法（新主机的准备见下一节；token 等沿用第七轮）：
+
+```bash
+export LGS_WORK_DIR=work/round12 HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1
+mkdir -p $LGS_WORK_DIR && cp -r work/round7/{prepare,flow,poses,tokens,compat_packages} $LGS_WORK_DIR/
+python -m unittest discover -s tests -v
+python scripts/run_anysplat.py --config configs/mofang_9cam_lean.yaml 2>&1 | tee $LGS_WORK_DIR/1_anysplat.log
+python scripts/evaluate.py --config configs/mofang_9cam_lean.yaml 2>&1 | tee $LGS_WORK_DIR/3_evaluate.log
+python scripts/validate_results.py configs/mofang_9cam_lean.yaml
+```
+
+先看 `summary.md` 的"测试时优化：步数–耗时–质量"表，再看"颜色来源对比"表（只有 rife，含 oracle）。
+
+判断标准：
+1. **提速**：监督框面积占比明显低于 96% / 91%；每步耗时 = 累计耗时 / 步数，与第十一轮的 70 / 123 ms 比。换了 4090，可用日志里的编码时间（3090 上 0.83 / 0.52 s）估计两台机器本身的速度差。
+2. **质量不变**：rife 前馈与 TTO 100 / 200 步应与第十一轮接近（cam3 TTO200 27.33 / 0.0460；cam5 TTO200 29.15 / 0.0382）。
+3. **最少步数**：cam3 和 cam5 最早在哪个检查点达到 6/6、3/4，以及对应的每帧耗时。
+4. **流程总耗时**：从 GS 到评估完，应在十几分钟内。
+
+## 0.a 新主机准备（魔方数据 / 第十二轮用；六路数据集见上面 ★ 一节）
+
+需要从旧主机或网上拿到下面这些（`data_root` 默认 `/home/han/linux-han`，也可以用环境变量 `LGS_DATA_ROOT` 指定）：
+
+1. **代码**：`git clone` 本仓库。
+2. **数据集**：`北极星/0/魔方_9/grid_00~08.png`（原图）和 `北极星/1/魔方_9/aligned_grid_00~08.png`（对齐图），放在 `data_root` 下。
+3. **AnySplat 源码**：`data_root/AnySplat/`。
+4. **AnySplat 权重**：Hugging Face 缓存 `~/.cache/huggingface/hub/models--lhjiang--anysplat/`（使用 `HF_HUB_OFFLINE=1` 时必需）。新主机能联网的话，也可以不设 `HF_HUB_OFFLINE`，让它自动下载。
+5. **LPIPS 用的 AlexNet 权重**：`~/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth`（没有的话首次评估会自动下载）。
+6. **第七轮的复用输入**：`local-gs-eval/work/round7/{prepare,flow,poses,tokens,compat_packages}`，放到新主机同一路径。其中 `compat_packages` 是 e3nn 0.5.6 兼容包。这样光流基线和 token 与前几轮逐位一致，验证脚本会核对。
+7. **Practical-RIFE**：`data_root/Practical-RIFE/train_log/{IFNet_HDv3.py,flownet.pkl}`。只有重新跑光流或 token 时才需要，本轮用不到，建议一并拷贝。
+8. **conda 环境**：建议在旧主机上用 `conda pack -n gspl -o gspl.tar.gz` 打包，在新主机解压到 `~/anaconda3/envs/gspl` 后执行 `bin/conda-unpack`。这样得到的是同一套 Python 3.9、torch 2.0.1+cu117、gsplat 1.5.3。
+   - 4090 能直接运行 cu117 的 torch，但需要较新的 NVIDIA 驱动（≥ 525）。
+   - gsplat 首次运行如果要重新编译 CUDA 扩展：需要 CUDA 11.7 的 nvcc，并先 `export TORCH_CUDA_ARCH_LIST="8.6+PTX"`（nvcc 11.7 不认识 4090 的 8.9 架构；8.6 的代码可以直接在 4090 上运行）。
+   - 也可以把旧主机的 `~/.cache/torch_extensions/` 一起拷过去。
+
+自检：
+
+```bash
+python -c "import torch, gsplat; print(torch.cuda.get_device_name(0), torch.__version__, gsplat.__version__)"
+python -m unittest discover -s tests -v
+```
+
+## 0.0 第十一轮：测试时优化提速
 
 第十轮结论：TTO 第一次让局部 GS 在两组上都超过纯光流（rife、`_al`、直接贴回、300 步：cam3 27.20 / 0.0470，6/6 不差；cam5 29.03 / 0.0390，3/4 不差）。1000 步留出视点反而变差（过拟合）。但耗时太长：前馈编码 0.5–0.8 s，TTO 到 1000 步 cam3 75 s、cam5 138 s，约每步 75 / 138 ms。慢的原因是每一步都把全部 3/5 个输入视图在约 911² 全图上渲染并反传，而真正优化的只是 token 区附近的高斯。
 
@@ -45,7 +251,7 @@ python scripts/validate_results.py configs/mofang_9cam.yaml
 3. 最少步数：25 / 50 / 100 步里，最早在哪一步两组的 fg 均值就超过纯光流、不差目标数达到第十轮 300 步的水平；它对应的耗时就是每帧的实际额外开销。
 4. 如果裁剪后仍然慢（比如监督框占视图 50% 以上），下一步考虑降监督分辨率（`max_res`）或每步只随机取一个输入视图。
 
-## 0.0000 第十轮：局部 GS 测试时优化
+## 0.00000 第十轮：局部 GS 测试时优化
 
 第九轮结论：从输入原图取纹理，两条路线都明显差于直接用 GS 颜色（cam3 rife：GS 颜色 26.38 / 0.0537；GS 几何 + 输入纹理 23.48 / 0.0908；VGGT 几何 + 输入纹理 24.52 / 0.0997；object LPIPS 从 0.16 恶化到 0.40）。原因有两点：
 - GS / VGGT 几何用来做对齐足够准，但按像素取色不够准。魔方色块边缘锐利，深度差 1–2 px（448 分辨率）就会取到相邻色块，出现"清晰但位置错"的纹理，而 LPIPS 对错位的惩罚比对模糊更重。

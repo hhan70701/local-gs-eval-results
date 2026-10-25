@@ -1,0 +1,14 @@
+{
+  "source_tag": "linux-3090-round12",
+  "source_commit": "aed2679360ff1c73ccf5dfcdc115be11e2dbab6d",
+  "work_dir": "work/round12",
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+  "executable": "/home/han/anaconda3/envs/gspl/bin/python",
+  "torch": "2.0.1",
+  "torch_cuda": "11.7",
+  "gsplat": "1.5.3",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "reused_round7_file_count": 1271,
+  "eval_parallel_by_setup": true
+}
