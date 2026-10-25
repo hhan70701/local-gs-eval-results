@@ -1,0 +1,5 @@
+GPU: NVIDIA GeForce RTX 4090
+torch: 2.2.0+cu121 CUDA: 12.1
+gsplat: 1.4.0+pt22cu121 xformers: 0.0.24
+gsplat CUDA rendering and backward: PASS
+xformers CUDA attention and backward: PASS

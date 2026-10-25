@@ -1,0 +1,26 @@
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] gs_tok448: window x0=245 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 1.115, pixel-wise num: 602112, after voxelize: 438552, voxelize ratio: 0.728
+Gaussians attributes: 
+opacities: mean: 0.6384386420249939, min: 1.833112264648662e-06, max: 0.9990203380584717 
+scales: mean: 0.0014939530519768596, min: 8.115596685764817e-19, max: 0.21981826424598694
+B: 1 V: 3 H: 448 W: 448
+  gaussians=438552  encode=0.324s  ctx self-PSNR=32.50dB  pose align rot err=0.26deg
+  t_pose (this encode): {1: 0.362, 2: 0.695, 4: 0.495}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 438552): 0-3 recon=121714 core=60238, 3-5 recon=86904 core=33351
+  local GS tokrife_w30 (visible, of 438552): 0-3 recon=107818 core=40462, 3-5 recon=60538 core=14005
+  local GS tokrife_w40 (visible, of 438552): 0-3 recon=71072 core=23128, 3-5 recon=39500 core=9062
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.821px
+  TTO: 140016 of 438552 Gaussians at 1296px, supervised box 1296x1163 (87% of view), 7.4s total; it1: PSNR 30.74, it25: PSNR 32.83 @ 1.85s, it50: PSNR 33.48 @ 3.70s, it100: PSNR 34.03 @ 7.42s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=41.9ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.9ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=30.1ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=32.6ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.3ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.4ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.8ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.1ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.4ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.9ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.0ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.5ms

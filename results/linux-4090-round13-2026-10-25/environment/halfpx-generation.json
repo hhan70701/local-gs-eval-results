@@ -1,0 +1,17 @@
+{
+  "source": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088.npy",
+  "output": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy",
+  "source_sha256": "5b03b34659edc1b423bc0f1f80f2e6db67b8e2fb66f80d5df694360356a98a40",
+  "output_sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89",
+  "formula": "H_halfpx[i] = T(-0.5,-0.5) @ H_existing[i]",
+  "crop_origin_xy": [
+    192.5,
+    104.5
+  ],
+  "output_size_wh": [
+    1920,
+    1088
+  ],
+  "cam3_bilinear_check": "PASS",
+  "user_authorized_generation": true
+}

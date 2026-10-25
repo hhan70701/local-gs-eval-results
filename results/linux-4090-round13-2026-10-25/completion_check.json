@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "source_commit": "a5d5cbc0ddd2b0a8143bfdccab456ae417f8cb78",
+  "source_tag": "linux-4090-round13",
+  "elapsed_s": 472.13367652893066,
+  "scenes": 5,
+  "target_views": 15,
+  "token_variants": [
+    "rife",
+    "rife_w30",
+    "rife_w40"
+  ],
+  "tto_checkpoints": [
+    25,
+    50,
+    100
+  ],
+  "gs_renders": 180,
+  "montages": 15,
+  "metric_rows": 3330,
+  "previous_round_summary_unchanged": true,
+  "only_output_directory_overridden": true,
+  "publication": "Published to GitHub at user request after initial local-only run",
+  "validations": [
+    {
+      "scene": "changjing/shot_0007",
+      "status": "PASS",
+      "metric_rows": 666,
+      "methods": 37,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 36,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0003",
+      "status": "PASS",
+      "metric_rows": 666,
+      "methods": 37,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 36,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0012",
+      "status": "PASS",
+      "metric_rows": 666,
+      "methods": 37,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 36,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0032",
+      "status": "PASS",
+      "metric_rows": 666,
+      "methods": 37,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 36,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing2/shot_0000",
+      "status": "PASS",
+      "metric_rows": 666,
+      "methods": 37,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 36,
+      "flow_renders": 3,
+      "montages": 3
+    }
+  ]
+}

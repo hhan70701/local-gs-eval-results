@@ -1,0 +1,519 @@
+[changjing/shot_0007] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0007: prepare =====
+cam 0: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 1: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 2: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 3: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 4: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 5: inliers 0/0, raw->aligned PSNR 100.00 dB
+
+===== changjing/shot_0007: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0036 of frame, median |F_t0| = 59.0px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0026 of frame, median |F_t0| = 42.9px
+[in035/r5] pair 0-3: core=0.930 of foreground
+[in035/r5] pair 3-5: core=0.367 of foreground
+[in035/r5] cam0 (union over pairs): fail=0.905 depth=0.023 core=0.933 recon=0.999 (fraction of foreground)
+[in035/r5] cam3 (union over pairs): fail=0.912 depth=0.034 core=0.945 recon=0.999 (fraction of foreground)
+[in035/r5] cam5 (union over pairs): fail=0.268 depth=0.023 core=0.370 recon=0.769 (fraction of foreground)
+[in035/rife] pair 0-3: core=0.479 of foreground
+[in035/rife] pair 3-5: core=0.067 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.411 depth=0.022 core=0.485 recon=0.828 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.415 depth=0.029 core=0.502 recon=0.845 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.033 depth=0.021 core=0.072 recon=0.388 (fraction of foreground)
+[in035/rife_w30] pair 0-3: core=0.104 of foreground
+[in035/rife_w30] pair 3-5: core=0.044 of foreground
+[in035/rife_w30] cam0 (union over pairs): fail=0.072 depth=0.021 core=0.117 recon=0.434 (fraction of foreground)
+[in035/rife_w30] cam3 (union over pairs): fail=0.060 depth=0.024 core=0.121 recon=0.487 (fraction of foreground)
+[in035/rife_w30] cam5 (union over pairs): fail=0.015 depth=0.017 core=0.047 recon=0.294 (fraction of foreground)
+[in035/rife_w40] pair 0-3: core=0.038 of foreground
+[in035/rife_w40] pair 3-5: core=0.022 of foreground
+[in035/rife_w40] cam0 (union over pairs): fail=0.025 depth=0.018 core=0.051 recon=0.245 (fraction of foreground)
+[in035/rife_w40] cam3 (union over pairs): fail=0.011 depth=0.013 core=0.040 recon=0.247 (fraction of foreground)
+[in035/rife_w40] cam5 (union over pairs): fail=0.006 depth=0.011 core=0.027 recon=0.187 (fraction of foreground)
+[in035/strict] pair 0-3: core=0.019 of foreground
+[in035/strict] pair 3-5: core=0.011 of foreground
+[in035/strict] cam0 (union over pairs): fail=0.009 depth=0.000 core=0.020 recon=0.129 (fraction of foreground)
+[in035/strict] cam3 (union over pairs): fail=0.010 depth=0.000 core=0.026 recon=0.192 (fraction of foreground)
+[in035/strict] cam5 (union over pairs): fail=0.006 depth=0.000 core=0.015 recon=0.128 (fraction of foreground)
+[in035/rife_g] pair 0-3: core=0.479 of foreground
+[in035/rife_g] pair 3-5: core=0.067 of foreground
+[in035/rife_g] cam0 (union over pairs): fail=0.411 depth=0.022 core=0.485 recon=0.828 (fraction of foreground)
+[in035/rife_g] cam3 (union over pairs): fail=0.415 depth=0.029 core=0.502 recon=0.845 (fraction of foreground)
+[in035/rife_g] cam5 (union over pairs): fail=0.033 depth=0.021 core=0.072 recon=0.388 (fraction of foreground)
+[in035/strict_g] pair 0-3: core=0.019 of foreground < gate 0.03: pure flow
+[in035/strict_g] pair 3-5: core=0.011 of foreground < gate 0.03: pure flow
+[in035/strict_g] cam0 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam3 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+
+===== changjing/shot_0007: anysplat =====
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] token 变体 strict_g 在所有输入相机上都没有标记：不触发 GS，等价于纯光流
+[in035] gs_tok448: window x0=559 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 1.009, pixel-wise num: 602112, after voxelize: 402166, voxelize ratio: 0.668
+Gaussians attributes: 
+opacities: mean: 0.6902974843978882, min: 5.126583602077517e-08, max: 0.998522937297821 
+scales: mean: 0.0012137395096942782, min: 3.6544637766636516e-23, max: 0.2872118353843689
+B: 1 V: 3 H: 448 W: 448
+  gaussians=402166  encode=0.325s  ctx self-PSNR=32.55dB  pose align rot err=0.25deg
+  t_pose (this encode): {1: 0.357, 2: 0.691, 4: 0.479}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 402166): 0-3 recon=106855 core=46057, 3-5 recon=79306 core=14823
+  local GS tokrife_w30 (visible, of 402166): 0-3 recon=72286 core=16221, 3-5 recon=64908 core=10449
+  local GS tokrife_w40 (visible, of 402166): 0-3 recon=50336 core=8372, 3-5 recon=42350 core=5890
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.707px
+  TTO: 131548 of 402166 Gaussians at 1296px, supervised box 1265x840 (61% of view), 6.5s total; it1: PSNR 29.44, it25: PSNR 31.18 @ 1.63s, it50: PSNR 31.84 @ 3.24s, it100: PSNR 32.43 @ 6.50s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=40.8ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.9ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.0ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=36.1ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=38.1ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=40.2ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=36.0ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.2ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.6ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.2ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=37.4ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.9ms
+
+===== changjing/shot_0007: flow =====
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=24.76 risk=0.903
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=25.28 risk=0.917
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=26.94 risk=0.467
+
+===== changjing/shot_0007: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.127 risk=0.956 risk_tuned=0.956 object=0.551
+[in035] cam2: oracle_fail=0.106 risk=0.979 risk_tuned=0.979 object=0.560
+[in035] cam4: oracle_fail=0.085 risk=0.519 risk_tuned=0.519 object=0.553
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/changjing_shot_0007/eval/summary.md
+
+===== changjing/shot_0007: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 666,
+  "methods": 37,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 36,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0003] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0003: prepare =====
+cam 0: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 1: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 2: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 3: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 4: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 5: inliers 0/0, raw->aligned PSNR 100.00 dB
+
+===== changjing/shot_0003: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0012 of frame, median |F_t0| = 12.5px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0006 of frame, median |F_t0| = 9.6px
+[in035/r5] pair 0-3: core=0.373 of foreground
+[in035/r5] pair 3-5: core=0.159 of foreground
+[in035/r5] cam0 (union over pairs): fail=0.285 depth=0.018 core=0.371 recon=0.731 (fraction of foreground)
+[in035/r5] cam3 (union over pairs): fail=0.340 depth=0.044 core=0.432 recon=0.840 (fraction of foreground)
+[in035/r5] cam5 (union over pairs): fail=0.091 depth=0.013 core=0.161 recon=0.694 (fraction of foreground)
+[in035/rife] pair 0-3: core=0.053 of foreground
+[in035/rife] pair 3-5: core=0.033 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.020 depth=0.014 core=0.049 recon=0.298 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.027 depth=0.032 core=0.084 recon=0.408 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.005 depth=0.006 core=0.029 recon=0.256 (fraction of foreground)
+[in035/rife_w30] pair 0-3: core=0.029 of foreground
+[in035/rife_w30] pair 3-5: core=0.006 of foreground
+[in035/rife_w30] cam0 (union over pairs): fail=0.007 depth=0.010 core=0.027 recon=0.196 (fraction of foreground)
+[in035/rife_w30] cam3 (union over pairs): fail=0.006 depth=0.012 core=0.037 recon=0.274 (fraction of foreground)
+[in035/rife_w30] cam5 (union over pairs): fail=0.000 depth=0.001 core=0.005 recon=0.060 (fraction of foreground)
+[in035/rife_w40] pair 0-3: core=0.009 of foreground
+[in035/rife_w40] pair 3-5: core=0.002 of foreground
+[in035/rife_w40] cam0 (union over pairs): fail=0.001 depth=0.003 core=0.008 recon=0.085 (fraction of foreground)
+[in035/rife_w40] cam3 (union over pairs): fail=0.001 depth=0.004 core=0.014 recon=0.122 (fraction of foreground)
+[in035/rife_w40] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict] pair 0-3: core=0.005 of foreground
+[in035/strict] pair 3-5: core=0.000 of foreground
+[in035/strict] cam0 (union over pairs): fail=0.003 depth=0.000 core=0.007 recon=0.054 (fraction of foreground)
+[in035/strict] cam3 (union over pairs): fail=0.001 depth=0.000 core=0.002 recon=0.028 (fraction of foreground)
+[in035/strict] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/rife_g] pair 0-3: core=0.053 of foreground
+[in035/rife_g] pair 3-5: core=0.033 of foreground
+[in035/rife_g] cam0 (union over pairs): fail=0.020 depth=0.014 core=0.049 recon=0.298 (fraction of foreground)
+[in035/rife_g] cam3 (union over pairs): fail=0.027 depth=0.032 core=0.084 recon=0.408 (fraction of foreground)
+[in035/rife_g] cam5 (union over pairs): fail=0.005 depth=0.006 core=0.029 recon=0.256 (fraction of foreground)
+[in035/strict_g] pair 0-3: core=0.005 of foreground < gate 0.03: pure flow
+[in035/strict_g] pair 3-5: core=0.000 of foreground < gate 0.03: pure flow
+[in035/strict_g] cam0 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam3 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+
+===== changjing/shot_0003: anysplat =====
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] token 变体 strict_g 在所有输入相机上都没有标记：不触发 GS，等价于纯光流
+[in035] gs_tok448: window x0=492 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.983, pixel-wise num: 602112, after voxelize: 311491, voxelize ratio: 0.517
+Gaussians attributes: 
+opacities: mean: 0.6741210222244263, min: 4.690148216468515e-07, max: 0.9978281855583191 
+scales: mean: 0.0011422076495364308, min: 1.8920627216743917e-20, max: 0.2351691722869873
+B: 1 V: 3 H: 448 W: 448
+  gaussians=311491  encode=0.321s  ctx self-PSNR=31.17dB  pose align rot err=0.22deg
+  t_pose (this encode): {1: 0.36, 2: 0.685, 4: 0.487}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 311491): 0-3 recon=51170 core=10297, 3-5 recon=56473 core=8710
+  local GS tokrife_w30 (visible, of 311491): 0-3 recon=39307 core=6215, 3-5 recon=20085 core=2586
+  local GS tokrife_w40 (visible, of 311491): 0-3 recon=20551 core=2518, 3-5 recon=6176 core=813
+  aligned domain: ref cam 3, zero-parallax plane fit rms=1.828px
+  TTO: 79882 of 311491 Gaussians at 1296px, supervised box 1271x797 (57% of view), 4.9s total; it1: PSNR 27.68, it25: PSNR 28.44 @ 1.25s, it50: PSNR 28.67 @ 2.46s, it100: PSNR 28.90 @ 4.89s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=41.4ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.3ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=42.4ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=40.9ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=39.6ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=44.3ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.5ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=43.5ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=31.6ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=39.4ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=43.5ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=38.2ms
+
+===== changjing/shot_0003: flow =====
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=26.88 risk=0.506
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=28.09 risk=0.373
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=28.46 risk=0.171
+
+===== changjing/shot_0003: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.068 risk=0.542 risk_tuned=0.542 object=0.021
+[in035] cam2: oracle_fail=0.041 risk=0.416 risk_tuned=0.416 object=0.022
+[in035] cam4: oracle_fail=0.033 risk=0.214 risk_tuned=0.214 object=0.022
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/changjing_shot_0003/eval/summary.md
+
+===== changjing/shot_0003: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 666,
+  "methods": 37,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 36,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0012] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0012: prepare =====
+cam 0: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 1: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 2: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 3: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 4: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 5: inliers 0/0, raw->aligned PSNR 100.00 dB
+
+===== changjing1/shot_0012: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0033 of frame, median |F_t0| = 7.9px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0005 of frame, median |F_t0| = 5.9px
+[in035/r5] pair 0-3: core=0.370 of foreground
+[in035/r5] pair 3-5: core=0.161 of foreground
+[in035/r5] cam0 (union over pairs): fail=0.241 depth=0.047 core=0.363 recon=0.891 (fraction of foreground)
+[in035/r5] cam3 (union over pairs): fail=0.294 depth=0.073 core=0.425 recon=0.961 (fraction of foreground)
+[in035/r5] cam5 (union over pairs): fail=0.077 depth=0.022 core=0.167 recon=0.872 (fraction of foreground)
+[in035/rife] pair 0-3: core=0.126 of foreground
+[in035/rife] pair 3-5: core=0.063 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.057 depth=0.040 core=0.120 recon=0.544 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.079 depth=0.067 core=0.167 recon=0.568 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.027 depth=0.020 core=0.066 recon=0.319 (fraction of foreground)
+[in035/rife_w30] pair 0-3: core=0.087 of foreground
+[in035/rife_w30] pair 3-5: core=0.018 of foreground
+[in035/rife_w30] cam0 (union over pairs): fail=0.028 depth=0.032 core=0.084 recon=0.458 (fraction of foreground)
+[in035/rife_w30] cam3 (union over pairs): fail=0.035 depth=0.039 core=0.098 recon=0.447 (fraction of foreground)
+[in035/rife_w30] cam5 (union over pairs): fail=0.006 depth=0.009 core=0.025 recon=0.140 (fraction of foreground)
+[in035/rife_w40] pair 0-3: core=0.049 of foreground
+[in035/rife_w40] pair 3-5: core=0.000 of foreground
+[in035/rife_w40] cam0 (union over pairs): fail=0.008 depth=0.019 core=0.049 recon=0.355 (fraction of foreground)
+[in035/rife_w40] cam3 (union over pairs): fail=0.016 depth=0.019 core=0.048 recon=0.285 (fraction of foreground)
+[in035/rife_w40] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict] pair 0-3: core=0.018 of foreground
+[in035/strict] pair 3-5: core=0.000 of foreground
+[in035/strict] cam0 (union over pairs): fail=0.007 depth=0.000 core=0.019 recon=0.157 (fraction of foreground)
+[in035/strict] cam3 (union over pairs): fail=0.009 depth=0.000 core=0.018 recon=0.125 (fraction of foreground)
+[in035/strict] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/rife_g] pair 0-3: core=0.126 of foreground
+[in035/rife_g] pair 3-5: core=0.063 of foreground
+[in035/rife_g] cam0 (union over pairs): fail=0.057 depth=0.040 core=0.120 recon=0.544 (fraction of foreground)
+[in035/rife_g] cam3 (union over pairs): fail=0.079 depth=0.067 core=0.167 recon=0.568 (fraction of foreground)
+[in035/rife_g] cam5 (union over pairs): fail=0.027 depth=0.020 core=0.066 recon=0.319 (fraction of foreground)
+[in035/strict_g] pair 0-3: core=0.018 of foreground < gate 0.03: pure flow
+[in035/strict_g] pair 3-5: core=0.000 of foreground < gate 0.03: pure flow
+[in035/strict_g] cam0 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam3 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+
+===== changjing1/shot_0012: anysplat =====
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] token 变体 strict_g 在所有输入相机上都没有标记：不触发 GS，等价于纯光流
+[in035] gs_tok448: window x0=180 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.989, pixel-wise num: 602112, after voxelize: 250656, voxelize ratio: 0.416
+Gaussians attributes: 
+opacities: mean: 0.6755706071853638, min: 1.329795122728683e-05, max: 0.9987653493881226 
+scales: mean: 0.001080166082829237, min: 1.824227245227506e-14, max: 0.17108154296875
+B: 1 V: 3 H: 448 W: 448
+  gaussians=250656  encode=0.321s  ctx self-PSNR=29.69dB  pose align rot err=0.26deg
+  t_pose (this encode): {1: 0.366, 2: 0.695, 4: 0.494}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 250656): 0-3 recon=68082 core=17316, 3-5 recon=32648 core=7697
+  local GS tokrife_w30 (visible, of 250656): 0-3 recon=50866 core=11026, 3-5 recon=13878 core=2296
+  local GS tokrife_w40 (visible, of 250656): 0-3 recon=38086 core=6176, 3-5 recon=0 core=0
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.311px
+  TTO: 78344 of 250656 Gaussians at 1296px, supervised box 1285x861 (62% of view), 4.7s total; it1: PSNR 26.81, it25: PSNR 27.78 @ 1.20s, it50: PSNR 28.20 @ 2.36s, it100: PSNR 28.60 @ 4.69s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=38.6ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.7ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=32.1ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=41.1ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=36.9ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.2ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=36.0ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=41.1ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=25.4ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=37.8ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=37.8ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=26.9ms
+
+===== changjing1/shot_0012: flow =====
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=26.51 risk=0.434
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=27.40 risk=0.385
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=29.38 risk=0.208
+
+===== changjing1/shot_0012: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.096 risk=0.570 risk_tuned=0.570 object=0.074
+[in035] cam2: oracle_fail=0.063 risk=0.502 risk_tuned=0.502 object=0.065
+[in035] cam4: oracle_fail=0.030 risk=0.294 risk_tuned=0.294 object=0.056
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/changjing1_shot_0012/eval/summary.md
+
+===== changjing1/shot_0012: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 666,
+  "methods": 37,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 36,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0032] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0032: prepare =====
+cam 0: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 1: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 2: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 3: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 4: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 5: inliers 0/0, raw->aligned PSNR 100.00 dB
+
+===== changjing1/shot_0032: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0062 of frame, median |F_t0| = 8.8px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0056 of frame, median |F_t0| = 7.7px
+[in035/r5] pair 0-3: core=0.450 of foreground
+[in035/r5] pair 3-5: core=0.247 of foreground
+[in035/r5] cam0 (union over pairs): fail=0.410 depth=0.078 core=0.492 recon=0.837 (fraction of foreground)
+[in035/r5] cam3 (union over pairs): fail=0.413 depth=0.099 core=0.499 recon=0.869 (fraction of foreground)
+[in035/r5] cam5 (union over pairs): fail=0.154 depth=0.061 core=0.239 recon=0.736 (fraction of foreground)
+[in035/rife] pair 0-3: core=0.156 of foreground
+[in035/rife] pair 3-5: core=0.137 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.153 depth=0.077 core=0.207 recon=0.537 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.138 depth=0.098 core=0.196 recon=0.534 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.075 depth=0.059 core=0.127 recon=0.425 (fraction of foreground)
+[in035/rife_w30] pair 0-3: core=0.123 of foreground
+[in035/rife_w30] pair 3-5: core=0.110 of foreground
+[in035/rife_w30] cam0 (union over pairs): fail=0.114 depth=0.075 core=0.173 recon=0.484 (fraction of foreground)
+[in035/rife_w30] cam3 (union over pairs): fail=0.087 depth=0.088 core=0.160 recon=0.451 (fraction of foreground)
+[in035/rife_w30] cam5 (union over pairs): fail=0.050 depth=0.052 core=0.101 recon=0.373 (fraction of foreground)
+[in035/rife_w40] pair 0-3: core=0.102 of foreground
+[in035/rife_w40] pair 3-5: core=0.078 of foreground
+[in035/rife_w40] cam0 (union over pairs): fail=0.086 depth=0.068 core=0.148 recon=0.430 (fraction of foreground)
+[in035/rife_w40] cam3 (union over pairs): fail=0.053 depth=0.067 core=0.132 recon=0.389 (fraction of foreground)
+[in035/rife_w40] cam5 (union over pairs): fail=0.035 depth=0.041 core=0.075 recon=0.273 (fraction of foreground)
+[in035/strict] pair 0-3: core=0.022 of foreground
+[in035/strict] pair 3-5: core=0.037 of foreground
+[in035/strict] cam0 (union over pairs): fail=0.017 depth=0.000 core=0.034 recon=0.238 (fraction of foreground)
+[in035/strict] cam3 (union over pairs): fail=0.028 depth=0.000 core=0.049 recon=0.247 (fraction of foreground)
+[in035/strict] cam5 (union over pairs): fail=0.016 depth=0.000 core=0.033 recon=0.206 (fraction of foreground)
+[in035/rife_g] pair 0-3: core=0.156 of foreground
+[in035/rife_g] pair 3-5: core=0.137 of foreground
+[in035/rife_g] cam0 (union over pairs): fail=0.153 depth=0.077 core=0.207 recon=0.537 (fraction of foreground)
+[in035/rife_g] cam3 (union over pairs): fail=0.138 depth=0.098 core=0.196 recon=0.534 (fraction of foreground)
+[in035/rife_g] cam5 (union over pairs): fail=0.075 depth=0.059 core=0.127 recon=0.425 (fraction of foreground)
+[in035/strict_g] pair 0-3: core=0.022 of foreground < gate 0.03: pure flow
+[in035/strict_g] pair 3-5: core=0.037 of foreground
+[in035/strict_g] cam0 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[in035/strict_g] cam3 (union over pairs): fail=0.024 depth=0.000 core=0.041 recon=0.195 (fraction of foreground)
+[in035/strict_g] cam5 (union over pairs): fail=0.016 depth=0.000 core=0.033 recon=0.206 (fraction of foreground)
+
+===== changjing1/shot_0032: anysplat =====
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] gs_tok448: window x0=187 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.990, pixel-wise num: 602112, after voxelize: 271639, voxelize ratio: 0.451
+Gaussians attributes: 
+opacities: mean: 0.6716535687446594, min: 6.068501534173265e-06, max: 0.9982033967971802 
+scales: mean: 0.001177069847472012, min: 6.822709570905908e-16, max: 0.18439865112304688
+B: 1 V: 3 H: 448 W: 448
+  gaussians=271639  encode=0.321s  ctx self-PSNR=29.50dB  pose align rot err=0.35deg
+  t_pose (this encode): {1: 0.357, 2: 0.687, 4: 0.484}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 271639): 0-3 recon=68577 core=21057, 3-5 recon=56397 core=17075
+  local GS tokrife_w30 (visible, of 271639): 0-3 recon=59168 core=17299, 3-5 recon=48527 core=14063
+  local GS tokrife_w40 (visible, of 271639): 0-3 recon=50406 core=14570, 3-5 recon=38490 core=10621
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.346px
+  TTO: 86971 of 271639 Gaussians at 1296px, supervised box 1198x905 (62% of view), 5.3s total; it1: PSNR 26.50, it25: PSNR 27.45 @ 1.35s, it50: PSNR 27.85 @ 2.67s, it100: PSNR 28.25 @ 5.34s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=42.6ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.5ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.8ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.6ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.8ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=32.6ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.7ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=31.2ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=28.6ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.0ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=30.4ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=30.1ms
+
+===== changjing1/shot_0032: flow =====
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=23.96 risk=0.515
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=25.42 risk=0.462
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=26.21 risk=0.269
+
+===== changjing1/shot_0032: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.170 risk=0.615 risk_tuned=0.615 object=0.179
+[in035] cam2: oracle_fail=0.148 risk=0.564 risk_tuned=0.564 object=0.182
+[in035] cam4: oracle_fail=0.096 risk=0.370 risk_tuned=0.370 object=0.188
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/changjing1_shot_0032/eval/summary.md
+
+===== changjing1/shot_0032: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 666,
+  "methods": 37,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 36,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing2/shot_0000] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing2/shot_0000: prepare =====
+cam 0: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 1: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 2: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 3: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 4: inliers 0/0, raw->aligned PSNR 100.00 dB
+cam 5: inliers 0/0, raw->aligned PSNR 100.00 dB
+
+===== changjing2/shot_0000: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0289 of frame, median |F_t0| = 126.1px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0065 of frame, median |F_t0| = 104.8px
+[in035/r5] pair 0-3: core=0.944 of foreground
+[in035/r5] pair 3-5: core=0.819 of foreground
+[in035/r5] cam0 (union over pairs): fail=0.937 depth=0.012 core=0.972 recon=1.000 (fraction of foreground)
+[in035/r5] cam3 (union over pairs): fail=0.959 depth=0.023 core=0.968 recon=0.999 (fraction of foreground)
+[in035/r5] cam5 (union over pairs): fail=0.774 depth=0.006 core=0.820 recon=0.989 (fraction of foreground)
+[in035/rife] pair 0-3: core=0.775 of foreground
+[in035/rife] pair 3-5: core=0.425 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.736 depth=0.011 core=0.800 recon=0.996 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.848 depth=0.023 core=0.884 recon=0.984 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.370 depth=0.006 core=0.403 recon=0.584 (fraction of foreground)
+[in035/rife_w30] pair 0-3: core=0.535 of foreground
+[in035/rife_w30] pair 3-5: core=0.142 of foreground
+[in035/rife_w30] cam0 (union over pairs): fail=0.490 depth=0.011 core=0.568 recon=0.898 (fraction of foreground)
+[in035/rife_w30] cam3 (union over pairs): fail=0.507 depth=0.023 core=0.583 recon=0.903 (fraction of foreground)
+[in035/rife_w30] cam5 (union over pairs): fail=0.079 depth=0.006 core=0.108 recon=0.312 (fraction of foreground)
+[in035/rife_w40] pair 0-3: core=0.307 of foreground
+[in035/rife_w40] pair 3-5: core=0.089 of foreground
+[in035/rife_w40] cam0 (union over pairs): fail=0.264 depth=0.010 core=0.338 recon=0.710 (fraction of foreground)
+[in035/rife_w40] cam3 (union over pairs): fail=0.275 depth=0.022 core=0.339 recon=0.686 (fraction of foreground)
+[in035/rife_w40] cam5 (union over pairs): fail=0.041 depth=0.006 core=0.057 recon=0.171 (fraction of foreground)
+[in035/strict] pair 0-3: core=0.102 of foreground
+[in035/strict] pair 3-5: core=0.014 of foreground
+[in035/strict] cam0 (union over pairs): fail=0.050 depth=0.000 core=0.104 recon=0.473 (fraction of foreground)
+[in035/strict] cam3 (union over pairs): fail=0.051 depth=0.000 core=0.109 recon=0.483 (fraction of foreground)
+[in035/strict] cam5 (union over pairs): fail=0.003 depth=0.000 core=0.011 recon=0.088 (fraction of foreground)
+[in035/rife_g] pair 0-3: core=0.775 of foreground
+[in035/rife_g] pair 3-5: core=0.425 of foreground
+[in035/rife_g] cam0 (union over pairs): fail=0.736 depth=0.011 core=0.800 recon=0.996 (fraction of foreground)
+[in035/rife_g] cam3 (union over pairs): fail=0.848 depth=0.023 core=0.884 recon=0.984 (fraction of foreground)
+[in035/rife_g] cam5 (union over pairs): fail=0.370 depth=0.006 core=0.403 recon=0.584 (fraction of foreground)
+[in035/strict_g] pair 0-3: core=0.102 of foreground
+[in035/strict_g] pair 3-5: core=0.014 of foreground < gate 0.03: pure flow
+[in035/strict_g] cam0 (union over pairs): fail=0.050 depth=0.000 core=0.104 recon=0.473 (fraction of foreground)
+[in035/strict_g] cam3 (union over pairs): fail=0.046 depth=0.000 core=0.100 recon=0.427 (fraction of foreground)
+[in035/strict_g] cam5 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+
+===== changjing2/shot_0000: anysplat =====
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] gs_tok448: window x0=245 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 1.115, pixel-wise num: 602112, after voxelize: 438552, voxelize ratio: 0.728
+Gaussians attributes: 
+opacities: mean: 0.6384386420249939, min: 1.833112264648662e-06, max: 0.9990203380584717 
+scales: mean: 0.0014939530519768596, min: 8.115596685764817e-19, max: 0.21981826424598694
+B: 1 V: 3 H: 448 W: 448
+  gaussians=438552  encode=0.324s  ctx self-PSNR=32.50dB  pose align rot err=0.26deg
+  t_pose (this encode): {1: 0.362, 2: 0.695, 4: 0.495}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 438552): 0-3 recon=121714 core=60238, 3-5 recon=86904 core=33351
+  local GS tokrife_w30 (visible, of 438552): 0-3 recon=107818 core=40462, 3-5 recon=60538 core=14005
+  local GS tokrife_w40 (visible, of 438552): 0-3 recon=71072 core=23128, 3-5 recon=39500 core=9062
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.821px
+  TTO: 140016 of 438552 Gaussians at 1296px, supervised box 1296x1163 (87% of view), 7.4s total; it1: PSNR 30.74, it25: PSNR 32.83 @ 1.85s, it50: PSNR 33.48 @ 3.70s, it100: PSNR 34.03 @ 7.42s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=41.9ms
+  gs_tokrife_w30448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.9ms
+  gs_tokrife_w40448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=30.1ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=32.6ms
+  gs_tokrife_w30448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.3ms
+  gs_tokrife_w40448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.4ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.8ms
+  gs_tokrife_w30448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.1ms
+  gs_tokrife_w40448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.4ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.9ms
+  gs_tokrife_w30448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.0ms
+  gs_tokrife_w40448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.5ms
+
+===== changjing2/shot_0000: flow =====
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=18.41 risk=0.999
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=19.62 risk=1.000
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=22.29 risk=0.881
+
+===== changjing2/shot_0000: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.311 risk=1.046 risk_tuned=1.046 object=0.023
+[in035] cam2: oracle_fail=0.232 risk=1.051 risk_tuned=1.051 object=0.024
+[in035] cam4: oracle_fail=0.176 risk=0.950 risk_tuned=0.950 object=0.026
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/changjing2_shot_0000/eval/summary.md
+
+===== changjing2/shot_0000: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 666,
+  "methods": 37,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 36,
+  "flow_renders": 3,
+  "montages": 3
+}
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round13/summary_all.md

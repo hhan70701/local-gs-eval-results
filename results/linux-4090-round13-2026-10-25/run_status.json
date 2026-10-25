@@ -1,0 +1,17 @@
+{
+  "pid": 55430,
+  "status": "completed",
+  "started_unix": 1792944239.4125986,
+  "source_commit": "a5d5cbc0ddd2b0a8143bfdccab456ae417f8cb78",
+  "source_tag": "linux-4090-round13",
+  "publication": "local only; no GitHub push",
+  "command": [
+    "/home/sang-usb/miniconda3/envs/gspl/bin/python",
+    "scripts/run_scenes.py",
+    "--config",
+    "work/setup/dataset6_round13.yaml"
+  ],
+  "exit_code": 0,
+  "finished_unix": 1792944711.5462747,
+  "elapsed_s": 472.13367652893066
+}
