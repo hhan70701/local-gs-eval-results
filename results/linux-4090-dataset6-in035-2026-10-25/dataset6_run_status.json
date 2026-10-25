@@ -1,0 +1,15 @@
+{
+  "pid": 48708,
+  "started_unix": 1792939551.5723057,
+  "status": "completed",
+  "command": [
+    "/home/sang-usb/miniconda3/envs/gspl/bin/python",
+    "scripts/run_scenes.py",
+    "--config",
+    "configs/dataset6_lean.yaml"
+  ],
+  "experiment_started_unix": 1792939896.90153,
+  "exit_code": 0,
+  "finished_unix": 1792940185.4624016,
+  "elapsed_s": 633.8900961875916
+}

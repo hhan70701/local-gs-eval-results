@@ -1,0 +1,188 @@
+{
+  "repositories": {
+    "/home/sang-usb/linux-han/local-gs-eval": "af66f0f2d861dcec902100027213030d5b86a451",
+    "/home/sang-usb/linux-han/AnySplat": "5f5e208a7dd57d52e43ea0d553a95eab526e8775"
+  },
+  "config": "configs/dataset6_lean.yaml",
+  "tag": "linux-4090-dataset6",
+  "torch": "2.2.0+cu121",
+  "cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gsplat": "1.4.0+pt22cu121",
+  "inputs": {
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_0.png": {
+      "size": 4497986,
+      "sha256": "4e498b9dc05752c795b3446551ddc033cd6e51f269b61233b99e708cd216ecff"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_1.png": {
+      "size": 4533831,
+      "sha256": "d3801eafd8545b7d065ccd212d7d34fc53d9e28c9806352e99dcf1fdc6eece49"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_2.png": {
+      "size": 4492366,
+      "sha256": "399d228ce811f25cb7befa44200a3615ce5522938d0a1b1f933501ac3c1f6be9"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_3.png": {
+      "size": 4510062,
+      "sha256": "c16d978792460d62ef848628deab69eb8b1d2799b96e874e68ac2c8451fe5419"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_4.png": {
+      "size": 4450775,
+      "sha256": "d00608cc68b2ec3c3ac89010c86a34619a77e63ba2da5d00c077254d7d886e5b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_5.png": {
+      "size": 4440923,
+      "sha256": "b85e295950cd178b0ed967eb7b1f8fdbd5ac54382b1960ed9f3a9a4dab5b17ed"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_0.png": {
+      "size": 4405583,
+      "sha256": "c23e802c880a83574ac7873e13ebfc15a3395579143bb7a639e7874aca404bd5"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_1.png": {
+      "size": 4474938,
+      "sha256": "7f7a4d16286b68ac4a6d6f986f77a82b02097a6f1be171559356b2d4581cd2a7"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_2.png": {
+      "size": 4421618,
+      "sha256": "d0921c7c68cf156ed6d5bb9d9e5f6c50645452e336d45e60bac5c0bc60c3607a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_3.png": {
+      "size": 4453095,
+      "sha256": "b0d048648a60d6cedcc129dd694da8cab0ece2ebc0af2d76696eb1806171d11a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_4.png": {
+      "size": 4362371,
+      "sha256": "7060a10d90e6165c62c174164eddb41621bf34ad71290d9dd497cf056f26c091"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_5.png": {
+      "size": 4379759,
+      "sha256": "e14b0a05db5977d2f145462e178775dac830b36e1d718183a03d03e80bec54ee"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_0.png": {
+      "size": 4502519,
+      "sha256": "bfed4035f4c32c7ea1dda42472830190d6f8780edda80e0b552f415b6cceb503"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_1.png": {
+      "size": 4543319,
+      "sha256": "e1111760f4aaf92dcad3428dc90fb5da286bed16425c61258d7f4bef8058f135"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_2.png": {
+      "size": 4514970,
+      "sha256": "5016d25decb090d1e5c8be950dfe37437098753a803cd7b0c04e19376dccbb65"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_3.png": {
+      "size": 4560382,
+      "sha256": "da69f912c8408c594bdf81a56cbcbd93b222648a1e5cdb4e311dc6d682ad5f41"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_4.png": {
+      "size": 4481581,
+      "sha256": "4edbe47d85c9ba2a1b9bc541082fd633f42da9dd5205d1b010737635429a2419"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0012/view_5.png": {
+      "size": 4462038,
+      "sha256": "f9aa27aa89986655e82c0400e696d810d630c6469aedcc09752105df07613459"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_0.png": {
+      "size": 4531320,
+      "sha256": "02a017c395171d239f7c0983e627db1d957aabbc3a6dd2aec500ae37ded359c9"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_1.png": {
+      "size": 4566496,
+      "sha256": "775f51b4f11805be6cfa9f0fc9622fcf2862ae089b1b823ef177a1a82856b08a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_2.png": {
+      "size": 4538106,
+      "sha256": "43c0d62ceb9b92ef6f85337c4982fa2eda4513678376a692667b6122d8031c9c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_3.png": {
+      "size": 4585221,
+      "sha256": "8b4a23df208ce7ed37a2b35e3456ad574f9d2da4847ff7b7fbe04c3f37c72a62"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_4.png": {
+      "size": 4509051,
+      "sha256": "a55ac0038331a2303dbfa0525a28fe747f109f503b3c6ff6564ab48d16a6866f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0032/view_5.png": {
+      "size": 4482146,
+      "sha256": "eae5174169490d7241e64175a81a851d50a9e6d34157b1ee6644a63ae3d771b1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_0.png": {
+      "size": 4483378,
+      "sha256": "eb2c37947da7f52b8c514428fb260ee82ca17e3959ac42fd68a2557ba453a060"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_1.png": {
+      "size": 4516995,
+      "sha256": "cf1a28eef0c55b51a3db8b94d5c117ade64aa610e05cfb9a6786776ee00b6384"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_2.png": {
+      "size": 4494426,
+      "sha256": "2b7dbb48c35249184e7025e5110d672fed56bddba1aba6c06abbfb9e60c4aadf"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_3.png": {
+      "size": 4512140,
+      "sha256": "32ed07abb2754f4b7122cfde201c1bc509f492801da26d0ef0a0fea2e37dc499"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_4.png": {
+      "size": 4522855,
+      "sha256": "15dd6429d0a4a4a9fd74290e40bb9c3be9fe8eb2075cc66a3aaed5fa9ae0fb98"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing2/shot_0000/view_5.png": {
+      "size": 4444649,
+      "sha256": "1f9aaa6e72e994166faf59cb45bc78d35967a3a81163d14f80dfe13812736c00"
+    },
+    "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy": {
+      "size": 560,
+      "sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89"
+    },
+    "/home/sang-usb/linux-han/datasets_1080/calib/calib_1920x1080.json": {
+      "size": 9482,
+      "sha256": "a94de699170b6ca65972ee5304fee0d6a14bcf511d5c4f6634541b204b797f01"
+    },
+    "/home/sang-usb/linux-han/train_log/flownet.pkl": {
+      "size": 24636301,
+      "sha256": "6615790efd627772917205db291f51cd392528a157ecbb2ecaeec3bff8eb6de2"
+    },
+    "/home/sang-usb/linux-han/train_log/IFNet_HDv3.py": {
+      "size": 6433,
+      "sha256": "655b4c772b037967b86c2dd31c8fa3b5323b79dd9a0e0088708d89149bbc8a32"
+    },
+    "/home/sang-usb/linux-han/model/warplayer.py": {
+      "size": 1058,
+      "sha256": "eed94da2f2e8056fa0ceabed88b87fedf25ec849494991a956b9f2cbad33632c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/configs/dataset6_lean.yaml": {
+      "size": 12870,
+      "sha256": "beccdb73c16a133d0e79bb750641d8539a398305442edf2a3515a05954516571"
+    }
+  },
+  "halfpx_generation": {
+    "source": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088.npy",
+    "output": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy",
+    "source_sha256": "5b03b34659edc1b423bc0f1f80f2e6db67b8e2fb66f80d5df694360356a98a40",
+    "output_sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89",
+    "formula": "H_halfpx[i] = T(-0.5,-0.5) @ H_existing[i]",
+    "crop_origin_xy": [
+      192.5,
+      104.5
+    ],
+    "output_size_wh": [
+      1920,
+      1088
+    ],
+    "cam3_bilinear_check": "PASS",
+    "user_authorized_generation": true
+  },
+  "model_weights": {
+    "lhjiang/anysplat": {
+      "revision": "d2e8c343672646041ad4ea518184968f94362f01",
+      "sha256": "1c4de2ba5a29c540b899af901bf02107395b5f0617655d347e262f814b4c0c7c"
+    },
+    "facebook/VGGT-1B": {
+      "revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e"
+    },
+    "alexnet": {
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[in035] token 变体 strict_g 在所有输入相机上都没有标记：不触发 GS，等价于纯光流
+[in035] gs_tok448: window x0=136 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.990, pixel-wise num: 602112, after voxelize: 262988, voxelize ratio: 0.437
+Gaussians attributes: 
+opacities: mean: 0.663975179195404, min: 2.0450337615329772e-05, max: 0.9986193180084229 
+scales: mean: 0.001092644757591188, min: 5.516380334837957e-14, max: 0.15881097316741943
+B: 1 V: 3 H: 448 W: 448
+  gaussians=262988  encode=0.321s  ctx self-PSNR=29.00dB  pose align rot err=0.17deg
+  t_pose (this encode): {1: 0.374, 2: 0.703, 4: 0.508}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 262988): 0-3 recon=69816 core=17810, 3-5 recon=33647 core=7632
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.443px
+  TTO: 80379 of 262988 Gaussians at 1008px, supervised box 969x680 (63% of view), 4.4s total; it1: PSNR 26.79, it50: PSNR 28.81 @ 1.15s, it100: PSNR 29.67 @ 2.25s, it200: PSNR 30.42 @ 4.43s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=46.2ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=31.5ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.5ms
+  gs_tokrife448_nat_dil_al_tto200_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.0ms
