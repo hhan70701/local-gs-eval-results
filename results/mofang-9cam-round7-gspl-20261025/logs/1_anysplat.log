@@ -1,0 +1,54 @@
+Python 3.9 annotation compatibility copy: /home/han/linux-han/local-gs-eval/work/round7/anysplat_py39
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[cam3] gs_tok448: window x0=455 y0=140 side=911 (x2.03 upsampling)
+scene scale: 1.032, pixel-wise num: 602112, after voxelize: 368382, voxelize ratio: 0.612
+Gaussians attributes: 
+opacities: mean: 0.6066482663154602, min: 2.3555250550089113e-07, max: 0.9989218711853027 
+scales: mean: 0.0018201952334493399, min: 1.1140618416350202e-19, max: 0.23446530103683472
+B: 1 V: 3 H: 448 W: 448
+  gaussians=368382  encode=0.828s  ctx self-PSNR=29.11dB  pose align rot err=0.34deg
+  t_pose (this encode): {1: 0.305, 2: 0.542, 3: 0.799, 5: 0.19, 6: 0.468, 7: 0.76}  t shared with flow: {1: 0.305, 2: 0.551, 3: 0.802, 5: 0.194, 6: 0.463, 7: 0.742}
+  local GS tokr5 (visible, of 368382): 0-4 recon=103413 core=33204, 4-8 recon=123923 core=30384
+  local GS tokrife (visible, of 368382): 0-4 recon=40153 core=14806, 4-8 recon=30061 core=4790
+  local GS tokstrict (visible, of 368382): 0-4 recon=28085 core=12296, 4-8 recon=9366 core=822
+  local GS tokrife_g (visible, of 368382): 0-4 recon=40153 core=14806, 4-8 recon=0 core=0
+  local GS tokstrict_g (visible, of 368382): 0-4 recon=28085 core=12296, 4-8 recon=0 core=0
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.162px
+  gs_tok448_nat_dil_al: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=46.9ms
+  gs_tokr5448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=157.6ms
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=161.1ms
+  gs_tokstrict448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=64.5ms
+  gs_tokrife_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=39.1ms
+  gs_tokstrict_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=43.6ms
+  gs_tok448_nat_dil_alv: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=28.9ms
+  gs_tokr5448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=43.1ms
+  gs_tokrife448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=66.6ms
+  gs_tokstrict448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=64.1ms
+  gs_tokrife_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=51.9ms
+  gs_tokstrict_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.939 filter3d=False render/view=36.0ms
+[cam5] gs_tok448: window x0=457 y0=134 side=917 (x2.05 upsampling)
+scene scale: 1.024, pixel-wise num: 1003520, after voxelize: 527417, voxelize ratio: 0.526
+Gaussians attributes: 
+opacities: mean: 0.5208514332771301, min: 8.808494840195635e-07, max: 0.9987050294876099 
+scales: mean: 0.0018009808845818043, min: 1.0601012959864916e-19, max: 0.20286467671394348
+B: 1 V: 5 H: 448 W: 448
+  gaussians=527417  encode=0.519s  ctx self-PSNR=29.44dB  pose align rot err=0.13deg
+  t_pose (this encode): {1: 0.55, 3: 0.546, 5: 0.402, 7: 0.531}  t shared with flow: {1: 0.554, 3: 0.559, 5: 0.419, 7: 0.522}
+  local GS tokr5 (visible, of 527417): 0-2 recon=114593 core=26048, 2-4 recon=103203 core=19938, 4-6 recon=106080 core=17929, 6-8 recon=128997 core=12367
+  local GS tokrife (visible, of 527417): 0-2 recon=27441 core=8757, 2-4 recon=30847 core=7508, 4-6 recon=8758 core=1450, 6-8 recon=10105 core=1158
+  local GS tokstrict (visible, of 527417): 0-2 recon=18249 core=5533, 2-4 recon=21343 core=4009, 4-6 recon=5276 core=429, 6-8 recon=0 core=0
+  local GS tokrife_g (visible, of 527417): 0-2 recon=27441 core=8757, 2-4 recon=30847 core=7508, 4-6 recon=0 core=0, 6-8 recon=0 core=0
+  local GS tokstrict_g (visible, of 527417): 0-2 recon=18249 core=5533, 2-4 recon=0 core=0, 4-6 recon=0 core=0, 6-8 recon=0 core=0
+  aligned domain: ref cam 4, zero-parallax plane fit rms=2.271px
+  gs_tok448_nat_dil_al: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=50.6ms
+  gs_tokr5448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=44.4ms
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=51.5ms
+  gs_tokstrict448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=44.3ms
+  gs_tokrife_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=37.8ms
+  gs_tokstrict_g448_nat_dil_al_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=35.2ms
+  gs_tok448_nat_dil_alv: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=34.8ms
+  gs_tokr5448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=60.5ms
+  gs_tokrife448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=69.1ms
+  gs_tokstrict448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=50.8ms
+  gs_tokrife_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=51.6ms
+  gs_tokstrict_g448_nat_dil_alv_local: res=aligned mode=classic eps2d=1.964 filter3d=False render/view=32.6ms

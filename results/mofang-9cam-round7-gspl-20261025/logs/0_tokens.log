@@ -1,0 +1,76 @@
+[cam3] pair 0-4: RIFE t=0.5 |W0-W1|>0.2 on 0.0190 of frame, median |F_t0| = 9.1px
+[cam3] pair 4-8: RIFE t=0.5 |W0-W1|>0.2 on 0.0018 of frame, median |F_t0| = 8.9px
+[cam3/r5] pair 0-4: core=0.304 of foreground
+[cam3/r5] pair 4-8: core=0.249 of foreground
+[cam3/r5] cam0 (union over pairs): fail=0.182 depth=0.004 core=0.288 recon=0.827 (fraction of foreground)
+[cam3/r5] cam4 (union over pairs): fail=0.247 depth=0.013 core=0.376 recon=0.973 (fraction of foreground)
+[cam3/r5] cam8 (union over pairs): fail=0.135 depth=0.008 core=0.257 recon=0.920 (fraction of foreground)
+[cam3/rife] pair 0-4: core=0.145 of foreground
+[cam3/rife] pair 4-8: core=0.025 of foreground
+[cam3/rife] cam0 (union over pairs): fail=0.107 depth=0.002 core=0.142 recon=0.347 (fraction of foreground)
+[cam3/rife] cam4 (union over pairs): fail=0.112 depth=0.007 core=0.155 recon=0.387 (fraction of foreground)
+[cam3/rife] cam8 (union over pairs): fail=0.008 depth=0.002 core=0.026 recon=0.167 (fraction of foreground)
+[cam3/strict] pair 0-4: core=0.124 of foreground
+[cam3/strict] pair 4-8: core=0.004 of foreground
+[cam3/strict] cam0 (union over pairs): fail=0.092 depth=0.000 core=0.123 recon=0.242 (fraction of foreground)
+[cam3/strict] cam4 (union over pairs): fail=0.089 depth=0.000 core=0.126 recon=0.273 (fraction of foreground)
+[cam3/strict] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.001 recon=0.028 (fraction of foreground)
+[cam3/rife_g] pair 0-4: core=0.145 of foreground
+[cam3/rife_g] pair 4-8: core=0.025 of foreground < gate 0.03: pure flow
+[cam3/rife_g] cam0 (union over pairs): fail=0.107 depth=0.002 core=0.142 recon=0.347 (fraction of foreground)
+[cam3/rife_g] cam4 (union over pairs): fail=0.106 depth=0.004 core=0.148 recon=0.386 (fraction of foreground)
+[cam3/rife_g] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam3/strict_g] pair 0-4: core=0.124 of foreground
+[cam3/strict_g] pair 4-8: core=0.004 of foreground < gate 0.03: pure flow
+[cam3/strict_g] cam0 (union over pairs): fail=0.092 depth=0.000 core=0.123 recon=0.242 (fraction of foreground)
+[cam3/strict_g] cam4 (union over pairs): fail=0.088 depth=0.000 core=0.125 recon=0.273 (fraction of foreground)
+[cam3/strict_g] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5] pair 0-2: RIFE t=0.5 |W0-W1|>0.2 on 0.0049 of frame, median |F_t0| = 5.2px
+[cam5] pair 2-4: RIFE t=0.5 |W0-W1|>0.2 on 0.0021 of frame, median |F_t0| = 4.1px
+[cam5] pair 4-6: RIFE t=0.5 |W0-W1|>0.2 on 0.0003 of frame, median |F_t0| = 3.9px
+[cam5] pair 6-8: RIFE t=0.5 |W0-W1|>0.2 on 0.0005 of frame, median |F_t0| = 5.1px
+[cam5/r5] pair 0-2: core=0.188 of foreground
+[cam5/r5] pair 2-4: core=0.120 of foreground
+[cam5/r5] pair 4-6: core=0.113 of foreground
+[cam5/r5] pair 6-8: core=0.071 of foreground
+[cam5/r5] cam0 (union over pairs): fail=0.103 depth=0.014 core=0.181 recon=0.751 (fraction of foreground)
+[cam5/r5] cam2 (union over pairs): fail=0.139 depth=0.039 core=0.217 recon=0.791 (fraction of foreground)
+[cam5/r5] cam4 (union over pairs): fail=0.100 depth=0.015 core=0.163 recon=0.700 (fraction of foreground)
+[cam5/r5] cam6 (union over pairs): fail=0.080 depth=0.012 core=0.153 recon=0.750 (fraction of foreground)
+[cam5/r5] cam8 (union over pairs): fail=0.014 depth=0.001 core=0.072 recon=0.681 (fraction of foreground)
+[cam5/rife] pair 0-2: core=0.059 of foreground
+[cam5/rife] pair 2-4: core=0.037 of foreground
+[cam5/rife] pair 4-6: core=0.008 of foreground
+[cam5/rife] pair 6-8: core=0.004 of foreground
+[cam5/rife] cam0 (union over pairs): fail=0.022 depth=0.009 core=0.044 recon=0.191 (fraction of foreground)
+[cam5/rife] cam2 (union over pairs): fail=0.061 depth=0.039 core=0.090 recon=0.258 (fraction of foreground)
+[cam5/rife] cam4 (union over pairs): fail=0.021 depth=0.014 core=0.042 recon=0.162 (fraction of foreground)
+[cam5/rife] cam6 (union over pairs): fail=0.002 depth=0.005 core=0.014 recon=0.088 (fraction of foreground)
+[cam5/rife] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.002 recon=0.039 (fraction of foreground)
+[cam5/strict] pair 0-2: core=0.040 of foreground
+[cam5/strict] pair 2-4: core=0.021 of foreground
+[cam5/strict] pair 4-6: core=0.002 of foreground
+[cam5/strict] pair 6-8: core=0.000 of foreground
+[cam5/strict] cam0 (union over pairs): fail=0.011 depth=0.000 core=0.028 recon=0.165 (fraction of foreground)
+[cam5/strict] cam2 (union over pairs): fail=0.048 depth=0.000 core=0.070 recon=0.208 (fraction of foreground)
+[cam5/strict] cam4 (union over pairs): fail=0.010 depth=0.000 core=0.019 recon=0.107 (fraction of foreground)
+[cam5/strict] cam6 (union over pairs): fail=0.000 depth=0.000 core=0.002 recon=0.026 (fraction of foreground)
+[cam5/strict] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5/rife_g] pair 0-2: core=0.059 of foreground
+[cam5/rife_g] pair 2-4: core=0.037 of foreground
+[cam5/rife_g] pair 4-6: core=0.008 of foreground < gate 0.03: pure flow
+[cam5/rife_g] pair 6-8: core=0.004 of foreground < gate 0.03: pure flow
+[cam5/rife_g] cam0 (union over pairs): fail=0.022 depth=0.009 core=0.044 recon=0.191 (fraction of foreground)
+[cam5/rife_g] cam2 (union over pairs): fail=0.061 depth=0.039 core=0.090 recon=0.258 (fraction of foreground)
+[cam5/rife_g] cam4 (union over pairs): fail=0.020 depth=0.014 core=0.039 recon=0.161 (fraction of foreground)
+[cam5/rife_g] cam6 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5/rife_g] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5/strict_g] pair 0-2: core=0.040 of foreground
+[cam5/strict_g] pair 2-4: core=0.021 of foreground < gate 0.03: pure flow
+[cam5/strict_g] pair 4-6: core=0.002 of foreground < gate 0.03: pure flow
+[cam5/strict_g] pair 6-8: core=0.000 of foreground < gate 0.03: pure flow
+[cam5/strict_g] cam0 (union over pairs): fail=0.011 depth=0.000 core=0.028 recon=0.165 (fraction of foreground)
+[cam5/strict_g] cam2 (union over pairs): fail=0.036 depth=0.000 core=0.053 recon=0.174 (fraction of foreground)
+[cam5/strict_g] cam4 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5/strict_g] cam6 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)
+[cam5/strict_g] cam8 (union over pairs): fail=0.000 depth=0.000 core=0.000 recon=0.000 (fraction of foreground)

@@ -1,0 +1,27 @@
+{
+  "rows_per_target": {
+    "cam3/1": 312,
+    "cam3/2": 312,
+    "cam3/3": 312,
+    "cam3/5": 312,
+    "cam3/6": 312,
+    "cam3/7": 312,
+    "cam5/1": 312,
+    "cam5/3": 312,
+    "cam5/5": 312,
+    "cam5/7": 312
+  },
+  "paste_rows": 228,
+  "ring_rows": 100,
+  "hybrid_coverage_min": 1.0,
+  "gated_identity_checks": 22,
+  "shared_encoding_metadata_equal": true,
+  "shared_t_exact": true,
+  "local_count_order": "0 <= core <= recon <= total (count check only)",
+  "mask_archive_sha256": "ba6e924a9585a49e4cb72ff98b9f0d084e9eeb97e2b4be3858e5fd933ae8258b",
+  "reference_vs_round6_max_abs_difference": {
+    "psnr": 0.0,
+    "lpips": 0.0,
+    "area_px": 0.0
+  }
+}
