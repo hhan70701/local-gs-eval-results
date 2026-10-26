@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "source_commit": "cae8a7b2a4245f20c966fc1cc15137f52a5e083c",
+  "source_tag": "linux-4090-round15-pixgs",
+  "host": "linux-4090",
+  "scenes": 23,
+  "target_views": 69,
+  "montages": 69,
+  "elapsed_s": 3795.6921133995056,
+  "only_output_directory_overridden": true,
+  "validations": [
+    {
+      "scene": "changjing/shot_0000",
+      "status": "PASS",
+      "metric_rows": 1343,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0001",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0003",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0005",
+      "status": "PASS",
+      "metric_rows": 1343,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0007",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0009",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0011",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0000",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0001",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0003",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0005",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0007",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0009",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0011",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0013",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0015",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0017",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0020",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0022",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0024",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0026",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [
+        "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_local",
+        "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto25_local",
+        "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto50_local",
+        "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto100_local"
+      ],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0028",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0030",
+      "status": "PASS",
+      "metric_rows": 1422,
+      "methods": 79,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 78,
+      "flow_renders": 3,
+      "montages": 3
+    }
+  ]
+}

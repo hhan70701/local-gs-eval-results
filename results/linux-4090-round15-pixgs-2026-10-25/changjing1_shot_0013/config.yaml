@@ -1,0 +1,280 @@
+data_root: /home/han/linux-han
+work_dir: /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0013
+num_cams: 6
+raw_pattern: datasets/changjing1/shot_0013/view_{}.png
+aligned_pattern: /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0013/aligned/aligned_{:02d}.png
+homographies: datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy
+aligned_size:
+- 1920
+- 1088
+dataset6:
+  root: datasets
+  calib: datasets_1080/calib/calib_1920x1080.json
+  work_root: work/dataset6_round15_pixgs
+  shots:
+  - changjing/shot_0000
+  - changjing/shot_0001
+  - changjing/shot_0002
+  - changjing/shot_0003
+  - changjing/shot_0004
+  - changjing/shot_0005
+  - changjing/shot_0006
+  - changjing/shot_0007
+  - changjing/shot_0008
+  - changjing/shot_0009
+  - changjing/shot_0010
+  - changjing/shot_0011
+  - changjing/shot_0012
+  - changjing1/shot_0000
+  - changjing1/shot_0001
+  - changjing1/shot_0002
+  - changjing1/shot_0003
+  - changjing1/shot_0004
+  - changjing1/shot_0005
+  - changjing1/shot_0006
+  - changjing1/shot_0007
+  - changjing1/shot_0008
+  - changjing1/shot_0009
+  - changjing1/shot_0010
+  - changjing1/shot_0011
+  - changjing1/shot_0012
+  - changjing1/shot_0013
+  - changjing1/shot_0014
+  - changjing1/shot_0015
+  - changjing1/shot_0016
+  - changjing1/shot_0017
+  - changjing1/shot_0018
+  - changjing1/shot_0019
+  - changjing1/shot_0020
+  - changjing1/shot_0021
+  - changjing1/shot_0022
+  - changjing1/shot_0023
+  - changjing1/shot_0024
+  - changjing1/shot_0025
+  - changjing1/shot_0026
+  - changjing1/shot_0027
+  - changjing1/shot_0028
+  - changjing1/shot_0029
+  - changjing1/shot_0030
+  - changjing1/shot_0031
+  - changjing1/shot_0032
+  pilot_shots:
+  - changjing1/shot_0001
+  - changjing1/shot_0021
+  - changjing1/shot_0022
+  - changjing1/shot_0032
+  - changjing/shot_0000
+  - changjing1/shot_0018
+  hosts:
+    linux-4090:
+    - changjing/shot_0000
+    - changjing/shot_0001
+    - changjing/shot_0003
+    - changjing/shot_0005
+    - changjing/shot_0007
+    - changjing/shot_0009
+    - changjing/shot_0011
+    - changjing1/shot_0000
+    - changjing1/shot_0001
+    - changjing1/shot_0003
+    - changjing1/shot_0005
+    - changjing1/shot_0007
+    - changjing1/shot_0009
+    - changjing1/shot_0011
+    - changjing1/shot_0013
+    - changjing1/shot_0015
+    - changjing1/shot_0017
+    - changjing1/shot_0020
+    - changjing1/shot_0022
+    - changjing1/shot_0024
+    - changjing1/shot_0026
+    - changjing1/shot_0028
+    - changjing1/shot_0030
+    linux-3090:
+    - changjing/shot_0002
+    - changjing/shot_0004
+    - changjing/shot_0006
+    - changjing/shot_0008
+    - changjing/shot_0010
+    - changjing/shot_0012
+    - changjing1/shot_0002
+    - changjing1/shot_0004
+    - changjing1/shot_0006
+    - changjing1/shot_0008
+    - changjing1/shot_0010
+    - changjing1/shot_0012
+    - changjing1/shot_0014
+    - changjing1/shot_0016
+    - changjing1/shot_0018
+    - changjing1/shot_0019
+    - changjing1/shot_0021
+    - changjing1/shot_0023
+    - changjing1/shot_0025
+    - changjing1/shot_0027
+    - changjing1/shot_0029
+    - changjing1/shot_0031
+    - changjing1/shot_0032
+rife_dir: Practical-RIFE
+anysplat_dir: AnySplat
+anysplat_ckpt: lhjiang/anysplat
+setups:
+  in035:
+    context:
+    - 0
+    - 3
+    - 5
+chroma:
+  h_lo: 95
+  h_hi: 130
+  s_min: 10
+  s_max: 110
+  v_min: 50
+  min_area_frac: 0.002
+tokens:
+  rife_scale: 1.0
+  dis_preset: medium
+  fb_thresh: 3.0
+  fb_rel: 0.2
+  photo_thresh: 0.08
+  depth_thresh: 2.0
+  fg_dilate_px: 15
+  core_dilate_px: 6
+  recon_margin_px: 48
+  crop_pad_px: 32
+  paste_feather_px: 8
+  ring_px: 24
+  primary: rife
+  variants:
+    rife:
+      use_dis: false
+      rife_warp: 0.2
+      rife_col: 6.0
+      depth: near_fail
+      min_cc_px: 150
+    cnw_cnn:
+      external: data/tokens_cnw/{shot}/cnn
+    cnw_f5:
+      external: data/tokens_cnw/{shot}/f5
+  ring_max_disp_px: 20
+  paste_fg_dilate_px: 15
+calib:
+  board_pattern: 北极星/biao_ding_9/grid_{:02d}.png
+  board_inner:
+  - 11
+  - 8
+  square_size: 1.0
+  pair_max_gap: 4
+  max_matches_per_pair: 600
+  triangulate_max_err_px: 4.0
+  per_cam_focal: false
+  huber_px: 1.5
+gs:
+  sizes:
+  - 448
+  crops:
+  - token
+  roi_pad_px: 80
+  roi_min_side: 448
+  roi_window: null
+  filter3d_var: 0.2
+  filter3d_comp: false
+  pose_sources:
+  - aligned_int
+  aligned_ref: 3
+  aligned_pad_px: 160
+  local_variants:
+  - rife
+  - cnw_cnn
+  - cnw_f5
+  multi_window:
+    enabled: true
+    max_side: 640
+    max_windows: 4
+    pad_px: 16
+  render_full: false
+  pixgs:
+    enabled: true
+    variants:
+    - cnw_cnn
+    - cnw_f5
+    disp: data/disp_fs/{shot}
+    sigma_px: 0.5
+    max_stretch_px: 3.0
+    eps2d: 0.3
+    fill_px: 96
+    depth_tol_px: 3.0
+  token_window: per_variant
+  reproject:
+    geometries: []
+    sources:
+    - aligned_int
+    vis_tol: 0.05
+    splat_scale: null
+  tto:
+    checkpoints:
+    - 25
+    - 50
+    - 100
+    crop:
+      enabled: true
+      margin_px: 32
+      per_view: true
+      quantile: 0.002
+    scope: local
+    max_res: 1008
+    sh_rest: false
+    ssim_weight: 0.2
+    lr:
+      means: 1.6e-05
+      cov: 0.005
+      opacity: 0.025
+      dc: 0.0025
+    max_disp_scale: 1.0
+    max_cov_scale: 1.5
+    cov_every: 10
+  keep_mode: visible
+  visible_tol: 0.03
+  renders:
+  - name: nat_dil
+    res: native
+    mode: classic
+    eps2d: auto
+    filter3d: false
+risk:
+  warp_thresh: 0.08
+  col_thresh: 2.0
+  dilate_px: 9
+  fg_dilate_px: 15
+eval:
+  lean: true
+  tto_main_variant: cnw_cnn
+  ref_flow: flow_s1.0_pose
+  fail_err_thresh: 0.08
+  edge_thresh: 0.3
+  edge_dilate_px: 5
+  feather_sigma: 3.0
+  object_dilate_px: 40
+  reg_min_px: 2000
+  sweep_warp:
+  - 0.06
+  - 0.08
+  - 0.1
+  - 0.12
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.4
+  sweep_col:
+  - 2.0
+  - 3.0
+  - 4.0
+  - 6.0
+  - 1000000000.0
+  target_check_suffix:
+  - _al_local
+  - _al_tto25_local
+  - _al_tto50_local
+  - _al_tto100_local
+  target_check: []
+shot: changjing1/shot_0013

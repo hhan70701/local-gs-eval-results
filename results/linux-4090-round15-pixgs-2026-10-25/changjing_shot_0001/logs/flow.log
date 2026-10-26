@@ -1,0 +1,3 @@
+[in035] flow_s1.0_pose cam1 pair=0-3 t=0.357 fgPSNR=28.13 risk=0.165
+[in035] flow_s1.0_pose cam2 pair=0-3 t=0.688 fgPSNR=29.13 risk=0.127
+[in035] flow_s1.0_pose cam4 pair=3-5 t=0.481 fgPSNR=29.92 risk=0.065

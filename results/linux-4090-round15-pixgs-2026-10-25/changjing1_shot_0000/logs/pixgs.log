@@ -1,0 +1,2 @@
+[in035] gs_tokcnw_cnn_pix448_pix_al_local: 2052778 Gaussians over 3 views, 176 ms/view (gsplat); cam1 t=0.36 n=756792 miss a/b=0.00/0.10, cam2 t=0.69 n=756792 miss a/b=0.00/0.10, cam4 t=0.48 n=539194 miss a/b=0.00/0.01
+[in035] gs_tokcnw_f5_pix448_pix_al_local: 2122483 Gaussians over 3 views, 86 ms/view (gsplat); cam1 t=0.36 n=776427 miss a/b=0.00/0.08, cam2 t=0.69 n=776427 miss a/b=0.00/0.08, cam4 t=0.48 n=569629 miss a/b=0.00/0.01

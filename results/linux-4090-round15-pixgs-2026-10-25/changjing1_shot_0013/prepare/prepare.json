@@ -1,0 +1,86 @@
+{
+  "0": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.23604903875612746,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  },
+  "1": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.2347412109375,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  },
+  "2": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.23575032552083333,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  },
+  "3": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.24338666130514705,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  },
+  "4": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.23760962392769608,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  },
+  "5": {
+    "matches": 0,
+    "inliers": 0,
+    "warp_psnr_db": 100.0,
+    "fg_frac_aligned": 0.234716796875,
+    "raw_size": [
+      1296,
+      2304
+    ],
+    "aligned_size": [
+      1088,
+      1920
+    ]
+  }
+}

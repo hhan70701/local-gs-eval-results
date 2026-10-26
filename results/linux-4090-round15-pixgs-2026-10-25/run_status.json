@@ -1,0 +1,19 @@
+{
+  "pid": 97035,
+  "status": "completed",
+  "started_unix": 1792990120.6976056,
+  "source_commit": "cae8a7b2a4245f20c966fc1cc15137f52a5e083c",
+  "source_tag": "linux-4090-round15-pixgs",
+  "host": "linux-4090",
+  "command": [
+    "/home/sang-usb/miniconda3/envs/gspl/bin/python",
+    "scripts/run_scenes.py",
+    "--config",
+    "work/setup/dataset6_round15_pixgs.yaml",
+    "--host",
+    "linux-4090"
+  ],
+  "exit_code": 0,
+  "finished_unix": 1792993916.3897185,
+  "elapsed_s": 3795.6921133995056
+}

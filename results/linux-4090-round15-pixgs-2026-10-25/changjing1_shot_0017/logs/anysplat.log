@@ -1,0 +1,196 @@
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+[in035] token 变体 rife: 4 个编码窗口，边长 [602, 705, 471, 448]
+[in035] token 变体 cnw_cnn: 2 个编码窗口，边长 [850, 453]
+[in035] token 变体 cnw_f5: 3 个编码窗口，边长 [967, 448, 453]
+[in035] gs_tokrife448: window x0=181 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.992, pixel-wise num: 602112, after voxelize: 304220, voxelize ratio: 0.505
+Gaussians attributes: 
+opacities: mean: 0.677864670753479, min: 1.2023966746710357e-06, max: 0.9980044960975647 
+scales: mean: 0.0011650639353320003, min: 9.73094031836463e-18, max: 0.21758802235126495
+B: 1 V: 3 H: 448 W: 448
+  gaussians=304220  encode=0.322s  ctx self-PSNR=29.76dB  pose align rot err=0.05deg
+  t_pose (this encode): {1: 0.365, 2: 0.699, 4: 0.495}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife (visible, of 304220): 0-3 recon=58690 core=13248, 3-5 recon=20006 core=2567
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.331px
+  TTO: 64058 of 304220 Gaussians at 1008px, supervised box 980x707 (65% of view), 2.7s total; it1: PSNR 27.33, it25: PSNR 27.82 @ 0.73s, it50: PSNR 28.03 @ 1.38s, it100: PSNR 28.24 @ 2.67s
+  gs_tokrife448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=43.6ms
+  gs_tokrife448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.6ms
+  gs_tokrife448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.9ms
+  gs_tokrife448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=29.0ms
+[in035] gs_tokcnw_cnn448: window x0=126 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.992, pixel-wise num: 602112, after voxelize: 327077, voxelize ratio: 0.543
+Gaussians attributes: 
+opacities: mean: 0.6634631752967834, min: 8.758148396736942e-06, max: 0.998945415019989 
+scales: mean: 0.0011811211006715894, min: 9.611039754038684e-15, max: 0.17634862661361694
+B: 1 V: 3 H: 448 W: 448
+  gaussians=327077  encode=0.170s  ctx self-PSNR=29.50dB  pose align rot err=0.21deg
+  t_pose (this encode): {1: 0.371, 2: 0.697, 4: 0.468}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_cnn (visible, of 327077): 0-3 recon=60517 core=14692, 3-5 recon=30094 core=3673
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.487px
+  TTO: 68197 of 327077 Gaussians at 1008px, supervised box 1000x645 (60% of view), 2.6s total; it1: PSNR 26.86, it25: PSNR 27.58 @ 0.67s, it50: PSNR 27.92 @ 1.31s, it100: PSNR 28.21 @ 2.59s
+  gs_tokcnw_cnn448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=33.3ms
+  gs_tokcnw_cnn448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=34.9ms
+  gs_tokcnw_cnn448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=38.4ms
+  gs_tokcnw_cnn448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.1ms
+[in035] gs_tokcnw_f5448: window x0=110 y0=0 side=1296 (x2.89 upsampling)
+scene scale: 0.992, pixel-wise num: 602112, after voxelize: 314717, voxelize ratio: 0.523
+Gaussians attributes: 
+opacities: mean: 0.6652607321739197, min: 1.2100060303055216e-05, max: 0.9986522793769836 
+scales: mean: 0.0011617480777204037, min: 7.478878254814792e-15, max: 0.17565622925758362
+B: 1 V: 3 H: 448 W: 448
+  gaussians=314717  encode=0.170s  ctx self-PSNR=29.37dB  pose align rot err=0.22deg
+  t_pose (this encode): {1: 0.368, 2: 0.699, 4: 0.485}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_f5 (visible, of 314717): 0-3 recon=71622 core=20237, 3-5 recon=36512 core=6245
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.161px
+  TTO: 77229 of 314717 Gaussians at 1008px, supervised box 1008x635 (60% of view), 2.6s total; it1: PSNR 26.69, it25: PSNR 27.49 @ 0.67s, it50: PSNR 27.90 @ 1.33s, it100: PSNR 28.30 @ 2.62s
+  gs_tokcnw_f5448_nat_dil_al_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.4ms
+  gs_tokcnw_f5448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=31.2ms
+  gs_tokcnw_f5448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=35.2ms
+  gs_tokcnw_f5448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=2.511 filter3d=False render/view=32.4ms
+[in035] gs_tokrife_mw0_448: window x0=443 y0=400 side=602 (x1.34 upsampling)
+scene scale: 0.992, pixel-wise num: 602112, after voxelize: 113956, voxelize ratio: 0.189
+Gaussians attributes: 
+opacities: mean: 0.6263020634651184, min: 1.7298516468144953e-06, max: 0.9986989498138428 
+scales: mean: 0.0010998023208230734, min: 9.999743411761699e-17, max: 0.18307355046272278
+B: 1 V: 3 H: 448 W: 448
+  gaussians=113956  encode=0.170s  ctx self-PSNR=28.25dB  pose align rot err=0.11deg
+  t_pose (this encode): {1: 0.367, 2: 0.691, 4: 0.474}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife_mw (visible, of 113956): 0-3 recon=26993 core=8012, 3-5 recon=14535 core=1875
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.223px
+  TTO: 37957 of 113956 Gaussians at 602px, supervised box 513x602 (76% of view), 1.3s total; it1: PSNR 27.23, it25: PSNR 28.04 @ 0.33s, it50: PSNR 28.28 @ 0.66s, it100: PSNR 28.53 @ 1.29s
+  gs_tokrife_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.542 filter3d=False render/view=32.9ms
+  gs_tokrife_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.542 filter3d=False render/view=29.0ms
+  gs_tokrife_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.542 filter3d=False render/view=33.7ms
+  gs_tokrife_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.542 filter3d=False render/view=27.9ms
+[in035] gs_tokrife_mw1_448: window x0=845 y0=568 side=705 (x1.57 upsampling)
+scene scale: 0.980, pixel-wise num: 602112, after voxelize: 140385, voxelize ratio: 0.233
+Gaussians attributes: 
+opacities: mean: 0.5895237326622009, min: 3.134132202831097e-05, max: 0.9989283680915833 
+scales: mean: 0.0012794684153050184, min: 2.7149918259221882e-14, max: 0.1312764436006546
+B: 1 V: 3 H: 448 W: 448
+  gaussians=140385  encode=0.167s  ctx self-PSNR=29.19dB  pose align rot err=0.29deg
+  t_pose (this encode): {1: 0.355, 2: 0.687, 4: 0.491}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife_mw (visible, of 140385): 0-3 recon=51667 core=16495, 3-5 recon=15349 core=3375
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.121px
+  TTO: 52643 of 140385 Gaussians at 705px, supervised box 534x680 (70% of view), 1.6s total; it1: PSNR 27.29, it25: PSNR 28.45 @ 0.42s, it50: PSNR 28.97 @ 0.83s, it100: PSNR 29.43 @ 1.64s
+  gs_tokrife_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.743 filter3d=False render/view=36.0ms
+  gs_tokrife_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.743 filter3d=False render/view=29.0ms
+  gs_tokrife_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.743 filter3d=False render/view=27.9ms
+  gs_tokrife_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.743 filter3d=False render/view=29.0ms
+[in035] gs_tokrife_mw2_448: window x0=543 y0=825 side=471 (x1.05 upsampling)
+scene scale: 0.995, pixel-wise num: 602112, after voxelize: 222969, voxelize ratio: 0.370
+Gaussians attributes: 
+opacities: mean: 0.614224910736084, min: 1.2095260903954852e-10, max: 0.9991704225540161 
+scales: mean: 0.0014128328766673803, min: 8.100687065082196e-27, max: 0.30000001192092896
+B: 1 V: 3 H: 448 W: 448
+  gaussians=222969  encode=0.172s  ctx self-PSNR=26.36dB  pose align rot err=0.19deg
+  t_pose (this encode): {1: 0.363, 2: 0.714, 4: 0.485}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife_mw (visible, of 222969): 0-3 recon=1703 core=66, 3-5 recon=5590 core=756
+  aligned domain: ref cam 3, zero-parallax plane fit rms=1.845px
+  TTO: 7293 of 222969 Gaussians at 471px, supervised box 471x178 (37% of view), 0.8s total; it1: PSNR 24.03, it25: PSNR 24.09 @ 0.20s, it50: PSNR 24.11 @ 0.39s, it100: PSNR 24.14 @ 0.78s
+  gs_tokrife_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.332 filter3d=False render/view=27.8ms
+  gs_tokrife_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.332 filter3d=False render/view=32.9ms
+  gs_tokrife_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.332 filter3d=False render/view=27.8ms
+  gs_tokrife_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.332 filter3d=False render/view=27.7ms
+[in035] gs_tokrife_mw3_448: window x0=75 y0=848 side=448 (x1.00 upsampling)
+scene scale: 0.998, pixel-wise num: 602112, after voxelize: 260759, voxelize ratio: 0.433
+Gaussians attributes: 
+opacities: mean: 0.662341296672821, min: 7.416700587015157e-09, max: 0.9994173049926758 
+scales: mean: 0.0016042733332142234, min: 3.60335707582011e-22, max: 0.2891833186149597
+B: 1 V: 3 H: 448 W: 448
+  gaussians=260759  encode=0.179s  ctx self-PSNR=25.71dB  pose align rot err=0.28deg
+  t_pose (this encode): {1: 0.36, 2: 0.681, 4: 0.723}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokrife_mw (visible, of 260759): 0-3 recon=11242 core=1534, 3-5 recon=0 core=0
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.700px
+  TTO: 11242 of 260759 Gaussians at 448px, supervised box 269x157 (14% of view), 0.8s total; it1: PSNR 23.18, it25: PSNR 23.71 @ 0.22s, it50: PSNR 23.95 @ 0.43s, it100: PSNR 24.21 @ 0.84s
+  gs_tokrife_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=25.2ms
+  gs_tokrife_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=25.1ms
+  gs_tokrife_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=25.2ms
+  gs_tokrife_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=28.2ms
+[in035] gs_tokcnw_cnn_mw0_448: window x0=606 y0=433 side=850 (x1.90 upsampling)
+scene scale: 0.982, pixel-wise num: 602112, after voxelize: 151654, voxelize ratio: 0.252
+Gaussians attributes: 
+opacities: mean: 0.5976872444152832, min: 3.939414909837069e-06, max: 0.998767614364624 
+scales: mean: 0.0011982060968875885, min: 2.1168033294348484e-17, max: 0.1935243010520935
+B: 1 V: 3 H: 448 W: 448
+  gaussians=151654  encode=0.175s  ctx self-PSNR=28.19dB  pose align rot err=0.11deg
+  t_pose (this encode): {1: 0.365, 2: 0.695, 4: 0.493}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_cnn_mw (visible, of 151654): 0-3 recon=56692 core=15827, 3-5 recon=26101 core=3687
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.527px
+  TTO: 63500 of 151654 Gaussians at 850px, supervised box 804x811 (82% of view), 2.4s total; it1: PSNR 26.58, it25: PSNR 27.68 @ 0.61s, it50: PSNR 28.18 @ 1.20s, it100: PSNR 28.67 @ 2.37s
+  gs_tokcnw_cnn_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=1.080 filter3d=False render/view=34.2ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=1.080 filter3d=False render/view=31.5ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=1.080 filter3d=False render/view=35.2ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=1.080 filter3d=False render/view=34.2ms
+[in035] gs_tokcnw_cnn_mw1_448: window x0=38 y0=843 side=453 (x1.01 upsampling)
+scene scale: 0.988, pixel-wise num: 602112, after voxelize: 211996, voxelize ratio: 0.352
+Gaussians attributes: 
+opacities: mean: 0.6460786461830139, min: 1.142938685916306e-06, max: 0.999454915523529 
+scales: mean: 0.0015540395397692919, min: 7.114130197617566e-16, max: 0.19397403299808502
+B: 1 V: 3 H: 448 W: 448
+  gaussians=211996  encode=0.181s  ctx self-PSNR=26.68dB  pose align rot err=0.50deg
+  t_pose (this encode): {1: 0.351, 2: 0.663, 4: 0.865}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_cnn_mw (visible, of 211996): 0-3 recon=16359 core=3354, 3-5 recon=20274 core=2180
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.326px
+  TTO: 23112 of 211996 Gaussians at 453px, supervised box 362x353 (44% of view), 0.9s total; it1: PSNR 24.33, it25: PSNR 25.22 @ 0.23s, it50: PSNR 25.49 @ 0.46s, it100: PSNR 25.89 @ 0.92s
+  gs_tokcnw_cnn_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=30.6ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=28.2ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=28.6ms
+  gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=33.7ms
+[in035] gs_tokcnw_f5_mw0_448: window x0=459 y0=329 side=967 (x2.16 upsampling)
+scene scale: 0.984, pixel-wise num: 602112, after voxelize: 156392, voxelize ratio: 0.260
+Gaussians attributes: 
+opacities: mean: 0.6079536080360413, min: 3.1229785236064345e-05, max: 0.9984941482543945 
+scales: mean: 0.001156322774477303, min: 3.8773387170225326e-13, max: 0.14492321014404297
+B: 1 V: 3 H: 448 W: 448
+  gaussians=156392  encode=0.176s  ctx self-PSNR=27.96dB  pose align rot err=0.20deg
+  t_pose (this encode): {1: 0.354, 2: 0.693, 4: 0.497}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_f5_mw (visible, of 156392): 0-3 recon=58868 core=19105, 3-5 recon=29420 core=4976
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.242px
+  TTO: 64183 of 156392 Gaussians at 967px, supervised box 955x803 (77% of view), 2.4s total; it1: PSNR 26.01, it25: PSNR 26.89 @ 0.61s, it50: PSNR 27.31 @ 1.21s, it100: PSNR 27.78 @ 2.40s
+  gs_tokcnw_f5_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=1.398 filter3d=False render/view=32.2ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=1.398 filter3d=False render/view=31.5ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=1.398 filter3d=False render/view=41.7ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=1.398 filter3d=False render/view=30.4ms
+[in035] gs_tokcnw_f5_mw1_448: window x0=206 y0=366 side=448 (x1.00 upsampling)
+scene scale: 0.997, pixel-wise num: 602112, after voxelize: 106844, voxelize ratio: 0.177
+Gaussians attributes: 
+opacities: mean: 0.6089755296707153, min: 6.989814949065476e-08, max: 0.998414158821106 
+scales: mean: 0.0011216156417503953, min: 2.3166136557433733e-19, max: 0.2612564265727997
+B: 1 V: 3 H: 448 W: 448
+  gaussians=106844  encode=0.169s  ctx self-PSNR=29.96dB  pose align rot err=0.54deg
+  t_pose (this encode): {1: 0.379, 2: 0.708, 4: 0.522}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_f5_mw (visible, of 106844): 0-3 recon=5903 core=444, 3-5 recon=0 core=0
+  aligned domain: ref cam 3, zero-parallax plane fit rms=4.443px
+  TTO: 5903 of 106844 Gaussians at 448px, supervised box 304x220 (22% of view), 0.5s total; it1: PSNR 26.61, it25: PSNR 27.38 @ 0.14s, it50: PSNR 27.78 @ 0.27s, it100: PSNR 28.36 @ 0.54s
+  gs_tokcnw_f5_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=24.8ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=24.9ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=27.4ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.300 filter3d=False render/view=25.0ms
+[in035] gs_tokcnw_f5_mw2_448: window x0=39 y0=843 side=453 (x1.01 upsampling)
+scene scale: 0.993, pixel-wise num: 602112, after voxelize: 235505, voxelize ratio: 0.391
+Gaussians attributes: 
+opacities: mean: 0.6508646011352539, min: 8.92330945134745e-07, max: 0.9995142221450806 
+scales: mean: 0.0015721420058980584, min: 9.388300767385361e-17, max: 0.19390425086021423
+B: 1 V: 3 H: 448 W: 448
+  gaussians=235505  encode=0.178s  ctx self-PSNR=27.38dB  pose align rot err=0.70deg
+  t_pose (this encode): {1: 0.36, 2: 0.684, 4: 0.932}  t shared with flow: {1: 0.357, 2: 0.688, 4: 0.481}
+  local GS tokcnw_f5_mw (visible, of 235505): 0-3 recon=25864 core=7976, 3-5 recon=26293 core=6206
+  aligned domain: ref cam 3, zero-parallax plane fit rms=2.443px
+  TTO: 30209 of 235505 Gaussians at 453px, supervised box 390x345 (46% of view), 1.0s total; it1: PSNR 24.85, it25: PSNR 25.71 @ 0.26s, it50: PSNR 26.04 @ 0.52s, it100: PSNR 26.44 @ 1.02s
+  gs_tokcnw_f5_mw448_nat_dil_al_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=27.2ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto25_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=28.3ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto50_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=28.2ms
+  gs_tokcnw_f5_mw448_nat_dil_al_tto100_local: res=aligned mode=classic eps2d=0.307 filter3d=False render/view=28.1ms
+  [in035] multi-window gs_tokcnw_cnn_mw448_nat_dil_al_local: 2 windows, sides [850, 453]
+  [in035] multi-window gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local: 2 windows, sides [850, 453]
+  [in035] multi-window gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local: 2 windows, sides [850, 453]
+  [in035] multi-window gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local: 2 windows, sides [850, 453]
+  [in035] multi-window gs_tokcnw_f5_mw448_nat_dil_al_local: 3 windows, sides [967, 448, 453]
+  [in035] multi-window gs_tokcnw_f5_mw448_nat_dil_al_tto100_local: 3 windows, sides [967, 448, 453]
+  [in035] multi-window gs_tokcnw_f5_mw448_nat_dil_al_tto25_local: 3 windows, sides [967, 448, 453]
+  [in035] multi-window gs_tokcnw_f5_mw448_nat_dil_al_tto50_local: 3 windows, sides [967, 448, 453]
+  [in035] multi-window gs_tokrife_mw448_nat_dil_al_local: 4 windows, sides [602, 705, 471, 448]
+  [in035] multi-window gs_tokrife_mw448_nat_dil_al_tto100_local: 4 windows, sides [602, 705, 471, 448]
+  [in035] multi-window gs_tokrife_mw448_nat_dil_al_tto25_local: 4 windows, sides [602, 705, 471, 448]
+  [in035] multi-window gs_tokrife_mw448_nat_dil_al_tto50_local: 4 windows, sides [602, 705, 471, 448]

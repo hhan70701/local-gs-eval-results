@@ -1,0 +1,1848 @@
+{
+  "source_commit": "cae8a7b2a4245f20c966fc1cc15137f52a5e083c",
+  "source_tag": "linux-4090-round15-pixgs",
+  "host": "linux-4090",
+  "shots": [
+    "changjing/shot_0000",
+    "changjing/shot_0001",
+    "changjing/shot_0003",
+    "changjing/shot_0005",
+    "changjing/shot_0007",
+    "changjing/shot_0009",
+    "changjing/shot_0011",
+    "changjing1/shot_0000",
+    "changjing1/shot_0001",
+    "changjing1/shot_0003",
+    "changjing1/shot_0005",
+    "changjing1/shot_0007",
+    "changjing1/shot_0009",
+    "changjing1/shot_0011",
+    "changjing1/shot_0013",
+    "changjing1/shot_0015",
+    "changjing1/shot_0017",
+    "changjing1/shot_0020",
+    "changjing1/shot_0022",
+    "changjing1/shot_0024",
+    "changjing1/shot_0026",
+    "changjing1/shot_0028",
+    "changjing1/shot_0030"
+  ],
+  "pilot_shots": [
+    "changjing/shot_0000",
+    "changjing1/shot_0001",
+    "changjing1/shot_0022"
+  ],
+  "anysplat_commit": "5f5e208a7dd57d52e43ea0d553a95eab526e8775",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "2.2.0+cu121",
+  "cuda_runtime": "12.1",
+  "gsplat": "1.4.0+pt22cu121",
+  "model_weights": {
+    "lhjiang/anysplat": {
+      "revision": "d2e8c343672646041ad4ea518184968f94362f01",
+      "sha256": "1c4de2ba5a29c540b899af901bf02107395b5f0617655d347e262f814b4c0c7c"
+    },
+    "facebook/VGGT-1B": {
+      "revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e"
+    },
+    "alexnet": {
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+    }
+  },
+  "halfpx_generation": {
+    "source": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088.npy",
+    "output": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy",
+    "source_sha256": "5b03b34659edc1b423bc0f1f80f2e6db67b8e2fb66f80d5df694360356a98a40",
+    "output_sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89",
+    "formula": "H_halfpx[i] = T(-0.5,-0.5) @ H_existing[i]",
+    "crop_origin_xy": [
+      192.5,
+      104.5
+    ],
+    "output_size_wh": [
+      1920,
+      1088
+    ],
+    "cam3_bilinear_check": "PASS",
+    "user_authorized_generation": true
+  },
+  "inputs": {
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_0.png": {
+      "size": 4480812,
+      "sha256": "bbb82cc275e0d55f294b34eb55979daa57d970223f5b1ed5f291fe4856245fd1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_1.png": {
+      "size": 4543393,
+      "sha256": "f51e5d7bc47d3e2391a2a590cc7e9ae2645c5767cecc7c5cdb506e9c42ebd895"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_2.png": {
+      "size": 4491409,
+      "sha256": "a7b6db485c069c95949aff93b3e85fe13e2cf309e16e86008400859cd3849ff0"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_3.png": {
+      "size": 4531250,
+      "sha256": "0f65b574b87401e90bd982703f8577915111b0afecc2570338e4c0627f834ccd"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_4.png": {
+      "size": 4428608,
+      "sha256": "f86b6ebb0339625db8d114f13e301e2d2234dcc7c33a275a502b2f305b4b303f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0000/view_5.png": {
+      "size": 4439924,
+      "sha256": "815e13886fe5e6adf188845fbd3542118dea1990bef477642e36551b78b05242"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_0.png": {
+      "size": 4478537,
+      "sha256": "e84587dc4f5d2208d83656e7b7728b73e1707a4aedf290fe92bfc1faddac231f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_1.png": {
+      "size": 4537464,
+      "sha256": "79f4e93f4d2799840c5d334a7e37f0aade7b4afbebfd9db086d983e5cea2128d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_2.png": {
+      "size": 4484452,
+      "sha256": "348f9dbe85f9e3ff8978391ff59decab693792769151ebe6e4f96aaf65691392"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_3.png": {
+      "size": 4526855,
+      "sha256": "476de7155959ec719d3be47e7186a42224b0ef9e456f80be166278008bc20271"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_4.png": {
+      "size": 4424251,
+      "sha256": "a8b4a8872c8edb1d72071fc264fdda3915a64f7091768af75eaabc385c187e30"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0001/view_5.png": {
+      "size": 4428008,
+      "sha256": "7df52be5fc68f4215d05e767a15865405a6b55a246f66ffb630ffa55c73c7130"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_0.png": {
+      "size": 4405583,
+      "sha256": "c23e802c880a83574ac7873e13ebfc15a3395579143bb7a639e7874aca404bd5"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_1.png": {
+      "size": 4474938,
+      "sha256": "7f7a4d16286b68ac4a6d6f986f77a82b02097a6f1be171559356b2d4581cd2a7"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_2.png": {
+      "size": 4421618,
+      "sha256": "d0921c7c68cf156ed6d5bb9d9e5f6c50645452e336d45e60bac5c0bc60c3607a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_3.png": {
+      "size": 4453095,
+      "sha256": "b0d048648a60d6cedcc129dd694da8cab0ece2ebc0af2d76696eb1806171d11a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_4.png": {
+      "size": 4362371,
+      "sha256": "7060a10d90e6165c62c174164eddb41621bf34ad71290d9dd497cf056f26c091"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0003/view_5.png": {
+      "size": 4379759,
+      "sha256": "e14b0a05db5977d2f145462e178775dac830b36e1d718183a03d03e80bec54ee"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_0.png": {
+      "size": 4477647,
+      "sha256": "88ac115d5433e7c2b86f3a99bd7cddc3d7b84dd8421f8cdf634b585ca4a51d2d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_1.png": {
+      "size": 4538623,
+      "sha256": "5be6acba7012dcc898866d6a36a2d12dc0a1744f5f351a9beb3f4129035347f1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_2.png": {
+      "size": 4489954,
+      "sha256": "7f78e2404f00b647329484c342ae78c58ea59001a8301edd77815d7305434459"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_3.png": {
+      "size": 4526160,
+      "sha256": "47e1eb0681d8981a16a1074a7a6cf701756bb08a776753c0c044c0c0480f7af8"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_4.png": {
+      "size": 4426193,
+      "sha256": "6f3bfc0f6cb2127edc9663e1c8c55afc6ca7eef79737797dc56ebeade5068376"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0005/view_5.png": {
+      "size": 4436456,
+      "sha256": "ba386aad75a330e9a3fbf3d4e750a9221b86b7d4b3449d1bacb2b46e58c54c76"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_0.png": {
+      "size": 4497986,
+      "sha256": "4e498b9dc05752c795b3446551ddc033cd6e51f269b61233b99e708cd216ecff"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_1.png": {
+      "size": 4533831,
+      "sha256": "d3801eafd8545b7d065ccd212d7d34fc53d9e28c9806352e99dcf1fdc6eece49"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_2.png": {
+      "size": 4492366,
+      "sha256": "399d228ce811f25cb7befa44200a3615ce5522938d0a1b1f933501ac3c1f6be9"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_3.png": {
+      "size": 4510062,
+      "sha256": "c16d978792460d62ef848628deab69eb8b1d2799b96e874e68ac2c8451fe5419"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_4.png": {
+      "size": 4450775,
+      "sha256": "d00608cc68b2ec3c3ac89010c86a34619a77e63ba2da5d00c077254d7d886e5b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0007/view_5.png": {
+      "size": 4440923,
+      "sha256": "b85e295950cd178b0ed967eb7b1f8fdbd5ac54382b1960ed9f3a9a4dab5b17ed"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_0.png": {
+      "size": 4524495,
+      "sha256": "7e164a5c9b9de01f97cd8d0eea4de828767dcf37ca12ba0387d6228459ff915c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_1.png": {
+      "size": 4569953,
+      "sha256": "6f31d67890dcd44627b84a5d57dc1df10282bf4e671b0ac6a7ab7fb2e52d416b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_2.png": {
+      "size": 4523076,
+      "sha256": "dbf4d7dc0ffd6214c4015eb25280aa1d564a09f5bffde5ff74e0829211235253"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_3.png": {
+      "size": 4554318,
+      "sha256": "e9a9160b08a667a886cbf43cbc7fe7e20405c6ab0e868f6d45e9ecd65f214b54"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_4.png": {
+      "size": 4462140,
+      "sha256": "0c53bdbcfca4bc01b115f5024a81c66f557753084ec7431e2f0624470f059914"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0009/view_5.png": {
+      "size": 4469779,
+      "sha256": "5897d80b7dfd0790c31b34a49a1d31e82ce6a243b9d9bbcc4a07eb89da37d50f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_0.png": {
+      "size": 4501064,
+      "sha256": "27b1439882cf801991dd4d43333788d225ea565a9af4354d5fe517abc430db59"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_1.png": {
+      "size": 4548358,
+      "sha256": "89c09bb3286139670be3d0092adc7dcf9a9a682392e0b380dc0060e2fe1df5e0"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_2.png": {
+      "size": 4498303,
+      "sha256": "56603e8d3881248e4d229a1950b08df0c59319a3b182dac4a34b0292447ca2b6"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_3.png": {
+      "size": 4525648,
+      "sha256": "1828dbe2c58ebab8a5d42c0f6e66f51a3576015ede56fda6b57e65bd3e5c150c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_4.png": {
+      "size": 4426517,
+      "sha256": "9a0d1216cdf915453c1f23113567a6b12d1abaa45188c00c34642f5cef770bc4"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing/shot_0011/view_5.png": {
+      "size": 4429361,
+      "sha256": "5b273d445252de6123f0918773cb3752e0431f94273610835219ba79fef3653f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_0.png": {
+      "size": 4478503,
+      "sha256": "ef1576698004d8a0f213536a7cbd9c49677bf64a75f72444de701d304eaa6fcd"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_1.png": {
+      "size": 4498410,
+      "sha256": "e979b7893b45785afe059170761e4e05a993cc72f66e90d8bef94ce870b26235"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_2.png": {
+      "size": 4452715,
+      "sha256": "2dee4c9bf7d3f91ed92d505f9ece7fe71463ff1c25159d60296d5b2cd24b772c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_3.png": {
+      "size": 4481250,
+      "sha256": "6a12c677bb8e81e3e79e1591f45e42f541fd6927f5927e5ce7668a945880dd43"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_4.png": {
+      "size": 4367190,
+      "sha256": "433d3303a47cfb68e3c7db2653d84072643e75cd3d6f674a12cc1a6ec5133ca5"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0000/view_5.png": {
+      "size": 4363994,
+      "sha256": "00eddb50160eac94ac76c293c9af677e49774feaf2925b26e8b90dd054e585d8"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_0.png": {
+      "size": 4447118,
+      "sha256": "442a63749f3dcdf7b7a1d76df8d52aaaeed65fce43faa2ab558ccbe82e0c5a83"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_1.png": {
+      "size": 4475851,
+      "sha256": "889acd65b09802f954291e5a0ac9c6459b2f0a8273c23cb20c307ee0ddd00180"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_2.png": {
+      "size": 4426481,
+      "sha256": "a6a54b0ff697862c7771bcf35ffe9fef3d10c68e76ef844251e7783ffb7a1165"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_3.png": {
+      "size": 4469837,
+      "sha256": "1f4ff40dc75dcea27cefaae234953fe7130f5c54eb2b40fe7aa65d52beabeaa1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_4.png": {
+      "size": 4387533,
+      "sha256": "d79c51291df242549d1f494317067dd5ae837360b62326db775b26d65e2d9c08"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0001/view_5.png": {
+      "size": 4397523,
+      "sha256": "9baabc591f72f964b590b5b33158912e5dda86c341676c31c50c8f14ee895760"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_0.png": {
+      "size": 4523532,
+      "sha256": "46259e6168be649a94c8d089d60551c406833d205528b1a08addbdcbff2515a3"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_1.png": {
+      "size": 4545660,
+      "sha256": "764fd0ad69dee903b186778fbba11c72995eba1083ece7b1b41d8db421deabf4"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_2.png": {
+      "size": 4522134,
+      "sha256": "f70c382cae3f923fd535bcb823d14473d4a95bee5c1a78baacb687fc603695a1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_3.png": {
+      "size": 4558035,
+      "sha256": "ebfa4ff3459a5d5423b962be31e4d7740484d1a4dbbc960b47dea7f292279a14"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_4.png": {
+      "size": 4450438,
+      "sha256": "671b105fd3b7919b8f01be1dd759f8b24f26eb8e4fd7a9d6d7c885a88006cb24"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0003/view_5.png": {
+      "size": 4430046,
+      "sha256": "21f473d3d22a3740d77e96a7ff2856bacba739360694fd686407caaf0117792b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_0.png": {
+      "size": 4495503,
+      "sha256": "fac03414a12a38aa5d9cb2ab7163ce903c1cea40888d01cacb3de21b45ecec5e"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_1.png": {
+      "size": 4540548,
+      "sha256": "0836d349b85d0e29fb6c009915dc3f1c0930263d857cfd728c197dae8aedd6d5"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_2.png": {
+      "size": 4504097,
+      "sha256": "371b4ae0bcf8b4a518760163fcc6cbe8415a6e8fae2d13ffc82e6a7f2b09113a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_3.png": {
+      "size": 4545759,
+      "sha256": "a4cdc4f76317a96cea4aa16776abbb94f68dbcf407723b27005b0b25ccb76696"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_4.png": {
+      "size": 4443130,
+      "sha256": "61e5602a7906cd5417b72f98b49d4c8d845e5cf01527ecf5ed0551a507ee4ccb"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0005/view_5.png": {
+      "size": 4441095,
+      "sha256": "a5cca5f358ac0066c3491a1a61cc69f40d2f24e4d4a29e6e3a2652ea97f726cf"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_0.png": {
+      "size": 4496668,
+      "sha256": "49cd44381d990749c1dfd008dc5db5ba40484342de7166c7c6025c07c8350384"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_1.png": {
+      "size": 4533165,
+      "sha256": "83fde8595915c31cbe28132c8cb76a953c639a766b63fed63d2cd16124665038"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_2.png": {
+      "size": 4500332,
+      "sha256": "70b66ab7d377c1bdf84b69f8623e04ca6867462210a08e00d73d87d7102a4d0b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_3.png": {
+      "size": 4541074,
+      "sha256": "e89fe371bc0550e7be2852547cf06b7df42cac99a24818c15fb0b4421deb5c9d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_4.png": {
+      "size": 4463638,
+      "sha256": "8a162d165ec7909b244ff22433fd85282666417b516711f90a0510e14ae7f8ac"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0007/view_5.png": {
+      "size": 4442748,
+      "sha256": "af8c5b703a5f1723befa063923097af93987e18879bbc5b625ee70c65cdbdefd"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_0.png": {
+      "size": 4519113,
+      "sha256": "b88f89fee8c767d106e9dc1939974b1bb415610588a1d0dc59d9723f2ebc0588"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_1.png": {
+      "size": 4551026,
+      "sha256": "3de63a3a8cd0b1639453d2830beaccdfdaa3f003a9411239614720804176b42d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_2.png": {
+      "size": 4528513,
+      "sha256": "22677cc74dd429f2158a5c3fdd79601ac41b798da29bdab87d61eea45018a9dc"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_3.png": {
+      "size": 4579077,
+      "sha256": "f1af5b30da22d14eb96ed6522d839bd069ed992fd889151c686c5755672bc84a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_4.png": {
+      "size": 4489455,
+      "sha256": "4ed801ffe0ebb424eacf93df71b8b5c155cd6e8a8444f1445d1bfe28c38727f6"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0009/view_5.png": {
+      "size": 4465213,
+      "sha256": "c84fcd8c09a9d6a4fbf1749887ecdee18295f4f31e1920f2235117ec0c624952"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_0.png": {
+      "size": 4494078,
+      "sha256": "211349d3d67812e45ab18d64aea8972cc7c656815074285ad29edc31544d88b4"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_1.png": {
+      "size": 4528096,
+      "sha256": "fbe7ff35550d2e1599c68b4ac905b41f9d3e9c15ddb4b0e270433a876f8c6132"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_2.png": {
+      "size": 4508470,
+      "sha256": "cb81d1f3c3e207b8d6a3abea0a40a3dee93ac345b93722ba300a1dbd29f9cd72"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_3.png": {
+      "size": 4555644,
+      "sha256": "7772a05d4b1474931bf343bfc0af65b87f7b60bbebf17f0465ed10c844092f5f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_4.png": {
+      "size": 4475022,
+      "sha256": "464361ddf5281246c9a80daf97304aebf5428efe06cdd7a4986421206bfa5b08"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0011/view_5.png": {
+      "size": 4454250,
+      "sha256": "2955803f2ed608591ba6c79ae0109da8f80c52973051e774bb0d52f7e6d28477"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_0.png": {
+      "size": 4478547,
+      "sha256": "1b3246c5aaa4a35b67ca9a2851593169364ccb4d54abafccd59e5b979d6bd9b2"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_1.png": {
+      "size": 4520251,
+      "sha256": "fefda4b5159acfc64e80ef9d45817d607eeeb213416ccc4adb6f5002365c2071"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_2.png": {
+      "size": 4484889,
+      "sha256": "71aabc2bc1c116f4b806c6349fed445d42fc019613df93f093a473693753c061"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_3.png": {
+      "size": 4534687,
+      "sha256": "4fccde2751a3e3cd60f4846944675432e3fa86279fb7143150d77c2be86a4ee9"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_4.png": {
+      "size": 4463492,
+      "sha256": "36e2fb23fe8b0e241782783bc60e73a95f09cc4515e960d946fd85fdff88bae3"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0013/view_5.png": {
+      "size": 4444462,
+      "sha256": "74afdcd56e73187321c334f9f02538671853565ee58544447ddc2b9ee78b73f8"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_0.png": {
+      "size": 4485706,
+      "sha256": "2f3bd34536f79fb62f9c5e86b3c79a235d2861540d62fe7664d70f01b668127f"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_1.png": {
+      "size": 4520735,
+      "sha256": "b85d80d1fa19f0b32891bf9e641f4c0fdea56dbdfc64fad55404262af83d1506"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_2.png": {
+      "size": 4489427,
+      "sha256": "9fef815ac92b18c787157e21338824f7e72000d0e0ba64c3539f51aff9b7ad4a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_3.png": {
+      "size": 4538296,
+      "sha256": "172f33e14991ab934cd54d96573ecada7815b6376e28022fe4af411823fe9b96"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_4.png": {
+      "size": 4462987,
+      "sha256": "a5b580b293fa7840da38f0b813aa0e2c2f0056f58764471d56ebb33774a12be1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0015/view_5.png": {
+      "size": 4438320,
+      "sha256": "5839c1431c70ff88525899423b27211bfaaccd4bcb82fa9449f5df801c574b65"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_0.png": {
+      "size": 4540622,
+      "sha256": "0b503fdd34daea96a14c038d7f11b95991ecb9c3982f5cf3b0106eddc6e4a89a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_1.png": {
+      "size": 4570453,
+      "sha256": "f65f5d462c5a8e355587eafd5980c98ebbba07f99fdd762c8d5c362a017bf9df"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_2.png": {
+      "size": 4548420,
+      "sha256": "b38300a495fc5616dd012f5b762f48a4f9390485bcc030780a90e32bdfa99f5b"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_3.png": {
+      "size": 4586631,
+      "sha256": "c86c53ab4755b09dcbe7c386c49507005b287247b0ba665d21b64798eb2c5408"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_4.png": {
+      "size": 4509000,
+      "sha256": "c6c6ccbad758c4c612c409f7123d9ecad02e144ade56e2e64f94ee9165db2553"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0017/view_5.png": {
+      "size": 4478411,
+      "sha256": "ccecf707ae6581fd96c61900c1c65889ff886c04e69ac4613b68ae8292fbc56d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_0.png": {
+      "size": 4532751,
+      "sha256": "441dce6724d73a878bdcd904d56cacd0832d6c9ed8a42074b6e54f6c156ded49"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_1.png": {
+      "size": 4562081,
+      "sha256": "c0f45050da8997a2e88373f36516b689514db7ffb4aad9225d8546a2b7941964"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_2.png": {
+      "size": 4536591,
+      "sha256": "dc6d1f2ddf81d25cbba470a0e3f856cc327c33ddd95cf1f2c44d1fa1b422664e"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_3.png": {
+      "size": 4582915,
+      "sha256": "b594ddd12995b73836845f8683d98d5a324771ed60d54725bdc95c3cc24599e0"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_4.png": {
+      "size": 4505083,
+      "sha256": "18e9f9fb8ba5e0f77d5005c5b65e1e1001a364ed79a2f135f7949417c74609eb"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0020/view_5.png": {
+      "size": 4479132,
+      "sha256": "00593cf94593ecdb0865047e03b148b5fe34e6b948ae9e0ef86ddd272137588e"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_0.png": {
+      "size": 4534333,
+      "sha256": "83efed92dc9c551c52acc99f049f290788f4ccff967a4dab6408ad347be447ee"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_1.png": {
+      "size": 4569753,
+      "sha256": "4121d22eabf880903638deba8932588dc86a182e83ceb7e81ff8b844d2d789fc"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_2.png": {
+      "size": 4553333,
+      "sha256": "a6fb47eb1f379576985f6d5692dd9ff3b7a6e909c7afa618d17597a03b91a8d5"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_3.png": {
+      "size": 4553659,
+      "sha256": "e83213adb96aa0cd85d5805858edee0bf6aabafd845c02381edfc928f53cffbe"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_4.png": {
+      "size": 4516891,
+      "sha256": "86a1db28daea7252ecc7d2e0b54e638943af7e7e2c02fc4d38ba78adf361fafd"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0022/view_5.png": {
+      "size": 4487466,
+      "sha256": "d3758091f2b23883a759b4fa1d22203ce37394fc473f59e94144dd8541b8d999"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_0.png": {
+      "size": 4532681,
+      "sha256": "44088d4efcf60e5b663192ece2ec14ce3ecf0e1bb7e4be497f6ede590639ad02"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_1.png": {
+      "size": 4561995,
+      "sha256": "5e81db97bca74ee5cf452635492852cc82618d51dd59c29e6b1db68411987571"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_2.png": {
+      "size": 4537469,
+      "sha256": "d12382ed1893ad64544e16f244eceb1265c758b5a71ff6ac8d974c903ebb5b0c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_3.png": {
+      "size": 4581145,
+      "sha256": "4cdddbd58f75d485a24f02ea0a51a2e299c729a074376c9f1aeb21654526c583"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_4.png": {
+      "size": 4504991,
+      "sha256": "523dd748b0d3803e468c5f43872bad70ac9b7e1d59fb3a77323a85b15ccfda64"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0024/view_5.png": {
+      "size": 4473530,
+      "sha256": "ec6337d0f7d3e2d28b8a50e5dc70b3889e0a6ed8526b9d16963d5c5e13422342"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_0.png": {
+      "size": 4524828,
+      "sha256": "18c528a999a69e7fa6ea74a7c60da48117d85fe538ef8b1c45c6a49c3bbbfdf1"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_1.png": {
+      "size": 4557169,
+      "sha256": "51557256ea0fd757938948d33f4b6af9b02578c265da3cb80f42ca3fc9246b6d"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_2.png": {
+      "size": 4529035,
+      "sha256": "7f726755af20c9c076e54feb31204d4241d6ebe6a5926ee6239538e80604ca63"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_3.png": {
+      "size": 4575419,
+      "sha256": "0bdaf8ea0d5a17f0e3fd4417c4aef025dc1a475ce85428bf8a66a0bdb4d55e40"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_4.png": {
+      "size": 4492393,
+      "sha256": "75f39a5685f2268eafb7e962cb71da2b3c5de97eb35e36702ea24b7aa69cde9a"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0026/view_5.png": {
+      "size": 4467590,
+      "sha256": "c3d175588ba3e68e0d86e6640f849d4e38a5fda57991583e11bb7c3b08864b5e"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_0.png": {
+      "size": 4532571,
+      "sha256": "8dff8f0b2cb452b99d883a1a4a15298d64943b2268e1b8941597fb38a2aeca0c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_1.png": {
+      "size": 4559711,
+      "sha256": "df38fcbc878badf36506ce98abcfca1ce96cdd1e9c7b97b5f16ef4956610ebff"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_2.png": {
+      "size": 4527809,
+      "sha256": "c513e5b4303aaad2e2100667f73c2d4e353ddeba0bcbe316b7dfef485ae41c70"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_3.png": {
+      "size": 4568192,
+      "sha256": "9721ff4423f80d9b221448e958f429b8ed20a09642e7f2d16fe28e22652e5b3c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_4.png": {
+      "size": 4494996,
+      "sha256": "beee3bcf8a50773595e63ca78a3acd093468b015cda429b39a4c14e4491fe9fa"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0028/view_5.png": {
+      "size": 4461336,
+      "sha256": "a4e8318e2255820986ff8325703e3e948a4affabe478c2273187aa9f2c1c46d4"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_0.png": {
+      "size": 4540168,
+      "sha256": "cc2266cb669d172dd63265758214a5d626abb6efb24e8b448abe264f42aa4bfe"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_1.png": {
+      "size": 4568372,
+      "sha256": "d46e5d7c4432527cdea3d8d29d7692b155b5ff4e2b3eb933e78d1b170a86c320"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_2.png": {
+      "size": 4540613,
+      "sha256": "2af42b7a027887b8f5856143502ea858e776a4ed0e9257605ff8f4aa9e8271e0"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_3.png": {
+      "size": 4575208,
+      "sha256": "aa18726201fed80474a2f965dd7361dcbcf2ee8cfbf51295162c0753f7bdf19c"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_4.png": {
+      "size": 4495207,
+      "sha256": "3d3f0d07fc37d8adfa263c305abe059e148b7fba650d805fda4264bd1dfb0779"
+    },
+    "/home/sang-usb/linux-han/datasets/changjing1/shot_0030/view_5.png": {
+      "size": 4470253,
+      "sha256": "53ddf2326517e1fe05073b0cf00ae08a9b5a2db4ec9e12b393cee599ca92e052"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/f5/meta.json": {
+      "size": 499,
+      "sha256": "11477805b5e55e81fa91d9495e71362e61e46db926642ba3cc7c979a1299a343"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/f5/pair3-5/cam5.png": {
+      "size": 5422,
+      "sha256": "b60e210571f378a022ed056e1054d689e4bcbfd62cc2a76ce6a4921ee95f326d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/f5/pair3-5/cam3.png": {
+      "size": 5742,
+      "sha256": "206b08b05777ad08aaf45458d6c727a7d422b6506b5e4a4b95ab1d4a5f93ebfa"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/f5/pair0-3/cam3.png": {
+      "size": 7237,
+      "sha256": "dc3879a0727a7ed9d63949cea03ead399fa9e2b993a5ad62cd0f816e1220d360"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/f5/pair0-3/cam0.png": {
+      "size": 7081,
+      "sha256": "e44bc32bfd2ab18fc37fa35acfbe1c8cf83f919cbf91e3788aeb2d909f03e3d0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/cnn/meta.json": {
+      "size": 500,
+      "sha256": "143a26292b390bd1150eea799bfce57b3386539b4dd483c168bd03effb50bbba"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/cnn/pair3-5/cam5.png": {
+      "size": 5368,
+      "sha256": "1403d64827b545537003cda6652b7034b1abe620da53ce3d0acf39e533199aba"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/cnn/pair3-5/cam3.png": {
+      "size": 5681,
+      "sha256": "cfb9b8f33989cdb40424d50bf630037b7d5c208a64622c364d93b2aa352e3111"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/cnn/pair0-3/cam3.png": {
+      "size": 6504,
+      "sha256": "1a41c07becbf865c5d642e18715443f91c42d707bbe769f251a82d8fe6b66c9c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0000/cnn/pair0-3/cam0.png": {
+      "size": 6193,
+      "sha256": "cb33e15fe4d3c93a81e760a2e3f24b0bfebe4ed13512bda8b193888caeb01d84"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/pair0-3.npz": {
+      "size": 176958,
+      "sha256": "bf209e78ec64c600a6da38ff79088aa804abc88f26a332f60be08ce52da71c87"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/meta.json": {
+      "size": 542,
+      "sha256": "acea6ad5a6d2ad118a0f2255a6a658e01615a5b1a1d2a5e110a0a69f3a242583"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/pair3-5.npz": {
+      "size": 73659,
+      "sha256": "f09c5749ddfc939c8e64a549caee6f84918cf666a840ed81799ea4e09537f676"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/f5/meta.json": {
+      "size": 499,
+      "sha256": "69b9406e03ff67c6f9584be2faa6a1b1736bb921686edec9ba847a3b83afa760"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/f5/pair3-5/cam5.png": {
+      "size": 5224,
+      "sha256": "00def00c93a4c47f40da6af541a9cc3c6098260244f080c63da8c4a0d85b2690"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/f5/pair3-5/cam3.png": {
+      "size": 5525,
+      "sha256": "79cf6fc43f0dacd641250f78d5c32ba2f057bccf1bd2018c698ec3a776f5f92b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/f5/pair0-3/cam3.png": {
+      "size": 6227,
+      "sha256": "f0a2cedf9ad2b387c956b4cc03840989747478130e9401bbe2cfb0874eda1459"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/f5/pair0-3/cam0.png": {
+      "size": 6470,
+      "sha256": "b16d214d0ade0b6b653806d2a5ba3c58f2477d5df0fafc5a3f6f8690104813de"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/cnn/meta.json": {
+      "size": 501,
+      "sha256": "87fba79874d4190c24e94805ce72f013d32420c6089248a9b113dc6225a780ae"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/cnn/pair3-5/cam5.png": {
+      "size": 5169,
+      "sha256": "7b1343931d648c5251df637e7d107f686b0d3c41df10f62e341bae092c555bb3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/cnn/pair3-5/cam3.png": {
+      "size": 5328,
+      "sha256": "3201c8e0b7af1e10c296fe9f279e9f3e9065a34769681b1237e9e6e3c34077ab"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/cnn/pair0-3/cam3.png": {
+      "size": 5785,
+      "sha256": "6d8bad3a29db99f09cec858ffe52ff0633ab31825c5edda6a30bcc8bef53502d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0001/cnn/pair0-3/cam0.png": {
+      "size": 5860,
+      "sha256": "e654ba33275948e283532a5ac32b94b37a814022c6388776d42ebae90e745ee2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/pair0-3.npz": {
+      "size": 109605,
+      "sha256": "b85709cddf0159057bc95bad3ce3c473175e000dc2eea5fa6db510d11a5fb23a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/meta.json": {
+      "size": 541,
+      "sha256": "9d8d02c37ff13f83907db7938c7b4c4f4f3400ef05c59cb75e0fd2c6537ca68a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/pair3-5.npz": {
+      "size": 24320,
+      "sha256": "e44d2a2f0a63ec52b04d209bd797a3b7bd394d28f427a04e9e16523486b7fcb3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/f5/meta.json": {
+      "size": 494,
+      "sha256": "7e8f6778f8cbd7e109ad70293656503b51dbf0103cc55f0fc5dad4b9a41bdae2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/f5/pair3-5/cam5.png": {
+      "size": 10031,
+      "sha256": "d64049b38bd375b7bebe6c3ec6a138b6c5d83c281416cf178e15208dab3994bd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/f5/pair3-5/cam3.png": {
+      "size": 10780,
+      "sha256": "1ba5a1996b7291b08af35add5c3ddbebc0744f82484be3ac52c6e4dfb8edc18e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/f5/pair0-3/cam3.png": {
+      "size": 11287,
+      "sha256": "3911d7b1d82723a3217bd1c434a7a644d560910191321e8e16529741ed298cce"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/f5/pair0-3/cam0.png": {
+      "size": 12184,
+      "sha256": "9d1ea8e9b8ce29139d5231a54cc2a20cf7e4f59e34f53a2a702d4e7f61f35105"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/cnn/meta.json": {
+      "size": 493,
+      "sha256": "ae77ac5d56566a6b4d6ce65b4ef4c8d1993a7e5c55861398598de7930473ca2d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/cnn/pair3-5/cam5.png": {
+      "size": 7840,
+      "sha256": "8a16d21ca18cc5173c9d62f7cec98765aa34e06ab657db372a447cd1e0c9db18"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/cnn/pair3-5/cam3.png": {
+      "size": 8629,
+      "sha256": "ea3cdb4da866a99010ef349d92a77f0f10e3026ce5f06efa3b039abce478bd74"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/cnn/pair0-3/cam3.png": {
+      "size": 9747,
+      "sha256": "f370e08b5574f28ef2b8e20cd8a86ca652b8c2bbc616a7d7648b543fd4367d46"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0003/cnn/pair0-3/cam0.png": {
+      "size": 10407,
+      "sha256": "d4ee40ec257d635364334ce795ede133b43717a5f6612a28cf354aaea8e71bb5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/pair0-3.npz": {
+      "size": 313921,
+      "sha256": "7f2bdc76a29072b6e483e9e45593c79fc7a2ff8b8d8a1fafa718a93627e16b0e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/meta.json": {
+      "size": 541,
+      "sha256": "2305aee29653e4e900aad893c107ddd9fc3e407a111c7f71859f0a51b901e2a4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/pair3-5.npz": {
+      "size": 199579,
+      "sha256": "79a8bb0d89d89eb26bb531d24874e009683be41ce36a46f36e713534952f2ead"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/f5/meta.json": {
+      "size": 498,
+      "sha256": "0ffa0a7e2c5b598047fd1aeac6a5ab5b352c39682da4c5d32ec2337d40251d3a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/f5/pair3-5/cam5.png": {
+      "size": 6576,
+      "sha256": "fd21c607c1cb971523f9a6a9bbc1c66109019333009516197deb2d03bd45110e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/f5/pair3-5/cam3.png": {
+      "size": 6774,
+      "sha256": "d3a159166f34ddac25414f3822275edb60ef12a82637bedab3aefb35b2d2e37d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/f5/pair0-3/cam3.png": {
+      "size": 8797,
+      "sha256": "d9cfbae299a4f65301d23fe7a2eb1b6015977834ae6d864a3dd5951f206e1e30"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/f5/pair0-3/cam0.png": {
+      "size": 8755,
+      "sha256": "cd4f0ef1639c274478e3f2d320f6844d030b2232221093732cb880f536370107"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/cnn/meta.json": {
+      "size": 501,
+      "sha256": "5152b6df691748448bf914d9337fe7bfa5d991ec4943e9f5689fc942384dad0c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/cnn/pair3-5/cam5.png": {
+      "size": 5554,
+      "sha256": "5e7c455205e2150bc54e3a28ab1dc29d043bf940315e48804818a210ab0c61e0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/cnn/pair3-5/cam3.png": {
+      "size": 5564,
+      "sha256": "947dd076dcea798d0e65fc4933918f3aff318ba5efd392bf090787985e692587"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/cnn/pair0-3/cam3.png": {
+      "size": 7406,
+      "sha256": "73b0fab5cd4f0212832a1cfb12141d1485e5379dc53c4b6325417d67bd6b0d1e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0005/cnn/pair0-3/cam0.png": {
+      "size": 7641,
+      "sha256": "4f29577f667ef71d64e34ba08a71735af2f8d0757c0fe0df126a5d9e46ee052a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/pair0-3.npz": {
+      "size": 216794,
+      "sha256": "4b10ceb598afbee93093b3c76c4e13433dced2a954e688b3c2f91667af373e3b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/meta.json": {
+      "size": 544,
+      "sha256": "eb6de2fd7e41f40ff778248877a1477bbcc24050ba09aaf13beec56b4dfba0f4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/pair3-5.npz": {
+      "size": 105873,
+      "sha256": "c97b0e1f7fe4e53b2b3a04488a49330963c70f28d8cf6f9fcb1f2cf918ca6bf9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/f5/meta.json": {
+      "size": 492,
+      "sha256": "cdbecb0b72c15f00a7bb25c1df302d87a6d4e4c5da60cc3c9f5d1cc0e8cb9a33"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/f5/pair3-5/cam5.png": {
+      "size": 17124,
+      "sha256": "882e3f0b3764b250daf70ca905680c151d47efcfcd15e1faf0a1b25da6c0e328"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/f5/pair3-5/cam3.png": {
+      "size": 14271,
+      "sha256": "277bd17fbdec83febd758f4e6286f808c7a6b49f764ba6533f6e4b32261bda54"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/f5/pair0-3/cam3.png": {
+      "size": 21097,
+      "sha256": "5f105a6ed6d44e6ae987f5cb04f9936419a3c92a549f0f8716237d516d7e6c3f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/f5/pair0-3/cam0.png": {
+      "size": 23275,
+      "sha256": "87ce70de4ed11cf9ef5cac84f6c4ef8450912188b2757519544770a9877df265"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/cnn/meta.json": {
+      "size": 494,
+      "sha256": "e732bf083e605486eef2715ad4e71e3299812c1b35ca979f01363e7e1b9725d6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/cnn/pair3-5/cam5.png": {
+      "size": 15585,
+      "sha256": "f39fd54a0d3735da5e936ab9a55f66b28d76273853d7d4f5baece273602c7b99"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/cnn/pair3-5/cam3.png": {
+      "size": 13461,
+      "sha256": "02fb2bfb4488bc4e116bfe2582b45d3303f174584c24c1f5d266a8af82aa74d0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/cnn/pair0-3/cam3.png": {
+      "size": 22124,
+      "sha256": "1bf5814679bb7733d58d7d14969c286eb991cd7fac2bcade9631907e64db4514"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0007/cnn/pair0-3/cam0.png": {
+      "size": 23322,
+      "sha256": "a7b9fc73322e3f2137853106e0d5458728eefaa850c0de2dc0a35c47ec411797"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/pair0-3.npz": {
+      "size": 547442,
+      "sha256": "c260546b04e5710a7aff466b60032d36d5fdda22d440b0d3927537518b668c79"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/meta.json": {
+      "size": 548,
+      "sha256": "53928982462cf740c29cc60e8184d4d33690173d19f6621b426646ae7a9f6b72"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/pair3-5.npz": {
+      "size": 402085,
+      "sha256": "08f09b2fdd0fc24024b0399087c5885f2b812fb9075fafbe187682484868cdf4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/f5/meta.json": {
+      "size": 496,
+      "sha256": "060445544c034b3444e01c85643f217a7cf366b3eb7a121822c52bc674bfaf88"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/f5/pair3-5/cam5.png": {
+      "size": 10590,
+      "sha256": "cf60609cdd5f0854374bd3e80fa385f0d771fc648fcd61e6bc0940481197a4f0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/f5/pair3-5/cam3.png": {
+      "size": 8939,
+      "sha256": "856f6d2981b222ec5112a2ec0912c1c2523eb16b046050ab1150c2f8f148bfa2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/f5/pair0-3/cam3.png": {
+      "size": 15010,
+      "sha256": "5639db35585060a40c4b4d4f8341b3d9a9d6808593469ae2b53c2d1724714184"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/f5/pair0-3/cam0.png": {
+      "size": 13497,
+      "sha256": "045fccc919d985104239f234aad2eaebafc0fdbff6a9ba0e6d9b68d2594773b6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/cnn/meta.json": {
+      "size": 498,
+      "sha256": "79146ac6c4921188ae34cbeabdc24a3510f1ae62a502110cf4bb63ef6e613cef"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/cnn/pair3-5/cam5.png": {
+      "size": 7665,
+      "sha256": "5aee229e19425cf9700b9e1f503a1c1e8115c2ebadf7379a90eaa8db785f86e9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/cnn/pair3-5/cam3.png": {
+      "size": 7245,
+      "sha256": "d01320daabe77ffd85209e2323c04c9d5872f2c13c09585bebc1eb2b9ab6fef7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/cnn/pair0-3/cam3.png": {
+      "size": 12308,
+      "sha256": "9396ed72eb0bab56848abf743ecc33e0251aaf1fe3bc933d53658b2b4fd7e754"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0009/cnn/pair0-3/cam0.png": {
+      "size": 10725,
+      "sha256": "5dc3ad1238a09f9c375b30ac02f996ce80ccc6874f4fb46add296c28de937e6a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/pair0-3.npz": {
+      "size": 434375,
+      "sha256": "473e641afaa772699fc758fc88947c97ee8cbb4caf65d27e0d1c5c96b54395d6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/meta.json": {
+      "size": 543,
+      "sha256": "bdf8d98e4e27ae5bb4a4c9e7cd517bcae5466ad76512c2e17781427b426dbe73"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/pair3-5.npz": {
+      "size": 220531,
+      "sha256": "32a3df595acc5cba68236e9e943e9cbc6e388fd83a88213fe29af45fca333469"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/f5/meta.json": {
+      "size": 495,
+      "sha256": "c195af958110143188d64bade66866b530d3e56d942617a67721cf045caef7dd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/f5/pair3-5/cam5.png": {
+      "size": 11524,
+      "sha256": "cebb931f6987bc2e5f058d0a0dba863ee23fec5f7f4cefd0706aad856eedf061"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/f5/pair3-5/cam3.png": {
+      "size": 9107,
+      "sha256": "c03bdc2e6e52983ce541727af9e840be8021a6096b0d77426e8ba9f9c4a50883"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/f5/pair0-3/cam3.png": {
+      "size": 14943,
+      "sha256": "6ca2d044f2561c17d0aa41218467f7f24bf66265a960b0c71bbe97e0bb65beae"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/f5/pair0-3/cam0.png": {
+      "size": 12039,
+      "sha256": "dc266ca943fc2824fb833a776b6a0c245c0c032ee85f52d9551e355728dd9434"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/cnn/meta.json": {
+      "size": 495,
+      "sha256": "e849bfc6de2bae555c5b533b79ae5b661ced48782dfc231d6b13310ae9ef5528"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/cnn/pair3-5/cam5.png": {
+      "size": 11190,
+      "sha256": "7cfc7189c29c5b0f31d961072137274b5d655d19cc210b23989041e8e57771ae"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/cnn/pair3-5/cam3.png": {
+      "size": 9108,
+      "sha256": "5488586192c2e04c5fde1dfa995270a8bd11a1be165a33429fae5eca18b1a383"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/cnn/pair0-3/cam3.png": {
+      "size": 14315,
+      "sha256": "63fc89503ab8712e874bbfd8f3227f66aa61b15245463ec009d071b25ca811a8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing_shot_0011/cnn/pair0-3/cam0.png": {
+      "size": 11301,
+      "sha256": "de37a71d314c03805487c81eb424900e488d593c065074164bd9ea0f455cc08a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/pair0-3.npz": {
+      "size": 382459,
+      "sha256": "46eae6e09367b36472613439344b6e0d2099ff4cae52897521b9848699f23dc9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/meta.json": {
+      "size": 542,
+      "sha256": "6c8ac5bfa267cde6f27ba7c269f707ec0a5633eba3ec5363015b7ca8a1fc1152"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/pair3-5.npz": {
+      "size": 224894,
+      "sha256": "a81efa33f79796e44d0228cac4f5a54b410a2c998a0a0e4effc11c3027156ac8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/f5/meta.json": {
+      "size": 495,
+      "sha256": "2903b8edbaf0bb69280cdf9a60e8ed6a3db8870874ca0a80cdc5dc3d2dd3ba9d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/f5/pair3-5/cam5.png": {
+      "size": 14550,
+      "sha256": "cf5ff9ca4ee44449a69b97aa2935d586fe913108f4e0b2a2c1b571e0c3b5a70a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/f5/pair3-5/cam3.png": {
+      "size": 15720,
+      "sha256": "26e4b7a268271cac5b6ce058840f015f672edc0742cb75df77eb8062efb7784b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/f5/pair0-3/cam3.png": {
+      "size": 16601,
+      "sha256": "98e8ca52ad309069d4bb2b8fd5a987a936a30b547076b686ec2ded02843ba535"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/f5/pair0-3/cam0.png": {
+      "size": 20423,
+      "sha256": "4b2a2f991f23a65bfe01d753146a4cb8af56236dffd1a45f8eac9e9d528135a1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/cnn/meta.json": {
+      "size": 495,
+      "sha256": "f8d6d1c4d546f73587f133808595c7abe12de1e5f6e412c47a04f6ff4fd681bb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/cnn/pair3-5/cam5.png": {
+      "size": 15423,
+      "sha256": "a51841c3cf5e9de8af613e5399fadd4ced4cce3686f0ae552e9276ab813b16ce"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/cnn/pair3-5/cam3.png": {
+      "size": 16801,
+      "sha256": "e97c7a0fed6e785f6d58b967995522d2beedef09be937b5fb822ae3fc7e7ff84"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/cnn/pair0-3/cam3.png": {
+      "size": 18909,
+      "sha256": "19998f3dbcc5e42996a8e5db6831bddf3f2b104c7dffc5aed0d7161d58f7aae9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0000/cnn/pair0-3/cam0.png": {
+      "size": 23076,
+      "sha256": "76d708a533ce441570203394ac3c5f284b741ee1d253dd02677b3dc1581f4e1e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/pair0-3.npz": {
+      "size": 322348,
+      "sha256": "54bc43152df7bff625c826e293a6bb2be1f8a5c2c1e1092939927032de5391be"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/meta.json": {
+      "size": 547,
+      "sha256": "63add0926b5b91b50be58330377f9d7a2b17ef55152261a8e50411772458fdd8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/pair3-5.npz": {
+      "size": 189408,
+      "sha256": "e10f1e55ce8c6ecc4d3e93e9db8250b3d58de42d7c35ceba6e512979fe38622e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/f5/meta.json": {
+      "size": 492,
+      "sha256": "77fc44f1ed9dfc7aa8aa76cbe0d4784a9f6a14a5ee866531f08281900ee66671"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/f5/pair3-5/cam5.png": {
+      "size": 19631,
+      "sha256": "386309582c8cb1326490d7cafa6ae608f9eb3f762734a1e21edaa79017bd26f9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/f5/pair3-5/cam3.png": {
+      "size": 14383,
+      "sha256": "5bc5af186bd7eaaa4ae831e5f5ac10bc3673f1f8ff7e59bff879ed3e462feb0e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/f5/pair0-3/cam3.png": {
+      "size": 17599,
+      "sha256": "6f9131a65ec06a72ab963ccb7beddba66e56a70dd5d997c3789351dc419fb443"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/f5/pair0-3/cam0.png": {
+      "size": 15758,
+      "sha256": "2a25b31b9511431c71b600e4f505383572e7125f2c6b4e7e843145c973c5a04c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/cnn/meta.json": {
+      "size": 493,
+      "sha256": "0637751d17578fb5c594553cbfd46b7036b2452dde1ae5a729f5b793e385d322"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/cnn/pair3-5/cam5.png": {
+      "size": 20516,
+      "sha256": "3a0f073577288ddbabac3e4e96b6f5af5034b72d09a809b5867c3ee0d4db4fa6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/cnn/pair3-5/cam3.png": {
+      "size": 14287,
+      "sha256": "e0bc4c3d2b5e9e5a538a946a3a24a6ba165e0de28f2d85e982ca2b9fd3a09b4b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/cnn/pair0-3/cam3.png": {
+      "size": 20273,
+      "sha256": "2d7fc36cf543957c34993a02d7ddfad2cedfef16a49a50b769040a16ffd13cd8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0001/cnn/pair0-3/cam0.png": {
+      "size": 17054,
+      "sha256": "c735df013aab3d8f9dad99e6807b332a123c275254396c47ae87fd6ff52788cf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/pair0-3.npz": {
+      "size": 327634,
+      "sha256": "c181b2942518017563c5eb8f3027467926c21779a5ac645d128c8c221205eba9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/meta.json": {
+      "size": 547,
+      "sha256": "064b0ce0a14855571531626903a189b18d8a5f1f836ddae3b39852b9592563cf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/pair3-5.npz": {
+      "size": 217544,
+      "sha256": "39dabbbdbd0f35bdc51025c581093e96eabe17364e081bca4e795d76b3ab98ce"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/f5/meta.json": {
+      "size": 496,
+      "sha256": "4c9365078cfbeed3e6405dd429d0d993f7f3ea6af46ee2b3dbfed92f2a1e63fb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/f5/pair3-5/cam5.png": {
+      "size": 7784,
+      "sha256": "29d5f072caf6bb7459127e6da71edf519138fa46efa119391246f5996ad64a8e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/f5/pair3-5/cam3.png": {
+      "size": 7251,
+      "sha256": "b64bb291e0794e626ac2852c5c6ee0ed4d57603bbc35789569692a4d7ec3a83c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/f5/pair0-3/cam3.png": {
+      "size": 13413,
+      "sha256": "437ecddb110cc45f495db40b74e061c92f38fa0752fa22b203c92e15a1e6a429"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/f5/pair0-3/cam0.png": {
+      "size": 11730,
+      "sha256": "75dca5ca77ddc8c301d4f5c607acea0d71c0f386f6586a7358eaf528917f5dcf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/cnn/meta.json": {
+      "size": 495,
+      "sha256": "ee9f9f93dcb3bf629016c3f9446f34424dbe48bdaf00bfa5cf1fd359c98c40ec"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/cnn/pair3-5/cam5.png": {
+      "size": 9054,
+      "sha256": "1c973899cfb280c8d709d5732db7572f6627ffff9a0984b3dd10db83cfe6236c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/cnn/pair3-5/cam3.png": {
+      "size": 8900,
+      "sha256": "bcca447adbc93c71a73ba66717ae2a63ccd7eea11080693b11e3a064838ec7df"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/cnn/pair0-3/cam3.png": {
+      "size": 12645,
+      "sha256": "e9e8008a19076bd2317709454688174122366911f4c450f17c89b94597f4fa23"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0003/cnn/pair0-3/cam0.png": {
+      "size": 11013,
+      "sha256": "245fd82508d30129b09d67b1b6214297bcb4a59a010236c2f4253f6896137317"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/pair0-3.npz": {
+      "size": 279793,
+      "sha256": "53de0e3938784880ae56b1fce2f344e0239d5a2e14084102d22eb3b3e2de3087"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/meta.json": {
+      "size": 544,
+      "sha256": "b30c6819aa51784a6d6b4f17f0aadbddd94435365cbab392301fecf9877a80df"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/pair3-5.npz": {
+      "size": 153045,
+      "sha256": "3ea9026991139a0fdacd5342817c54556444139d57f9ab699d34222dab4cd521"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/f5/meta.json": {
+      "size": 500,
+      "sha256": "a39ae438b07f76decac697714bbe306fc5c1eec4eee4ed50c57bc202b44f0946"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/f5/pair3-5/cam5.png": {
+      "size": 6342,
+      "sha256": "dcaf411e5ddb83a31fb3b13b4e0cfc6e11dcaf460eb5c29899d9eb5fd239c6b2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/f5/pair3-5/cam3.png": {
+      "size": 6089,
+      "sha256": "efe58d1ba08bf50af5f002dc864bf7fff5ea8849d41810695138931ca03688e0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/f5/pair0-3/cam3.png": {
+      "size": 7268,
+      "sha256": "c6df5334f29820a656909b912092c11b59ea0dae6b29ad21d1104df60625ede7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/f5/pair0-3/cam0.png": {
+      "size": 6890,
+      "sha256": "32642a939915d8737595160ffc53fd18050e42617a29db8233fb106cb7b5b47c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/cnn/meta.json": {
+      "size": 501,
+      "sha256": "52d8a53602d3aa88099e1956b845e2a2e93d18a6adf68aa2e65f5299316c082e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/cnn/pair3-5/cam5.png": {
+      "size": 5947,
+      "sha256": "761f587580cef3989407b482a208226f357058f4653b294ef99919923407ded3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/cnn/pair3-5/cam3.png": {
+      "size": 5970,
+      "sha256": "a51d965dd3511ca895f140348abfd10aafec393587c2b35e4feca5e9f359d49e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/cnn/pair0-3/cam3.png": {
+      "size": 6781,
+      "sha256": "3e2c0a563fab593b433714f40960a1c3e1cdbe58af130384d0c784fac38ae6ff"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0005/cnn/pair0-3/cam0.png": {
+      "size": 6905,
+      "sha256": "f701a56029e723255b7b1227d1efe742ad25ce98a8dcde9f2900dee460397c6e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/pair0-3.npz": {
+      "size": 73275,
+      "sha256": "00bc6aae332e2967f66c3d4504b268358fd2bd62afeeafd46eacdb479bdabbec"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/meta.json": {
+      "size": 541,
+      "sha256": "3a7efda04c1f1a37623d228741bb3a35169c46d0e404bd756be6526e6e3dfa99"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/pair3-5.npz": {
+      "size": 49890,
+      "sha256": "7eae40a3b6be379d578b0be74d582c25462a82cf9bac0d44e3d6cdd116a71989"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/f5/meta.json": {
+      "size": 497,
+      "sha256": "768e46a02f8df5d6490f3669d83fd2d105e3248d071add33c17571855a672a25"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/f5/pair3-5/cam5.png": {
+      "size": 6274,
+      "sha256": "55456866fe4803280281f07b35bde8ed8b6f9f6d81da7dae04d29d34caf898dc"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/f5/pair3-5/cam3.png": {
+      "size": 6651,
+      "sha256": "f6737292a116d695269c2056c29c244f249db332b30d673d05330c6f3e1959bc"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/f5/pair0-3/cam3.png": {
+      "size": 12277,
+      "sha256": "8c451b182fe4d64db04b22e58c6973dfb037b8df4a50eda32767988b3731ae09"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/f5/pair0-3/cam0.png": {
+      "size": 10124,
+      "sha256": "8262025d1c63b96c6ed280f5c344b144d44ee65ad838161f524c274ec151853c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/cnn/meta.json": {
+      "size": 499,
+      "sha256": "6268761f799e41696924cf3d783b3edf4fec407b301dcb6b98fd90a1fc9ec7b7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/cnn/pair3-5/cam5.png": {
+      "size": 5870,
+      "sha256": "4988d0102c0fd7c58afe980ebb1167d10226adfd404e4c342bff3db2ed6e75db"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/cnn/pair3-5/cam3.png": {
+      "size": 6338,
+      "sha256": "353837baf4dcc81588f121940cad4bd913badcb830ce3146c2cbfb12f49df131"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/cnn/pair0-3/cam3.png": {
+      "size": 9662,
+      "sha256": "da73ce90fc085d36ff2ec4492f87617485e7bfa8ada4a298df73e796a17c6037"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0007/cnn/pair0-3/cam0.png": {
+      "size": 7866,
+      "sha256": "a3448834bcefa789e44aa8d446edd46ed507fb51e485b1a5083cbc55bc636de6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/pair0-3.npz": {
+      "size": 263441,
+      "sha256": "8c926bd53c22b6fe5aa6f6c1092e5e1a4266b4fa4abf74705fcf427c5c22b3e0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/meta.json": {
+      "size": 540,
+      "sha256": "c4ee01d4c067ced80084dbb8b7093aa5419bc379cd8dbc604b165c612257260f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/pair3-5.npz": {
+      "size": 89670,
+      "sha256": "4193ec754247766193bc5d25c6cd8ce9dcd26353c1b6dec67d96289e6d71908b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/f5/meta.json": {
+      "size": 496,
+      "sha256": "83f99cefb7a63b3e0fcae7a3b7300beb422f3c693a9c5638ed72a0ebc91cd92d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/f5/pair3-5/cam5.png": {
+      "size": 8159,
+      "sha256": "02c14e51bf1c92841251aeb8367d12afd950e468a2056db7050beba81fb8045e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/f5/pair3-5/cam3.png": {
+      "size": 9027,
+      "sha256": "f1a7efd5354dd2de309c7b67a3cd8b3c5cc94e11ab8ce3a4c86d88a3a0c2b483"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/f5/pair0-3/cam3.png": {
+      "size": 11510,
+      "sha256": "c17e31a4597a5c58b77cce8d19c7785428354b9f1b066663175e245558f2ef02"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/f5/pair0-3/cam0.png": {
+      "size": 11653,
+      "sha256": "bbdc6ed6e25afce3bfe384a03c8ee99089a763b4f343c9dd3fac8a8b7c16663e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/cnn/meta.json": {
+      "size": 497,
+      "sha256": "9a518df927c4b068cc81275849de4f5916fafeaa6af79e6d3497f32a072334bd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/cnn/pair3-5/cam5.png": {
+      "size": 7842,
+      "sha256": "c2708476d3a7041c0994381a362da987ca93fd13c8dc496ab31d9750ca2f1803"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/cnn/pair3-5/cam3.png": {
+      "size": 8311,
+      "sha256": "f8c8b60b55312d56b772912d3e2edf93a3949a20a3933602c590283998591185"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/cnn/pair0-3/cam3.png": {
+      "size": 9835,
+      "sha256": "f528feb9c5ffbe05c9feade816cd43271d7aba0c6a083a122de84874a766eda3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0009/cnn/pair0-3/cam0.png": {
+      "size": 10211,
+      "sha256": "04b5b449467782e4fc893dd80c8f20388ff881fb8cb669f1514603f8755bf11f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/pair0-3.npz": {
+      "size": 292439,
+      "sha256": "7b49aa30c41755161e67aee728be21f5581e634cdb8da1d4775c3a8b58e316ea"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/meta.json": {
+      "size": 541,
+      "sha256": "d90cb4bc100f0aa749ddf9f0e99caf873b3d9937032979bc8d5e51bd986e9511"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/pair3-5.npz": {
+      "size": 153940,
+      "sha256": "7b97576bfdcd8f198e494a2babdc7224c0619580b0eb0c15d039f22499c0129d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/f5/meta.json": {
+      "size": 495,
+      "sha256": "2832693bf6060a821d9ae9f123a6a9353c6178bd5066993d4e455311a2fb91e9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/f5/pair3-5/cam5.png": {
+      "size": 11774,
+      "sha256": "b3db1068795b6607338d039a1fe3edcf06ec59ac0da48a56b140d44aaba124c5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/f5/pair3-5/cam3.png": {
+      "size": 10786,
+      "sha256": "0c9f0b7665160898eb04a0490b9c9fc82f24f538f75fe37db2be5470b2b3d6ec"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/f5/pair0-3/cam3.png": {
+      "size": 13379,
+      "sha256": "f1af6553ef48a1e9c0586aff950fd0ea6f66242d6854cc90c0cea642f1b91eb0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/f5/pair0-3/cam0.png": {
+      "size": 12745,
+      "sha256": "881c4fa117ccdcb0370f2457bc53c98bf16a1146c3c9e3c1f73923252e065392"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/cnn/meta.json": {
+      "size": 499,
+      "sha256": "a0cfae415bd3b03fa1da9b6933e28349c5153c326566b86dc2f4a30928a5661b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/cnn/pair3-5/cam5.png": {
+      "size": 10511,
+      "sha256": "da3878bd6793bcf9fdc1f5f6f0afc6a9d36ca2f892a609cee5280c67700f7ab5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/cnn/pair3-5/cam3.png": {
+      "size": 9192,
+      "sha256": "b7c44eaa82037736d1bf88fb28ad4c002d45b072b64aadc0e3663dccd433bae6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/cnn/pair0-3/cam3.png": {
+      "size": 11889,
+      "sha256": "978d1db977c3197917b6fd773cc3a0f5b56169e2352d423ab5acd4afd145844a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0011/cnn/pair0-3/cam0.png": {
+      "size": 12241,
+      "sha256": "dd6ea20fec1d8b5cd6738f79913095a28e93f4dae4789ccd7505042b56a14863"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/pair0-3.npz": {
+      "size": 257432,
+      "sha256": "c4e249b10adb0f3715d97731b93bb01500515da414ea8bab72c45b76a7826886"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/meta.json": {
+      "size": 539,
+      "sha256": "25fa3e0fe329c113766fd67e9380b0937e5df2eab05036deba10fe422480e4d4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/pair3-5.npz": {
+      "size": 205291,
+      "sha256": "838e989de64e321df332f5ac7d28f020cae1e52af1b4bc407e970b65a0b839b1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/f5/meta.json": {
+      "size": 492,
+      "sha256": "f817fc31b5fe7c36c5751e9955bb2e3b24cf8a2a4a0a779e045f803f72cbbc0a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/f5/pair3-5/cam5.png": {
+      "size": 11409,
+      "sha256": "aa23b25d2eab560e603e15efd63273075803b081b5cc36e5e0baa82133b7a633"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/f5/pair3-5/cam3.png": {
+      "size": 11635,
+      "sha256": "cf6066c9cf73edc6a3e5c1a0de5b5defd3028d907770df1bc9a33e3a8f855ce7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/f5/pair0-3/cam3.png": {
+      "size": 14095,
+      "sha256": "0d5edec34fbdd49e962f17dbb9c1cf9e6d5dc588533f3c5b4f7017aec241a036"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/f5/pair0-3/cam0.png": {
+      "size": 14047,
+      "sha256": "b36fa6939f5e53ba272eeb51340eb7092c7bbe16a9e1f98d3deeadf07ab78971"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/cnn/meta.json": {
+      "size": 496,
+      "sha256": "d56eaac76ffb8f757a2d63618b121aef6c3cb078c92408c2d120b3cc8aed69d2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/cnn/pair3-5/cam5.png": {
+      "size": 9956,
+      "sha256": "0f007bad63426df82fdb1c4f089e635e7d727683149ad70c788cbc8cc06aece5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/cnn/pair3-5/cam3.png": {
+      "size": 10504,
+      "sha256": "20a33b6e4f631102d75c5b503ed3ca5917d383b2fff0dab7da7b5b184759c7c4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/cnn/pair0-3/cam3.png": {
+      "size": 12495,
+      "sha256": "21b3e0a306aebe6af438acc564e0e8a6ffac26a96cfb2e519f303f5234b6ded7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0013/cnn/pair0-3/cam0.png": {
+      "size": 11367,
+      "sha256": "61205bbf5d89654e6351565e70bcf55bdffd379fee2e903a90f152e96fddf543"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/pair0-3.npz": {
+      "size": 355658,
+      "sha256": "82551d71e6ba862468fad29e187444ac4edc36c2cb658444ff344b6d36a4f5bf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/meta.json": {
+      "size": 538,
+      "sha256": "24d3e9514a1e896e14121f086c9037e78bf94bdfbb7da070fbd50208cbcafd4c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/pair3-5.npz": {
+      "size": 255590,
+      "sha256": "0d6323349d9785650f201f91c4aef329d3ef8fae0bbab14660000f202ba60bfd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/f5/meta.json": {
+      "size": 497,
+      "sha256": "01b8879565c1fb5473f4ee281cde45e8f0e6bbfec12b9e27d8840fb2059924d0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/f5/pair3-5/cam5.png": {
+      "size": 9090,
+      "sha256": "b9433fc959bca3d3002f79d2a390ac8dca72ea8db89bf35f6fe40646cfdf9328"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/f5/pair3-5/cam3.png": {
+      "size": 7633,
+      "sha256": "ffea67869e3e9b82c512f013a1250c2dbfdf9e0fc0e479e04961362d39047539"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/f5/pair0-3/cam3.png": {
+      "size": 12715,
+      "sha256": "b1a999efd72e28fcae04199d1a5782d310ac7c6f49cddde9708184ec35fc0b91"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/f5/pair0-3/cam0.png": {
+      "size": 10449,
+      "sha256": "c2e0772ef27992f258ce06fcf0bb90569973358038b48af0401186a91e6f2cf7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/cnn/meta.json": {
+      "size": 499,
+      "sha256": "eb5eaefecc56104515d31045bf93997c65885c49968e03ab28679aa7cac9fcda"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/cnn/pair3-5/cam5.png": {
+      "size": 7216,
+      "sha256": "a3a64e227e6270a8b18e920d96467a7f621f9bd18f2cf0fb7d6e0b04fbaa3f20"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/cnn/pair3-5/cam3.png": {
+      "size": 6379,
+      "sha256": "0eef92f4873744af45dfca2f8952a55ebd4340bfe2b14742a1048c9a07cc0a2b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/cnn/pair0-3/cam3.png": {
+      "size": 10790,
+      "sha256": "afa104b1b733c34468eb8a1d027d828eba2739d0de6b484745ddda96583d1213"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0015/cnn/pair0-3/cam0.png": {
+      "size": 7531,
+      "sha256": "2fdfca0aa2b67e2546d7be6db16fcf4581747b39b9f73102f87040f14b676f7b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/pair0-3.npz": {
+      "size": 276315,
+      "sha256": "60bcd10457607394df5ff184e98c7fa7700c5c1df554640a8df879e2f17d1ee4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/meta.json": {
+      "size": 539,
+      "sha256": "445091d2fe046f27c3444643c823d1aad2bfc9855cc4f2d9ed6fa054988cfa4f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/pair3-5.npz": {
+      "size": 157943,
+      "sha256": "a774c17ed25cfc307fde0700a671deed47c16028a1829004403a4ce78bfce475"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/f5/meta.json": {
+      "size": 494,
+      "sha256": "f1595a46bca60ca08fe09622d8c519c1a156ef8dd9b277641e299b1d0a7e018d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/f5/pair3-5/cam5.png": {
+      "size": 8770,
+      "sha256": "937fb86d80b227c338fba92d78feab4bba9af7bd3f24965c4cf5a7f5f8e239f7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/f5/pair3-5/cam3.png": {
+      "size": 8968,
+      "sha256": "6c8e7249ce057d0526d805e4ac4937838473bc50bc9d55fa3c2e427de83017e9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/f5/pair0-3/cam3.png": {
+      "size": 16820,
+      "sha256": "6caf4ab98302d79e262dc25bf827a1f6df354de6579e95f13f218e536f89b632"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/f5/pair0-3/cam0.png": {
+      "size": 12094,
+      "sha256": "064d6c1334c412aa7a1807e043875ee692e6931f310b0a2636018bf95582975c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/cnn/meta.json": {
+      "size": 497,
+      "sha256": "009796c09a79812793f0fd8470d182824dd86028769719a24b2006ad2849496d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/cnn/pair3-5/cam5.png": {
+      "size": 7720,
+      "sha256": "732e1e1cfc4b9b3ce7121fa7d19a80f8a48dd129986df194cf74a5b74af26f4d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/cnn/pair3-5/cam3.png": {
+      "size": 7607,
+      "sha256": "63b92ca7221025b2e9475a3b43a45dc8a1c256fe37954908355eed9f4cb0b7b6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/cnn/pair0-3/cam3.png": {
+      "size": 14523,
+      "sha256": "b09f74fead04acabeddeea48b050a757a6a32f98a479353c2dcc45cd20e9131b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0017/cnn/pair0-3/cam0.png": {
+      "size": 9688,
+      "sha256": "883e726a3d4187c33eab7fb79187902fb087d2b54bba6c6d2545fdaed781f254"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/pair0-3.npz": {
+      "size": 279097,
+      "sha256": "b8d8bdfdb82d2cc152a2573e1d54c0511737330917f65c92a87b2f8705ac656e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/meta.json": {
+      "size": 541,
+      "sha256": "fd99b5d806a53b7af381432d18d38e9113e1c0cd28ad865f0b50e3434b3fed2b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/pair3-5.npz": {
+      "size": 149211,
+      "sha256": "f8e543bdefe012cd7bf3eecdd0498cd2c5d21232eadbd551bac5c4f8b1854b41"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/f5/meta.json": {
+      "size": 495,
+      "sha256": "f572bb77e3d6f74f4069b53eaa6a08d5af359f833636d8e33f70d5483e6486d5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/f5/pair3-5/cam5.png": {
+      "size": 12767,
+      "sha256": "9ec9fa89796b42309a3da628291945ffa3967c21a18b5bf0cdd786b38d4388a5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/f5/pair3-5/cam3.png": {
+      "size": 10150,
+      "sha256": "b8fbc4258c4fb594f233c9f673eee9f54cc8d72b06f4c37d8e760e1e5b49929a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/f5/pair0-3/cam3.png": {
+      "size": 13501,
+      "sha256": "85c901947ba9a371347d3fba99bf8cd9f656b3b565c39e6d9c08dc3624d1a592"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/f5/pair0-3/cam0.png": {
+      "size": 12950,
+      "sha256": "08830923aaabcc8ac1de4f69e6a7e2a2c0679c3f9ac25fe44e360d9b0fd70c99"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/cnn/meta.json": {
+      "size": 498,
+      "sha256": "ee96aee6d846221df3413aeb45343500cedfe095422e11310eea6c46fa8505c7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/cnn/pair3-5/cam5.png": {
+      "size": 11612,
+      "sha256": "a9cf4b353f5a21552cb20bf803765c0c28664e459bf3aed030595e1e5853c7cc"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/cnn/pair3-5/cam3.png": {
+      "size": 8888,
+      "sha256": "a6f801f3be0d7a2fe361f78d16ce4928b4910b89bcb13c315d94db273dd037a6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/cnn/pair0-3/cam3.png": {
+      "size": 11765,
+      "sha256": "4ebac5cb3b57300edafde7c910bcb4fd52e21454029b833f4c717ea5ab49681b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0020/cnn/pair0-3/cam0.png": {
+      "size": 10070,
+      "sha256": "fc4a8ca13b8154709e346e1ddc17ab03e9f1684a91aba5cdc794814de5129c0f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/pair0-3.npz": {
+      "size": 278551,
+      "sha256": "a73b64ef8baef7ea505f02a28669f32f54cb2705afa8f0b38832a04a62f308d7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/meta.json": {
+      "size": 542,
+      "sha256": "637e74e4811d37911c6ade6e515ab1ec0d6e5569e6b8b94f2a29391a8abb2f5c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/pair3-5.npz": {
+      "size": 164948,
+      "sha256": "330c5ef699375f16c64d75fa89bfee8dcb93ad6c01e212ef5a40cf931b4fc915"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/f5/meta.json": {
+      "size": 494,
+      "sha256": "678820639c338e23e013fb9a4d9684d03c14205cc21e7077db65459a233eff24"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/f5/pair3-5/cam5.png": {
+      "size": 10919,
+      "sha256": "0cfc1b19a7e71f76491eab52791ef953e189f505d15beb442dd5cf9abe8ffded"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/f5/pair3-5/cam3.png": {
+      "size": 10973,
+      "sha256": "7e771257b80fa08d95ebdecc3e37c22bc977df4e049014561f5b87f560ef0944"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/f5/pair0-3/cam3.png": {
+      "size": 17057,
+      "sha256": "a19de48f45953d404d0fd85e2a0eb81bbb33aa4921dda64d7760c645f6f81adf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/f5/pair0-3/cam0.png": {
+      "size": 12981,
+      "sha256": "a2e70f57284bcb5b6b8d71709c02d7eb4b314fb1c1001ee0f7cfa390fcf3cd15"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/cnn/meta.json": {
+      "size": 494,
+      "sha256": "b00d7cd53fcf39941a5fd83549186e3c6d64993fe6d5a8012b05d9311c3288df"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/cnn/pair3-5/cam5.png": {
+      "size": 10871,
+      "sha256": "9a7adcdb6e31fdae43476347c68fa68e0d2b6f3ebaf0ac1aecfb35f76c705b6a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/cnn/pair3-5/cam3.png": {
+      "size": 10413,
+      "sha256": "4626c5dabc0c52fa0408ef5d41554dd6ebd04c18b772edf630cc5d54b9648704"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/cnn/pair0-3/cam3.png": {
+      "size": 15808,
+      "sha256": "702737f3934ae7acf7f02fa6999db87f44923dd423c0bf487a46e20773643bc8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0022/cnn/pair0-3/cam0.png": {
+      "size": 11894,
+      "sha256": "b4f089bd8894a24f2eb6f1bd1e6a71cbdaad7a86cef4fa0eb0530a0ba23afb69"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/pair0-3.npz": {
+      "size": 316923,
+      "sha256": "d2b1d32a555f48aa5693e5846766f9f2c281b11a095f6a6f4c5eaebcb1249b35"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/meta.json": {
+      "size": 543,
+      "sha256": "4b81083288de223f42498720d3731637fdec33f5ce3a41fc2f813fc882601049"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/pair3-5.npz": {
+      "size": 170072,
+      "sha256": "1499d8b5e932b7d952e7ae3fa712d2fd5c0c40418528df2bbe66a471be302bbb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/f5/meta.json": {
+      "size": 497,
+      "sha256": "32ae17b9347b65187c6d83580ddc8bd318ef69052e45da20d07969fcb338b106"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/f5/pair3-5/cam5.png": {
+      "size": 6901,
+      "sha256": "52004e5a0d0e10425192b26d2c2a0fd3f13491be05d30aa856722dffadd36a28"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/f5/pair3-5/cam3.png": {
+      "size": 8273,
+      "sha256": "e28d8b08e4ffbd1819de5ead1a649e7bca96e995543813615a1bc1b851d0399f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/f5/pair0-3/cam3.png": {
+      "size": 13586,
+      "sha256": "7b04d6014c141c6d6d2dd258937d6f9a58a14cbbf1135aed89d9be390ba71fcd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/f5/pair0-3/cam0.png": {
+      "size": 11778,
+      "sha256": "54444498339dbf905f7b02bbba4faece0abc91e2e0af5108f868809c38e49e0e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/cnn/meta.json": {
+      "size": 497,
+      "sha256": "7755db61ff5cd21c2defcde570200ff23ce9fc82514824f7d8d55fdb37a563af"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/cnn/pair3-5/cam5.png": {
+      "size": 6400,
+      "sha256": "8015e1f3a5444ac4bb969bb29580c9cd89e4f354b3fc4f7641938c1493b708d4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/cnn/pair3-5/cam3.png": {
+      "size": 7718,
+      "sha256": "856e2f60062fa04c5c978dec2eef7987b314df4c411e3b5d7faf116d663060cf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/cnn/pair0-3/cam3.png": {
+      "size": 11417,
+      "sha256": "96c53ad336b9f40f7dd80a016ecef61ed9b6b62da24a0d4ef1750093847eb669"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0024/cnn/pair0-3/cam0.png": {
+      "size": 9039,
+      "sha256": "6e2614b11d24f99e8ccd0738aa15b326841ccbea60e844c28517c13543322ae3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/pair0-3.npz": {
+      "size": 293670,
+      "sha256": "ecd372682e419c72584d3fc17fec5544ea38f70a0fbb7ce7f003492b90ffdb4d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/meta.json": {
+      "size": 540,
+      "sha256": "8e32ea804de3e74c6f3434248dbbcf3dd6bd113f20eaeb3d155d945c4f7c3f30"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/pair3-5.npz": {
+      "size": 126842,
+      "sha256": "2b000d53eb2a207ae3c5c833bbc1e8a1378011236d3c650873e60465f61de998"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/f5/meta.json": {
+      "size": 495,
+      "sha256": "ca60a4c5d4fa1689fd80992ff00eff3af1a9a87756a4aaf56c72e91cb0100978"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/f5/pair3-5/cam5.png": {
+      "size": 9778,
+      "sha256": "457409c62ab943e548d78d6686534bdb2a850f3bbc0d37b1ecf20e230f409d52"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/f5/pair3-5/cam3.png": {
+      "size": 10640,
+      "sha256": "40da76f320e7699c534d897c6ba3549696bc6848f5e9ada0f05ee76730175dc9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/f5/pair0-3/cam3.png": {
+      "size": 11490,
+      "sha256": "ec2839fc1bd980150dc05b98eb3336c0c2ac07ca725c4e5de3ad201f210dc6cb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/f5/pair0-3/cam0.png": {
+      "size": 11833,
+      "sha256": "8da269acdfcc8a38335decf29951992a00b3e8b579eb857b83a28fa5c1670a31"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/cnn/meta.json": {
+      "size": 498,
+      "sha256": "5a50e8d985ac4852c1ed75c293aa8c732f62bda92ce1235a2c2c60c2962ca719"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/cnn/pair3-5/cam5.png": {
+      "size": 8173,
+      "sha256": "72eeff65c413c1dfcd5491d3a352666fb47e256f06a1e395d3e5fd7e13cdcb8c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/cnn/pair3-5/cam3.png": {
+      "size": 8663,
+      "sha256": "a1dcde9fdf5167021a1b118735d298738111293e59d588b9f95fcb8ede105caa"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/cnn/pair0-3/cam3.png": {
+      "size": 8942,
+      "sha256": "69ffe2c4181ce5b2f3d5d6e6cd8ebf243320c2f80cdb12d225ff982d5d8134f5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0026/cnn/pair0-3/cam0.png": {
+      "size": 9387,
+      "sha256": "0f8736431781d219f7ad3af06c5d67dbb611b55dc33efaf67a53ecf955fb9e8b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/pair0-3.npz": {
+      "size": 323789,
+      "sha256": "e49137c93f0583335a659677dab3a0e3f32a37aa4dc90a449f8c2458a16dd6a5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/meta.json": {
+      "size": 541,
+      "sha256": "c128d104ec252bc27b433102ef0ef8edd2bc3d24f89565ee7d583d9abc2317f5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/pair3-5.npz": {
+      "size": 173047,
+      "sha256": "70aab6932a1eac60749c1a9401544027157e2e650656736212dc8646522c6663"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/f5/meta.json": {
+      "size": 496,
+      "sha256": "d697c3b3507c1d387e5e964fa118020ce800a9511252da66f72022d14090cb61"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/f5/pair3-5/cam5.png": {
+      "size": 10091,
+      "sha256": "f441e6d786763c4667d4488fd20346ed072b82324e43ba9e8e083387aa635815"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/f5/pair3-5/cam3.png": {
+      "size": 8846,
+      "sha256": "960ef2669c17f2707820f2ed5f7ba43d1dafc265cd38c4950e2baf7b0761eb2d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/f5/pair0-3/cam3.png": {
+      "size": 11895,
+      "sha256": "cfcfb26e980138faf67adeea4f0a10587d0845e75bd51204f012bf2bef0169e5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/f5/pair0-3/cam0.png": {
+      "size": 12731,
+      "sha256": "de042e3f24a912d967151880a9602c45d75b39131b2445ee3bccacb037c1c787"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/cnn/meta.json": {
+      "size": 497,
+      "sha256": "c5bae307310131162d837acc945768fec0a4ffdf7a820d0fb1a0e2f1e3fb2b79"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/cnn/pair3-5/cam5.png": {
+      "size": 9541,
+      "sha256": "19c9111261ceb218f8286a7e8e2308113b00bfe7226de44363dd05ac599b96ae"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/cnn/pair3-5/cam3.png": {
+      "size": 6975,
+      "sha256": "f8234bceee86cbe784a293cfb4f0ac2126b77cd43ecef76440aa257c8a7800c3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/cnn/pair0-3/cam3.png": {
+      "size": 10825,
+      "sha256": "70f922f696d56dd4afd8b9ea761070139e3ed4aaa432eb615a8e0a1a0b9f22b1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0028/cnn/pair0-3/cam0.png": {
+      "size": 9559,
+      "sha256": "0addc731db9ccf0a168b7992b862677ab9d163e479ea93f1035df8755e50e357"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/pair0-3.npz": {
+      "size": 296468,
+      "sha256": "9fbe82da0b8bca1604b283e9c0c7ab2c3eb4b41d7998b45d71e58c5e70c468e6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/meta.json": {
+      "size": 541,
+      "sha256": "a37ac4c28e88654ffaff662cfbecb81b02843c2d6112c577f8824a97c46a2817"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/pair3-5.npz": {
+      "size": 150456,
+      "sha256": "14c707e6d10acbc3f1f7c3532bfa3f4e71e98d2ad2c9192dc53104de8df3beeb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/f5/meta.json": {
+      "size": 496,
+      "sha256": "2831745af5fc599d73898c4ce0911761a496bdca630a491b483864bdaf188af4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/f5/pair3-5/cam5.png": {
+      "size": 10594,
+      "sha256": "9f3a9fd13b7ba012095edc4a2c54db36c97809b07aa1323fb179b7912dc54b55"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/f5/pair3-5/cam3.png": {
+      "size": 10066,
+      "sha256": "fcba33ce286541df25d6efb4d2637c5158f9835713769f134cdef79f8d0ceb7e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/f5/pair0-3/cam3.png": {
+      "size": 12033,
+      "sha256": "19e55d9eb9b8b74af2a46aab66c63ec976f773e8749547e5bfdd4010b7c921f9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/f5/pair0-3/cam0.png": {
+      "size": 12208,
+      "sha256": "a1c57abd1ee0579a5984de4993b723972468f4599fc3bbd17a1be77156a99c0d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/cnn/meta.json": {
+      "size": 498,
+      "sha256": "9c1ebeed90d85397d97320c05250fbb59995825c850af2590ef9617abeb0a380"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/cnn/pair3-5/cam5.png": {
+      "size": 9871,
+      "sha256": "fc99beabdd30655d823092df2441c51c178cc9bd2b67eeb9abb5300dd946f43e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/cnn/pair3-5/cam3.png": {
+      "size": 7783,
+      "sha256": "528df68745044db1d4d9273ecdabac7382f066d4d3fd5fe4a99ebb38abd7d744"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/cnn/pair0-3/cam3.png": {
+      "size": 10587,
+      "sha256": "86a10db13ed474d4bd888b49a9712cd28feb910e1c0286e1b09f0f42907aab84"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/tokens_cnw/changjing1_shot_0030/cnn/pair0-3/cam0.png": {
+      "size": 10704,
+      "sha256": "52f58a0fb1c638c2fd1527cf45619d5c560f1d332e6e7d977f3d78e914c6d81b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/pair0-3.npz": {
+      "size": 328979,
+      "sha256": "bb41aeccc8b5cc618298bf3a68e1b14fc17493aa9bec9fd2350777f970f2f155"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/meta.json": {
+      "size": 542,
+      "sha256": "6811426be7a56e3155a6750c52d6e0210d6b3b946df287ae290ffd67790265c8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/pair3-5.npz": {
+      "size": 190069,
+      "sha256": "bb08ced38d638770866aea14da340c1773d46a62342bd9a74f8111e8e7058d3c"
+    },
+    "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy": {
+      "size": 560,
+      "sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89"
+    },
+    "/home/sang-usb/linux-han/datasets_1080/calib/calib_1920x1080.json": {
+      "size": 9482,
+      "sha256": "a94de699170b6ca65972ee5304fee0d6a14bcf511d5c4f6634541b204b797f01"
+    },
+    "/home/sang-usb/linux-han/train_log/flownet.pkl": {
+      "size": 24636301,
+      "sha256": "6615790efd627772917205db291f51cd392528a157ecbb2ecaeec3bff8eb6de2"
+    },
+    "/home/sang-usb/linux-han/train_log/IFNet_HDv3.py": {
+      "size": 6433,
+      "sha256": "655b4c772b037967b86c2dd31c8fa3b5323b79dd9a0e0088708d89149bbc8a32"
+    },
+    "/home/sang-usb/linux-han/model/warplayer.py": {
+      "size": 1058,
+      "sha256": "eed94da2f2e8056fa0ceabed88b87fedf25ec849494991a956b9f2cbad33632c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/configs/dataset6_lean.yaml": {
+      "size": 18213,
+      "sha256": "850a8a1e1849ba683b6f1430130256979dbbb7fdd3a39322d420b0be4696f38b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/work/setup/dataset6_round15_pixgs.yaml": {
+      "size": 5705,
+      "sha256": "18be8ec3d305f6edd4ceadb0ae6598e4e895e4162c503d8c1290ec768e510418"
+    }
+  }
+}
