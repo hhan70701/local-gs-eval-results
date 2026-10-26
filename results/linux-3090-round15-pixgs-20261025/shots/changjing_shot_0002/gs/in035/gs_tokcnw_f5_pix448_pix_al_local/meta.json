@@ -1,0 +1,75 @@
+{
+  "num_gaussians": 1070024,
+  "time_encode_s": 0.8007413999876007,
+  "time_encode_note": "stereo (FoundationStereo rec_pp) per pair, measured on the Windows RTX 3090 at export",
+  "ctx_self_psnr": [
+    NaN
+  ],
+  "ctx_rot_err_deg": [
+    0.0
+  ],
+  "ctx_center_err_rel_baseline": [
+    0.0
+  ],
+  "window": [
+    0,
+    0,
+    1920
+  ],
+  "size": 448,
+  "crop": "token",
+  "token_variant": "cnw_f5",
+  "local": true,
+  "render": {
+    "name": "pix",
+    "res": "aligned",
+    "mode": "gsplat",
+    "eps2d": 0.3,
+    "filter3d": false
+  },
+  "render_res": null,
+  "eps2d_used": 0.3,
+  "time_render_per_view_s": 0.09194755554199219,
+  "pose_source": "aligned_int",
+  "pose_diag": null,
+  "tto_iters": 0,
+  "pixgs": {
+    "1": {
+      "pair": "0-3",
+      "t": 0.3574951469700082,
+      "gaussians": 390098,
+      "missing_a": 0.0,
+      "missing_b": 0.0014868067265187076,
+      "depth_sign": -1.0
+    },
+    "2": {
+      "pair": "0-3",
+      "t": 0.6875721512207589,
+      "gaussians": 390098,
+      "missing_a": 0.0,
+      "missing_b": 0.0014868067265187076,
+      "depth_sign": -1.0
+    },
+    "4": {
+      "pair": "3-5",
+      "t": 0.4812086841324973,
+      "gaussians": 289828,
+      "missing_a": 0.0,
+      "missing_b": 0.0,
+      "depth_sign": -1.0
+    }
+  },
+  "pixgs_cfg": {
+    "enabled": true,
+    "variants": [
+      "cnw_cnn",
+      "cnw_f5"
+    ],
+    "disp": "data/disp_fs/{shot}",
+    "sigma_px": 0.5,
+    "max_stretch_px": 3.0,
+    "eps2d": 0.3,
+    "fill_px": 96,
+    "depth_tol_px": 3.0
+  }
+}

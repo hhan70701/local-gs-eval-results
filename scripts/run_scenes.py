@@ -4,12 +4,12 @@
 Every shot in cfg["dataset6"]["shots"] (e.g. changjing1/shot_0012) gets its own work directory
 work_root/<scene>_<shot> with a filled-in copy of the config, the interpolation time t of every target
 from the calibrated camera centres (poses/<setup>.json, so no target image is used), and then the usual
-steps: prepare -> detect_tokens -> run_anysplat -> run_flow (reference flow only) -> evaluate ->
+steps: prepare -> detect_tokens -> run_anysplat -> run_pixgs -> run_flow (reference flow only) -> evaluate ->
 validate_results. Afterwards work_root/summary_all.md lists flow / feed-forward / TTO per shot and over
 all shots, with the TTO wall times.
 
 Usage: python scripts/run_scenes.py --config configs/dataset6_lean.yaml [--shots changjing/shot_0007 ...]
-       [--steps prepare tokens anysplat flow evaluate validate] [--summary-only]
+       [--steps prepare tokens anysplat pixgs flow evaluate validate] [--summary-only]
 """
 import argparse
 import csv
@@ -33,6 +33,7 @@ STEPS = {
     "prepare": ["scripts/prepare.py", "--config", "{cfg}"],
     "tokens": ["scripts/detect_tokens.py", "--config", "{cfg}"],
     "anysplat": ["scripts/run_anysplat.py", "--config", "{cfg}"],
+    "pixgs": ["scripts/run_pixgs.py", "--config", "{cfg}"],
     "flow": ["scripts/run_flow.py", "--config", "{cfg}", "--scales", "1.0", "--tmodes", "pose"],
     "evaluate": ["scripts/evaluate.py", "--config", "{cfg}"],
     "validate": ["scripts/validate_results.py", "{cfg}"],
@@ -70,6 +71,7 @@ def shot_config(base, shot, work):
     cfg["raw_pattern"] = f"{Path(base['dataset6'].get('root', 'datasets')).as_posix()}/{shot}/view_{{}}.png"
     cfg["aligned_pattern"] = str((work / "aligned" / "aligned_{:02d}.png").as_posix())
     cfg["work_dir"] = str(work.as_posix())
+    cfg["shot"] = shot  # external token masks are looked up by shot (tokens.variants.*.external)
     return cfg
 
 
@@ -77,6 +79,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True)
     ap.add_argument("--shots", nargs="+")
+    ap.add_argument("--host", help="只跑 dataset6.hosts.<host> 里的场景（如 linux-4090 / linux-3090）")
     ap.add_argument("--steps", nargs="+", default=list(STEPS))
     ap.add_argument("--summary-only", action="store_true")
     args = ap.parse_args()
@@ -86,7 +89,7 @@ def main():
     dcfg = base["dataset6"]
     root = Path(dcfg.get("work_root", "work/dataset6"))
     root = root if root.is_absolute() else REPO / root
-    shots = args.shots or dcfg["shots"]
+    shots = args.shots or (dcfg["hosts"][args.host] if args.host else dcfg["shots"])
     with open(data_root / dcfg["calib"], encoding="utf-8") as f:
         calib = json.load(f)
     env = {k: v for k, v in os.environ.items() if k != "LGS_WORK_DIR"}  # every shot uses its own work_dir
@@ -121,6 +124,11 @@ def summarize(root, shots, base):
     ref = base["eval"]["ref_flow"]
     main_v = base["eval"].get("tto_main_variant", "rife")
     variants = base["gs"].get("local_variants") or [main_v]
+    if (base["gs"].get("multi_window") or {}).get("enabled"):  # round 14: window-by-window encode of the same tokens
+        variants = [x for v in variants for x in (v, f"{v}_mw")]
+    pix = base["gs"].get("pixgs") or {}
+    if pix.get("enabled"):  # round 15: pixel-wise Gaussians in the aligned space
+        variants = variants + [f"{v}_pix" for v in pix.get("variants", [])]
     size = base["gs"]["sizes"][0]
     pats = {v: re.compile(rf"^(hyb_token|hyb_tokchk_oracle)\[gs_tok{re.escape(v)}{size}_.+_al(?:_tto(\d+))?_local\]$")
             for v in variants}
@@ -156,14 +164,16 @@ def summarize(root, shots, base):
                         st = int(m.group(1) or 0)
                         area[(shot, r["setup"], v, st, "直接")][int(r["target"])] = float(r["core_frac_fg"])
                         area[(shot, r["setup"], v, st, "oracle")][int(r["target"])] = float(r["paste_frac_fg"])
-        for meta in (work / "gs").glob(f"*/gs_tok{main_v}{size}_*_al_tto*_local/meta.json"):
-            m = json.loads(meta.read_text(encoding="utf-8"))
-            setup = meta.parts[-3]
-            if m.get("tto"):
-                times[(shot, setup)] = {e["iter"]: e["time_s"] for e in m["tto"]["log"] if "time_s" in e}
-                times[(shot, setup)]["box"] = (m["tto"]["log"][0].get("box") or {}).get("area_frac")
-                times[(shot, setup)]["encode"] = m.get("time_encode_s")
-                times[(shot, setup)]["window"] = (m.get("window") or [None, None, None])[2]
+        for v in variants:
+            for meta in (work / "gs").glob(f"*/gs_tok{v}{size}_*_al_tto*_local/meta.json"):
+                m = json.loads(meta.read_text(encoding="utf-8"))
+                setup = meta.parts[-3]
+                if m.get("tto"):
+                    key = (shot, setup, v)
+                    times[key] = {e["iter"]: e["time_s"] for e in m["tto"]["log"] if "time_s" in e}
+                    times[key]["box"] = (m["tto"]["log"][0].get("box") or {}).get("area_frac")
+                    times[key]["encode"] = m.get("time_encode_s")
+                    times[key]["window"] = "+".join(str(w[2]) for w in m["windows"]) if m.get("windows")                         else (m.get("window") or [None, None, None])[2]
         tf = work / "timing.json"
         if tf.exists():
             times[(shot, "steps")] = json.loads(tf.read_text(encoding="utf-8"))
@@ -190,30 +200,35 @@ def summarize(root, shots, base):
     setups = sorted({k[1] for k in per})
     stages = sorted({k[3] for k in per if k[3] != "flow"})
     rows = [("flow", "—")] + [(s, h) for s in stages for h in ("直接", "oracle")]
+    pilot = [x for x in shots if x in set(base["dataset6"].get("pilot_shots") or [])]
+    subsets = [("全部场景合计", shots)] + ([("第七轮试点场景合计（检测 CNN 未用它们训练，cnw_cnn 只看这一张表）", pilot)]
+                                       if pilot and len(pilot) < len(shots) else [])
     for setup in setups:
-        lines += [f"## {setup}：全部场景合计（每个目标视点等权）", "",
-                  "| token 变体 | 方法 | 贴回 | 贴回区 | fg PSNR / LPIPS | object PSNR / LPIPS | rest PSNR | 不差目标数 |",
-                  "|---|---|---|---:|---:|---:|---:|---:|"]
-        for v in variants:
-            for stage, how in rows:
-                if stage == "flow" and v != variants[0]:
-                    continue
-                d, fl, pa = {}, {}, []
-                for shot in shots:
-                    fs = per.get((shot, setup, v, "flow", "—"), {})
-                    ds = per.get((shot, setup, v, stage, how), {})
-                    d.update({((shot, k), r): x for (k, r), x in ds.items()})
-                    fl.update({((shot, k), r): x for (k, r), x in fs.items()})
-                    pa += list(area.get((shot, setup, v, stage, how), {}).values())
-                if not d:
-                    continue
-                ks = sorted({k for (k, r) in d if r == "fg"})
-                rest = avg(d, "rest")
-                lines.append(f"| {'—' if stage == 'flow' else v} | {name(stage)} | {how} | "
-                             f"{f'{np.mean(pa) * 100:.1f}%' if pa else '—'} | {cell(avg(d, 'fg'))} | "
-                             f"{cell(avg(d, 'object'))} | {f'{rest[0]:.2f}' if rest else '—'} | "
-                             f"{'—' if stage == 'flow' else f'{not_worse(d, fl, ks)}/{len(ks)}'} |")
-        lines += ["", f"## {setup}：逐场景", "",
+        for title, sub in subsets:
+            lines += [f"## {setup}：{title}（{len(sub)} 组场景，每个目标视点等权）", "",
+                      "| token 变体 | 方法 | 贴回 | 贴回区 | fg PSNR / LPIPS | object PSNR / LPIPS | rest PSNR | 不差目标数 |",
+                      "|---|---|---|---:|---:|---:|---:|---:|"]
+            for v in variants:
+                for stage, how in rows:
+                    if stage == "flow" and v != variants[0]:
+                        continue
+                    d, fl, pa = {}, {}, []
+                    for shot in sub:
+                        fs = per.get((shot, setup, v, "flow", "—"), {})
+                        ds = per.get((shot, setup, v, stage, how), {})
+                        d.update({((shot, k), r): x for (k, r), x in ds.items()})
+                        fl.update({((shot, k), r): x for (k, r), x in fs.items()})
+                        pa += list(area.get((shot, setup, v, stage, how), {}).values())
+                    if not d:
+                        continue
+                    ks = sorted({k for (k, r) in d if r == "fg"})
+                    rest = avg(d, "rest")
+                    lines.append(f"| {'—' if stage == 'flow' else v} | {name(stage)} | {how} | "
+                                 f"{f'{np.mean(pa) * 100:.1f}%' if pa else '—'} | {cell(avg(d, 'fg'))} | "
+                                 f"{cell(avg(d, 'object'))} | {f'{rest[0]:.2f}' if rest else '—'} | "
+                                 f"{'—' if stage == 'flow' else f'{not_worse(d, fl, ks)}/{len(ks)}'} |")
+            lines.append("")
+        lines += [f"## {setup}：逐场景", "",
                   "| 场景 | token 变体 | 方法 | 贴回 | 贴回区 | fg PSNR / LPIPS | object PSNR / LPIPS | rest PSNR | 不差目标数 | TTO 累计耗时 |",
                   "|---|---|---|---|---:|---:|---:|---:|---:|---:|"]
         for shot in shots:
@@ -229,7 +244,7 @@ def summarize(root, shots, base):
                         continue
                     ks = sorted({k for (k, r) in d if r == "fg"})
                     pa = list(area.get((shot, setup, v, stage, how), {}).values())
-                    tt = times.get((shot, setup), {}).get(stage) if stage not in ("flow", 0) else None
+                    tt = times.get((shot, setup, v), {}).get(stage) if stage not in ("flow", 0) else None
                     rest = avg(d, "rest")
                     lines.append(f"| {shot} | {'—' if stage == 'flow' else v} | {name(stage)} | {how} | "
                                  f"{f'{np.mean(pa) * 100:.1f}%' if pa else '—'} | {cell(avg(d, 'fg'))} | "
@@ -237,14 +252,15 @@ def summarize(root, shots, base):
                                  f"{'—' if stage == 'flow' else f'{not_worse(d, fl, ks)}/{len(ks)}'} | "
                                  f"{f'{tt:.2f} s' if tt is not None else '—'} |")
         lines.append("")
-    lines += ["## 耗时", "", "| 场景 | 设置 | 编码窗口边长 | 编码 | 监督框面积 | TTO 各检查点累计 | 各步骤墙钟时间 |",
-              "|---|---|---:|---:|---:|---|---|"]
-    for (shot, setup), t in sorted(times.items()):
-        if setup == "steps":
+    lines += ["## 耗时", "", "| 场景 | 设置 | token 变体 | 编码窗口边长 | 编码 | 监督框面积 | TTO 各检查点累计 | 各步骤墙钟时间 |",
+              "|---|---|---|---:|---:|---:|---|---|"]
+    for key, t in sorted(times.items(), key=lambda kv: tuple(map(str, kv[0]))):
+        if len(key) != 3:
             continue
+        shot, setup, v = key
         cps = ", ".join(f"{it}: {x:.2f}s" for it, x in sorted((k, x) for k, x in t.items() if isinstance(k, int)))
         st = times.get((shot, "steps"), {})
-        lines.append(f"| {shot} | {setup} | {t.get('window') or '—'} | {t.get('encode') or float('nan'):.2f} s | "
+        lines.append(f"| {shot} | {setup} | {v} | {t.get('window') or '—'} | {t.get('encode') or float('nan'):.2f} s | "
                      f"{(t.get('box') or float('nan')) * 100:.0f}% | {cps} | "
                      + ", ".join(f"{k} {x:.0f}s" for k, x in st.items()) + " |")
     root.mkdir(parents=True, exist_ok=True)

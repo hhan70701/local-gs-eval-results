@@ -1,0 +1,32 @@
+test_aligned_domain_render_matches_real_camera_homography (test_numerics.NumericsTests) ... ok
+test_auc_ties_and_order (test_numerics.NumericsTests) ... ok
+test_bundle_adjust_recovers_synthetic_rig (test_numerics.NumericsTests) ... ok
+test_dataset6_calib_t_and_wall_key (test_numerics.NumericsTests) ... ok
+test_distort_maps_match_opencv_projection (test_numerics.NumericsTests) ... ok
+test_ecc_registration_recovers_shift (test_numerics.NumericsTests) ... ok
+test_interp_pose_endpoints_and_midpoint (test_numerics.NumericsTests) ... ok
+test_local_keep_uses_only_the_targets_pair (test_numerics.NumericsTests) ... /home/han/linux-han/local-gs-eval/tests/test_numerics.py:202: DeprecationWarning: In future, it will be an error for 'np.bool_' scalars to be interpreted as an index
+  return torch.tensor([m.any() for m in masks])
+ok
+test_mip_filter3d_matches_formula (test_numerics.NumericsTests) ... ok
+test_multi_window_composite_and_external_tokens (test_numerics.NumericsTests) ... ok
+test_multi_window_grouping_partitions_tokens (test_numerics.NumericsTests) ... ok
+test_pixgs_moves_occludes_and_fills (test_numerics.NumericsTests) ... ok
+test_python39_type_backport_preserves_bitwise (test_numerics.NumericsTests) ... ok
+test_reproject_targets_matches_real_camera_on_plane (test_numerics.NumericsTests) ... ok
+test_reproject_textured_plane_and_occlusion (test_numerics.NumericsTests) ... ok
+test_sim3_known_transform (test_numerics.NumericsTests) ... ok
+test_target_poses_calib_identity_frame (test_numerics.NumericsTests) ... ok
+test_token_keep_selects_rays_through_mask (test_numerics.NumericsTests) ... ok
+test_tto_crop_box_is_exact_subwindow (test_numerics.NumericsTests) ... ok
+test_tto_factor_roundtrip_and_local_update (test_numerics.NumericsTests) ... ok
+test_tto_periodic_covariance_cap_holds_at_checkpoints (test_numerics.NumericsTests) ... ok
+test_tto_position_and_covariance_caps (test_numerics.NumericsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 5.321s
+
+OK
+  BA (linear): nfev=15 status=3 median reproj=0.0000px
+  BA (huber): nfev=2 status=3 median reproj=0.0000px
+  [s] multi-window gs_tokv_mw448_x_local: 2 windows, sides [448, 548]

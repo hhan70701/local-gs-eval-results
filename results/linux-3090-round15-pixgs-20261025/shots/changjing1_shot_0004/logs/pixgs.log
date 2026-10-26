@@ -1,0 +1,4 @@
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+[in035] gs_tokcnw_cnn_pix448_pix_al_local: 932387 Gaussians over 3 views, 455 ms/view (gsplat); cam1 t=0.36 n=369514 miss a/b=0.00/0.02, cam2 t=0.69 n=369514 miss a/b=0.00/0.02, cam4 t=0.48 n=193359 miss a/b=0.00/0.00
+[in035] gs_tokcnw_f5_pix448_pix_al_local: 1158711 Gaussians over 3 views, 108 ms/view (gsplat); cam1 t=0.36 n=478645 miss a/b=0.00/0.02, cam2 t=0.69 n=478645 miss a/b=0.00/0.02, cam4 t=0.48 n=201421 miss a/b=0.00/0.00
