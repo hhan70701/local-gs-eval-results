@@ -1,0 +1,8 @@
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.072 risk=0.386 risk_tuned=0.386 object=0.085
+[in035] cam2: oracle_fail=0.045 risk=0.362 risk_tuned=0.362 object=0.095
+[in035] cam4: oracle_fail=0.038 risk=0.208 risk_tuned=0.208 object=0.075
+done -> /home/han/linux-han/local-gs-eval/work/dataset6/changjing1_shot_0010/eval/summary.md

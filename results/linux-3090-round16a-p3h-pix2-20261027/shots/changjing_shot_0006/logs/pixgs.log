@@ -1,0 +1,10 @@
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 432993 primitives over 3 views, 33 ms/view (splat), prep 292 ms; cam1 t=0.36 lr-fail a/b=0.25/0.07 gate=0.25, cam2 t=0.69 lr-fail a/b=0.25/0.07 gate=0.23, cam4 t=0.48 lr-fail a/b=0.23/0.05 gate=0.44
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 432993 primitives over 3 views, 27 ms/view (splat), prep 279 ms; cam1 t=0.36 lr-fail a/b=0.26/0.08 gate=0.32, cam2 t=0.69 lr-fail a/b=0.26/0.08 gate=0.28, cam4 t=0.48 lr-fail a/b=0.24/0.06 gate=0.47
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 434477 primitives over 3 views, 30 ms/view (splat), prep 277 ms; cam1 t=0.36 lr-fail a/b=0.29/0.06, cam2 t=0.69 lr-fail a/b=0.29/0.06, cam4 t=0.48 lr-fail a/b=0.26/0.06
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 432993 primitives over 3 views, 180 ms/view (gsplat), prep 281 ms; cam1 t=0.36 lr-fail a/b=0.25/0.07 gate=0.34, cam2 t=0.69 lr-fail a/b=0.25/0.07 gate=0.36, cam4 t=0.48 lr-fail a/b=0.23/0.05 gate=0.44
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 432993 primitives over 3 views, 35 ms/view (gsplat), prep 278 ms; cam1 t=0.36 lr-fail a/b=0.26/0.08 gate=0.34, cam2 t=0.69 lr-fail a/b=0.26/0.08 gate=0.34, cam4 t=0.48 lr-fail a/b=0.24/0.06 gate=0.46
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 434477 primitives over 3 views, 34 ms/view (gsplat), prep 273 ms; cam1 t=0.36 lr-fail a/b=0.29/0.06, cam2 t=0.69 lr-fail a/b=0.29/0.06, cam4 t=0.48 lr-fail a/b=0.26/0.06

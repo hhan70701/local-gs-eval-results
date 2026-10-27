@@ -1,0 +1,69 @@
+{"stage": "start", "all": 23, "complete": 1, "pending": 22}
+{"shot": "changjing/shot_0004", "steps": ["pixgs"], "seconds": 12.16}
+{"stage": "generate", "done": 1, "total": 22}
+{"shot": "changjing/shot_0006", "steps": ["pixgs"], "seconds": 11.51}
+{"stage": "generate", "done": 2, "total": 22}
+{"shot": "changjing/shot_0008", "steps": ["pixgs"], "seconds": 14.21}
+{"stage": "generate", "done": 3, "total": 22}
+{"shot": "changjing/shot_0010", "steps": ["pixgs"], "seconds": 12.77}
+{"stage": "generate", "done": 4, "total": 22}
+{"shot": "changjing/shot_0012", "steps": ["pixgs"], "seconds": 12.52}
+{"stage": "generate", "done": 5, "total": 22}
+{"shot": "changjing1/shot_0002", "steps": ["pixgs"], "seconds": 13.42}
+{"stage": "generate", "done": 6, "total": 22}
+{"shot": "changjing1/shot_0004", "steps": ["pixgs"], "seconds": 11.78}
+{"stage": "generate", "done": 7, "total": 22}
+{"shot": "changjing1/shot_0006", "steps": ["pixgs"], "seconds": 11.96}
+{"stage": "generate", "done": 8, "total": 22}
+{"shot": "changjing1/shot_0008", "steps": ["pixgs"], "seconds": 11.92}
+{"stage": "generate", "done": 9, "total": 22}
+{"shot": "changjing1/shot_0010", "steps": ["pixgs"], "seconds": 12.19}
+{"stage": "generate", "done": 10, "total": 22}
+{"shot": "changjing1/shot_0012", "steps": ["pixgs"], "seconds": 12.77}
+{"stage": "generate", "done": 11, "total": 22}
+{"shot": "changjing1/shot_0014", "steps": ["pixgs"], "seconds": 12.03}
+{"stage": "generate", "done": 12, "total": 22}
+{"shot": "changjing1/shot_0016", "steps": ["pixgs"], "seconds": 11.97}
+{"stage": "generate", "done": 13, "total": 22}
+{"shot": "changjing1/shot_0018", "steps": ["pixgs"], "seconds": 12.26}
+{"stage": "generate", "done": 14, "total": 22}
+{"shot": "changjing1/shot_0019", "steps": ["pixgs"], "seconds": 12.2}
+{"stage": "generate", "done": 15, "total": 22}
+{"shot": "changjing1/shot_0021", "steps": ["pixgs"], "seconds": 12.31}
+{"stage": "generate", "done": 16, "total": 22}
+{"shot": "changjing1/shot_0023", "steps": ["pixgs"], "seconds": 12.25}
+{"stage": "generate", "done": 17, "total": 22}
+{"shot": "changjing1/shot_0025", "steps": ["pixgs"], "seconds": 12.47}
+{"stage": "generate", "done": 18, "total": 22}
+{"shot": "changjing1/shot_0027", "steps": ["pixgs"], "seconds": 12.75}
+{"stage": "generate", "done": 19, "total": 22}
+{"shot": "changjing1/shot_0029", "steps": ["pixgs"], "seconds": 12.27}
+{"stage": "generate", "done": 20, "total": 22}
+{"shot": "changjing1/shot_0031", "steps": ["pixgs"], "seconds": 12.41}
+{"stage": "generate", "done": 21, "total": 22}
+{"shot": "changjing1/shot_0032", "steps": ["pixgs"], "seconds": 13.08}
+{"stage": "generate", "done": 22, "total": 22}
+{"stage": "evaluate", "workers": 3, "shots": 22}
+{"shot": "changjing/shot_0006", "steps": ["evaluate", "validate"], "seconds": 225.36}
+{"shot": "changjing/shot_0004", "steps": ["evaluate", "validate"], "seconds": 229.96}
+{"shot": "changjing/shot_0008", "steps": ["evaluate", "validate"], "seconds": 274.84}
+{"shot": "changjing/shot_0010", "steps": ["evaluate", "validate"], "seconds": 242.97}
+{"shot": "changjing1/shot_0002", "steps": ["evaluate", "validate"], "seconds": 202.41}
+{"shot": "changjing/shot_0012", "steps": ["evaluate", "validate"], "seconds": 260.7}
+{"shot": "changjing1/shot_0004", "steps": ["evaluate", "validate"], "seconds": 172.81}
+{"shot": "changjing1/shot_0006", "steps": ["evaluate", "validate"], "seconds": 259.61}
+{"shot": "changjing1/shot_0008", "steps": ["evaluate", "validate"], "seconds": 263.84}
+{"shot": "changjing1/shot_0010", "steps": ["evaluate", "validate"], "seconds": 262.41}
+{"shot": "changjing1/shot_0012", "steps": ["evaluate", "validate"], "seconds": 264.64}
+{"shot": "changjing1/shot_0014", "steps": ["evaluate", "validate"], "seconds": 264.0}
+{"shot": "changjing1/shot_0016", "steps": ["evaluate", "validate"], "seconds": 262.41}
+{"shot": "changjing1/shot_0018", "steps": ["evaluate", "validate"], "seconds": 252.02}
+{"shot": "changjing1/shot_0019", "steps": ["evaluate", "validate"], "seconds": 255.92}
+{"shot": "changjing1/shot_0021", "steps": ["evaluate", "validate"], "seconds": 250.9}
+{"shot": "changjing1/shot_0023", "steps": ["evaluate", "validate"], "seconds": 260.1}
+{"shot": "changjing1/shot_0025", "steps": ["evaluate", "validate"], "seconds": 258.13}
+{"shot": "changjing1/shot_0027", "steps": ["evaluate", "validate"], "seconds": 255.3}
+{"shot": "changjing1/shot_0029", "steps": ["evaluate", "validate"], "seconds": 255.94}
+{"shot": "changjing1/shot_0031", "steps": ["evaluate", "validate"], "seconds": 285.6}
+{"shot": "changjing1/shot_0032", "steps": ["evaluate", "validate"], "seconds": 239.69}
+{"stage": "complete", "validated": 23}

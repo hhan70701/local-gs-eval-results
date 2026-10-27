@@ -1,0 +1,14 @@
+[changjing1/shot_0032] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0032: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 2476363 primitives over 3 views, 73 ms/view (splat), prep 314 ms; cam1 t=0.36 lr-fail a/b=0.24/0.36 gate=0.38, cam2 t=0.69 lr-fail a/b=0.24/0.36 gate=0.21, cam4 t=0.48 lr-fail a/b=0.21/0.30 gate=0.26
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 2476363 primitives over 3 views, 70 ms/view (splat), prep 296 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.41, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.22, cam4 t=0.48 lr-fail a/b=0.21/0.30 gate=0.27
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 2477664 primitives over 3 views, 69 ms/view (splat), prep 302 ms; cam1 t=0.36 lr-fail a/b=0.27/0.35, cam2 t=0.69 lr-fail a/b=0.27/0.35, cam4 t=0.48 lr-fail a/b=0.22/0.29
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 2476363 primitives over 3 views, 218 ms/view (gsplat), prep 296 ms; cam1 t=0.36 lr-fail a/b=0.24/0.36 gate=0.43, cam2 t=0.69 lr-fail a/b=0.24/0.36 gate=0.22, cam4 t=0.48 lr-fail a/b=0.21/0.30 gate=0.29
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 2476363 primitives over 3 views, 79 ms/view (gsplat), prep 294 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.45, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.22, cam4 t=0.48 lr-fail a/b=0.21/0.30 gate=0.29
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 2477664 primitives over 3 views, 78 ms/view (gsplat), prep 297 ms; cam1 t=0.36 lr-fail a/b=0.27/0.35, cam2 t=0.69 lr-fail a/b=0.27/0.35, cam4 t=0.48 lr-fail a/b=0.22/0.29
+done -> /home/han/linux-han/local-gs-eval/work/dataset6/summary_all.md
