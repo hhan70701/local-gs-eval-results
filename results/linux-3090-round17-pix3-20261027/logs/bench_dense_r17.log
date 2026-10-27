@@ -1,0 +1,52 @@
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+[changjing/shot_0002] pix2 N=41/pair (82 views): once 0.114 s + per view rife 27.8 / repair 5.6 / paste 0.9 ms -> 2.92 s (RIFE alone 2.28 s; correspondences 0.80 s on Windows)
+[changjing/shot_0002] pix3n N=41/pair (82 views): once 0.188 s + per view rife 28.0 / repair 2.7 / paste 0.9 ms -> 2.77 s (RIFE alone 2.29 s; correspondences 0.80 s on Windows)
+[changjing/shot_0002] pix3 N=41/pair (82 views): once 2.914 s + per view rife 28.1 / repair 2.6 / paste 0.9 ms -> 5.51 s (RIFE alone 2.31 s; correspondences 0.80 s on Windows)
+[changjing/shot_0002] pix2 N=60/pair (120 views): once 0.090 s + per view rife 28.1 / repair 5.5 / paste 0.9 ms -> 4.23 s (RIFE alone 3.37 s; correspondences 0.80 s on Windows)
+[changjing/shot_0002] pix3n N=60/pair (120 views): once 0.186 s + per view rife 28.2 / repair 2.6 / paste 0.9 ms -> 3.99 s (RIFE alone 3.38 s; correspondences 0.80 s on Windows)
+[changjing/shot_0002] pix3 N=60/pair (120 views): once 2.916 s + per view rife 28.2 / repair 2.6 / paste 0.9 ms -> 6.73 s (RIFE alone 3.39 s; correspondences 0.80 s on Windows)
+[changjing/shot_0004] pix2 N=41/pair (82 views): once 0.101 s + per view rife 28.2 / repair 6.3 / paste 0.9 ms -> 3.00 s (RIFE alone 2.31 s; correspondences 0.79 s on Windows)
+[changjing/shot_0004] pix3n N=41/pair (82 views): once 0.241 s + per view rife 28.3 / repair 2.9 / paste 0.9 ms -> 2.87 s (RIFE alone 2.32 s; correspondences 0.79 s on Windows)
+[changjing/shot_0004] pix3 N=41/pair (82 views): once 3.380 s + per view rife 28.5 / repair 2.9 / paste 0.9 ms -> 6.03 s (RIFE alone 2.34 s; correspondences 0.79 s on Windows)
+[changjing/shot_0004] pix2 N=60/pair (120 views): once 0.102 s + per view rife 28.5 / repair 6.0 / paste 0.9 ms -> 4.35 s (RIFE alone 3.43 s; correspondences 0.79 s on Windows)
+[changjing/shot_0004] pix3n N=60/pair (120 views): once 0.238 s + per view rife 28.7 / repair 2.9 / paste 0.9 ms -> 4.14 s (RIFE alone 3.44 s; correspondences 0.79 s on Windows)
+[changjing/shot_0004] pix3 N=60/pair (120 views): once 3.420 s + per view rife 28.8 / repair 2.9 / paste 0.9 ms -> 7.33 s (RIFE alone 3.45 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix2 N=41/pair (82 views): once 0.076 s + per view rife 28.8 / repair 5.6 / paste 0.9 ms -> 2.97 s (RIFE alone 2.36 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix3n N=41/pair (82 views): once 0.162 s + per view rife 28.9 / repair 2.6 / paste 0.9 ms -> 2.82 s (RIFE alone 2.37 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix3 N=41/pair (82 views): once 2.529 s + per view rife 28.8 / repair 2.5 / paste 0.9 ms -> 5.17 s (RIFE alone 2.36 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix2 N=60/pair (120 views): once 0.076 s + per view rife 28.8 / repair 5.6 / paste 0.9 ms -> 4.31 s (RIFE alone 3.46 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix3n N=60/pair (120 views): once 0.153 s + per view rife 28.9 / repair 2.5 / paste 0.9 ms -> 4.04 s (RIFE alone 3.47 s; correspondences 0.79 s on Windows)
+[changjing/shot_0006] pix3 N=60/pair (120 views): once 2.543 s + per view rife 28.9 / repair 2.6 / paste 0.9 ms -> 6.43 s (RIFE alone 3.47 s; correspondences 0.79 s on Windows)
+[changjing/shot_0008] pix2 N=41/pair (82 views): once 0.191 s + per view rife 28.9 / repair 8.1 / paste 0.9 ms -> 3.30 s (RIFE alone 2.37 s; correspondences 0.81 s on Windows)
+[changjing/shot_0008] pix3n N=41/pair (82 views): once 0.525 s + per view rife 28.9 / repair 4.7 / paste 0.9 ms -> 3.36 s (RIFE alone 2.37 s; correspondences 0.81 s on Windows)
+[changjing/shot_0008] pix3 N=41/pair (82 views): once 6.799 s + per view rife 29.0 / repair 4.8 / paste 0.9 ms -> 9.65 s (RIFE alone 2.38 s; correspondences 0.81 s on Windows)
+[changjing/shot_0008] pix2 N=60/pair (120 views): once 0.190 s + per view rife 28.9 / repair 8.1 / paste 0.9 ms -> 4.74 s (RIFE alone 3.47 s; correspondences 0.81 s on Windows)
+[changjing/shot_0008] pix3n N=60/pair (120 views): once 0.517 s + per view rife 28.9 / repair 4.7 / paste 0.9 ms -> 4.66 s (RIFE alone 3.47 s; correspondences 0.81 s on Windows)
+[changjing/shot_0008] pix3 N=60/pair (120 views): once 6.759 s + per view rife 29.0 / repair 4.8 / paste 0.9 ms -> 10.92 s (RIFE alone 3.48 s; correspondences 0.81 s on Windows)
+[changjing/shot_0010] pix2 N=41/pair (82 views): once 0.135 s + per view rife 28.7 / repair 6.7 / paste 0.9 ms -> 3.11 s (RIFE alone 2.36 s; correspondences 0.80 s on Windows)
+[changjing/shot_0010] pix3n N=41/pair (82 views): once 0.331 s + per view rife 28.9 / repair 3.6 / paste 0.9 ms -> 3.07 s (RIFE alone 2.37 s; correspondences 0.80 s on Windows)
+[changjing/shot_0010] pix3 N=41/pair (82 views): once 4.684 s + per view rife 29.0 / repair 3.6 / paste 0.9 ms -> 7.43 s (RIFE alone 2.38 s; correspondences 0.80 s on Windows)
+[changjing/shot_0010] pix2 N=60/pair (120 views): once 0.132 s + per view rife 28.8 / repair 6.7 / paste 0.9 ms -> 4.50 s (RIFE alone 3.46 s; correspondences 0.80 s on Windows)
+[changjing/shot_0010] pix3n N=60/pair (120 views): once 0.330 s + per view rife 28.9 / repair 3.6 / paste 0.9 ms -> 4.33 s (RIFE alone 3.46 s; correspondences 0.80 s on Windows)
+[changjing/shot_0010] pix3 N=60/pair (120 views): once 4.677 s + per view rife 28.9 / repair 3.6 / paste 0.9 ms -> 8.69 s (RIFE alone 3.47 s; correspondences 0.80 s on Windows)
+[changjing/shot_0012] pix2 N=41/pair (82 views): once 0.115 s + per view rife 28.8 / repair 6.2 / paste 0.9 ms -> 3.06 s (RIFE alone 2.36 s; correspondences 0.79 s on Windows)
+[changjing/shot_0012] pix3n N=41/pair (82 views): once 0.275 s + per view rife 28.8 / repair 3.1 / paste 0.9 ms -> 2.96 s (RIFE alone 2.36 s; correspondences 0.79 s on Windows)
+[changjing/shot_0012] pix3 N=41/pair (82 views): once 3.845 s + per view rife 29.0 / repair 3.1 / paste 0.9 ms -> 6.55 s (RIFE alone 2.37 s; correspondences 0.79 s on Windows)
+[changjing/shot_0012] pix2 N=60/pair (120 views): once 0.112 s + per view rife 28.9 / repair 6.2 / paste 0.9 ms -> 4.43 s (RIFE alone 3.47 s; correspondences 0.79 s on Windows)
+[changjing/shot_0012] pix3n N=60/pair (120 views): once 0.263 s + per view rife 28.9 / repair 3.1 / paste 0.9 ms -> 4.21 s (RIFE alone 3.46 s; correspondences 0.79 s on Windows)
+[changjing/shot_0012] pix3 N=60/pair (120 views): once 3.844 s + per view rife 29.0 / repair 3.1 / paste 0.9 ms -> 7.81 s (RIFE alone 3.48 s; correspondences 0.79 s on Windows)
+# 密集视点计时（linux-3090，NVIDIA GeForce RTX 3090，pix2 渲染 gsplat，token cnw_cnn，对应 data/disp_fs/{shot}）
+
+每对输入相机生成 N 个视点（in035 共 2 对）。一次性 = 每对一次的位移整理和建高斯 / 建立合成数据（GPU）；对应关系（立体 / 光流）本身在 Windows RTX 3090 上导出，单列；token 标记见 rt_token_exp R1（3 台相机 28.7 ms / 帧），不在此计时。
+
+| 方法 | N/对 | 视点数 | 一次性 (s) | 其中联合优化 (s) | RIFE (ms/视点) | 修补渲染 (ms/视点) | 贴回 (ms/视点) | 合计 (s) | 只用 RIFE (s) | 对应关系 (s, Windows) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| pix2 | 41 | 82 | 0.114 | 0.000 | 28.8 | 6.2 | 0.9 | 3.03 | 2.36 | 0.80 |
+| pix2 | 60 | 120 | 0.107 | 0.000 | 28.8 | 6.1 | 0.9 | 4.39 | 3.46 | 0.80 |
+| pix3 | 41 | 82 | 3.612 | 3.359 | 28.9 | 3.0 | 0.9 | 6.29 | 2.37 | 0.80 |
+| pix3 | 60 | 120 | 3.632 | 3.376 | 28.9 | 3.0 | 0.9 | 7.57 | 3.47 | 0.80 |
+| pix3n | 41 | 82 | 0.258 | 0.000 | 28.8 | 3.0 | 0.9 | 2.92 | 2.36 | 0.80 |
+| pix3n | 60 | 120 | 0.250 | 0.000 | 28.9 | 3.0 | 0.9 | 4.17 | 3.46 | 0.80 |
+
+各列为 6 组场景的中位数；逐场景数据见 bench_dense_linux-3090.json。
