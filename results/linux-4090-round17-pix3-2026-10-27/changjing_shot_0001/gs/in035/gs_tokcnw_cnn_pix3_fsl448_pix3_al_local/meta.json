@@ -1,0 +1,204 @@
+{
+  "num_gaussians": 256000,
+  "time_encode_s": 0.9794616000144742,
+  "time_encode_note": "correspondences per pair, measured on the Windows RTX 3090 at export (pregs_exp P3 rec_pp (FoundationStereo ViT-L, scale 0.375, 8 iters, one direction))",
+  "ctx_self_psnr": [
+    NaN
+  ],
+  "ctx_rot_err_deg": [
+    0.0
+  ],
+  "ctx_center_err_rel_baseline": [
+    0.0
+  ],
+  "window": [
+    0,
+    0,
+    1920
+  ],
+  "size": 448,
+  "crop": "token",
+  "token_variant": "cnw_cnn",
+  "local": true,
+  "render": {
+    "name": "pix",
+    "res": "aligned",
+    "mode": "gsplat",
+    "eps2d": 0.3,
+    "filter3d": false
+  },
+  "render_res": null,
+  "eps2d_used": 0.3,
+  "time_render_per_view_s": 0.008360624313354492,
+  "pose_source": "aligned_int",
+  "pose_diag": null,
+  "tto_iters": 0,
+  "pixgs": {
+    "1": {
+      "pair": "0-3",
+      "t": 0.3574951469700082,
+      "gaussians": 119036,
+      "depth_sign": -1.0,
+      "core_px": 8448,
+      "vis_both_share_in_core": 0.8212594696969697
+    },
+    "2": {
+      "pair": "0-3",
+      "t": 0.6875721512207589,
+      "gaussians": 119036,
+      "depth_sign": -1.0,
+      "core_px": 8646,
+      "vis_both_share_in_core": 0.8059218135554014
+    },
+    "4": {
+      "pair": "3-5",
+      "t": 0.4812086841324973,
+      "gaussians": 17928,
+      "depth_sign": -1.0,
+      "core_px": 1100,
+      "vis_both_share_in_core": 0.5890909090909091
+    }
+  },
+  "pixgs_cfg": {
+    "enabled": true,
+    "variants": [],
+    "disp": "data/disp_fs/{shot}",
+    "sigma_px": 0.5,
+    "max_stretch_px": 3.0,
+    "eps2d": 0.3,
+    "fill_px": 96,
+    "depth_tol_px": 3.0,
+    "skip_existing": true,
+    "run_tokens": [
+      "cnw_cnn"
+    ],
+    "edge_px": 1.0,
+    "runs": [
+      {
+        "name": "pix2_fsl",
+        "method": "pix2",
+        "disp": "data/disp_fs/{shot}"
+      },
+      {
+        "name": "pix3n_fsl",
+        "method": "pix3",
+        "disp": "data/disp_fs/{shot}",
+        "mutual": true,
+        "opt_steps": 0
+      },
+      {
+        "name": "pix3_fsl",
+        "method": "pix3",
+        "disp": "data/disp_fs/{shot}",
+        "mutual": true,
+        "opt_steps": 100
+      }
+    ],
+    "opt_lr": {
+      "color": 0.02,
+      "disp": 0.05,
+      "opacity": 0.05,
+      "scale": 0.01
+    },
+    "gate": {
+      "runs": [
+        "pix2_fsl",
+        "pix3n_fsl"
+      ],
+      "thr": 0.1,
+      "blur_px": 3,
+      "dilate_px": 8
+    }
+  },
+  "round16": {
+    "label": "cnw_cnn_pix3_fsl",
+    "method": "pix3",
+    "disp": "data/disp_fs/{shot}",
+    "gated": false,
+    "time_prep_per_pair_s": 0.8857048749923706,
+    "gate": null,
+    "run": {
+      "name": "pix3_fsl",
+      "method": "pix3",
+      "disp": "data/disp_fs/{shot}",
+      "mutual": true,
+      "opt_steps": 100
+    },
+    "pairs": {
+      "0-3": {
+        "build_s": 0.049295663833618164,
+        "opt": {
+          "steps": 100,
+          "time_s": 0.9208943843841553,
+          "log": [
+            {
+              "iter": 1,
+              "loss": 0.041328027844429016
+            },
+            {
+              "iter": 25,
+              "loss": 0.025799300521612167
+            },
+            {
+              "iter": 50,
+              "loss": 0.020363958552479744
+            },
+            {
+              "iter": 75,
+              "loss": 0.017608921974897385
+            },
+            {
+              "iter": 100,
+              "loss": 0.01559461746364832
+            }
+          ],
+          "dg_abs_mean": 0.6585786938667297
+        },
+        "n_both_view": 61244,
+        "n_a": 79315,
+        "n_b_only": 39721,
+        "rec_a_px": 79315,
+        "rec_b_px": 83000,
+        "rec_a_px_own": 63318,
+        "rec_b_px_own": 60384
+      },
+      "3-5": {
+        "build_s": 0.037328243255615234,
+        "opt": {
+          "steps": 100,
+          "time_s": 0.7638914585113525,
+          "log": [
+            {
+              "iter": 1,
+              "loss": 0.031578369438648224
+            },
+            {
+              "iter": 25,
+              "loss": 0.01916794292628765
+            },
+            {
+              "iter": 50,
+              "loss": 0.015309464186429977
+            },
+            {
+              "iter": 75,
+              "loss": 0.013176413252949715
+            },
+            {
+              "iter": 100,
+              "loss": 0.011785198003053665
+            }
+          ],
+          "dg_abs_mean": 0.6613410115242004
+        },
+        "n_both_view": 12232,
+        "n_a": 17268,
+        "n_b_only": 660,
+        "rec_a_px": 17268,
+        "rec_b_px": 11840,
+        "rec_a_px_own": 16337,
+        "rec_b_px_own": 11424
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+# 局部 GS 质量验证结果汇总
+
+指标为各留出相机的平均值；PSNR/SSIM 越高越好，LPIPS 越低越好。`覆盖` = 该方法有渲染结果的像素占区域的比例（ROI 渲染只覆盖局部）。`+reg` 表示用真值做 ECC 单应配准后的 GS（诊断用上限，不是可部署的方法）。
+
+## Token 局部 GS 贴回（主结果：输入相机标记 → 局部 GS → 虚拟视点贴回，全程不用真值）
+
+`flow_s1.0_pose` 为纯光流；`hyb_token[v]` 直接贴回；`hyb_token_ringreg[v]` 先在贴回区外环用光流结果配准 GS 块（不用真值）再贴回。真值只用于计算指标。
+
+### 贴回区内（同一组像素）
+
+| 设置 | 局部变体 | 贴回区占前景 | 光流 PSNR / LPIPS | 直接贴回 PSNR / LPIPS | 环带配准 PSNR / LPIPS | 环带位移 px |
+|---|---|---:|---:|---:|---:|---:|
+| in035 | gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | 47.4% | 23.49 / 0.0763 | 23.89 / 0.1168 | — | — |
+| in035 | gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | 45.0% | 22.88 / 0.0803 | 23.63 / 0.1176 | — | — |
+| in035 | gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | 12.1% | 18.67 / 0.0523 | 19.28 / 0.0757 | — | — |
+| in035 | gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | 47.6% | 23.53 / 0.0835 | 26.42 / 0.0841 | — | — |
+| in035 | gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | 47.5% | 23.49 / 0.0831 | 25.82 / 0.1029 | — | — |
+| in035 | gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | 11.3% | 18.59 / 0.0510 | 21.38 / 0.0518 | — | — |
+
+### 整图与物体区（PSNR / LPIPS）
+
+| 设置 | 方法 | fg | object | oracle_fail | rest |
+|---|---|---:|---:|---:|---:|
+| in035 | flow_s1.0_pose | 25.66 / 0.1132 | — / — | 17.16 / 0.0514 | 30.07 / 0.0246 |
+| in035 | hyb_token[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 25.99 / 0.1485 | — / — | 18.97 / 0.0470 | 30.01 / 0.0271 |
+| in035 | hyb_token[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 26.47 / 0.1431 | — / — | 19.67 / 0.0566 | 30.18 / 0.0257 |
+| in035 | hyb_token[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 26.26 / 0.1336 | — / — | 19.41 / 0.0577 | 30.04 / 0.0255 |
+| in035 | hyb_token[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 27.88 / 0.1198 | — / — | 20.42 / 0.0518 | 30.17 / 0.0240 |
+| in035 | hyb_token[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 27.55 / 0.1324 | — / — | 20.20 / 0.0493 | 30.22 / 0.0256 |
+| in035 | hyb_token[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 27.25 / 0.1188 | — / — | 19.89 / 0.0501 | 30.08 / 0.0246 |
+
+### Token 变体对比（`_al` 对齐域、光心按 t 插值 = 可部署设置）
+
+输入 core = 输入相机上贴回核心区占前景比例（各输入相机平均）；oracle_fail 面积供对照（真值定义的光流失败区）。
+
+| 设置 | token 变体 | 输入 core | 贴回区占前景 | fg PSNR / LPIPS | object PSNR / LPIPS | rest PSNR |
+|---|---|---:|---:|---:|---:|---:|
+| in035 | 纯光流 `flow_s1.0_pose`（oracle_fail 占前景 10.6%） | — | — | 25.66 / 0.1132 | — / — | 30.07 |
+
+### 逐目标视点（fg ΔPSNR / ΔLPIPS 相对纯光流；输入对 core = 该目标所在相机对的 token 面积，带 * 表示该对被门限关闭、等价纯光流）
+
+| 设置 | 目标 | 相机对 | 光流 fg PSNR / LPIPS | rife | cnw_cnn | cnw_f5 |
+|---|---|---|---:|---:|---:|---:|
+| in035 | 1 | 0-3 | 24.76 / 0.1172 | — | — | — |
+| in035 | 2 | 0-3 | 25.28 / 0.1154 | — | — | — |
+| in035 | 4 | 3-5 | 26.94 / 0.1070 | — | — | — |
+
+### 目标侧光流风险复核（第八轮：贴回区 = token core ∩ 目标视点光流风险区，不用真值；oracle = core ∩ 真值失败区）
+
+不差 = 该目标 fg 的 PSNR 不低于且 LPIPS 不高于纯光流（门限关闭/贴回区为空时恰好等于光流）。
+
+| 设置 | token 变体 | 复核 | 贴回区占前景 | fg PSNR / LPIPS | object PSNR | rest PSNR | 不差目标数 |
+|---|---|---|---:|---:|---:|---:|---:|
+| in035 | 纯光流 | — | — | 25.66 / 0.1132 | — | 30.07 | — |
+| in035 | cnw_cnn_mw | 不复核 | —% | 25.99 / 0.1485 | — | 30.01 | 0/3 |
+| in035 | cnw_cnn_mw | oracle | 8.3% | 26.72 / 0.1123 | — | 30.07 | 2/3 |
+| in035 | cnw_cnn_pix2_fsl | 不复核 | —% | 26.47 / 0.1431 | — | 30.18 | 0/3 |
+| in035 | cnw_cnn_pix2_fsl | oracle | 8.4% | 27.21 / 0.1226 | — | 30.07 | 0/3 |
+| in035 | cnw_cnn_pix2_fsl_g | 不复核 | —% | 26.26 / 0.1336 | — | 30.04 | 0/3 |
+| in035 | cnw_cnn_pix2_fsl_g | oracle | 6.4% | 27.04 / 0.1223 | — | 30.07 | 0/3 |
+| in035 | cnw_cnn_pix3_fsl | 不复核 | —% | 27.88 / 0.1198 | — | 30.17 | 0/3 |
+| in035 | cnw_cnn_pix3_fsl | oracle | 8.4% | 27.87 / 0.1155 | — | 30.08 | 0/3 |
+| in035 | cnw_cnn_pix3n_fsl | 不复核 | —% | 27.55 / 0.1324 | — | 30.22 | 0/3 |
+| in035 | cnw_cnn_pix3n_fsl | oracle | 8.4% | 27.68 / 0.1135 | — | 30.07 | 1/3 |
+| in035 | cnw_cnn_pix3n_fsl_g | 不复核 | —% | 27.25 / 0.1188 | — | 30.08 | 0/3 |
+| in035 | cnw_cnn_pix3n_fsl_g | oracle | 6.2% | 27.47 / 0.1132 | — | 30.07 | 1/3 |
+
+### 颜色来源对比（第九轮输入纹理 / 第十轮测试时优化：同一 token 贴回区；oracle = 只贴 core ∩ 真值失败区）
+
+| 设置 | token 变体 | 颜色来源 | 贴回 | fg PSNR / LPIPS | object PSNR / LPIPS | rest PSNR | 不差目标数 |
+|---|---|---|---|---:|---:|---:|---:|
+| in035 | — | 纯光流 | — | 25.66 / 0.1132 | — / — | 30.07 | — |
+| in035 | cnw_cnn_mw | GS 测试时优化 100 步 | 直接 | 25.99 / 0.1485 | — / — | 30.01 | 0/3 |
+| in035 | cnw_cnn_mw | GS 测试时优化 100 步 | oracle | 26.72 / 0.1123 | — / — | 30.07 | 2/3 |
+
+## 其余诊断（整窗口 GS、用真值配准的上限等）
+
+## 设置 in035
+
+按目标位姿来源分别选出物体区 PSNR 最好的 GS 变体：。调优风险阈值（扫描 IoU 最优）：warp=0.08, col=2.0。
+
+### 关键对比
+
+| 方法 | object PSNR / LPIPS | oracle_fail PSNR / LPIPS | rest PSNR / LPIPS | fg PSNR / LPIPS |
+|---|---:|---:|---:|---:|
+| flow_s1.0_pose | — / — | 17.16 / 0.0514 | 30.07 / 0.0246 | 25.66 / 0.1132 |
+
+### 区域 `object`：物体级区域（真值中的魔方 + 周围 40 px，含手和遮挡带）（平均占前景 —%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+
+### 区域 `oracle_fail`：光流失败区（用真值误差定义，等价于完美检测器）（平均占前景 10.6%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+| flow_s1.0_pose | 17.16 | 0.4793 | 0.0514 | 1.00 |
+| gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | 14.59 | 0.6306 | 0.0728 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | 18.11 | 0.6581 | 0.0755 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | 18.11 | 0.6581 | 0.0755 | 1.00 |
+| gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | 19.25 | 0.6802 | 0.0661 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | 19.05 | 0.6818 | 0.0635 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | 19.05 | 0.6818 | 0.0635 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 18.97 | 0.6512 | 0.0468 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 19.67 | 0.6815 | 0.0564 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 19.41 | 0.6586 | 0.0575 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 20.43 | 0.6893 | 0.0516 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 20.21 | 0.6933 | 0.0491 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 19.89 | 0.6683 | 0.0500 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 18.97 | 0.6512 | 0.0470 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 19.67 | 0.6810 | 0.0566 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 19.41 | 0.6581 | 0.0577 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 20.42 | 0.6888 | 0.0518 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 20.20 | 0.6931 | 0.0493 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 19.89 | 0.6681 | 0.0501 | 1.00 |
+
+### 区域 `risk`：自检风险区（仅用光流自身信号、配置中的固定阈值）（平均占前景 81.8%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+| flow_s1.0_pose | 24.96 | 0.7294 | 0.0942 | 1.00 |
+| gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | 13.08 | 0.6956 | 0.2775 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | 18.08 | 0.6514 | 0.2471 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | 18.08 | 0.6514 | 0.2471 | 1.00 |
+| gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | 19.08 | 0.6662 | 0.2029 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | 18.96 | 0.6792 | 0.2241 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | 18.96 | 0.6792 | 0.2241 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 26.09 | 0.7517 | 0.0959 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 26.59 | 0.7573 | 0.1055 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 26.41 | 0.7525 | 0.1045 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 27.32 | 0.7601 | 0.0976 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 27.10 | 0.7605 | 0.0962 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 26.88 | 0.7552 | 0.0956 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 25.30 | 0.7606 | 0.1304 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 25.61 | 0.7632 | 0.1333 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 25.43 | 0.7474 | 0.1207 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 27.25 | 0.7640 | 0.1028 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 26.83 | 0.7714 | 0.1175 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 26.55 | 0.7538 | 0.1031 | 1.00 |
+
+### 区域 `edge`：深度边缘带（视差水平梯度）（平均占前景 —%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+
+### 区域 `rest`：前景中其余区域（光流应当可靠）（平均占前景 23.1%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+| flow_s1.0_pose | 30.07 | 0.6732 | 0.0246 | 1.00 |
+| gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | 6.04 | 0.4970 | 0.1508 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | 19.15 | 0.4393 | 0.1100 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | 19.15 | 0.4393 | 0.1100 | 1.00 |
+| gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | 19.60 | 0.4582 | 0.0963 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | 19.70 | 0.4757 | 0.1023 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | 19.70 | 0.4757 | 0.1023 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 30.07 | 0.6737 | 0.0245 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 30.07 | 0.6736 | 0.0245 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 30.07 | 0.6732 | 0.0246 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 30.08 | 0.6737 | 0.0245 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 30.07 | 0.6736 | 0.0246 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 30.07 | 0.6732 | 0.0246 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 30.01 | 0.6786 | 0.0271 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 30.18 | 0.6784 | 0.0257 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 30.04 | 0.6734 | 0.0255 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 30.17 | 0.6770 | 0.0240 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 30.22 | 0.6803 | 0.0256 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 30.08 | 0.6735 | 0.0246 | 1.00 |
+
+### 区域 `fg`：整个前景（人+魔方）（平均占前景 100.0%）
+
+| 方法 | PSNR | SSIM | LPIPS | 覆盖 |
+|---|---:|---:|---:|---:|
+| flow_s1.0_pose | 25.66 | 0.7284 | 0.1132 | 1.00 |
+| gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | 11.21 | 0.6745 | 0.3446 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | 18.19 | 0.6246 | 0.2944 | 1.00 |
+| gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | 18.19 | 0.6246 | 0.2944 | 1.00 |
+| gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | 19.16 | 0.6353 | 0.2504 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | 19.07 | 0.6525 | 0.2729 | 1.00 |
+| gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | 19.07 | 0.6525 | 0.2729 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 26.72 | 0.7477 | 0.1123 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 27.21 | 0.7535 | 0.1226 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 27.04 | 0.7493 | 0.1223 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 27.87 | 0.7550 | 0.1155 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 27.68 | 0.7556 | 0.1135 | 1.00 |
+| hyb_tokchk_oracle[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 27.47 | 0.7512 | 0.1132 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local] | 25.99 | 0.7559 | 0.1485 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl448_pix2_al_local] | 26.47 | 0.7628 | 0.1431 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local] | 26.26 | 0.7472 | 0.1336 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3_fsl448_pix3_al_local] | 27.88 | 0.7589 | 0.1198 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local] | 27.55 | 0.7682 | 0.1324 | 1.00 |
+| hyb_token[gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local] | 27.25 | 0.7510 | 0.1188 | 1.00 |
+
+## GS 配准残差（ECC 平移→仿射→单应，前景除物体区；越大说明目标相机位姿/内参误差越大）
+
+| 设置 | 变体 | 平均位移 px | 成功率 |
+|---|---|---:|---:|
+
+## 风险阈值扫描（风险区 vs oracle_fail，按 IoU 排序，前 8 名与配置默认值）
+
+| 设置 | warp 阈值 | col 阈值 | 精确率 | 召回率 | IoU | 面积比 |
+|---|---:|---:|---:|---:|---:|---:|
+
+## t 估计对比（scale=1.0）
+
+| 设置 | 目标相机 | t_uniform | t_pose (VGGT) | t_posecal (标定) | t_oracle |
+|---|---:|---:|---:|---:|---:|
+| in035 | 1 | — | 0.357 | — | — |
+| in035 | 2 | — | 0.688 | — | — |
+| in035 | 4 | — | 0.481 | — | — |
+
+## AnySplat 运行统计
+
+旋转/光心误差：vggt 行是联合估计与输入视点估计的一致性；calib/calibK 行是标定位姿经 Sim(3) 对齐到AnySplat 输入视点位姿后的残差（反映 AnySplat 自身预测的输入相机几何与真实阵列的偏差）。
+
+| 设置 | 变体 | 位姿来源 | 窗口边长 | 渲染分辨率 | 模式 | eps2d | 3D 滤波 | 高斯数 | 编码 s | 渲染 ms/视点 | 输入视点自渲染 PSNR | 最大旋转误差° | 最大光心误差/基线 |
+|---|---|---|---:|---:|---|---:|---|---:|---:|---:|---:|---:|---:|
+| in035 | gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local | aligned_int | 1296 | None | classic | 2.51 | False | 399182 | 0.164 | 40.0 | 32.90 | 0.20 | 0.008 |
+| in035 | gs_tokcnw_cnn_pix2_fsl448_pix2_al_local | aligned_int | 1920 | None | gsplat | 0.30 | False | 3762814 | 0.813 | 126.2 | — | 0.00 | 0.000 |
+| in035 | gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local | aligned_int | 1920 | None | gsplat | 0.30 | False | 3762814 | 0.813 | 126.2 | — | 0.00 | 0.000 |
+| in035 | gs_tokcnw_cnn_pix3_fsl448_pix3_al_local | aligned_int | 1920 | None | gsplat | 0.30 | False | 2862865 | 0.813 | 8.2 | — | 0.00 | 0.000 |
+| in035 | gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local | aligned_int | 1920 | None | gsplat | 0.30 | False | 2862865 | 0.813 | 6.3 | — | 0.00 | 0.000 |
+| in035 | gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local | aligned_int | 1920 | None | gsplat | 0.30 | False | 2862865 | 0.813 | 6.3 | — | 0.00 | 0.000 |
+
+## 光流自身信号预测“光流失败”的 AUC（标签 = oracle_fail，0.5 = 随机）
+
+| 设置 | 信号 | 平均 AUC | 前景失败率 |
+|---|---|---:|---:|
+| in035 | g_disp | 0.671 | 0.052 |
+| in035 | mask_ent | 0.793 | 0.052 |
+| in035 | mask_grad | 0.500 | 0.052 |
+| in035 | r_col | 0.630 | 0.052 |
+| in035 | r_warp | 0.780 | 0.052 |

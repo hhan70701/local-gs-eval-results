@@ -1,0 +1,17 @@
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0015 of frame, median |F_t0| = 6.8px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0007 of frame, median |F_t0| = 4.8px
+[in035/rife] pair 0-3: core=0.040 of foreground
+[in035/rife] pair 3-5: core=0.062 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.015 depth=0.011 core=0.042 recon=0.269 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.057 depth=0.042 core=0.097 recon=0.352 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.016 depth=0.015 core=0.046 recon=0.265 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.081 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.057 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.034 depth=0.000 core=0.074 recon=0.315 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.073 depth=0.000 core=0.129 recon=0.425 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.020 depth=0.000 core=0.049 recon=0.319 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.116 of foreground
+[in035/cnw_f5] pair 3-5: core=0.082 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.052 depth=0.000 core=0.108 recon=0.471 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.097 depth=0.000 core=0.168 recon=0.504 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.034 depth=0.000 core=0.075 recon=0.393 (fraction of foreground)

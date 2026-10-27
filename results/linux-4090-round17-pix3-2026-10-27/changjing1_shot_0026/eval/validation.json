@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "metric_rows": 342,
+  "methods": 19,
+  "auc_rows": 15,
+  "warnings": [
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto25_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto50_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto100_local"
+  ],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}

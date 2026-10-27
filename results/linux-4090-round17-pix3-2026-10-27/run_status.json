@@ -1,0 +1,34 @@
+{
+  "pid": 154124,
+  "status": "completed",
+  "started_unix": 1793103505.9667182,
+  "source_commit": "3585842a50d8e26ffa87033dda9f0cfb28d21626",
+  "source_tag": "linux-4090-round17-pix3",
+  "host": "linux-4090",
+  "work_root": "work/dataset6_round15_pixgs",
+  "phases": {
+    "evaluate": {
+      "exit_code": 0,
+      "elapsed_s": 872.8576979637146
+    },
+    "benchmark": {
+      "exit_code": 0,
+      "elapsed_s": 109.00914239883423
+    }
+  },
+  "phase": "benchmark",
+  "command": [
+    "/home/sang-usb/miniconda3/envs/gspl/bin/python",
+    "scripts/bench_dense.py",
+    "--config",
+    "work/setup/dataset6_round17.yaml",
+    "--host",
+    "linux-4090",
+    "--views",
+    "41",
+    "60"
+  ],
+  "exit_code": 0,
+  "finished_unix": 1793104487.875694,
+  "elapsed_s": 981.9089758396149
+}

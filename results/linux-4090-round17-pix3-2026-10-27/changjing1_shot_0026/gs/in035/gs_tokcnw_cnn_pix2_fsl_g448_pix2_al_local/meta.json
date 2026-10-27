@@ -1,0 +1,150 @@
+{
+  "num_gaussians": 1207263,
+  "time_encode_s": 0.813130899972748,
+  "time_encode_note": "correspondences per pair, measured on the Windows RTX 3090 at export (pregs_exp P3 rec_pp (FoundationStereo ViT-L, scale 0.375, 8 iters, one direction))",
+  "ctx_self_psnr": [
+    NaN
+  ],
+  "ctx_rot_err_deg": [
+    0.0
+  ],
+  "ctx_center_err_rel_baseline": [
+    0.0
+  ],
+  "window": [
+    0,
+    0,
+    1920
+  ],
+  "size": 448,
+  "crop": "token",
+  "token_variant": "cnw_cnn",
+  "local": true,
+  "render": {
+    "name": "pix",
+    "res": "aligned",
+    "mode": "gsplat",
+    "eps2d": 0.3,
+    "filter3d": false
+  },
+  "render_res": null,
+  "eps2d_used": 0.3,
+  "time_render_per_view_s": 0.08705790837605794,
+  "pose_source": "aligned_int",
+  "pose_diag": null,
+  "tto_iters": 0,
+  "pixgs": {
+    "1": {
+      "pair": "0-3",
+      "t": 0.3574951469700082,
+      "gaussians": 446114,
+      "depth_sign": -1.0,
+      "lr_fail_a": 0.2452842890417783,
+      "lr_fail_b": 0.37350142188584606,
+      "missing_a": 0.0,
+      "missing_b": 0.0,
+      "core_px": 35897,
+      "hole_in_core": 129.0,
+      "gate_keep": 0.40683065437223165
+    },
+    "2": {
+      "pair": "0-3",
+      "t": 0.6875721512207589,
+      "gaussians": 446114,
+      "depth_sign": -1.0,
+      "lr_fail_a": 0.2452842890417783,
+      "lr_fail_b": 0.37350142188584606,
+      "missing_a": 0.0,
+      "missing_b": 0.0,
+      "core_px": 32834,
+      "hole_in_core": 87.0,
+      "gate_keep": 0.31272461472863494
+    },
+    "4": {
+      "pair": "3-5",
+      "t": 0.4812086841324973,
+      "gaussians": 315035,
+      "depth_sign": -1.0,
+      "lr_fail_a": 0.14463673076679623,
+      "lr_fail_b": 0.2628099909658867,
+      "missing_a": 0.0008165487207403375,
+      "missing_b": 0.0,
+      "core_px": 24744,
+      "hole_in_core": 71.0,
+      "gate_keep": 0.3411332040090527
+    }
+  },
+  "pixgs_cfg": {
+    "enabled": true,
+    "variants": [],
+    "disp": "data/disp_fs/{shot}",
+    "sigma_px": 0.5,
+    "max_stretch_px": 3.0,
+    "eps2d": 0.3,
+    "fill_px": 96,
+    "depth_tol_px": 3.0,
+    "skip_existing": true,
+    "run_tokens": [
+      "cnw_cnn"
+    ],
+    "edge_px": 1.0,
+    "runs": [
+      {
+        "name": "pix2_fsl",
+        "method": "pix2",
+        "disp": "data/disp_fs/{shot}"
+      },
+      {
+        "name": "pix3n_fsl",
+        "method": "pix3",
+        "disp": "data/disp_fs/{shot}",
+        "mutual": true,
+        "opt_steps": 0
+      },
+      {
+        "name": "pix3_fsl",
+        "method": "pix3",
+        "disp": "data/disp_fs/{shot}",
+        "mutual": true,
+        "opt_steps": 100
+      }
+    ],
+    "opt_lr": {
+      "color": 0.02,
+      "disp": 0.05,
+      "opacity": 0.05,
+      "scale": 0.01
+    },
+    "gate": {
+      "runs": [
+        "pix2_fsl",
+        "pix3n_fsl"
+      ],
+      "thr": 0.1,
+      "blur_px": 3,
+      "dilate_px": 8
+    }
+  },
+  "round16": {
+    "label": "cnw_cnn_pix2_fsl_g",
+    "method": "pix2",
+    "disp": "data/disp_fs/{shot}",
+    "gated": true,
+    "time_prep_per_pair_s": 0.2144012451171875,
+    "gate": {
+      "runs": [
+        "pix2_fsl",
+        "pix3n_fsl"
+      ],
+      "thr": 0.1,
+      "blur_px": 3,
+      "dilate_px": 8
+    },
+    "run": {
+      "name": "pix2_fsl",
+      "method": "pix2",
+      "disp": "data/disp_fs/{shot}"
+    },
+    "pairs": {}
+  }
+}
