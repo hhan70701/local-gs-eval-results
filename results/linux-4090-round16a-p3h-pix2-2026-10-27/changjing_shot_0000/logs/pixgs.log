@@ -1,0 +1,8 @@
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 461073 primitives over 3 views, 43 ms/view (splat), prep 206 ms; cam1 t=0.36 lr-fail a/b=0.12/0.29 gate=0.11, cam2 t=0.69 lr-fail a/b=0.12/0.29 gate=0.11, cam4 t=0.48 lr-fail a/b=0.24/0.02 gate=0.19
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 461073 primitives over 3 views, 17 ms/view (splat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.13/0.28 gate=0.13, cam2 t=0.69 lr-fail a/b=0.13/0.28 gate=0.11, cam4 t=0.48 lr-fail a/b=0.25/0.02 gate=0.18
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 462093 primitives over 3 views, 17 ms/view (splat), prep 192 ms; cam1 t=0.36 lr-fail a/b=0.14/0.20, cam2 t=0.69 lr-fail a/b=0.14/0.20, cam4 t=0.48 lr-fail a/b=0.25/0.03
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 461073 primitives over 3 views, 66 ms/view (gsplat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.12/0.29 gate=0.17, cam2 t=0.69 lr-fail a/b=0.12/0.29 gate=0.15, cam4 t=0.48 lr-fail a/b=0.24/0.02 gate=0.19
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 461073 primitives over 3 views, 24 ms/view (gsplat), prep 192 ms; cam1 t=0.36 lr-fail a/b=0.13/0.28 gate=0.15, cam2 t=0.69 lr-fail a/b=0.13/0.28 gate=0.17, cam4 t=0.48 lr-fail a/b=0.25/0.02 gate=0.33
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 462093 primitives over 3 views, 24 ms/view (gsplat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.14/0.20, cam2 t=0.69 lr-fail a/b=0.14/0.20, cam4 t=0.48 lr-fail a/b=0.25/0.03

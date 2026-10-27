@@ -1,0 +1,901 @@
+{
+  "source_commit": "34ee4649f2a76980c36d0d600a6ddf3b93a70296",
+  "source_tag": "linux-4090-round16a-p3h-pix2",
+  "host": "linux-4090",
+  "shots": [
+    "changjing/shot_0000",
+    "changjing/shot_0001",
+    "changjing/shot_0003",
+    "changjing/shot_0005",
+    "changjing/shot_0007",
+    "changjing/shot_0009",
+    "changjing/shot_0011",
+    "changjing1/shot_0000",
+    "changjing1/shot_0001",
+    "changjing1/shot_0003",
+    "changjing1/shot_0005",
+    "changjing1/shot_0007",
+    "changjing1/shot_0009",
+    "changjing1/shot_0011",
+    "changjing1/shot_0013",
+    "changjing1/shot_0015",
+    "changjing1/shot_0017",
+    "changjing1/shot_0020",
+    "changjing1/shot_0022",
+    "changjing1/shot_0024",
+    "changjing1/shot_0026",
+    "changjing1/shot_0028",
+    "changjing1/shot_0030"
+  ],
+  "baseline_publication": {
+    "repository": "https://github.com/hhan70701/local-gs-eval-results",
+    "branch": "experiment/linux-4090-round15-pixgs-2026-10-25",
+    "directory": "results/linux-4090-round15-pixgs-2026-10-25",
+    "commit": "4664c567040c78a4741777ddc8336863808f1ed8",
+    "files": 1305,
+    "remote_head_verification": "PASS",
+    "manifest_and_git_tree_verification": "PASS",
+    "github_summary_readback_verification": "PASS"
+  },
+  "baseline_source_commit": "cae8a7b2a4245f20c966fc1cc15137f52a5e083c",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "2.2.0+cu121",
+  "cuda_runtime": "12.1",
+  "gsplat": "1.4.0+pt22cu121",
+  "halfpx_generation": {
+    "source": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088.npy",
+    "output": "/home/sang-usb/linux-han/datasets_1080/calib/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy",
+    "source_sha256": "5b03b34659edc1b423bc0f1f80f2e6db67b8e2fb66f80d5df694360356a98a40",
+    "output_sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89",
+    "formula": "H_halfpx[i] = T(-0.5,-0.5) @ H_existing[i]",
+    "crop_origin_xy": [
+      192.5,
+      104.5
+    ],
+    "output_size_wh": [
+      1920,
+      1088
+    ],
+    "cam3_bilinear_check": "PASS",
+    "user_authorized_generation": true
+  },
+  "inputs": {
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/pair0-3.npz": {
+      "size": 176958,
+      "sha256": "bf209e78ec64c600a6da38ff79088aa804abc88f26a332f60be08ce52da71c87"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/meta.json": {
+      "size": 542,
+      "sha256": "acea6ad5a6d2ad118a0f2255a6a658e01615a5b1a1d2a5e110a0a69f3a242583"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0000/pair3-5.npz": {
+      "size": 73659,
+      "sha256": "f09c5749ddfc939c8e64a549caee6f84918cf666a840ed81799ea4e09537f676"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0000/pair0-3.npz": {
+      "size": 176797,
+      "sha256": "9197caac2d3ef71a25c10b219bdccaa2cdcb7257d0d7d9a595d34894a4bf65f4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0000/meta.json": {
+      "size": 544,
+      "sha256": "d7d1a201998c64513c65d705ddea28fe6173f38773409e887873fe66f51edbf0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0000/pair3-5.npz": {
+      "size": 72298,
+      "sha256": "6ef2e5775e0322b7b428aa336a91ac59de19773e31e42e6857b7941bdd345434"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0000/pair0-3.npz": {
+      "size": 415871,
+      "sha256": "c9bddac6757bee3ec403edae82e7574ab0ab7936eb5df9f5595d18815934f7cd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0000/meta.json": {
+      "size": 614,
+      "sha256": "544f1fa81a0f3d80029a57bd976b2e826ac3043ff5d6ab229b19863fc83186a4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0000/pair3-5.npz": {
+      "size": 177190,
+      "sha256": "96dc634c78a05ed14a4e1c7c997ff14c4b5175046196d72d51ac4238adf89cac"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/pair0-3.npz": {
+      "size": 109605,
+      "sha256": "b85709cddf0159057bc95bad3ce3c473175e000dc2eea5fa6db510d11a5fb23a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/meta.json": {
+      "size": 541,
+      "sha256": "9d8d02c37ff13f83907db7938c7b4c4f4f3400ef05c59cb75e0fd2c6537ca68a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0001/pair3-5.npz": {
+      "size": 24320,
+      "sha256": "e44d2a2f0a63ec52b04d209bd797a3b7bd394d28f427a04e9e16523486b7fcb3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0001/pair0-3.npz": {
+      "size": 107396,
+      "sha256": "053f2160e62963e4c64cc081ae81ac88b5632eaa89d421717410eb2b8dde17c6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0001/meta.json": {
+      "size": 543,
+      "sha256": "cf5e69c3265705fa3507e6b1fc76e6719c2a9a08a4e91c59b48132e7434b8c11"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0001/pair3-5.npz": {
+      "size": 21408,
+      "sha256": "7528528ef14a9b72bbcffcbf1751f858e0d978c793aaed2dc3c1aa61ab3a923f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0001/pair0-3.npz": {
+      "size": 272933,
+      "sha256": "a47d36a312e2281b7091d3caed9a60dda2a6db422f48213f332cd96b3de6f906"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0001/meta.json": {
+      "size": 614,
+      "sha256": "3c6dadd5d0bfbc0fd76915b2d567fe124bf607033d45623dfc72b81f9b314132"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0001/pair3-5.npz": {
+      "size": 53241,
+      "sha256": "e62d6b8a4548420be4290fa76e59ab3afeb6e7a5611676e1f11040ab2b95fab2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/pair0-3.npz": {
+      "size": 313921,
+      "sha256": "7f2bdc76a29072b6e483e9e45593c79fc7a2ff8b8d8a1fafa718a93627e16b0e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/meta.json": {
+      "size": 541,
+      "sha256": "2305aee29653e4e900aad893c107ddd9fc3e407a111c7f71859f0a51b901e2a4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0003/pair3-5.npz": {
+      "size": 199579,
+      "sha256": "79a8bb0d89d89eb26bb531d24874e009683be41ce36a46f36e713534952f2ead"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0003/pair0-3.npz": {
+      "size": 300651,
+      "sha256": "8279cd962c2f3e925dee4dcb62e50785f084c6ba27775460157b07d13c8b03a7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0003/meta.json": {
+      "size": 546,
+      "sha256": "2779ea82b0d06a6481fef795ebd7101bedd10968edb2fc7664e8a5d25b531086"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0003/pair3-5.npz": {
+      "size": 187601,
+      "sha256": "782936d37875be44a724f030245862ef5be19bcbfe1af890f35f0ec8b6b89046"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0003/pair0-3.npz": {
+      "size": 790728,
+      "sha256": "632c613ce3da45589a192795a37e433f4dda4320f610ca34c4d3c1b3a5a5bff8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0003/meta.json": {
+      "size": 617,
+      "sha256": "2188ef90d5312f0aa752f58b372fd11288e889f8040add24d36b1183f4064db6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0003/pair3-5.npz": {
+      "size": 558718,
+      "sha256": "b3a522f3a2754d67d429bcfe2960bda6811de005eb8fa35e5ac27e6a5883133e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/pair0-3.npz": {
+      "size": 216794,
+      "sha256": "4b10ceb598afbee93093b3c76c4e13433dced2a954e688b3c2f91667af373e3b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/meta.json": {
+      "size": 544,
+      "sha256": "eb6de2fd7e41f40ff778248877a1477bbcc24050ba09aaf13beec56b4dfba0f4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0005/pair3-5.npz": {
+      "size": 105873,
+      "sha256": "c97b0e1f7fe4e53b2b3a04488a49330963c70f28d8cf6f9fcb1f2cf918ca6bf9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0005/pair0-3.npz": {
+      "size": 217978,
+      "sha256": "0f07cf92420ae91dcf28d6bc2a09db4fedf433fa1149f27db8ece7a1ecc51cc2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0005/meta.json": {
+      "size": 547,
+      "sha256": "0520b629a6afcbc26e63b1fa5a96e32e26d7b2601aa94d87a7b991ca694c25e0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0005/pair3-5.npz": {
+      "size": 95069,
+      "sha256": "14e61698012512822402861b723925678ffea7be2c6c05ab7703ca7d819465de"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0005/pair0-3.npz": {
+      "size": 545085,
+      "sha256": "2f836385b19e9b0a687b0a962d68752b970a69e1c18f69245e9f197d78bc2846"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0005/meta.json": {
+      "size": 618,
+      "sha256": "1cddeb9354fc4b1e2bd207f4428380ecafdda4f3cca463d078815d608ddd290b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0005/pair3-5.npz": {
+      "size": 270781,
+      "sha256": "4d89d5fe0fc63746763bde9eb5f362b53137ad586eceae65dbf86e97a51f3bf9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/pair0-3.npz": {
+      "size": 547442,
+      "sha256": "c260546b04e5710a7aff466b60032d36d5fdda22d440b0d3927537518b668c79"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/meta.json": {
+      "size": 548,
+      "sha256": "53928982462cf740c29cc60e8184d4d33690173d19f6621b426646ae7a9f6b72"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0007/pair3-5.npz": {
+      "size": 402085,
+      "sha256": "08f09b2fdd0fc24024b0399087c5885f2b812fb9075fafbe187682484868cdf4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0007/pair0-3.npz": {
+      "size": 584189,
+      "sha256": "dc6269eeede046e2039c98a36e870c990a70f0d9848d63f3ff19404f4a1ffa51"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0007/meta.json": {
+      "size": 549,
+      "sha256": "89d26c5c5ad7d1a46c550edf5cf7f754aa29243f9adfa2c61b84d89f88f45b76"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0007/pair3-5.npz": {
+      "size": 438443,
+      "sha256": "a968d53a6e103f79d142b6763b25b39402db5ab7b72bf3087b7f09da76e1d2d7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0007/pair0-3.npz": {
+      "size": 1683628,
+      "sha256": "f0d1e9984f74a15b3d08c31699f6a67f1b85af2d53c849b99eaa1a6a6b019937"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0007/meta.json": {
+      "size": 620,
+      "sha256": "0ef3ce4065905cbf4780ad699e09b2100548b97e2a9c50c009383e32b985f123"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0007/pair3-5.npz": {
+      "size": 1310738,
+      "sha256": "1d258c71a37e21097a8e4d16d8a850c96dd3c1c4e3cf65714f906e9f57b0b5e4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/pair0-3.npz": {
+      "size": 434375,
+      "sha256": "473e641afaa772699fc758fc88947c97ee8cbb4caf65d27e0d1c5c96b54395d6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/meta.json": {
+      "size": 543,
+      "sha256": "bdf8d98e4e27ae5bb4a4c9e7cd517bcae5466ad76512c2e17781427b426dbe73"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0009/pair3-5.npz": {
+      "size": 220531,
+      "sha256": "32a3df595acc5cba68236e9e943e9cbc6e388fd83a88213fe29af45fca333469"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0009/pair0-3.npz": {
+      "size": 436196,
+      "sha256": "e08bc94fb33f47addf6d3f96ff224e40b910ba10a60f9ddb7cfd0c1d3a7a49b4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0009/meta.json": {
+      "size": 546,
+      "sha256": "e34b6ecbfd99835cf444e0cefade73374dcb0dad4ef5b590c6e9ce131be729ed"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0009/pair3-5.npz": {
+      "size": 230243,
+      "sha256": "bb23bcddff07ba68daf2ce42eb0964dcacbd8f66679e5e038e164e99f4dee450"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0009/pair0-3.npz": {
+      "size": 1058568,
+      "sha256": "eb6a1dfdbc46d58709d811a07791adfcde8e09a231b7bd40275d1d4e21c8649e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0009/meta.json": {
+      "size": 620,
+      "sha256": "5dd28b05a94fb2d5ac1a2cb3d7a36f15ab898e0b1aacc5cdb01f16d6ff859d67"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0009/pair3-5.npz": {
+      "size": 597181,
+      "sha256": "1260dd0d1b6498f63e917d17f5830e385d064404348e9238d7bd4e44329e29f5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/pair0-3.npz": {
+      "size": 382459,
+      "sha256": "46eae6e09367b36472613439344b6e0d2099ff4cae52897521b9848699f23dc9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/meta.json": {
+      "size": 542,
+      "sha256": "6c8ac5bfa267cde6f27ba7c269f707ec0a5633eba3ec5363015b7ca8a1fc1152"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing_shot_0011/pair3-5.npz": {
+      "size": 224894,
+      "sha256": "a81efa33f79796e44d0228cac4f5a54b410a2c998a0a0e4effc11c3027156ac8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0011/pair0-3.npz": {
+      "size": 409132,
+      "sha256": "3572f98216f84ba8f352cd3e5e2c1f3538eec79f0795b9c20d54bb80eb06e630"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0011/meta.json": {
+      "size": 544,
+      "sha256": "0ab5b0b3816dfb787d4eb3946c9848e75518316c0657672278ad85ab9aa6d718"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing_shot_0011/pair3-5.npz": {
+      "size": 238224,
+      "sha256": "d304ee21c3ecb724ee932b48ccfffd98080806fcafc42de0ef78f90e22575cc3"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0011/pair0-3.npz": {
+      "size": 920206,
+      "sha256": "a6d627abd144d8ba60064eb0699351dc9ef0bac73281b5a10ab7950b4a7146f9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0011/meta.json": {
+      "size": 617,
+      "sha256": "e9509ef7df7b654506db8e7cd7a9c560f88d229ba8d88963d2e99434a192616b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing_shot_0011/pair3-5.npz": {
+      "size": 568983,
+      "sha256": "0664f7048f164e518ed3f4813f4bb1f656af6e41af52df8ec2da8e890224972b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/pair0-3.npz": {
+      "size": 322348,
+      "sha256": "54bc43152df7bff625c826e293a6bb2be1f8a5c2c1e1092939927032de5391be"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/meta.json": {
+      "size": 547,
+      "sha256": "63add0926b5b91b50be58330377f9d7a2b17ef55152261a8e50411772458fdd8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0000/pair3-5.npz": {
+      "size": 189408,
+      "sha256": "e10f1e55ce8c6ecc4d3e93e9db8250b3d58de42d7c35ceba6e512979fe38622e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0000/pair0-3.npz": {
+      "size": 323546,
+      "sha256": "fa20fb5d333e24a2cfda3fbba5f4249b393788fed6bbc5354e49f13535d69704"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0000/meta.json": {
+      "size": 547,
+      "sha256": "a3848633c14de99b9a85b476eedb4ccb26ebafb6029e3a167f4b48828aa32514"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0000/pair3-5.npz": {
+      "size": 188761,
+      "sha256": "c7327a733a76ad1e5dc36f854235bdaad9a980048d55a905250f46317bfbb9e1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0000/pair0-3.npz": {
+      "size": 940746,
+      "sha256": "34960f7a3dbd1996c42cb50fd47bdd025be847c108b8141bcf4b4ef582c8f1b1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0000/meta.json": {
+      "size": 622,
+      "sha256": "cc95eec31a8a45c0b46aa830b88fc2219d3baf1d3149aa0991fe6adc88d12df0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0000/pair3-5.npz": {
+      "size": 627703,
+      "sha256": "d7a25bbe7cb9b7c9c2eae1ecf93ad9b275682d23cd598854bb92ce9de8b71ff0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/pair0-3.npz": {
+      "size": 327634,
+      "sha256": "c181b2942518017563c5eb8f3027467926c21779a5ac645d128c8c221205eba9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/meta.json": {
+      "size": 547,
+      "sha256": "064b0ce0a14855571531626903a189b18d8a5f1f836ddae3b39852b9592563cf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0001/pair3-5.npz": {
+      "size": 217544,
+      "sha256": "39dabbbdbd0f35bdc51025c581093e96eabe17364e081bca4e795d76b3ab98ce"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0001/pair0-3.npz": {
+      "size": 324318,
+      "sha256": "e2ec9be7ee128aaa28768de7555301fc566722a08b19d285d57c88dc45daba1f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0001/meta.json": {
+      "size": 549,
+      "sha256": "3aa1f188e03c1d4dc81bda15b6b3b22a9dfe71e37baa83bf21e2f7ae4bc129bd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0001/pair3-5.npz": {
+      "size": 217839,
+      "sha256": "e2fb8d917af980a67ef88ef2090fd853787581410d788c690c3d11d8efeac0b0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0001/pair0-3.npz": {
+      "size": 960667,
+      "sha256": "3bca2e0b02d6cc0e9fb1b7b51f20c8433eee153a8cca6e8254647483e9d1d252"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0001/meta.json": {
+      "size": 622,
+      "sha256": "36d12871b0fbc288060c7449e1ac472f6663d7d4cfce36423e6e33fdbf5be7b1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0001/pair3-5.npz": {
+      "size": 753608,
+      "sha256": "73c7e433123df004b3112b89784044066587da644ce870d7bbd3405680ba0f1a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/pair0-3.npz": {
+      "size": 279793,
+      "sha256": "53de0e3938784880ae56b1fce2f344e0239d5a2e14084102d22eb3b3e2de3087"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/meta.json": {
+      "size": 544,
+      "sha256": "b30c6819aa51784a6d6b4f17f0aadbddd94435365cbab392301fecf9877a80df"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0003/pair3-5.npz": {
+      "size": 153045,
+      "sha256": "3ea9026991139a0fdacd5342817c54556444139d57f9ab699d34222dab4cd521"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0003/pair0-3.npz": {
+      "size": 324243,
+      "sha256": "46c962ff0ac8b3ba5ac08d31baa85bf15a86c27adb47f54fc140002707f9423b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0003/meta.json": {
+      "size": 549,
+      "sha256": "b64247af31b7d79853def947417c2365fea516e7ff90ea34b2ad82e1837cd73f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0003/pair3-5.npz": {
+      "size": 155396,
+      "sha256": "b6d5a1dca0161ed8476149e7927c94ce4ecebddf8392cc14c627f813322e5797"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0003/pair0-3.npz": {
+      "size": 948722,
+      "sha256": "ec7ac64bb34bb333679081321d9b74bc0e55b47f885035f6b36f4c74ea9b5d39"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0003/meta.json": {
+      "size": 621,
+      "sha256": "15df921e1ea51ddb02dde9be8c56bf2849f7b0e7fc5b6316f2ce337c72859816"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0003/pair3-5.npz": {
+      "size": 528694,
+      "sha256": "c86fd978b050495a1b53ac92adcc3f97c975ba8644e04e36c995339836348e39"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/pair0-3.npz": {
+      "size": 73275,
+      "sha256": "00bc6aae332e2967f66c3d4504b268358fd2bd62afeeafd46eacdb479bdabbec"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/meta.json": {
+      "size": 541,
+      "sha256": "3a7efda04c1f1a37623d228741bb3a35169c46d0e404bd756be6526e6e3dfa99"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0005/pair3-5.npz": {
+      "size": 49890,
+      "sha256": "7eae40a3b6be379d578b0be74d582c25462a82cf9bac0d44e3d6cdd116a71989"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0005/pair0-3.npz": {
+      "size": 69677,
+      "sha256": "a9c2ffc9862277a7e10920e427289aac6b54604bfe2f63f9b302a409a7ea4be1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0005/meta.json": {
+      "size": 544,
+      "sha256": "1b00c7ca2a9e69d778c706f52e6de474cf9ff15ce231f75c582adb0785c167fc"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0005/pair3-5.npz": {
+      "size": 45321,
+      "sha256": "b63228080c73023f1ce8c656457e0674cd122de8b466f0e5fe6369a436e659f2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0005/pair0-3.npz": {
+      "size": 218579,
+      "sha256": "3525c3270689154b7919b9bfc85e23ad1c6566df178da883d1216f27c8a01cad"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0005/meta.json": {
+      "size": 618,
+      "sha256": "70bd71202f8c4118af6e39e5e28d91291b9aba25a3e6b25bdefc6d688fcd0b67"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0005/pair3-5.npz": {
+      "size": 142655,
+      "sha256": "f21b15557bdaa77b20cb3940492bace87bbd434143e185d08b30c3161e565950"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/pair0-3.npz": {
+      "size": 263441,
+      "sha256": "8c926bd53c22b6fe5aa6f6c1092e5e1a4266b4fa4abf74705fcf427c5c22b3e0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/meta.json": {
+      "size": 540,
+      "sha256": "c4ee01d4c067ced80084dbb8b7093aa5419bc379cd8dbc604b165c612257260f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0007/pair3-5.npz": {
+      "size": 89670,
+      "sha256": "4193ec754247766193bc5d25c6cd8ce9dcd26353c1b6dec67d96289e6d71908b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0007/pair0-3.npz": {
+      "size": 257275,
+      "sha256": "d78f34ed8dacff6955743ebfe0d56641b0d178466b7acc30b9069ef34ed5d302"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0007/meta.json": {
+      "size": 543,
+      "sha256": "37f20d4e25b80068f0b59f26b30d9aea16b27772e4376326e915ed57682385ed"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0007/pair3-5.npz": {
+      "size": 85791,
+      "sha256": "e52e60de14fa1788d8942ed17cb0300c8b5175d9d490385705ca9b3a4ce0f139"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0007/pair0-3.npz": {
+      "size": 729909,
+      "sha256": "fd36d0367dc9a5c1017fd3bbe7684cb69a072ea11ef0503ea7b7c35fcdb52bee"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0007/meta.json": {
+      "size": 614,
+      "sha256": "58ac8e92edbb987ddb4877547e56d9a616824c25b42c47bb908160ee40ad1cee"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0007/pair3-5.npz": {
+      "size": 250096,
+      "sha256": "d7fc7af7d3ab7ce803a424bec862cd4ebb4df5862feb977964cc48f8dab276f2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/pair0-3.npz": {
+      "size": 292439,
+      "sha256": "7b49aa30c41755161e67aee728be21f5581e634cdb8da1d4775c3a8b58e316ea"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/meta.json": {
+      "size": 541,
+      "sha256": "d90cb4bc100f0aa749ddf9f0e99caf873b3d9937032979bc8d5e51bd986e9511"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0009/pair3-5.npz": {
+      "size": 153940,
+      "sha256": "7b97576bfdcd8f198e494a2babdc7224c0619580b0eb0c15d039f22499c0129d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0009/pair0-3.npz": {
+      "size": 282879,
+      "sha256": "8eeaeaabd55ddd48e82e0f81c31b7e8dac3da48ff6f608a5d1c913c2320edc5a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0009/meta.json": {
+      "size": 544,
+      "sha256": "fcb4b8f68d1e910b8521de7c2c48afdb31ff7962c4ad4673d8125225cab3433d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0009/pair3-5.npz": {
+      "size": 151119,
+      "sha256": "b8aacc261968058eef454d73cbf68941c77fa6c68b29e2088610ec8dca688d83"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0009/pair0-3.npz": {
+      "size": 781702,
+      "sha256": "7e0d758a279d5a31519a12545320e3f0755ee332a3d5f99d4414e917199e43e2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0009/meta.json": {
+      "size": 614,
+      "sha256": "451ec584049da77ded9a9d19a1c6058e3b3baa3e1dbc7ecccdcb667a81240596"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0009/pair3-5.npz": {
+      "size": 459699,
+      "sha256": "4a5bcb3ac83d3a836cf6147bb1ddc86578024e2f3a81ae21f7c9754a1573b047"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/pair0-3.npz": {
+      "size": 257432,
+      "sha256": "c4e249b10adb0f3715d97731b93bb01500515da414ea8bab72c45b76a7826886"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/meta.json": {
+      "size": 539,
+      "sha256": "25fa3e0fe329c113766fd67e9380b0937e5df2eab05036deba10fe422480e4d4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0011/pair3-5.npz": {
+      "size": 205291,
+      "sha256": "838e989de64e321df332f5ac7d28f020cae1e52af1b4bc407e970b65a0b839b1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0011/pair0-3.npz": {
+      "size": 261129,
+      "sha256": "77d6d23b6eb960be65858da160bcc0c0ed7a7e8a89cfeb662ca8d4f6c60f8d2b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0011/meta.json": {
+      "size": 545,
+      "sha256": "804fcdc003f417d8a38f159b7991098a554228f71df644714e2b74263481b842"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0011/pair3-5.npz": {
+      "size": 199375,
+      "sha256": "d4045e1dcfed91927c4e5b6d7c65af799a5667f0bcbf5b65cb8e83c6fcf64f2e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0011/pair0-3.npz": {
+      "size": 758824,
+      "sha256": "72f21da49eb12d74fe652e96ca635b7633a1c7a2387f2d2329515ebaaa4e0716"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0011/meta.json": {
+      "size": 615,
+      "sha256": "f0a5bf104a21fc6ddfe4e5889e752386cdfa8293be8db8ecac41909294a297bd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0011/pair3-5.npz": {
+      "size": 570878,
+      "sha256": "e5f19d2e179806539e7c5997ccb04b1914e73015bc7822ce153996d369ba947f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/pair0-3.npz": {
+      "size": 355658,
+      "sha256": "82551d71e6ba862468fad29e187444ac4edc36c2cb658444ff344b6d36a4f5bf"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/meta.json": {
+      "size": 538,
+      "sha256": "24d3e9514a1e896e14121f086c9037e78bf94bdfbb7da070fbd50208cbcafd4c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0013/pair3-5.npz": {
+      "size": 255590,
+      "sha256": "0d6323349d9785650f201f91c4aef329d3ef8fae0bbab14660000f202ba60bfd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0013/pair0-3.npz": {
+      "size": 350985,
+      "sha256": "26a50eae8ec088103d0f483554dd78de6fe5adf13f7d4ca11bbac596cd44715f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0013/meta.json": {
+      "size": 542,
+      "sha256": "907eea0fbe8365af9f264f16eb5a35090a9154c782a0edfefb9c1d8a113d292f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0013/pair3-5.npz": {
+      "size": 248497,
+      "sha256": "24537faba35dbfbd0f96df8fa844f3c1c60f6f6099c8234db8fb3c52a9c81248"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0013/pair0-3.npz": {
+      "size": 986172,
+      "sha256": "6a72f9ae93357d4499798a529ba045ac5b0f91ff3ba4f0bb901ff4b35e6a0202"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0013/meta.json": {
+      "size": 614,
+      "sha256": "161a121d28086d2e502cf5ba4950be31f7e7eebca9c6cdeddb7eb86aca30e925"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0013/pair3-5.npz": {
+      "size": 743361,
+      "sha256": "2607d38756ddc46bd79cf0c0c65d72aaaaebc3f9c717e97de7195ff22bba51a0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/pair0-3.npz": {
+      "size": 276315,
+      "sha256": "60bcd10457607394df5ff184e98c7fa7700c5c1df554640a8df879e2f17d1ee4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/meta.json": {
+      "size": 539,
+      "sha256": "445091d2fe046f27c3444643c823d1aad2bfc9855cc4f2d9ed6fa054988cfa4f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0015/pair3-5.npz": {
+      "size": 157943,
+      "sha256": "a774c17ed25cfc307fde0700a671deed47c16028a1829004403a4ce78bfce475"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0015/pair0-3.npz": {
+      "size": 271941,
+      "sha256": "70330e63036575d785988559cf35ac1bc7c5f056aeb6f063c36297ba1bfbda82"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0015/meta.json": {
+      "size": 543,
+      "sha256": "d57b8bee930faad51e6f481576f3ab9ccb36438f7a8ccbbc7e9434fd502173d5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0015/pair3-5.npz": {
+      "size": 146976,
+      "sha256": "8d04f1479aa73433406540f2277ffb6b10338fa0e111eb6b16ce53848c740561"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0015/pair0-3.npz": {
+      "size": 763597,
+      "sha256": "04206ab711511bb07885d9cc39729691c613341dcf022a145434714d7ba35748"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0015/meta.json": {
+      "size": 614,
+      "sha256": "370a010be8cdafef529a4ba9238495013126186453038094b692edff79102815"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0015/pair3-5.npz": {
+      "size": 436435,
+      "sha256": "6891c555290d3a120d945637fe0402dc8e7335c77dc77bd5210fd0234e190c9f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/pair0-3.npz": {
+      "size": 279097,
+      "sha256": "b8d8bdfdb82d2cc152a2573e1d54c0511737330917f65c92a87b2f8705ac656e"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/meta.json": {
+      "size": 541,
+      "sha256": "fd99b5d806a53b7af381432d18d38e9113e1c0cd28ad865f0b50e3434b3fed2b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0017/pair3-5.npz": {
+      "size": 149211,
+      "sha256": "f8e543bdefe012cd7bf3eecdd0498cd2c5d21232eadbd551bac5c4f8b1854b41"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0017/pair0-3.npz": {
+      "size": 273301,
+      "sha256": "40f4f86128a280c1a103da276a17801b2713d9dde8b1f45d2558558b765b5082"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0017/meta.json": {
+      "size": 544,
+      "sha256": "9791459af3ccdb8db192624f329fca4c5dd9f2301569eafd62f6060500c33482"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0017/pair3-5.npz": {
+      "size": 145873,
+      "sha256": "bddbaf0881226cd977baace10b61e3757f2aefecb66d3b19bbf2d63655c2f6a7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0017/pair0-3.npz": {
+      "size": 802982,
+      "sha256": "6e3470b6463d59a92aaa276676c7fbc4ece31c7ca04370ea1f7a1d82eb952fd4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0017/meta.json": {
+      "size": 615,
+      "sha256": "f1c727f23b0ea67a1e2775d82ce6fa9afd8020dce12aead547b6282afb0a9a98"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0017/pair3-5.npz": {
+      "size": 428498,
+      "sha256": "37f2366bda197e3b420af14a7d757662d30a7be50efa0b74aa9f8fb66ee9f747"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/pair0-3.npz": {
+      "size": 278551,
+      "sha256": "a73b64ef8baef7ea505f02a28669f32f54cb2705afa8f0b38832a04a62f308d7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/meta.json": {
+      "size": 542,
+      "sha256": "637e74e4811d37911c6ade6e515ab1ec0d6e5569e6b8b94f2a29391a8abb2f5c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0020/pair3-5.npz": {
+      "size": 164948,
+      "sha256": "330c5ef699375f16c64d75fa89bfee8dcb93ad6c01e212ef5a40cf931b4fc915"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0020/pair0-3.npz": {
+      "size": 273764,
+      "sha256": "3f31e61fe978cca284b36c22098837040b7a6fea9f6fdfd38ad12bdddbe6cb34"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0020/meta.json": {
+      "size": 542,
+      "sha256": "5c239891f8e4ff87c86191632591bc5b7eda319b6ec0c5d17f2b1a70bc319530"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0020/pair3-5.npz": {
+      "size": 164060,
+      "sha256": "79c2f8388bf1666433d42fcc3972cf55229f28cb440e116f3330825ef165d1bd"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0020/pair0-3.npz": {
+      "size": 832516,
+      "sha256": "17c87aeab82fb68ec09b51607c41fa2aaf68786472e1f7ce130865438bbb53f6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0020/meta.json": {
+      "size": 615,
+      "sha256": "8abe32e0a44111369f500a81bcc00ed415a97ab7c254ff5866934abbe95e6b14"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0020/pair3-5.npz": {
+      "size": 516478,
+      "sha256": "90c192ed031d5650949097a35b270a1bbd6e27b5b85a6e46e72ed5d1f290d5e2"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/pair0-3.npz": {
+      "size": 316923,
+      "sha256": "d2b1d32a555f48aa5693e5846766f9f2c281b11a095f6a6f4c5eaebcb1249b35"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/meta.json": {
+      "size": 543,
+      "sha256": "4b81083288de223f42498720d3731637fdec33f5ce3a41fc2f813fc882601049"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0022/pair3-5.npz": {
+      "size": 170072,
+      "sha256": "1499d8b5e932b7d952e7ae3fa712d2fd5c0c40418528df2bbe66a471be302bbb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0022/pair0-3.npz": {
+      "size": 318010,
+      "sha256": "9302df330c2bbf72ecf4287b05033c897c132886918890f8564594e6cd90c29b"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0022/meta.json": {
+      "size": 541,
+      "sha256": "9c31c85fcacff55630a528e800d4ec1fceb87ef11ee4bfcbb827319533db5bf9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0022/pair3-5.npz": {
+      "size": 165198,
+      "sha256": "f74882cc1a867e20519b348cbe957c12b7edfad9b7ba6c5ccd179d6db04414e9"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0022/pair0-3.npz": {
+      "size": 983387,
+      "sha256": "2bcb723a5ce1b4e2b243ebb414fd322188ebd6e3ddd45f72bf9102336021f8fa"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0022/meta.json": {
+      "size": 615,
+      "sha256": "5b5fdeed545bacc6d2ec9c0d224286a1151d3e4b968118163ead41be20a80217"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0022/pair3-5.npz": {
+      "size": 566720,
+      "sha256": "3aecca7053201e2450691b2d0b9e3eac939290f3eee89ea2ef42e5edd34089b8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/pair0-3.npz": {
+      "size": 293670,
+      "sha256": "ecd372682e419c72584d3fc17fec5544ea38f70a0fbb7ce7f003492b90ffdb4d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/meta.json": {
+      "size": 540,
+      "sha256": "8e32ea804de3e74c6f3434248dbbcf3dd6bd113f20eaeb3d155d945c4f7c3f30"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0024/pair3-5.npz": {
+      "size": 126842,
+      "sha256": "2b000d53eb2a207ae3c5c833bbc1e8a1378011236d3c650873e60465f61de998"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0024/pair0-3.npz": {
+      "size": 282093,
+      "sha256": "bf91d18c80225fa45bc428596768bc068b9526dacef8906ff60575404e396daa"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0024/meta.json": {
+      "size": 543,
+      "sha256": "2d8c33fdf1fe9f39dddcfeb22b3eef2a443b722779cdd0e3bc30abb96223232c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0024/pair3-5.npz": {
+      "size": 128692,
+      "sha256": "945768caa2063bf8760507f00f7467da0761a3979335c5dfa99de6f77a664163"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0024/pair0-3.npz": {
+      "size": 809800,
+      "sha256": "e86d914759d7659d7890aedec338fd21517767f247b8b20b82dce27a1950608d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0024/meta.json": {
+      "size": 613,
+      "sha256": "3b02a8574ab963adaf4e21b889a7daf8cc69f10ac260d2cbfe347154d79cc8f1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0024/pair3-5.npz": {
+      "size": 366065,
+      "sha256": "aeb4375e50f2dd4565a6c9c2bef90223ba58dbab8aa04ff5035e2b81aa809fc4"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/pair0-3.npz": {
+      "size": 323789,
+      "sha256": "e49137c93f0583335a659677dab3a0e3f32a37aa4dc90a449f8c2458a16dd6a5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/meta.json": {
+      "size": 541,
+      "sha256": "c128d104ec252bc27b433102ef0ef8edd2bc3d24f89565ee7d583d9abc2317f5"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0026/pair3-5.npz": {
+      "size": 173047,
+      "sha256": "70aab6932a1eac60749c1a9401544027157e2e650656736212dc8646522c6663"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0026/pair0-3.npz": {
+      "size": 313685,
+      "sha256": "72ca07eb6036381b3bd36e61c1234b36c899e8fedc204d76e058fe2a4832d9a1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0026/meta.json": {
+      "size": 544,
+      "sha256": "2fda6c2f30d1c7fc3243a79490722f8891df637d816b74263be8abf3604fbf07"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0026/pair3-5.npz": {
+      "size": 167767,
+      "sha256": "80ecfbe3aaa0c6df4b766883032599b391414eb6da3b7325fb8d3747d0752147"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0026/pair0-3.npz": {
+      "size": 894058,
+      "sha256": "e187aa99e409b738c18bee35244ec5218cbf127580a36787943640cfd9ddacdc"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0026/meta.json": {
+      "size": 615,
+      "sha256": "2293a9aa89bd45ed668eec51b927499add1d2f7e1cbc13bfbd906fbbc39c6c9c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0026/pair3-5.npz": {
+      "size": 524428,
+      "sha256": "6beef95db59cbad2af27eb19b08dcb250c387c7a9f1bc9d9a24b685d07cc32fb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/pair0-3.npz": {
+      "size": 296468,
+      "sha256": "9fbe82da0b8bca1604b283e9c0c7ab2c3eb4b41d7998b45d71e58c5e70c468e6"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/meta.json": {
+      "size": 541,
+      "sha256": "a37ac4c28e88654ffaff662cfbecb81b02843c2d6112c577f8824a97c46a2817"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0028/pair3-5.npz": {
+      "size": 150456,
+      "sha256": "14c707e6d10acbc3f1f7c3532bfa3f4e71e98d2ad2c9192dc53104de8df3beeb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0028/pair0-3.npz": {
+      "size": 282743,
+      "sha256": "4bc1c473ebab2ab14bd81c1fc8e708a43fe2949d720db2fb0144d2314e06b45d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0028/meta.json": {
+      "size": 543,
+      "sha256": "b778c2442583535174cbdd3420b5fc67f8ef4ce7fe25893a1d7f3aefcfc00e5f"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0028/pair3-5.npz": {
+      "size": 149067,
+      "sha256": "9634c59a99864d49ac1d698b2d2b03d418a16ab91ea68de35e76db21d216ef7d"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0028/pair0-3.npz": {
+      "size": 829324,
+      "sha256": "574e6001dfa12e73fafcb6bd3dd918d817bd03b513147c335e4b3b9fd033bd91"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0028/meta.json": {
+      "size": 615,
+      "sha256": "5b7be682c7a845e385e4aeae4e9d064e9c15973f55514682c689c7de86f4f15a"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0028/pair3-5.npz": {
+      "size": 480828,
+      "sha256": "7c2575e87451e17e480a4ed996ed58b97a412306f9930373e74d98584e66b1bb"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/pair0-3.npz": {
+      "size": 328979,
+      "sha256": "bb41aeccc8b5cc618298bf3a68e1b14fc17493aa9bec9fd2350777f970f2f155"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/meta.json": {
+      "size": 542,
+      "sha256": "6811426be7a56e3155a6750c52d6e0210d6b3b946df287ae290ffd67790265c8"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fs/changjing1_shot_0030/pair3-5.npz": {
+      "size": 190069,
+      "sha256": "bb08ced38d638770866aea14da340c1773d46a62342bd9a74f8111e8e7058d3c"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0030/pair0-3.npz": {
+      "size": 326094,
+      "sha256": "7756bee080371a570bcfac2b4f19f6b53ceae2ab1018c529f0641ed97c701886"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0030/meta.json": {
+      "size": 542,
+      "sha256": "15bee5873dedcc4a81a4d64a80a7d6079ccba4e01f10b851a4e930cee99842a0"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_fss/changjing1_shot_0030/pair3-5.npz": {
+      "size": 181134,
+      "sha256": "7610c461a51e82c16ab2c9347d8a20dc9956c5d9dcc79cbcab225a9fd5d5c9ce"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0030/pair0-3.npz": {
+      "size": 950696,
+      "sha256": "1ef584e2642a7dc075c57b59bc8695efb8e7222ad8de6f589ec3bff1cc803fb7"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0030/meta.json": {
+      "size": 614,
+      "sha256": "1f6f0a3555ff6f358afd87158093bc17140ff88a8d76ddc2e9eb5e0b81c3b930"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/data/disp_flw/changjing1_shot_0030/pair3-5.npz": {
+      "size": 607510,
+      "sha256": "bfcf0fa253e4e874d7195644b2e6c85cce7034ecb2520e4830f3108318dc7ca1"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/configs/dataset6_lean.yaml": {
+      "size": 19859,
+      "sha256": "7a12d279315e6c84c18aeaef0c52279e0842bfc694aac839a94243a3726d3057"
+    },
+    "/home/sang-usb/linux-han/local-gs-eval/work/setup/dataset6_round16a.yaml": {
+      "size": 6355,
+      "sha256": "fd063217b1dc26355be7bea1935381502363473e81aee1975aae3e591bb1f476"
+    }
+  },
+  "baseline_data_hash_check": "PASS"
+}

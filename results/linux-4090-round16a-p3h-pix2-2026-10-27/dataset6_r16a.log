@@ -1,0 +1,765 @@
+[changjing/shot_0000] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0000: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 461073 primitives over 3 views, 43 ms/view (splat), prep 206 ms; cam1 t=0.36 lr-fail a/b=0.12/0.29 gate=0.11, cam2 t=0.69 lr-fail a/b=0.12/0.29 gate=0.11, cam4 t=0.48 lr-fail a/b=0.24/0.02 gate=0.19
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 461073 primitives over 3 views, 17 ms/view (splat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.13/0.28 gate=0.13, cam2 t=0.69 lr-fail a/b=0.13/0.28 gate=0.11, cam4 t=0.48 lr-fail a/b=0.25/0.02 gate=0.18
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 462093 primitives over 3 views, 17 ms/view (splat), prep 192 ms; cam1 t=0.36 lr-fail a/b=0.14/0.20, cam2 t=0.69 lr-fail a/b=0.14/0.20, cam4 t=0.48 lr-fail a/b=0.25/0.03
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 461073 primitives over 3 views, 66 ms/view (gsplat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.12/0.29 gate=0.17, cam2 t=0.69 lr-fail a/b=0.12/0.29 gate=0.15, cam4 t=0.48 lr-fail a/b=0.24/0.02 gate=0.19
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 461073 primitives over 3 views, 24 ms/view (gsplat), prep 192 ms; cam1 t=0.36 lr-fail a/b=0.13/0.28 gate=0.15, cam2 t=0.69 lr-fail a/b=0.13/0.28 gate=0.17, cam4 t=0.48 lr-fail a/b=0.25/0.02 gate=0.33
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 462093 primitives over 3 views, 24 ms/view (gsplat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.14/0.20, cam2 t=0.69 lr-fail a/b=0.14/0.20, cam4 t=0.48 lr-fail a/b=0.25/0.03
+
+===== changjing/shot_0000: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.092 risk=0.251 risk_tuned=0.251 object=0.036
+[in035] cam2: oracle_fail=0.047 risk=0.218 risk_tuned=0.218 object=0.037
+[in035] cam4: oracle_fail=0.015 risk=0.123 risk_tuned=0.123 object=0.000
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0000/eval/summary.md
+
+===== changjing/shot_0000: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1853,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0001] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0001: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 275165 primitives over 3 views, 41 ms/view (splat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.16/0.28 gate=0.09, cam2 t=0.69 lr-fail a/b=0.16/0.28 gate=0.10, cam4 t=0.48 lr-fail a/b=0.31/0.01 gate=0.40
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 275165 primitives over 3 views, 15 ms/view (splat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.16/0.29 gate=0.10, cam2 t=0.69 lr-fail a/b=0.16/0.29 gate=0.11, cam4 t=0.48 lr-fail a/b=0.33/0.01 gate=0.68
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 275165 primitives over 3 views, 15 ms/view (splat), prep 188 ms; cam1 t=0.36 lr-fail a/b=0.17/0.25, cam2 t=0.69 lr-fail a/b=0.17/0.25, cam4 t=0.48 lr-fail a/b=0.33/0.05
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 275165 primitives over 3 views, 64 ms/view (gsplat), prep 191 ms; cam1 t=0.36 lr-fail a/b=0.16/0.28 gate=0.31, cam2 t=0.69 lr-fail a/b=0.16/0.28 gate=0.41, cam4 t=0.48 lr-fail a/b=0.31/0.01 gate=0.52
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 275165 primitives over 3 views, 21 ms/view (gsplat), prep 188 ms; cam1 t=0.36 lr-fail a/b=0.16/0.29 gate=0.28, cam2 t=0.69 lr-fail a/b=0.16/0.29 gate=0.37, cam4 t=0.48 lr-fail a/b=0.33/0.01 gate=0.69
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 275165 primitives over 3 views, 21 ms/view (gsplat), prep 188 ms; cam1 t=0.36 lr-fail a/b=0.17/0.25, cam2 t=0.69 lr-fail a/b=0.17/0.25, cam4 t=0.48 lr-fail a/b=0.33/0.05
+
+===== changjing/shot_0001: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.075 risk=0.245 risk_tuned=0.245 object=0.028
+[in035] cam2: oracle_fail=0.038 risk=0.211 risk_tuned=0.211 object=0.032
+[in035] cam4: oracle_fail=0.009 risk=0.119 risk_tuned=0.119 object=0.029
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0001/eval/summary.md
+
+===== changjing/shot_0001: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0003] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0003: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1207695 primitives over 3 views, 52 ms/view (splat), prep 222 ms; cam1 t=0.36 lr-fail a/b=0.23/0.24 gate=0.34, cam2 t=0.69 lr-fail a/b=0.23/0.24 gate=0.28, cam4 t=0.48 lr-fail a/b=0.16/0.18 gate=0.31
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1207695 primitives over 3 views, 25 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.24/0.24 gate=0.35, cam2 t=0.69 lr-fail a/b=0.24/0.24 gate=0.29, cam4 t=0.48 lr-fail a/b=0.17/0.18 gate=0.32
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1207695 primitives over 3 views, 26 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.27/0.21, cam2 t=0.69 lr-fail a/b=0.27/0.21, cam4 t=0.48 lr-fail a/b=0.20/0.16
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1207695 primitives over 3 views, 74 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.23/0.24 gate=0.40, cam2 t=0.69 lr-fail a/b=0.23/0.24 gate=0.33, cam4 t=0.48 lr-fail a/b=0.16/0.18 gate=0.34
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1207695 primitives over 3 views, 33 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.24/0.24 gate=0.40, cam2 t=0.69 lr-fail a/b=0.24/0.24 gate=0.34, cam4 t=0.48 lr-fail a/b=0.17/0.18 gate=0.35
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1207695 primitives over 3 views, 34 ms/view (gsplat), prep 208 ms; cam1 t=0.36 lr-fail a/b=0.27/0.21, cam2 t=0.69 lr-fail a/b=0.27/0.21, cam4 t=0.48 lr-fail a/b=0.20/0.16
+
+===== changjing/shot_0003: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.068 risk=0.542 risk_tuned=0.542 object=0.021
+[in035] cam2: oracle_fail=0.041 risk=0.416 risk_tuned=0.416 object=0.022
+[in035] cam4: oracle_fail=0.033 risk=0.214 risk_tuned=0.214 object=0.022
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0003/eval/summary.md
+
+===== changjing/shot_0003: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0005] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0005: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 697890 primitives over 3 views, 44 ms/view (splat), prep 213 ms; cam1 t=0.36 lr-fail a/b=0.19/0.14 gate=0.29, cam2 t=0.69 lr-fail a/b=0.19/0.14 gate=0.15, cam4 t=0.48 lr-fail a/b=0.14/0.06 gate=0.02
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 697890 primitives over 3 views, 20 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.21/0.14 gate=0.28, cam2 t=0.69 lr-fail a/b=0.21/0.14 gate=0.16, cam4 t=0.48 lr-fail a/b=0.14/0.05 gate=0.00
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 698090 primitives over 3 views, 20 ms/view (splat), prep 196 ms; cam1 t=0.36 lr-fail a/b=0.24/0.14, cam2 t=0.69 lr-fail a/b=0.24/0.14, cam4 t=0.48 lr-fail a/b=0.18/0.06
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 697890 primitives over 3 views, 68 ms/view (gsplat), prep 196 ms; cam1 t=0.36 lr-fail a/b=0.19/0.14 gate=0.22, cam2 t=0.69 lr-fail a/b=0.19/0.14 gate=0.16, cam4 t=0.48 lr-fail a/b=0.14/0.06 gate=0.00
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 697890 primitives over 3 views, 27 ms/view (gsplat), prep 195 ms; cam1 t=0.36 lr-fail a/b=0.21/0.14 gate=0.29, cam2 t=0.69 lr-fail a/b=0.21/0.14 gate=0.18, cam4 t=0.48 lr-fail a/b=0.14/0.05 gate=0.06
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 698090 primitives over 3 views, 27 ms/view (gsplat), prep 198 ms; cam1 t=0.36 lr-fail a/b=0.24/0.14, cam2 t=0.69 lr-fail a/b=0.24/0.14, cam4 t=0.48 lr-fail a/b=0.18/0.06
+
+===== changjing/shot_0005: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.102 risk=0.259 risk_tuned=0.259 object=0.028
+[in035] cam2: oracle_fail=0.055 risk=0.248 risk_tuned=0.248 object=0.026
+[in035] cam4: oracle_fail=0.042 risk=0.177 risk_tuned=0.177 object=0.000
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0005/eval/summary.md
+
+===== changjing/shot_0005: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1853,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0007] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0007: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 3762814 primitives over 3 views, 86 ms/view (splat), prep 232 ms; cam1 t=0.36 lr-fail a/b=0.24/0.30 gate=0.27, cam2 t=0.69 lr-fail a/b=0.24/0.30 gate=0.22, cam4 t=0.48 lr-fail a/b=0.18/0.32 gate=0.32
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 3762814 primitives over 3 views, 61 ms/view (splat), prep 221 ms; cam1 t=0.36 lr-fail a/b=0.25/0.31 gate=0.28, cam2 t=0.69 lr-fail a/b=0.25/0.31 gate=0.25, cam4 t=0.48 lr-fail a/b=0.20/0.33 gate=0.35
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 3764628 primitives over 3 views, 61 ms/view (splat), prep 220 ms; cam1 t=0.36 lr-fail a/b=0.22/0.22, cam2 t=0.69 lr-fail a/b=0.22/0.22, cam4 t=0.48 lr-fail a/b=0.23/0.28
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 3762814 primitives over 3 views, 109 ms/view (gsplat), prep 219 ms; cam1 t=0.36 lr-fail a/b=0.24/0.30 gate=0.29, cam2 t=0.69 lr-fail a/b=0.24/0.30 gate=0.24, cam4 t=0.48 lr-fail a/b=0.18/0.32 gate=0.35
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 3762814 primitives over 3 views, 67 ms/view (gsplat), prep 215 ms; cam1 t=0.36 lr-fail a/b=0.25/0.31 gate=0.32, cam2 t=0.69 lr-fail a/b=0.25/0.31 gate=0.26, cam4 t=0.48 lr-fail a/b=0.20/0.33 gate=0.38
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 3764628 primitives over 3 views, 67 ms/view (gsplat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.22/0.22, cam2 t=0.69 lr-fail a/b=0.22/0.22, cam4 t=0.48 lr-fail a/b=0.23/0.28
+
+===== changjing/shot_0007: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.127 risk=0.956 risk_tuned=0.956 object=0.551
+[in035] cam2: oracle_fail=0.106 risk=0.979 risk_tuned=0.979 object=0.560
+[in035] cam4: oracle_fail=0.085 risk=0.519 risk_tuned=0.519 object=0.553
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0007/eval/summary.md
+
+===== changjing/shot_0007: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0009] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0009: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1391705 primitives over 3 views, 54 ms/view (splat), prep 219 ms; cam1 t=0.36 lr-fail a/b=0.13/0.37 gate=0.35, cam2 t=0.69 lr-fail a/b=0.13/0.37 gate=0.31, cam4 t=0.48 lr-fail a/b=0.14/0.25 gate=0.24
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1391705 primitives over 3 views, 28 ms/view (splat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.15/0.37 gate=0.41, cam2 t=0.69 lr-fail a/b=0.15/0.37 gate=0.37, cam4 t=0.48 lr-fail a/b=0.16/0.26 gate=0.33
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1392749 primitives over 3 views, 28 ms/view (splat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.16/0.27, cam2 t=0.69 lr-fail a/b=0.16/0.27, cam4 t=0.48 lr-fail a/b=0.18/0.23
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1391705 primitives over 3 views, 77 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.13/0.37 gate=0.37, cam2 t=0.69 lr-fail a/b=0.13/0.37 gate=0.35, cam4 t=0.48 lr-fail a/b=0.14/0.25 gate=0.28
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1391705 primitives over 3 views, 36 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.15/0.37 gate=0.42, cam2 t=0.69 lr-fail a/b=0.15/0.37 gate=0.41, cam4 t=0.48 lr-fail a/b=0.16/0.26 gate=0.33
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1392749 primitives over 3 views, 35 ms/view (gsplat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.16/0.27, cam2 t=0.69 lr-fail a/b=0.16/0.27, cam4 t=0.48 lr-fail a/b=0.18/0.23
+
+===== changjing/shot_0009: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.077 risk=0.672 risk_tuned=0.672 object=0.391
+[in035] cam2: oracle_fail=0.056 risk=0.707 risk_tuned=0.707 object=0.383
+[in035] cam4: oracle_fail=0.048 risk=0.205 risk_tuned=0.205 object=0.364
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0009/eval/summary.md
+
+===== changjing/shot_0009: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0011] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0011: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1433417 primitives over 3 views, 54 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.17/0.36 gate=0.21, cam2 t=0.69 lr-fail a/b=0.17/0.36 gate=0.19, cam4 t=0.48 lr-fail a/b=0.19/0.37 gate=0.10
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1433417 primitives over 3 views, 28 ms/view (splat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.21/0.38 gate=0.22, cam2 t=0.69 lr-fail a/b=0.21/0.38 gate=0.20, cam4 t=0.48 lr-fail a/b=0.21/0.38 gate=0.14
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1435148 primitives over 3 views, 28 ms/view (splat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.21/0.33, cam2 t=0.69 lr-fail a/b=0.21/0.33, cam4 t=0.48 lr-fail a/b=0.21/0.32
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1433417 primitives over 3 views, 78 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.17/0.36 gate=0.21, cam2 t=0.69 lr-fail a/b=0.17/0.36 gate=0.20, cam4 t=0.48 lr-fail a/b=0.19/0.37 gate=0.16
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1433417 primitives over 3 views, 36 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.21/0.38 gate=0.24, cam2 t=0.69 lr-fail a/b=0.21/0.38 gate=0.22, cam4 t=0.48 lr-fail a/b=0.21/0.38 gate=0.16
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1435148 primitives over 3 views, 36 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.21/0.33, cam2 t=0.69 lr-fail a/b=0.21/0.33, cam4 t=0.48 lr-fail a/b=0.21/0.32
+
+===== changjing/shot_0011: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.080 risk=0.643 risk_tuned=0.643 object=0.286
+[in035] cam2: oracle_fail=0.066 risk=0.654 risk_tuned=0.654 object=0.253
+[in035] cam4: oracle_fail=0.027 risk=0.208 risk_tuned=0.208 object=0.188
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0011/eval/summary.md
+
+===== changjing/shot_0011: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0000] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0000: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 2132814 primitives over 3 views, 62 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.37/0.43 gate=0.26, cam2 t=0.69 lr-fail a/b=0.37/0.43 gate=0.29, cam4 t=0.48 lr-fail a/b=0.34/0.42 gate=0.30
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 2132814 primitives over 3 views, 38 ms/view (splat), prep 198 ms; cam1 t=0.36 lr-fail a/b=0.38/0.43 gate=0.27, cam2 t=0.69 lr-fail a/b=0.38/0.43 gate=0.27, cam4 t=0.48 lr-fail a/b=0.35/0.42 gate=0.30
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 2132814 primitives over 3 views, 38 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.42/0.34, cam2 t=0.69 lr-fail a/b=0.42/0.34, cam4 t=0.48 lr-fail a/b=0.42/0.38
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 2132814 primitives over 3 views, 87 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.37/0.43 gate=0.28, cam2 t=0.69 lr-fail a/b=0.37/0.43 gate=0.29, cam4 t=0.48 lr-fail a/b=0.34/0.42 gate=0.30
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 2132814 primitives over 3 views, 44 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.38/0.43 gate=0.30, cam2 t=0.69 lr-fail a/b=0.38/0.43 gate=0.29, cam4 t=0.48 lr-fail a/b=0.35/0.42 gate=0.30
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 2132814 primitives over 3 views, 45 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.42/0.34, cam2 t=0.69 lr-fail a/b=0.42/0.34, cam4 t=0.48 lr-fail a/b=0.42/0.38
+
+===== changjing1/shot_0000: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.166 risk=1.050 risk_tuned=1.050 object=0.596
+[in035] cam2: oracle_fail=0.149 risk=1.118 risk_tuned=1.118 object=0.567
+[in035] cam4: oracle_fail=0.145 risk=0.571 risk_tuned=0.571 object=0.434
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0000/eval/summary.md
+
+===== changjing1/shot_0000: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0001] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0001: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 2273496 primitives over 3 views, 64 ms/view (splat), prep 219 ms; cam1 t=0.36 lr-fail a/b=0.36/0.46 gate=0.32, cam2 t=0.69 lr-fail a/b=0.36/0.46 gate=0.20, cam4 t=0.48 lr-fail a/b=0.24/0.39 gate=0.24
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 2273496 primitives over 3 views, 39 ms/view (splat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.37/0.46 gate=0.36, cam2 t=0.69 lr-fail a/b=0.37/0.46 gate=0.21, cam4 t=0.48 lr-fail a/b=0.25/0.40 gate=0.24
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 2274454 primitives over 3 views, 39 ms/view (splat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.49/0.41, cam2 t=0.69 lr-fail a/b=0.49/0.41, cam4 t=0.48 lr-fail a/b=0.32/0.39
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 2273496 primitives over 3 views, 88 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.36/0.46 gate=0.31, cam2 t=0.69 lr-fail a/b=0.36/0.46 gate=0.21, cam4 t=0.48 lr-fail a/b=0.24/0.39 gate=0.24
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 2273496 primitives over 3 views, 46 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.37/0.46 gate=0.35, cam2 t=0.69 lr-fail a/b=0.37/0.46 gate=0.23, cam4 t=0.48 lr-fail a/b=0.25/0.40 gate=0.23
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 2274454 primitives over 3 views, 47 ms/view (gsplat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.49/0.41, cam2 t=0.69 lr-fail a/b=0.49/0.41, cam4 t=0.48 lr-fail a/b=0.32/0.39
+
+===== changjing1/shot_0001: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.217 risk=1.088 risk_tuned=1.088 object=0.592
+[in035] cam2: oracle_fail=0.145 risk=0.942 risk_tuned=0.942 object=0.520
+[in035] cam4: oracle_fail=0.180 risk=0.505 risk_tuned=0.505 object=0.310
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0001/eval/summary.md
+
+===== changjing1/shot_0001: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0003] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0003: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1596720 primitives over 3 views, 57 ms/view (splat), prep 215 ms; cam1 t=0.36 lr-fail a/b=0.11/0.40 gate=0.15, cam2 t=0.69 lr-fail a/b=0.11/0.40 gate=0.02, cam4 t=0.48 lr-fail a/b=0.07/0.31 gate=0.18
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1596720 primitives over 3 views, 31 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.15/0.41 gate=0.16, cam2 t=0.69 lr-fail a/b=0.15/0.41 gate=0.02, cam4 t=0.48 lr-fail a/b=0.07/0.31 gate=0.18
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1596720 primitives over 3 views, 31 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.23/0.26, cam2 t=0.69 lr-fail a/b=0.23/0.26, cam4 t=0.48 lr-fail a/b=0.20/0.19
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1596720 primitives over 3 views, 81 ms/view (gsplat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.11/0.40 gate=0.16, cam2 t=0.69 lr-fail a/b=0.11/0.40 gate=0.04, cam4 t=0.48 lr-fail a/b=0.07/0.31 gate=0.19
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1596720 primitives over 3 views, 39 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.15/0.41 gate=0.17, cam2 t=0.69 lr-fail a/b=0.15/0.41 gate=0.05, cam4 t=0.48 lr-fail a/b=0.07/0.31 gate=0.18
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1596720 primitives over 3 views, 38 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.23/0.26, cam2 t=0.69 lr-fail a/b=0.23/0.26, cam4 t=0.48 lr-fail a/b=0.20/0.19
+
+===== changjing1/shot_0003: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.057 risk=0.642 risk_tuned=0.642 object=0.827
+[in035] cam2: oracle_fail=0.021 risk=0.940 risk_tuned=0.940 object=0.815
+[in035] cam4: oracle_fail=0.024 risk=0.225 risk_tuned=0.225 object=0.775
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0003/eval/summary.md
+
+===== changjing1/shot_0003: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0005] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0005: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 451754 primitives over 3 views, 41 ms/view (splat), prep 197 ms; cam1 t=0.36 lr-fail a/b=0.20/0.29 gate=0.28, cam2 t=0.69 lr-fail a/b=0.20/0.29 gate=0.29, cam4 t=0.48 lr-fail a/b=0.12/0.22 gate=0.09
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 451754 primitives over 3 views, 17 ms/view (splat), prep 186 ms; cam1 t=0.36 lr-fail a/b=0.21/0.29 gate=0.30, cam2 t=0.69 lr-fail a/b=0.21/0.29 gate=0.31, cam4 t=0.48 lr-fail a/b=0.13/0.22 gate=0.02
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 451754 primitives over 3 views, 17 ms/view (splat), prep 189 ms; cam1 t=0.36 lr-fail a/b=0.18/0.25, cam2 t=0.69 lr-fail a/b=0.18/0.25, cam4 t=0.48 lr-fail a/b=0.14/0.17
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 451754 primitives over 3 views, 65 ms/view (gsplat), prep 188 ms; cam1 t=0.36 lr-fail a/b=0.20/0.29 gate=0.40, cam2 t=0.69 lr-fail a/b=0.20/0.29 gate=0.38, cam4 t=0.48 lr-fail a/b=0.12/0.22 gate=0.06
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 451754 primitives over 3 views, 23 ms/view (gsplat), prep 193 ms; cam1 t=0.36 lr-fail a/b=0.21/0.29 gate=0.41, cam2 t=0.69 lr-fail a/b=0.21/0.29 gate=0.36, cam4 t=0.48 lr-fail a/b=0.13/0.22 gate=0.10
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 451754 primitives over 3 views, 23 ms/view (gsplat), prep 187 ms; cam1 t=0.36 lr-fail a/b=0.18/0.25, cam2 t=0.69 lr-fail a/b=0.18/0.25, cam4 t=0.48 lr-fail a/b=0.14/0.17
+
+===== changjing1/shot_0005: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.060 risk=0.692 risk_tuned=0.692 object=0.803
+[in035] cam2: oracle_fail=0.017 risk=0.413 risk_tuned=0.413 object=0.814
+[in035] cam4: oracle_fail=0.006 risk=0.138 risk_tuned=0.138 object=0.842
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0005/eval/summary.md
+
+===== changjing1/shot_0005: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0007] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0007: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 825350 primitives over 3 views, 48 ms/view (splat), prep 213 ms; cam1 t=0.36 lr-fail a/b=0.20/0.34 gate=0.41, cam2 t=0.69 lr-fail a/b=0.20/0.34 gate=0.49, cam4 t=0.48 lr-fail a/b=0.18/0.20 gate=0.09
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 825350 primitives over 3 views, 21 ms/view (splat), prep 195 ms; cam1 t=0.36 lr-fail a/b=0.21/0.35 gate=0.43, cam2 t=0.69 lr-fail a/b=0.21/0.35 gate=0.50, cam4 t=0.48 lr-fail a/b=0.18/0.19 gate=0.12
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 825543 primitives over 3 views, 21 ms/view (splat), prep 196 ms; cam1 t=0.36 lr-fail a/b=0.23/0.27, cam2 t=0.69 lr-fail a/b=0.23/0.27, cam4 t=0.48 lr-fail a/b=0.23/0.11
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 825350 primitives over 3 views, 71 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.20/0.34 gate=0.44, cam2 t=0.69 lr-fail a/b=0.20/0.34 gate=0.51, cam4 t=0.48 lr-fail a/b=0.18/0.20 gate=0.09
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 825350 primitives over 3 views, 29 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.21/0.35 gate=0.47, cam2 t=0.69 lr-fail a/b=0.21/0.35 gate=0.54, cam4 t=0.48 lr-fail a/b=0.18/0.19 gate=0.17
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 825543 primitives over 3 views, 28 ms/view (gsplat), prep 198 ms; cam1 t=0.36 lr-fail a/b=0.23/0.27, cam2 t=0.69 lr-fail a/b=0.23/0.27, cam4 t=0.48 lr-fail a/b=0.23/0.11
+
+===== changjing1/shot_0007: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.074 risk=0.322 risk_tuned=0.322 object=0.035
+[in035] cam2: oracle_fail=0.052 risk=0.288 risk_tuned=0.288 object=0.036
+[in035] cam4: oracle_fail=0.033 risk=0.175 risk_tuned=0.175 object=0.034
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0007/eval/summary.md
+
+===== changjing1/shot_0007: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0009] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0009: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1356355 primitives over 3 views, 53 ms/view (splat), prep 215 ms; cam1 t=0.36 lr-fail a/b=0.19/0.28 gate=0.33, cam2 t=0.69 lr-fail a/b=0.19/0.28 gate=0.28, cam4 t=0.48 lr-fail a/b=0.17/0.21 gate=0.12
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1356513 primitives over 3 views, 27 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.19/0.28 gate=0.33, cam2 t=0.69 lr-fail a/b=0.19/0.28 gate=0.34, cam4 t=0.48 lr-fail a/b=0.17/0.20 gate=0.10
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1356513 primitives over 3 views, 27 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.21/0.24, cam2 t=0.69 lr-fail a/b=0.21/0.24, cam4 t=0.48 lr-fail a/b=0.16/0.14
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1356355 primitives over 3 views, 76 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.19/0.28 gate=0.39, cam2 t=0.69 lr-fail a/b=0.19/0.28 gate=0.32, cam4 t=0.48 lr-fail a/b=0.17/0.21 gate=0.15
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1356513 primitives over 3 views, 35 ms/view (gsplat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.19/0.28 gate=0.40, cam2 t=0.69 lr-fail a/b=0.19/0.28 gate=0.41, cam4 t=0.48 lr-fail a/b=0.17/0.20 gate=0.16
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1356513 primitives over 3 views, 35 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.21/0.24, cam2 t=0.69 lr-fail a/b=0.21/0.24, cam4 t=0.48 lr-fail a/b=0.16/0.14
+
+===== changjing1/shot_0009: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.085 risk=0.442 risk_tuned=0.442 object=0.092
+[in035] cam2: oracle_fail=0.060 risk=0.414 risk_tuned=0.414 object=0.089
+[in035] cam4: oracle_fail=0.034 risk=0.236 risk_tuned=0.236 object=0.080
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0009/eval/summary.md
+
+===== changjing1/shot_0009: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0011] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0011: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1352612 primitives over 3 views, 53 ms/view (splat), prep 215 ms; cam1 t=0.36 lr-fail a/b=0.22/0.34 gate=0.38, cam2 t=0.69 lr-fail a/b=0.22/0.34 gate=0.33, cam4 t=0.48 lr-fail a/b=0.16/0.25 gate=0.21
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1352612 primitives over 3 views, 27 ms/view (splat), prep 197 ms; cam1 t=0.36 lr-fail a/b=0.23/0.35 gate=0.40, cam2 t=0.69 lr-fail a/b=0.23/0.35 gate=0.40, cam4 t=0.48 lr-fail a/b=0.16/0.25 gate=0.25
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1352870 primitives over 3 views, 28 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.23/0.28, cam2 t=0.69 lr-fail a/b=0.23/0.28, cam4 t=0.48 lr-fail a/b=0.16/0.20
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1352612 primitives over 3 views, 76 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.22/0.34 gate=0.43, cam2 t=0.69 lr-fail a/b=0.22/0.34 gate=0.38, cam4 t=0.48 lr-fail a/b=0.16/0.25 gate=0.28
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1352612 primitives over 3 views, 35 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.23/0.35 gate=0.46, cam2 t=0.69 lr-fail a/b=0.23/0.35 gate=0.46, cam4 t=0.48 lr-fail a/b=0.16/0.25 gate=0.29
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1352870 primitives over 3 views, 35 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.23/0.28, cam2 t=0.69 lr-fail a/b=0.23/0.28, cam4 t=0.48 lr-fail a/b=0.16/0.20
+
+===== changjing1/shot_0011: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.078 risk=0.392 risk_tuned=0.392 object=0.057
+[in035] cam2: oracle_fail=0.051 risk=0.345 risk_tuned=0.345 object=0.074
+[in035] cam4: oracle_fail=0.032 risk=0.240 risk_tuned=0.240 object=0.057
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0011/eval/summary.md
+
+===== changjing1/shot_0011: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0013] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0013: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1519252 primitives over 3 views, 55 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.19/0.33 gate=0.36, cam2 t=0.69 lr-fail a/b=0.19/0.33 gate=0.20, cam4 t=0.48 lr-fail a/b=0.19/0.28 gate=0.21
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1519252 primitives over 3 views, 30 ms/view (splat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.19/0.33 gate=0.36, cam2 t=0.69 lr-fail a/b=0.19/0.33 gate=0.22, cam4 t=0.48 lr-fail a/b=0.19/0.28 gate=0.16
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1519440 primitives over 3 views, 30 ms/view (splat), prep 207 ms; cam1 t=0.36 lr-fail a/b=0.22/0.30, cam2 t=0.69 lr-fail a/b=0.22/0.30, cam4 t=0.48 lr-fail a/b=0.20/0.22
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1519252 primitives over 3 views, 78 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.19/0.33 gate=0.37, cam2 t=0.69 lr-fail a/b=0.19/0.33 gate=0.22, cam4 t=0.48 lr-fail a/b=0.19/0.28 gate=0.23
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1519252 primitives over 3 views, 37 ms/view (gsplat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.19/0.33 gate=0.39, cam2 t=0.69 lr-fail a/b=0.19/0.33 gate=0.24, cam4 t=0.48 lr-fail a/b=0.19/0.28 gate=0.21
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1519440 primitives over 3 views, 37 ms/view (gsplat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.22/0.30, cam2 t=0.69 lr-fail a/b=0.22/0.30, cam4 t=0.48 lr-fail a/b=0.20/0.22
+
+===== changjing1/shot_0013: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.084 risk=0.454 risk_tuned=0.454 object=0.040
+[in035] cam2: oracle_fail=0.048 risk=0.427 risk_tuned=0.427 object=0.043
+[in035] cam4: oracle_fail=0.032 risk=0.272 risk_tuned=0.272 object=0.045
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0013/eval/summary.md
+
+===== changjing1/shot_0013: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0015] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0015: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 836425 primitives over 3 views, 47 ms/view (splat), prep 215 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33 gate=0.38, cam2 t=0.69 lr-fail a/b=0.22/0.33 gate=0.37, cam4 t=0.48 lr-fail a/b=0.16/0.24 gate=0.16
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 836425 primitives over 3 views, 22 ms/view (splat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.23/0.34 gate=0.35, cam2 t=0.69 lr-fail a/b=0.23/0.34 gate=0.34, cam4 t=0.48 lr-fail a/b=0.16/0.24 gate=0.33
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 836647 primitives over 3 views, 22 ms/view (splat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.22/0.29, cam2 t=0.69 lr-fail a/b=0.22/0.29, cam4 t=0.48 lr-fail a/b=0.18/0.18
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 836425 primitives over 3 views, 70 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33 gate=0.35, cam2 t=0.69 lr-fail a/b=0.22/0.33 gate=0.35, cam4 t=0.48 lr-fail a/b=0.16/0.24 gate=0.10
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 836425 primitives over 3 views, 29 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.23/0.34 gate=0.34, cam2 t=0.69 lr-fail a/b=0.23/0.34 gate=0.37, cam4 t=0.48 lr-fail a/b=0.16/0.24 gate=0.31
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 836647 primitives over 3 views, 28 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.22/0.29, cam2 t=0.69 lr-fail a/b=0.22/0.29, cam4 t=0.48 lr-fail a/b=0.18/0.18
+
+===== changjing1/shot_0015: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.083 risk=0.363 risk_tuned=0.363 object=0.029
+[in035] cam2: oracle_fail=0.064 risk=0.312 risk_tuned=0.312 object=0.028
+[in035] cam4: oracle_fail=0.024 risk=0.182 risk_tuned=0.182 object=0.027
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0015/eval/summary.md
+
+===== changjing1/shot_0015: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0017] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0017: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1311100 primitives over 3 views, 52 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.18/0.37 gate=0.31, cam2 t=0.69 lr-fail a/b=0.18/0.37 gate=0.36, cam4 t=0.48 lr-fail a/b=0.16/0.20 gate=0.15
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1311182 primitives over 3 views, 27 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.18/0.38 gate=0.32, cam2 t=0.69 lr-fail a/b=0.18/0.38 gate=0.40, cam4 t=0.48 lr-fail a/b=0.15/0.20 gate=0.18
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1311182 primitives over 3 views, 27 ms/view (splat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.19/0.31, cam2 t=0.69 lr-fail a/b=0.19/0.31, cam4 t=0.48 lr-fail a/b=0.18/0.16
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1311100 primitives over 3 views, 76 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.18/0.37 gate=0.32, cam2 t=0.69 lr-fail a/b=0.18/0.37 gate=0.39, cam4 t=0.48 lr-fail a/b=0.16/0.20 gate=0.11
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1311182 primitives over 3 views, 34 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.18/0.38 gate=0.31, cam2 t=0.69 lr-fail a/b=0.18/0.38 gate=0.40, cam4 t=0.48 lr-fail a/b=0.15/0.20 gate=0.10
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1311182 primitives over 3 views, 35 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.19/0.31, cam2 t=0.69 lr-fail a/b=0.19/0.31, cam4 t=0.48 lr-fail a/b=0.18/0.16
+
+===== changjing1/shot_0017: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.104 risk=0.305 risk_tuned=0.305 object=0.128
+[in035] cam2: oracle_fail=0.094 risk=0.318 risk_tuned=0.318 object=0.132
+[in035] cam4: oracle_fail=0.050 risk=0.192 risk_tuned=0.192 object=0.137
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0017/eval/summary.md
+
+===== changjing1/shot_0017: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0020] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0020: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1317437 primitives over 3 views, 52 ms/view (splat), prep 212 ms; cam1 t=0.36 lr-fail a/b=0.21/0.36 gate=0.25, cam2 t=0.69 lr-fail a/b=0.21/0.36 gate=0.22, cam4 t=0.48 lr-fail a/b=0.14/0.27 gate=0.12
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1317551 primitives over 3 views, 27 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.22/0.37 gate=0.25, cam2 t=0.69 lr-fail a/b=0.22/0.37 gate=0.22, cam4 t=0.48 lr-fail a/b=0.14/0.28 gate=0.15
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1317551 primitives over 3 views, 27 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33, cam2 t=0.69 lr-fail a/b=0.22/0.33, cam4 t=0.48 lr-fail a/b=0.15/0.21
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1317437 primitives over 3 views, 75 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.21/0.36 gate=0.27, cam2 t=0.69 lr-fail a/b=0.21/0.36 gate=0.24, cam4 t=0.48 lr-fail a/b=0.14/0.27 gate=0.13
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1317551 primitives over 3 views, 35 ms/view (gsplat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.22/0.37 gate=0.27, cam2 t=0.69 lr-fail a/b=0.22/0.37 gate=0.24, cam4 t=0.48 lr-fail a/b=0.14/0.28 gate=0.15
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1317551 primitives over 3 views, 34 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33, cam2 t=0.69 lr-fail a/b=0.22/0.33, cam4 t=0.48 lr-fail a/b=0.15/0.21
+
+===== changjing1/shot_0020: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.083 risk=0.317 risk_tuned=0.317 object=0.117
+[in035] cam2: oracle_fail=0.050 risk=0.309 risk_tuned=0.309 object=0.116
+[in035] cam4: oracle_fail=0.048 risk=0.196 risk_tuned=0.196 object=0.121
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0020/eval/summary.md
+
+===== changjing1/shot_0020: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0022] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0022: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1536505 primitives over 3 views, 55 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.21/0.33 gate=0.60, cam2 t=0.69 lr-fail a/b=0.21/0.33 gate=0.59, cam4 t=0.48 lr-fail a/b=0.18/0.26 gate=0.59
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1536505 primitives over 3 views, 30 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33 gate=0.59, cam2 t=0.69 lr-fail a/b=0.22/0.33 gate=0.62, cam4 t=0.48 lr-fail a/b=0.17/0.25 gate=0.60
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1536505 primitives over 3 views, 30 ms/view (splat), prep 205 ms; cam1 t=0.36 lr-fail a/b=0.24/0.29, cam2 t=0.69 lr-fail a/b=0.24/0.29, cam4 t=0.48 lr-fail a/b=0.18/0.19
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1536505 primitives over 3 views, 78 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.21/0.33 gate=0.62, cam2 t=0.69 lr-fail a/b=0.21/0.33 gate=0.60, cam4 t=0.48 lr-fail a/b=0.18/0.26 gate=0.62
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1536505 primitives over 3 views, 37 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.22/0.33 gate=0.62, cam2 t=0.69 lr-fail a/b=0.22/0.33 gate=0.63, cam4 t=0.48 lr-fail a/b=0.17/0.25 gate=0.62
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1536505 primitives over 3 views, 37 ms/view (gsplat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.24/0.29, cam2 t=0.69 lr-fail a/b=0.24/0.29, cam4 t=0.48 lr-fail a/b=0.18/0.19
+
+===== changjing1/shot_0022: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.153 risk=0.416 risk_tuned=0.416 object=0.124
+[in035] cam2: oracle_fail=0.148 risk=0.396 risk_tuned=0.396 object=0.129
+[in035] cam4: oracle_fail=0.106 risk=0.276 risk_tuned=0.276 object=0.135
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0022/eval/summary.md
+
+===== changjing1/shot_0022: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0024] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0024: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1011738 primitives over 3 views, 49 ms/view (splat), prep 220 ms; cam1 t=0.36 lr-fail a/b=0.19/0.38 gate=0.41, cam2 t=0.69 lr-fail a/b=0.19/0.38 gate=0.35, cam4 t=0.48 lr-fail a/b=0.24/0.25 gate=0.17
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1011856 primitives over 3 views, 24 ms/view (splat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.18/0.37 gate=0.41, cam2 t=0.69 lr-fail a/b=0.18/0.37 gate=0.35, cam4 t=0.48 lr-fail a/b=0.24/0.25 gate=0.08
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1011738 primitives over 3 views, 25 ms/view (splat), prep 208 ms; cam1 t=0.36 lr-fail a/b=0.20/0.30, cam2 t=0.69 lr-fail a/b=0.20/0.30, cam4 t=0.48 lr-fail a/b=0.20/0.16
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1011738 primitives over 3 views, 74 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.19/0.38 gate=0.43, cam2 t=0.69 lr-fail a/b=0.19/0.38 gate=0.35, cam4 t=0.48 lr-fail a/b=0.24/0.25 gate=0.12
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1011856 primitives over 3 views, 31 ms/view (gsplat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.18/0.37 gate=0.41, cam2 t=0.69 lr-fail a/b=0.18/0.37 gate=0.36, cam4 t=0.48 lr-fail a/b=0.24/0.25 gate=0.08
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1011738 primitives over 3 views, 31 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.20/0.30, cam2 t=0.69 lr-fail a/b=0.20/0.30, cam4 t=0.48 lr-fail a/b=0.20/0.16
+
+===== changjing1/shot_0024: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.092 risk=0.316 risk_tuned=0.316 object=0.139
+[in035] cam2: oracle_fail=0.093 risk=0.389 risk_tuned=0.389 object=0.147
+[in035] cam4: oracle_fail=0.018 risk=0.165 risk_tuned=0.165 object=0.121
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0024/eval/summary.md
+
+===== changjing1/shot_0024: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0026] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0026: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1207263 primitives over 3 views, 51 ms/view (splat), prep 216 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.38, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.27, cam4 t=0.48 lr-fail a/b=0.14/0.26 gate=0.34
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1207263 primitives over 3 views, 26 ms/view (splat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.32, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.24, cam4 t=0.48 lr-fail a/b=0.14/0.26 gate=0.28
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1207392 primitives over 3 views, 26 ms/view (splat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.21/0.31, cam2 t=0.69 lr-fail a/b=0.21/0.31, cam4 t=0.48 lr-fail a/b=0.15/0.22
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1207263 primitives over 3 views, 75 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.41, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.31, cam4 t=0.48 lr-fail a/b=0.14/0.26 gate=0.34
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1207263 primitives over 3 views, 33 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.25/0.37 gate=0.36, cam2 t=0.69 lr-fail a/b=0.25/0.37 gate=0.26, cam4 t=0.48 lr-fail a/b=0.14/0.26 gate=0.34
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1207392 primitives over 3 views, 33 ms/view (gsplat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.21/0.31, cam2 t=0.69 lr-fail a/b=0.21/0.31, cam4 t=0.48 lr-fail a/b=0.15/0.22
+
+===== changjing1/shot_0026: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.072 risk=0.351 risk_tuned=0.351 object=0.129
+[in035] cam2: oracle_fail=0.057 risk=0.349 risk_tuned=0.349 object=0.145
+[in035] cam4: oracle_fail=0.031 risk=0.241 risk_tuned=0.241 object=0.029
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0026/eval/summary.md
+
+===== changjing1/shot_0026: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto25_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto50_local",
+    "pose alignment above threshold: gs_tokcnw_f5_mw448_nat_dil_al_tto100_local"
+  ],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0028] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0028: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1042606 primitives over 3 views, 49 ms/view (splat), prep 217 ms; cam1 t=0.36 lr-fail a/b=0.22/0.41 gate=0.27, cam2 t=0.69 lr-fail a/b=0.22/0.41 gate=0.19, cam4 t=0.48 lr-fail a/b=0.11/0.31 gate=0.30
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1042606 primitives over 3 views, 24 ms/view (splat), prep 202 ms; cam1 t=0.36 lr-fail a/b=0.21/0.41 gate=0.29, cam2 t=0.69 lr-fail a/b=0.21/0.41 gate=0.18, cam4 t=0.48 lr-fail a/b=0.11/0.31 gate=0.31
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1043504 primitives over 3 views, 24 ms/view (splat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.21/0.34, cam2 t=0.69 lr-fail a/b=0.21/0.34, cam4 t=0.48 lr-fail a/b=0.13/0.30
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1042606 primitives over 3 views, 72 ms/view (gsplat), prep 198 ms; cam1 t=0.36 lr-fail a/b=0.22/0.41 gate=0.29, cam2 t=0.69 lr-fail a/b=0.22/0.41 gate=0.21, cam4 t=0.48 lr-fail a/b=0.11/0.31 gate=0.27
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1042606 primitives over 3 views, 31 ms/view (gsplat), prep 199 ms; cam1 t=0.36 lr-fail a/b=0.21/0.41 gate=0.32, cam2 t=0.69 lr-fail a/b=0.21/0.41 gate=0.21, cam4 t=0.48 lr-fail a/b=0.11/0.31 gate=0.29
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1043504 primitives over 3 views, 31 ms/view (gsplat), prep 204 ms; cam1 t=0.36 lr-fail a/b=0.21/0.34, cam2 t=0.69 lr-fail a/b=0.21/0.34, cam4 t=0.48 lr-fail a/b=0.13/0.30
+
+===== changjing1/shot_0028: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.078 risk=0.334 risk_tuned=0.334 object=0.132
+[in035] cam2: oracle_fail=0.059 risk=0.331 risk_tuned=0.331 object=0.126
+[in035] cam4: oracle_fail=0.043 risk=0.205 risk_tuned=0.205 object=0.119
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0028/eval/summary.md
+
+===== changjing1/shot_0028: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0030] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0030: pixgs =====
+[in035] gs_tokcnw_cnn_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] gs_tokcnw_f5_pix448_pix_al_local 已存在（第十五轮结果），跳过
+[in035] cnw_cnn_p3h_fsl (p3h, data/disp_fs/{shot}): 1349493 primitives over 3 views, 54 ms/view (splat), prep 218 ms; cam1 t=0.36 lr-fail a/b=0.25/0.34 gate=0.34, cam2 t=0.69 lr-fail a/b=0.25/0.34 gate=0.31, cam4 t=0.48 lr-fail a/b=0.22/0.25 gate=0.11
+[in035] cnw_cnn_p3h_fss (p3h, data/disp_fss/{shot}): 1349493 primitives over 3 views, 28 ms/view (splat), prep 208 ms; cam1 t=0.36 lr-fail a/b=0.26/0.34 gate=0.32, cam2 t=0.69 lr-fail a/b=0.26/0.34 gate=0.27, cam4 t=0.48 lr-fail a/b=0.22/0.25 gate=0.10
+[in035] cnw_cnn_p3h_flw (p3h, data/disp_flw/{shot}): 1349493 primitives over 3 views, 28 ms/view (splat), prep 203 ms; cam1 t=0.36 lr-fail a/b=0.29/0.23, cam2 t=0.69 lr-fail a/b=0.29/0.23, cam4 t=0.48 lr-fail a/b=0.27/0.26
+[in035] cnw_cnn_pix2_fsl (pix2, data/disp_fs/{shot}): 1349493 primitives over 3 views, 76 ms/view (gsplat), prep 201 ms; cam1 t=0.36 lr-fail a/b=0.25/0.34 gate=0.35, cam2 t=0.69 lr-fail a/b=0.25/0.34 gate=0.33, cam4 t=0.48 lr-fail a/b=0.22/0.25 gate=0.08
+[in035] cnw_cnn_pix2_fss (pix2, data/disp_fss/{shot}): 1349493 primitives over 3 views, 35 ms/view (gsplat), prep 200 ms; cam1 t=0.36 lr-fail a/b=0.26/0.34 gate=0.31, cam2 t=0.69 lr-fail a/b=0.26/0.34 gate=0.31, cam4 t=0.48 lr-fail a/b=0.22/0.25 gate=0.07
+[in035] cnw_cnn_pix2_flw (pix2, data/disp_flw/{shot}): 1349493 primitives over 3 views, 35 ms/view (gsplat), prep 206 ms; cam1 t=0.36 lr-fail a/b=0.29/0.23, cam2 t=0.69 lr-fail a/b=0.29/0.23, cam4 t=0.48 lr-fail a/b=0.27/0.26
+
+===== changjing1/shot_0030: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.119 risk=0.403 risk_tuned=0.403 object=0.133
+[in035] cam2: oracle_fail=0.083 risk=0.328 risk_tuned=0.328 object=0.124
+[in035] cam4: oracle_fail=0.063 risk=0.219 risk_tuned=0.219 object=0.108
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0030/eval/summary.md
+
+===== changjing1/shot_0030: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 1962,
+  "methods": 109,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 108,
+  "flow_renders": 3,
+  "montages": 3
+}
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/summary_all.md
