@@ -1,0 +1,23 @@
+/home/han/anaconda3/envs/gspl/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+[changjing/shot_0008] N=30/pair (60 views): RIFE seq fp32 1.60 s -> batch fp16 1.56 s; pix3n: build 0.04 + opt 0.00 s, 4.6+0.9 ms/view, total 1.93 s; pix3_s50: build 0.04 + opt 2.75 s, 4.7+0.9 ms/view, total 4.69 s; pix3_s100: build 0.04 + opt 5.55 s, 4.7+0.9 ms/view, total 7.49 s
+[changjing1/shot_0012] N=30/pair (60 views): RIFE seq fp32 1.61 s -> batch fp16 1.31 s; pix3n: build 0.04 + opt 0.00 s, 3.4+0.9 ms/view, total 1.61 s; pix3_s50: build 0.04 + opt 2.05 s, 3.5+0.9 ms/view, total 3.66 s; pix3_s100: build 0.04 + opt 4.10 s, 3.5+0.9 ms/view, total 5.71 s
+[changjing1/shot_0018] N=30/pair (60 views): RIFE seq fp32 1.62 s -> batch fp16 1.31 s; pix3n: build 0.04 + opt 0.00 s, 3.2+0.9 ms/view, total 1.59 s; pix3_s50: build 0.04 + opt 1.86 s, 3.2+0.9 ms/view, total 3.46 s; pix3_s100: build 0.04 + opt 3.66 s, 3.2+0.9 ms/view, total 5.26 s
+[changjing1/shot_0021] N=30/pair (60 views): RIFE seq fp32 1.63 s -> batch fp16 1.32 s; pix3n: build 0.04 + opt 0.00 s, 3.4+0.9 ms/view, total 1.61 s; pix3_s50: build 0.04 + opt 1.94 s, 3.4+0.9 ms/view, total 3.56 s; pix3_s100: build 0.04 + opt 3.91 s, 3.4+0.9 ms/view, total 5.52 s
+[changjing1/shot_0027] N=30/pair (60 views): RIFE seq fp32 1.63 s -> batch fp16 1.32 s; pix3n: build 0.04 + opt 0.00 s, 3.4+0.9 ms/view, total 1.63 s; pix3_s50: build 0.04 + opt 2.07 s, 3.6+0.9 ms/view, total 3.71 s; pix3_s100: build 0.04 + opt 4.13 s, 3.5+0.9 ms/view, total 5.76 s
+[changjing1/shot_0032] N=30/pair (60 views): RIFE seq fp32 1.64 s -> batch fp16 1.32 s; pix3n: build 0.04 + opt 0.00 s, 3.7+0.9 ms/view, total 1.64 s; pix3_s50: build 0.04 + opt 2.23 s, 3.8+0.9 ms/view, total 3.87 s; pix3_s100: build 0.04 + opt 4.44 s, 3.8+0.9 ms/view, total 6.09 s
+# 密集视点计时（linux-3090，NVIDIA GeForce RTX 3090，渲染 gsplat，token f4rq，对应 data/disp_fs/{shot}，背景平面 data/bgplane/{room}）
+
+每对相邻输入相机之间 N 个虚拟视点（in035 共 2 对）；6 组场景的中位数。全部在 GPU 上；token（R4 F4R-q，3 台相机约 28 ms / 帧）和对应关系（FoundationStereo，Windows RTX 3090 导出，单列）不在本表计时内。
+
+## N = 30 / 对（共 60 个虚拟视点）
+
+RIFE：逐个视点 fp32 1.62 s → 批量（4）fp16 **1.32 s**；对应关系（立体，Windows 导出）0.81 s
+
+| 方法 | 建立 (s) | 联合优化 (s) | 渲染 (ms/视点) | 贴回 (ms/视点) | 合计含批量 RIFE (s) |
+|---|---:|---:|---:|---:|---:|
+| pix3n | 0.042 | 0.000 | 3.44 | 0.88 | 1.62 |
+| pix3_s50 | 0.042 | 2.058 | 3.56 | 0.89 | 3.68 |
+| pix3_s100 | 0.042 | 4.115 | 3.53 | 0.89 | 5.74 |
+
+逐场景数据见 bench_dense_linux-3090.json。

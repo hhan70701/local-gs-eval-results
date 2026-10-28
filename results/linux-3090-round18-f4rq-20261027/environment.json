@@ -1,0 +1,22 @@
+{
+  "source_repo": "luckyhan-mike/local-gs-eval",
+  "source_tag": "linux-3090-round18-f4rq",
+  "source_commit": "80a09871a3d7a6bd815e24ddffa0421e8ef7970b",
+  "host": "linux-3090",
+  "shots": [
+    "changjing/shot_0008",
+    "changjing1/shot_0012",
+    "changjing1/shot_0018",
+    "changjing1/shot_0021",
+    "changjing1/shot_0027",
+    "changjing1/shot_0032"
+  ],
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+  "executable": "/home/han/anaconda3/envs/gspl/bin/python",
+  "torch": "2.0.1",
+  "torch_cuda": "11.7",
+  "gsplat": "1.5.3",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "reused_work": "round17 work/dataset6 (aligned inputs, flow, baseline GS, disparity)"
+}
