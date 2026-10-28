@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "source_commit": "80a09871a3d7a6bd815e24ddffa0421e8ef7970b",
+  "source_tag": "linux-4090-round18-f4rq",
+  "host": "linux-4090",
+  "scenes": 6,
+  "target_views": 18,
+  "montages": 18,
+  "elapsed_s": 314.9322130680084,
+  "only_output_directory_overridden": true,
+  "validations": [
+    {
+      "scene": "changjing/shot_0000",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing/shot_0003",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0001",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0007",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0013",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    },
+    {
+      "scene": "changjing1/shot_0022",
+      "status": "PASS",
+      "metric_rows": 396,
+      "methods": 22,
+      "auc_rows": 15,
+      "warnings": [],
+      "gs_renders": 87,
+      "flow_renders": 3,
+      "montages": 3
+    }
+  ],
+  "render_variants_per_scene": 5,
+  "reused_gs_metadata_unchanged": true,
+  "reused_gs_json_files": 252,
+  "benchmark_scenes": 6,
+  "benchmark_views_per_pair": [
+    30
+  ],
+  "phases": {
+    "evaluate": {
+      "exit_code": 0,
+      "elapsed_s": 282.0251398086548
+    },
+    "benchmark": {
+      "exit_code": 0,
+      "elapsed_s": 32.855244874954224
+    }
+  }
+}

@@ -1,0 +1,2798 @@
+[
+  {
+    "path": "README.md",
+    "size": 2785,
+    "sha256": "e30d47d025bcbbb91f67ef7c8f93bcf5124722723f0666899e7e2aa602fbe833",
+    "git_blob_sha": "67c62b30abd4a8df745db4e208ebe2fba56a8dd6"
+  },
+  {
+    "path": "base_config.yaml",
+    "size": 7099,
+    "sha256": "35d4a2c32470c0075ded46877ccafd3e6adc7a041d37ff2100d60bc3264b19ea",
+    "git_blob_sha": "140ea7c22f491592fcc42da34b027bff2d2e9d5b"
+  },
+  {
+    "path": "bench_dense.log",
+    "size": 2620,
+    "sha256": "d1e972fa90754c7489064d0fe653b9d72573da1e055280e2fa3dfc70d4517b24",
+    "git_blob_sha": "6780e6289b73782d0e894590646d0cc0bb24d860"
+  },
+  {
+    "path": "bench_dense_linux-4090.json",
+    "size": 4914,
+    "sha256": "e89c8c419ec0f655240bf19bd79cbb642882c74c3bc5ba7a5f330deeca82721e",
+    "git_blob_sha": "dba4813691b2e73a569d872c2649446c946e4332"
+  },
+  {
+    "path": "bench_dense_linux-4090.md",
+    "size": 924,
+    "sha256": "2848b5ab5996188f0d7b90e8d8f6c934293e1431a90c8801cda56278a3b3222f",
+    "git_blob_sha": "58719dca2d6df97d1d85f24feeb0eca1bfa326cc"
+  },
+  {
+    "path": "calibration/homographies_cam3_raw2304_to_crop1920x1088.npy",
+    "size": 560,
+    "sha256": "5b03b34659edc1b423bc0f1f80f2e6db67b8e2fb66f80d5df694360356a98a40",
+    "git_blob_sha": "27cf7e59c68fc407ab4a684183ff6c0172acef50"
+  },
+  {
+    "path": "calibration/homographies_cam3_raw2304_to_crop1920x1088_halfpx.npy",
+    "size": 560,
+    "sha256": "6ec2d6214bd4279653d802b90bffefaf0f4cdaad83123d2419461804275d8e89",
+    "git_blob_sha": "962574e69cb0bc74afb4f277a277d9ff5a11623b"
+  },
+  {
+    "path": "changjing1_shot_0001/config.yaml",
+    "size": 7296,
+    "sha256": "c8939983ce3c0b4f737c1515f958b197a0dc9eb94b0dcc1cefd7daf711eea154",
+    "git_blob_sha": "98476f8679d890f3cc4c5a39f06dec381a57acb4"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/auc.csv",
+    "size": 876,
+    "sha256": "15a4ffc47e8d8fc4aeff20ea8b6ba7e4c669e8a808d3f18e96f4117c4b1f4590",
+    "git_blob_sha": "9c925dfbdb99d4d018540ed867e98b86126a7556"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam1_montage.png",
+    "size": 435539,
+    "sha256": "e21d9a81c9b3a2fba5b468e781673f73013059b65e5b8c0c0bfd1eba86ee03ae",
+    "git_blob_sha": "82d1bb1c1266aab98a8eb10a7b7a5974864e7b54"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam1_montage_fullgs.png",
+    "size": 177054,
+    "sha256": "f017afe091414aed3b7c030b7b41782be5a1ec51e04fb3d73410e391894de33a",
+    "git_blob_sha": "d61bbf0718a73b8da48b6983fd9bc4142c3d69c1"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam2_montage.png",
+    "size": 396756,
+    "sha256": "ea3790c0849a05646a5c18f29b8e62e574d5373c97ea78b2841df39dfda45096",
+    "git_blob_sha": "87b78cbbe8239abbd217f1bffbd3c9b3d6f17af9"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam2_montage_fullgs.png",
+    "size": 164695,
+    "sha256": "f339c8e1fe7c3ca3df626ae8cc4b4a0443b786bd3a15e8ea3034af6c976f6bb3",
+    "git_blob_sha": "04efb6d08e293f5f41082791907ce9c9af7c4e52"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam4_montage.png",
+    "size": 385393,
+    "sha256": "c358876ef918d12c5600e73b6919f79f5edb4c3484fbd2e031f655cde83423d3",
+    "git_blob_sha": "0a9dbb4f104e1feb52252b3c5a91e744e7269b03"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/in035/cam4_montage_fullgs.png",
+    "size": 162995,
+    "sha256": "71e8616e92239dc418516ae47de99d9317b4336542b9dc5c7665d2110a9d30b4",
+    "git_blob_sha": "bcf003195fe47e00206ad737371e9232b30a43fe"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/metrics.csv",
+    "size": 59831,
+    "sha256": "c7a14eb29ea1d67d704575ab61fb43544ed42c02f587701b79de51149c6296a5",
+    "git_blob_sha": "535738cb2de1968562089c00de81b03731987f18"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/paste.csv",
+    "size": 6772,
+    "sha256": "7c92fa3711f0cc1b8cb9a567ad0923b43954becebe4cf9d3b67f6a9a393f4aae",
+    "git_blob_sha": "74b67cdf6e3c6e7fa761b846e1bdc6c392e4c6fe"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/summary.md",
+    "size": 17734,
+    "sha256": "a5fe64b2121a32454138375e808d08691ec4cfb6e2db3289fcb480d21b06d6e7",
+    "git_blob_sha": "cc07e0e9966eae5d0058c5d6eb4c6e362052eff5"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/tokchk.csv",
+    "size": 2071,
+    "sha256": "792b8124aaa00ec834c05f95dd62a7be4181743171b6c4c8556dbd8085afba26",
+    "git_blob_sha": "747e28445f5eed66a0d2805db06b89d16e82b48d"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/token_ringreg.csv",
+    "size": 1591,
+    "sha256": "e646f47df60497f538d9cdae1d00446564ebd653cd0acdb49cc3f4c815d69c1c",
+    "git_blob_sha": "5334fa216cc7a9f73231c3005762831323d2a922"
+  },
+  {
+    "path": "changjing1_shot_0001/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2527,
+    "sha256": "784d33107d994dcae7584aea57fd51eed5eda5029600632a890d6e7643eed096",
+    "git_blob_sha": "50c6474d267cba0bcbd1d466f431380283ede68b"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2528,
+    "sha256": "7e0df8e7201af0233c1de68ddad65d9f7ef137e5b8fc82dcee1c18c986774939",
+    "git_blob_sha": "5834977551e4dea4fd7c73d97c79eea9722531c0"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2527,
+    "sha256": "fdd178ac58c73d85e56d787574e9c86102f58f29b03628ac9920f2b7c7831642",
+    "git_blob_sha": "08260c429698efcecf2677e572131735a18f678f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2527,
+    "sha256": "61d994ae82649822d73c3d27f1b056d4aab41c50fa0f66b1574a092b222225b2",
+    "git_blob_sha": "f6a2fc2eed687f26b5ed15513a6818c1d0078431"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3607,
+    "sha256": "89d35153a5fc18b35c36b818956ad281f6db2dc3e8d6081322c96094f83027b8",
+    "git_blob_sha": "1b599263c7813a84a74515079d19e8fa5ba00415"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 2639,
+    "sha256": "3faaa5e134927db557b54561dc43d9f74b567eded93fa90b055c2d8b9c333cb9",
+    "git_blob_sha": "53ad1b3a83b8a2bf4bc2ece9f1a410e74d92c2e6"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2642,
+    "sha256": "7eb9a853c191f353afdb968f3b9903c155a0d15f88677c0c6ca6d56d38f86fa4",
+    "git_blob_sha": "fe42718addf310a79cd0d16de615ec1a6d79b108"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2640,
+    "sha256": "90a3441b0d25fd74a6426e89c18270eb7ed470101c63b2943f5befba82435980",
+    "git_blob_sha": "43e4af5bb04d5d777cf6c67393cdb664112710e0"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2641,
+    "sha256": "7ae4200dc7f9181382f7d8135ec19461ada4b62b2efb83b5720f5e524fa37fb8",
+    "git_blob_sha": "e585cd08d1171737ee5545348afab129c3eeb763"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3152,
+    "sha256": "7c362b21ff7c13ffcc41dba6e49db98165544502b01346cac5499e503525277e",
+    "git_blob_sha": "240b87414d3e6d283c1ef694c3b77a5f250f1959"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3230,
+    "sha256": "57db1de1d18eafe82f5c757a551f5a28268f9cc6e19ed2fd70fb142857161467",
+    "git_blob_sha": "be57fe68edda11329a0a4e52042c4364e0189fff"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3395,
+    "sha256": "4de42168f5f10a875a949ed19ab9c8a64a08336a35dba7ec2871bb231b5af5b3",
+    "git_blob_sha": "a3c9e4eaff2bc025e9f7dbd9f04dcd0a7fd53f63"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3231,
+    "sha256": "5a5f239afd226185ef62fa47a0d50ab67de57293083256e12e6955f87b1db893",
+    "git_blob_sha": "270ff0ce8d76dc03aee2045d166e024a53362e2f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3396,
+    "sha256": "ffb2dcf1e5f654e68610f9d83cc1853d082629a68fe156264e09d5f469105d0a",
+    "git_blob_sha": "36bb8de6738822dc363ba612f004a6fbdb14e1f3"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3161,
+    "sha256": "10fdaa552017dc650248f59f0591ab738fd0692f188f34f22dbbeeffa8a30812",
+    "git_blob_sha": "6e54b9015f9c6d5cef22b6d54f7c36493135acab"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3171,
+    "sha256": "99664db7d216c6edbcf7eb1acde1506e95f0759f2130fb4dd7eada42242339d7",
+    "git_blob_sha": "818992d22159435229ee92751d2524ddaf76385d"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3299,
+    "sha256": "060dd8eee02637378bd44d7f3c56c3bbd930b751b80ff9a81e3f45bbac254fac",
+    "git_blob_sha": "406b2dbdd181fdaf64b0821e941cfdea84fa298f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3244,
+    "sha256": "ab25d8505c7ccdd8afba9cf05eb8ee7b804306b955280f562049032d2af06d35",
+    "git_blob_sha": "719a9a8307fbfc380be0c059b25588fd6124a37c"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3409,
+    "sha256": "27716d4d6d0ec417ad65d79cbcddbb4e7e7ba12e6d5f68350b4a817ded831773",
+    "git_blob_sha": "4b7058ce708fe6994ba2836f21011e30e65702a1"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4589,
+    "sha256": "4600c080803026d58ab0cffccbe5c75b3a1d2b8c9795dab2ee32730d0cc97e65",
+    "git_blob_sha": "c173374ccc6238ce186db67bdba90f7cd2234a62"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3550,
+    "sha256": "3b6149da66453614072d037b6fadb85b8b19871851088a214f4a9b140b712898",
+    "git_blob_sha": "1578a2729a156f27b52f90c27bd330bb384b60fe"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3678,
+    "sha256": "c30282276ac7023b70781f05fb21535f9f1eb3583442c7fb2c722e2e5b43dddd",
+    "git_blob_sha": "d27b5ae6a577a394fd73dca24e12ed2a01867057"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1527,
+    "sha256": "809bdfdc8a32d0e04cad5c67c4e276e21af1998325be3bfce3029be14b24bfad",
+    "git_blob_sha": "8f88e515e13729af3ab8b804a59b095cf394092b"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2528,
+    "sha256": "204363f154819948354d81dc74e536d059315d351f45ffa066816999b8cfacf5",
+    "git_blob_sha": "109fdf6fec5fde8b2ee11f9922f142280bac96ef"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2530,
+    "sha256": "f40f71a892101a8c1a161197f1b3169344334b0b2751d22b393ea00ead040243",
+    "git_blob_sha": "64bba9ef83449d828eb09c4786e9b70e1da91014"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2529,
+    "sha256": "f99d30a09405c7d83f986113c336c8e5ee4a4c2aeed86af43c65e53ff3a42b2a",
+    "git_blob_sha": "73555924139ac0e8fc310a81dd515c0af74ba4f0"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2529,
+    "sha256": "324235f9aa60ccba1c04761612486d8a9f834a827d98991e52332ec78b82ce52",
+    "git_blob_sha": "52a35e275b50b7b8bf52dae287283c1997a4dc87"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3607,
+    "sha256": "3fa04ac76cb998844b6b41e6a69df4b4a3abe03c54ab5c8011457045ed420b09",
+    "git_blob_sha": "6263a045d1e0be07a5053e7b25a3dd12288c235d"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 2643,
+    "sha256": "39d7e28511cf21cf9ff2f2456285bcbf4dd6b968ae65221e6b0fdcc8dd0941e5",
+    "git_blob_sha": "f6a56640dbfff9675d1e0c17ff279da54737fef4"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2646,
+    "sha256": "6b252b5965e3742d97d42477d2a022b9e8a652ae4398b7e852b9e59a168a5730",
+    "git_blob_sha": "18d31c8a3c9862b16e844a2fbd61e0f2f6e0a89c"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2645,
+    "sha256": "f5de8f3a49af479031a018b02a99c5d158bee41316c3474e852521f64d1b5efc",
+    "git_blob_sha": "f074b75420a98e7721c70b36febcb0c26de1aa6f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2645,
+    "sha256": "e64868b87fdc560dc97a2a3918c5cc85a2960b59cbe28c4461d0b77255809776",
+    "git_blob_sha": "25df7b98ab64d27b5681341ac52c6406173b8b94"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1525,
+    "sha256": "a81c24d87b5cc0cb5feb5865740285b16fde6b93c8555ec89d6f3c0145262a20",
+    "git_blob_sha": "97577b7f468713b38d5937b4c3cbab1963b561d2"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4564,
+    "sha256": "c576ffb60618f13321a5a5ee4d234092bd58a2e3740d43ec56e5c1eaece47f38",
+    "git_blob_sha": "1fb2fa6a73bc2f239d6c7b76609b66b51110f0ee"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4897,
+    "sha256": "07bd980bd5449c45fde6dae9b0b23f22a22b1535d2a9b7ba7fd86f27bc5d9ace",
+    "git_blob_sha": "0502ffb420af44af974fb3e15722144c1a1ef5ac"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 5006,
+    "sha256": "4d3bf1ede2d1ce986e57c1ca5d609539c0c1c3dc3f79cf61716b34606c04446a",
+    "git_blob_sha": "3848a8dfec90fa7e4b7a17bfe8f8d8f24b31a35c"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "ae8d9120db2bd27d0d5c4555af9c7da47f5b98b65efc7122079c5f0ef547d890",
+    "git_blob_sha": "2a6da4b2f0aa61146cf1b6eaa71bd68432af2de0"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "385d5ca293914e811c16814ed7c56af845c33e462cf98a45b35fb430c0b37007",
+    "git_blob_sha": "dbe42e0575f0c0f8562fd26bffa32d462b01b1fc"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2526,
+    "sha256": "1547c6083f41e7c1fce7654f58dcafb3fc5ecbacecca64bff1423ca3b37b0838",
+    "git_blob_sha": "39d5e91bd1f351e7c5168181c16830e294eb1fc1"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2528,
+    "sha256": "b6ed3972362730ba31d825c075cc53baf3fd0587eb7a05ab2bc86cd0f9f54637",
+    "git_blob_sha": "dd5ad4c6d11b30a4db3875a942a8660e2a51699f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2526,
+    "sha256": "ff27f175288acb5434778075b886a9f7325950b303ecace98caabd7c548ba1bb",
+    "git_blob_sha": "d48a5df404d44e7af4e3818bb2d33cca37e2a4ae"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2527,
+    "sha256": "bf2fab747d7a75d429f031a13a4c21324b87a3cbc617c14db5a475a9d01d6840",
+    "git_blob_sha": "e5d9af9590297d95598b419fedf5f34965202cac"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife448_poses.json",
+    "size": 3566,
+    "sha256": "b3dda22bb9725616a058e767fe5127c762966645c01b81bb26143c18b725a8a1",
+    "git_blob_sha": "7198d9417952952c57a2436dfade729bf67d230f"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 2635,
+    "sha256": "8f2061cf60eb60cc249168b0a4faa30ab17197e35430e3fbf92a2a553495220c",
+    "git_blob_sha": "8580a8b3a17b811d7dfbbd6f36dc30cc25c42366"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2637,
+    "sha256": "4c1ea8d73ff3d288b4d98ff65aeb829dc951955ca4b77b54c8741368e76323ca",
+    "git_blob_sha": "3dbda4684d773558cee651ec0c666bd54c65c99c"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2636,
+    "sha256": "85b36c20752db5c5a516e8c1101c4bc082607aa39908793dd82714dc0cff3353",
+    "git_blob_sha": "dc46865f9ff6855fbb88b765d13387126d8c0f6a"
+  },
+  {
+    "path": "changjing1_shot_0001/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2637,
+    "sha256": "2773505510839e27500b6de257a27c8365fe697b04d701c2ab02c6c8148c8026",
+    "git_blob_sha": "9f1da8e5bf6420b30d7c52ac95d2fae1a6cf06cd"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/anysplat.log",
+    "size": 9682,
+    "sha256": "e2ae736a9aed5d5203e930fd8bdac31f3d5f6ca386e6b75573295027c9f6a815",
+    "git_blob_sha": "ffd077af38829e8c3ec3972b276f895dfcd06d75"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/evaluate.log",
+    "size": 1002,
+    "sha256": "5bb5b152ae26ccbb9f4ef841dc0ae5f1f33f1901b28ea2ca6b0b0162bf38d807",
+    "git_blob_sha": "770881d1233a4745dacfeb1d2810606a4bb49061"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/flow.log",
+    "size": 207,
+    "sha256": "6f9611c5caf41f6a1ee85c61db47a1b116afe9ff494a24315db78933c25e586f",
+    "git_blob_sha": "d3abf9696229ab5381f19b4456765c1fe11740f1"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/pixgs.log",
+    "size": 771,
+    "sha256": "e1a66a6f032a2f6e97a93b91e6771970ec3ac1f26abc55a2c0a2e23805dc93ad",
+    "git_blob_sha": "9094c66b2e0bb2f6d7d773cc019c3b05a49b5534"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/tokens.log",
+    "size": 1885,
+    "sha256": "25b6796adb201fa8c21d8a86da03ab9d8e390fe743aa85127adec6dc117b66ae",
+    "git_blob_sha": "9d725761654b4531057800b344b07710cdb362fc"
+  },
+  {
+    "path": "changjing1_shot_0001/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0001/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing1_shot_0001/prepare/prepare.json",
+    "size": 1322,
+    "sha256": "6314dfc291f7343d90045fbe18fbc2b7488e3dbc692fca74de53e4daf39bcef3",
+    "git_blob_sha": "9aff17c794c18d78a151ab97acb36a2b88bbb2e5"
+  },
+  {
+    "path": "changjing1_shot_0001/timing.json",
+    "size": 126,
+    "sha256": "2baa3fdb48bc572d4cee6be1085b9ce432577bad9bb7a501e5bf7516e92768d9",
+    "git_blob_sha": "1e9bfaeee612e68c8f2df427efbce1dfe69c5a57"
+  },
+  {
+    "path": "changjing1_shot_0001/tokens/tokens.json",
+    "size": 4818,
+    "sha256": "b0b164150504d7e7bf8a52d7dc0fdf6eb90bea6e66d37c16876cb464d04e821c",
+    "git_blob_sha": "e9f484923f3917249e5fd01c3137efa847eb557a"
+  },
+  {
+    "path": "changjing1_shot_0007/config.yaml",
+    "size": 7296,
+    "sha256": "0cc7eedf270c1d84961ba1789bec37eeb8fda6a7ff055e11af48a2cb24c81137",
+    "git_blob_sha": "d06b70b20c4d8cbf1ff800085864dbc19ac69d61"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/auc.csv",
+    "size": 882,
+    "sha256": "351657feb913a62803648322bc25a3858ae1d78bfc1333f78c35e7e3d4d3703b",
+    "git_blob_sha": "4a04e8ba776267024cafa2c27b375bfc1f06c2cc"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam1_montage.png",
+    "size": 707688,
+    "sha256": "dbce29f21056dbbcfd4bd9c0a1991171c11a90de564613b17e98ad4346682f80",
+    "git_blob_sha": "08d1fcb51a34b1946141d2e4c4d61cebfc6a7efb"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam1_montage_fullgs.png",
+    "size": 290796,
+    "sha256": "e7c5af9cacf811a7c724ddd8275ed1c3b9ba5bced653071f7960fe94f964e08e",
+    "git_blob_sha": "5b8344a3d4c3e61ce62acf4a4d77da7d02450912"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam2_montage.png",
+    "size": 702838,
+    "sha256": "15d940b7b065945161609d4e6db778f7bc7c30cace153362c82be43bfbe0e7e2",
+    "git_blob_sha": "33194bbefd4a526c24a8c4e395082a4a51e5f84c"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam2_montage_fullgs.png",
+    "size": 292085,
+    "sha256": "768d6f90099a9bffb3987db0d9957b2c8ed6498d2ca0572e1d638a473c79f346",
+    "git_blob_sha": "f2ae4db1498bc35762e16bee363642dcc58de8fe"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam4_montage.png",
+    "size": 670982,
+    "sha256": "c2b921687fc71d490c65c0af828e5c3bde4f1f50a6063b9b4f4cd484013b121e",
+    "git_blob_sha": "ea784793067b4345e23341a3d716babffeb6bed5"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/in035/cam4_montage_fullgs.png",
+    "size": 291219,
+    "sha256": "f1055a5e1327ad3f90c18d3f8dbd4c0983e219238969d5bf11d2c2c6c7e9538f",
+    "git_blob_sha": "431268234974cbe393233a96ba38a42f8682a58b"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/metrics.csv",
+    "size": 60061,
+    "sha256": "5e030701989abda7ac1123a0558a5b4d359519ffe38150ca1337f34fe3694b43",
+    "git_blob_sha": "8893718160a25bd2771bdedbd5f8f2b28c5f3f46"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/paste.csv",
+    "size": 6873,
+    "sha256": "99c41c3a364a7ac322febfa1457e1b2e7dbcab3fd18c86ab7fee51659593755b",
+    "git_blob_sha": "9a9cabed2d44950775e2a2aafa109b5dc1e3fc2a"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/summary.md",
+    "size": 17708,
+    "sha256": "e261e994c60a9475c5e3dd635542db1f0959447a9105724ffd07d8bc51a5c71f",
+    "git_blob_sha": "565009c9e4d5dbc8e167a7e43e5d48fbf46dd72d"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/tokchk.csv",
+    "size": 2119,
+    "sha256": "63fcf3340a66cc98306f4e812fa7353fa50e89912b5bd504580d0f5dfddb32a1",
+    "git_blob_sha": "b3a9baccc29f8d528e37964fa4be5511bb2d963a"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/token_ringreg.csv",
+    "size": 1618,
+    "sha256": "ea6e3448683b0ccdca9f0a3575b3c3153c49ba9b364a2748dd373cb48700beb1",
+    "git_blob_sha": "99f5fa9dbb7209791cb7bed26e42862071c0a4f6"
+  },
+  {
+    "path": "changjing1_shot_0007/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2530,
+    "sha256": "dda08cea48f9cfc51e426e36fc2842c0cd9cd5247ba6f455e5016c9e102c8e6e",
+    "git_blob_sha": "367eb46c2a73cf1f228f2a841cda3f1917cd377b"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2531,
+    "sha256": "8a70bbfcdc8ab75138211667c44f922ec6083c76065563f955c737536d13742c",
+    "git_blob_sha": "d885ddf0f39522488120ec222afc1d9bd20a792c"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2530,
+    "sha256": "b499681aaf95a3de7d5d949519deebc9dd889ab5aa88eedc3c223f5ef03b9cbc",
+    "git_blob_sha": "e426c2b6c9f6f06e5e7710defcc3788a752706c8"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2529,
+    "sha256": "19e3072d6e9d3773bcc4b9217639a4c9ca02e7223747f7e37911e1df81afc8c2",
+    "git_blob_sha": "6a8392c30981df5559ea1ca91199becebb3e2486"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3577,
+    "sha256": "2ea9dab5c5df9ac34278922a15e77d11c57bf5e2a95e6422432c5ddec24c8eb1",
+    "git_blob_sha": "faa5919ed1eb3223623c3a7f6b1f161c836acb41"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 3010,
+    "sha256": "9782c877b60a7941066a0762bfcc5fddd53fc9375bd87bcd237437bac44fa0a5",
+    "git_blob_sha": "52086916fcfb8b34f3052a6249c8287ee45494f2"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3012,
+    "sha256": "4c452e33123736d9124d6e428011125f81050f983179a0c6d5d9e63543925f99",
+    "git_blob_sha": "1543d7ea2c6f99aca6d301b0f1437f1b19e4c82e"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3011,
+    "sha256": "087fbd113c45cffd969e311e5518ac578730f5fa46e6ab94e2a231463988a2c6",
+    "git_blob_sha": "31e23dd8a0164fd18659b7688ec1f0851ff963fe"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3011,
+    "sha256": "d33497e9e28a9c4a5e71cd8de558182334bb579c1dd53e48a30a01d7ad1e38d5",
+    "git_blob_sha": "dbd80743fbea8af26378fbb12ceba79a905bfe3b"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3143,
+    "sha256": "7aa5b71eb8a3384609bce96af8a8d5f0c816ca7d3a8310c98cf02692ed5b29c9",
+    "git_blob_sha": "b788f32cd005593bc53c8de6a394cf930e409ae8"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3208,
+    "sha256": "7e5de604d25c101a82a371d8d6ebd269223a6a24a9591baddf6d380eecdae23f",
+    "git_blob_sha": "90171b4b2deccab8431e49b9be7ccdac912b8be5"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3373,
+    "sha256": "46ddad044f2ade37fb905b414ad06671f4be49215dfe8df6535f99c2a9be152a",
+    "git_blob_sha": "52fd5728840a900a9d4e4cb8a049b6bfb461f7f9"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3208,
+    "sha256": "9c9ca9e12c1a4ea133032b5a38a15b29d2fca7eec664bc09ee5ddb401b2b9c5f",
+    "git_blob_sha": "2e0c877bf4faf74a39833ae49ee9001ceb3cb599"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3373,
+    "sha256": "ec14104467c0a699a4aadfc69b7779d32f0e821299c7cf2affd21c273f561d9a",
+    "git_blob_sha": "e3d6501645b85852389077e9117150d43ee7847a"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3148,
+    "sha256": "1475a5c99f28538180deb7558f927f29dcfc0b8170ccd68560a7d479ddf38e28",
+    "git_blob_sha": "0b13eb198519794785742961fd144d12af5f4861"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3144,
+    "sha256": "2d44ffb0d72bd8c887162d18ac1c097e03e88dbce8287ca2bd4defc351a101b7",
+    "git_blob_sha": "50b8ebedb85a761f25531a9ca2b3861597d47811"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3272,
+    "sha256": "ca4107dd2748cd9a267ff011561ec861d5af3c2fe65bd9c38b8c2680415b9a1d",
+    "git_blob_sha": "195ebb465fd60dd48a823a26b8d4ab55302dcda1"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3215,
+    "sha256": "de6aac4b4c47bfcf4139338d251208354c353ef818342aa6966e990ffaf02bb6",
+    "git_blob_sha": "721131978eebbb14c4581e0372469c112895dd18"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3380,
+    "sha256": "99c46b2f3e7e389dd02d0ff22d16b5f108d158f15f2bc696c7b3c879d6ef7f9e",
+    "git_blob_sha": "1573774bf21d0f776d35a36b850369c2c331dc83"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4575,
+    "sha256": "94326bc85db37b32076ad789cd3f4e734aee97f2862b68befc611fd805623b15",
+    "git_blob_sha": "4d9fff775d4bfc12fb8fa87778a83d37ff2af090"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3534,
+    "sha256": "a2a1f530a2a407096c7e0317c17d79ff948c06fdea9fc7174c4135798ac94e15",
+    "git_blob_sha": "d799e5cbb153aa08a930b36d1c9f63ccf5ced690"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3662,
+    "sha256": "ec164aaff6c7ac90688c2b0772ebb40140facc6fa494052e45646cf770b4370c",
+    "git_blob_sha": "6b98ab615fa82ffe310259d76fe9138c947f83a3"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1527,
+    "sha256": "130c27a1fdcf2413f2ee562614eefbd9d37a62f55610d2620a3c21ba227b1137",
+    "git_blob_sha": "3dc9ecdfe6fa64760dcb58728f33083efff08348"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2527,
+    "sha256": "513bf30f5f69e60daf670258bf887f67364c822c672c9b3599b3577466c1b3ff",
+    "git_blob_sha": "2c10bfc80a69ff1ce97fcd166b70ee91270327a4"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2530,
+    "sha256": "c7bb9747ee948a30f88a875b7c7024db1d63cd4f86d2b58207e4353309e2cf6a",
+    "git_blob_sha": "e20f534f3d99972b61bd9e63b1fb712839a0fcbb"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2529,
+    "sha256": "bf4042f54c98a341322980eab13838fbe8784eca3e3f2c5fd797c78fad5de8bb",
+    "git_blob_sha": "0260ff5295b7d7ad8c36268e6eb2d8177931ad3f"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2528,
+    "sha256": "5decaf4646cbdc1e97dc88b7e973474105f03cfed053a861748c5eb7a47f9776",
+    "git_blob_sha": "b6504866597add8dc77c62b00061191cf28b5c40"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3611,
+    "sha256": "10c029d548524156e5118e8e65f1f666bca452a24e3c8fe31b27da4f04810110",
+    "git_blob_sha": "36e419e1e935fab8f41c0ef0ce4dd57896b0a1c9"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 3022,
+    "sha256": "12e84da91fedbafa46737f559a15764d85fdc5f0379aa91366d533566ecde212",
+    "git_blob_sha": "93426fe33dc4f79bf3a6261381d487ed552938f8"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3024,
+    "sha256": "8c029867f1de5819a0c5dc6872c5dbbb7bb1cdac54fe57bb79ac68f32cc51c4c",
+    "git_blob_sha": "b5d906b32cae0e95398697d2af58798a89b191b4"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3023,
+    "sha256": "2f61d7d8a8fac4c216652d41056c8a636bafe7b017a75de7453cda06a3c93e4d",
+    "git_blob_sha": "43ae071fcc0e178bc9ec1ead85dd9395456d98aa"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3023,
+    "sha256": "82fc417b1fac5f29e7fbcd0686dee318191203377d7090f4d46dfffc14a817c4",
+    "git_blob_sha": "df3a6d28f6a3d5a1c3da8bf76b95bc9841f8337e"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1527,
+    "sha256": "4510afd023f13036a9678f6a1b5c73cd8976c1cc94524fc58994ee1fa8937e18",
+    "git_blob_sha": "9cd656bff5fd0e50a6355036361c3e3f26ff6a97"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4556,
+    "sha256": "8c8dda4264328bc12862f3ce92ee7a19733b1518fa9d7f0c211ca07034dd89b4",
+    "git_blob_sha": "89e2cf4505acea93feaf9e71c37dc81e17226f1e"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4891,
+    "sha256": "56dfa49170072336d9b4ae33bb799e7bcb1afd2ffc869156f34bb07dff93ea23",
+    "git_blob_sha": "28d2aeefeac9795c326d7ca1ced48c6ff133c841"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 5000,
+    "sha256": "4a4d8e82e0021804e4483d71584a7c1b15d14cf048c340f7f2eeed3af4dfea03",
+    "git_blob_sha": "afa874fb497e6c2183b557d1897081ff0918f99b"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4895,
+    "sha256": "a3d57b61a1435a45c66c99852e8459fc0bf39bfb57df2334bfff7b52e0a90566",
+    "git_blob_sha": "36f639e8da82f23654813644572458b80b5c892e"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4895,
+    "sha256": "b38830eac91ff95f761db795fdc6be5a60bef9f3418a87c11774ab3685eb1864",
+    "git_blob_sha": "faaf7e8a725090e600b4b762623283bc89cec152"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2515,
+    "sha256": "7f022ad706d3a02a90f14acf38dbf8006171a856e3b6320b48eb2ca5eed3e1ea",
+    "git_blob_sha": "d37c24001a901b49f636c106980b9ae7d524c4c9"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2517,
+    "sha256": "74f081a92a6f88ddde25877f274f83ae5abfdf9c6cabc75f5e9d9561b8590d00",
+    "git_blob_sha": "c20761ead7411c1fb90fea70708588eb08c696f3"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2516,
+    "sha256": "0643604bff984fa42eae53300f98c7154d9294221a17195ad3859fa81cf13aa1",
+    "git_blob_sha": "399824f880bf3ae0f79b8e85c1d3a9d8f074a1ae"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2516,
+    "sha256": "5fd12776e84fe8098bc8f8d9197cc72c91e1802f14d0038f9fc38f1095fa8407",
+    "git_blob_sha": "e4a5959d3c9a383fb99775b239e95ec15399d0b1"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife448_poses.json",
+    "size": 3612,
+    "sha256": "1a83851fc31b1d888f84af13936711f54c07539edea66dcc818853fdc648d301",
+    "git_blob_sha": "efd51ffb60772134ab421b3ae59a989d4d4dbdd6"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 3011,
+    "sha256": "e650164ea6eb91fec41d44106544f632c29e897e6bf5d6007564a387dba0c08e",
+    "git_blob_sha": "ab7ef38f33ab238bc50c470d9b9d4bdab56d4e0c"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3013,
+    "sha256": "79587a97e6fcb807b187e13c2d4e528b1702aeed36a704dff398a8460a0825e9",
+    "git_blob_sha": "19e175fde3addc3c5bfd5729cdd1979f137ff4dd"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3012,
+    "sha256": "efc0308760ea8361cd65db55d39b185d67f0f9eb7b8ac917b2f9deecbe66ef82",
+    "git_blob_sha": "378655878355d11edfe8ac16adadbe2a8d73a43f"
+  },
+  {
+    "path": "changjing1_shot_0007/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3012,
+    "sha256": "93140ce2a9f83193c987f3ee948de08a475c691dc4ad5482f65e9affbcacc62c",
+    "git_blob_sha": "4e6977b05dc97b5fd451980c870ba6dc600186b3"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/anysplat.log",
+    "size": 18152,
+    "sha256": "485c9031114f5860ec1478da32d5bcefdf8af19b998304df362fe90e2be59445",
+    "git_blob_sha": "61399cb6c5371da82f075a2f8b5791a4ce051b9e"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/evaluate.log",
+    "size": 1002,
+    "sha256": "8e534c090b74028248b15c24c61484f43a34cbae4f3a406b9458d9d2d97b70ee",
+    "git_blob_sha": "d1ca4e78469e164bf6a657d930a330a2e76ae76f"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/flow.log",
+    "size": 207,
+    "sha256": "7e2d48705a2ff779fc13abca7c1374ce18953325ed7990bc51b3a0d0be7753a7",
+    "git_blob_sha": "e64e76672dae629b71f76daaa82a2c6cabccd750"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/pixgs.log",
+    "size": 770,
+    "sha256": "5c357bcf7901350572f407b363e8dff8f0e4a95dadebd65f86610339ca83b383",
+    "git_blob_sha": "237c1c4ed46c8b033611565b6650e28701a458c9"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/tokens.log",
+    "size": 1883,
+    "sha256": "5845c5abb452b5a7c7347bad53a6d8e94c297a13bc3b65bcb91b9710c589d18f",
+    "git_blob_sha": "0cf0373726c80de0bb7a947355b303c2062bcc4f"
+  },
+  {
+    "path": "changjing1_shot_0007/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0007/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing1_shot_0007/prepare/prepare.json",
+    "size": 1321,
+    "sha256": "a84812a296431305807227704627ce676bf66939e0c4f5a535ff9109000efb5f",
+    "git_blob_sha": "eab24f7bad480d22c4e1e4c7bda428a8b26d12ef"
+  },
+  {
+    "path": "changjing1_shot_0007/timing.json",
+    "size": 128,
+    "sha256": "8f8292d04c3db7cfa828640977aa611fc8e886e28d6e1535ee9e764c2c42b887",
+    "git_blob_sha": "0298a29b0da8117d56ae27e31703c93b28aafd5f"
+  },
+  {
+    "path": "changjing1_shot_0007/tokens/tokens.json",
+    "size": 4982,
+    "sha256": "06ba29316fc5a069fe749d762cb9bf9441aaef3977d05bd21ad07ad8532c2e97",
+    "git_blob_sha": "899a35287abb9d573357cee2712e7acf54660b6b"
+  },
+  {
+    "path": "changjing1_shot_0013/config.yaml",
+    "size": 7296,
+    "sha256": "1c7faa723389471f6e98750d2a1b8861d179b3e3f5f71cca7e80b10e7a778dee",
+    "git_blob_sha": "a69fbd3e3b85f5fac2022ac5a3534873b2e3207c"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/auc.csv",
+    "size": 882,
+    "sha256": "857d298fa06a3746179796acc727c8e56d193477665128913ec5aa818b0a04f1",
+    "git_blob_sha": "a6196717103e13175d7550e2c226af4c2c056a0a"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam1_montage.png",
+    "size": 772320,
+    "sha256": "b69808cdc57eee125de52eedb7ee366072683a069278c478b29da6fe73298917",
+    "git_blob_sha": "386a36d51f3bcc24ebe553fcb00c77413df8228c"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam1_montage_fullgs.png",
+    "size": 312089,
+    "sha256": "e28fe43f78f83d3cdc3c6ae7b5673012733f7676b29d8297ee8880f8aacee3f6",
+    "git_blob_sha": "c314d6b33e73af17cf2fb12b184517638e073c5f"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam2_montage.png",
+    "size": 820761,
+    "sha256": "efe77003a6d1f28eacb7cb7a6cce17453b3a6c2ece3d3373540ac64316f01235",
+    "git_blob_sha": "a399d3f215acd66af8c1cc847a2a924fe8519226"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam2_montage_fullgs.png",
+    "size": 341685,
+    "sha256": "a892ac854c41d0d887f2e2f0dee986608cabd2c0b13c67c6849795c89e8034b3",
+    "git_blob_sha": "e38b3b6acff6a373da692874ade31209ba0e891c"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam4_montage.png",
+    "size": 669732,
+    "sha256": "782670ab8bfc0d3a1d47a0458211cc040f3edac59a614e7b0027a3ac90eb914b",
+    "git_blob_sha": "acc4e630a5a6bc72c8689a60fe53fad4cb9a8cf4"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/in035/cam4_montage_fullgs.png",
+    "size": 282397,
+    "sha256": "762c72834906527836088e4801b571a0b37347cb10ecd12de7b5d424ea497480",
+    "git_blob_sha": "827199e47a07464e28d0c591948f9bec14591306"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/metrics.csv",
+    "size": 60059,
+    "sha256": "08060fffc2b0f252d30a65591f815ccbfc3c787d599eba76e6f0b48306fb2a94",
+    "git_blob_sha": "ee88c77d73a05d655125b5315bc13868f3d6baf2"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/paste.csv",
+    "size": 6850,
+    "sha256": "c8ff8f1c428e237dfdbec70875608e7555ef6902386ebb944e34636fcd7f2acd",
+    "git_blob_sha": "578915d66979f4b6e6971059c8b23ed4eecbd47c"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/summary.md",
+    "size": 17715,
+    "sha256": "31a3068a2b0f460e635c70ee30fb45456a81534aee8e217c50194c52632d1430",
+    "git_blob_sha": "e8c44efe4c9b67f506d89a6d3aa906e7132a7a05"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/tokchk.csv",
+    "size": 2104,
+    "sha256": "b2fd9230bc84bfc78cc5b22130a061733ec688ff72279b443fc61a21380bd3a8",
+    "git_blob_sha": "8c444957590f18916ebd130093a37c66c584a3b0"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/token_ringreg.csv",
+    "size": 1610,
+    "sha256": "9eba21a991948f7c395758edc809f7c9da230d6287d3c066ecd755a54d2878f7",
+    "git_blob_sha": "0a53d7c1ab966ce113f9ada59b47cc98653fd3a7"
+  },
+  {
+    "path": "changjing1_shot_0013/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2530,
+    "sha256": "13cac3c1a38e1c1e10a5b666500d2035a0616e388697b415f2164f7465cea794",
+    "git_blob_sha": "e1db218ae01e4c310fa9df9c2db8d74ab192ab4c"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2531,
+    "sha256": "eb3538ab1f2f0b82e9df94fdaa09eb967481f133ddb7e56c17024b99e60328fb",
+    "git_blob_sha": "f68fc35b646ed7e84843f08105e904be4bc1244c"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2530,
+    "sha256": "5171b60e7690148f5ec73aa9742a801e5c9255ea8997523593ac1f1675e36bab",
+    "git_blob_sha": "2e85c5c5d4e8260071c6c6485de03f5e8ce0208d"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2532,
+    "sha256": "28f30cecd5d45a6c4bc047eea9a60699666a01a07f2da870547dd2b9e3ba230e",
+    "git_blob_sha": "282ab6450beda5b4f2f5d7c5d5edeb52490e8f78"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3616,
+    "sha256": "e57c76dfb1f8fca1e8772a8b8dbd4d6116b9930b3ef96e83163d97e5ba051364",
+    "git_blob_sha": "d1a79e7b59ae4129e221e7457e6296dcf900d10e"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 3190,
+    "sha256": "4d5b9a5f418384cf7e97d2f3f9a6baedfc863ea67fdc03b4c85cdbd6ebde4b25",
+    "git_blob_sha": "b91b053dd953ac7056fdc700396f1683f7259604"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3192,
+    "sha256": "9a7d71c121a2741e6ee17a438439f330f1988bcf8729eb7e4ef2b926813f7c47",
+    "git_blob_sha": "364f000c540103a6b3105b99c26a0c67af3fcc09"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3191,
+    "sha256": "668f08d19e5e4ace3d38ca93adb4b215a3ec3367433cac68dc29af0a2690a66b",
+    "git_blob_sha": "70d361a54a5143b5cd5d7df49b861b6a94e27814"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3191,
+    "sha256": "44d0aac19ed20b04d87d58f9be5d64846dcb6e3ae334d89cecae85563b4ce648",
+    "git_blob_sha": "f6f687d167eeb0d1a9e05d8162306b31870be23c"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3145,
+    "sha256": "334aed4971446ed287f239a5ea687873f1c56e80b69d9eb737d263b27b8a0a20",
+    "git_blob_sha": "104543516776de349085e83921451591ca592f96"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3209,
+    "sha256": "fb569ab1638e2b5164e906e5d60b45b2a23f5cf4b3b239cd27f9e2f066c1e7ca",
+    "git_blob_sha": "adb3a33e892e9f0229f4c1a40d48e092c1580722"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3374,
+    "sha256": "c60a974d87a62772d5e1b621557a7e9f23fe902fe17ab9acedb7520f98a24a41",
+    "git_blob_sha": "d761bb68f9bce27e5144c0c24ef43de5efd093a1"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3211,
+    "sha256": "8c45ab343f34642cc8cec8edd69499181c3109b29917eb8d839c750d10be1363",
+    "git_blob_sha": "b9b7a4dfb6d94eaa66e2371d0b81e20a94d4d30e"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3376,
+    "sha256": "4738d1d93023ed22613adf52f78d31c9821a4b83091bb7b15e4b7ea4898a6cf3",
+    "git_blob_sha": "9b870306917cd1fe888b09aa569f742895e19053"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3150,
+    "sha256": "ea10c72d4d7eaf2d2560564b13e3648ac41997896fa293b7078778d763105e4a",
+    "git_blob_sha": "fc5c9423ebd565e908d04e908fc2ab2642f5fff4"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3151,
+    "sha256": "9f93afba393d85b91807aa10af40d633aa681ffa7250909ba5d1b026b95f7057",
+    "git_blob_sha": "4cb125b69add8d7d5c4970fe5a9a86df3f2f4ac0"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3279,
+    "sha256": "0fad45814cfec49d648a4c35cbd82c34745063f0d9693408c86807f198348ce8",
+    "git_blob_sha": "b0c035cf5c213bd547534579b02b6cc34af5234f"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3218,
+    "sha256": "28d555ad0a8597971fa558dc00ba34e000667657791afb6046bb3f748c64cbf1",
+    "git_blob_sha": "107c136eabce1b29d752f8fb1098385ec18cea22"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3383,
+    "sha256": "05474de8500d5c0eebe216a1db520a3324c4e60039c9dfe2440d494e51e6df84",
+    "git_blob_sha": "e6afa531d94f252c3ca57b0f95757e70ac64557e"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4590,
+    "sha256": "606c615b187e6c7749aaa5828d1dcf492e2cff74e24aadb0c6acb66c354e27fb",
+    "git_blob_sha": "ea394bd56b427ab2d360d0d316b00a99b8e21818"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3543,
+    "sha256": "42d477c485a47323225d62a175ab6712239c41a0bfb1e15ba423c7b7869b2bbe",
+    "git_blob_sha": "ab35e51aa1c4f3a8a5855fe80173aab12abbab0f"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3671,
+    "sha256": "10889860f17dc2cc47d6e5b57034b564219f0d4f67cf721f336ab8fd754f1ca2",
+    "git_blob_sha": "b88e1fc9092873ec25587cea279932c90896fa9b"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1528,
+    "sha256": "78cc7f3b5e3141881054f9338d5e5b6109ef855670e4b93a88fbc7720c9cf736",
+    "git_blob_sha": "8f6623bb10531e3ac648d98c4ec49d9d4423ee10"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2528,
+    "sha256": "04f088ac81e273f700e6cf6a6606ad3e4c70c25b3dc9819555c2164e6a241db2",
+    "git_blob_sha": "14bad7201551c5d7cf9cfd00550813d842844b2a"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2531,
+    "sha256": "31afff958fb1cd0231bbe6e03af6f5a59665d2b22e9d68f59f482aa66a26b3c2",
+    "git_blob_sha": "08e80b083bbac310ac427c974ca5edbd5d8e7667"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2528,
+    "sha256": "041ac071bdaf0016e108db6e24003583f3203558022c141c7e9c047137e42196",
+    "git_blob_sha": "ae399ecaf3d56b3be146992a6f62e3dab581e495"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2528,
+    "sha256": "8d56c81d45c0abec878c12bfb175c38a199d61821d494a47fbe84ce148397853",
+    "git_blob_sha": "0551ef551864a16ac0c8ad86be589a9f5cdbf5fa"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3590,
+    "sha256": "b58c95eab7bb3627f022782a8cddbd7c6fe97e5ece0d82d6626e70c0ca6d7bd7",
+    "git_blob_sha": "7409e2f5de094efd4150376d73d80b592a2f7248"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 2841,
+    "sha256": "14a56e736e7248e6326ed4fa51a5cbfbcaef37944b173fa63fe370ff0d941681",
+    "git_blob_sha": "3b3c389edbe64f8e63e357e4592dc3c8a4683f8e"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2843,
+    "sha256": "f1a392fd7633055e2fd54c5dd4c3c65f442de3a84f5f08190fcaa2031cf01c5c",
+    "git_blob_sha": "a152fb8488a9c739afff1b987b981d771d1fb8c3"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2842,
+    "sha256": "e4a7ea0763f334eb46b7cc952c1dbbe74bf26b80552d7cf89bf197fde6f0f09d",
+    "git_blob_sha": "0f66c109a8d2ef5f443fe499ab430e18b8b490cd"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2842,
+    "sha256": "b583fc60726e2fe476332e076d2bce4fa515785033a9026a791c266721c52f37",
+    "git_blob_sha": "91286eb093e605162b55b2e0b47ada95953cb249"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1530,
+    "sha256": "09056d0e1b8303fcf34b70e8c3606a4e4169175a988e72f29061f3013f4cb10a",
+    "git_blob_sha": "20a46658162513d4ce1e5ea3cf3d01a88e088d23"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4563,
+    "sha256": "fdc572494ddc981cc08ad2649ebbadec2f5587c252a414b647e884d3114d5440",
+    "git_blob_sha": "f90e325f36fd663ef1a404fbbebd394727ea4b47"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4897,
+    "sha256": "450d4b3750f9e4dae553356f62dc45b1e8898eba470a38cceaf71a9118f87eed",
+    "git_blob_sha": "2e7689efe83affec646b527c470735aad915e3f6"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 5006,
+    "sha256": "8cbe5dd7c23b85e4089cfd13766dc6d9c5e0ef3a19231e3adf3085577ae9ca84",
+    "git_blob_sha": "92ff670be84aa002290c4ea3487702dd019f34ce"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "19c5b35c0b89ca4991d8efd73cf60f85e370436f4b6f296248e08a3863cc982c",
+    "git_blob_sha": "25fadd3c568c308ab57f751afb110b14c31001c3"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "cf9cda0c7d240ac76ea93253ec9910fdec9285375e4a0da7514545498a77572a",
+    "git_blob_sha": "fbba635f25b4b10be32faf3beb3a083556c38554"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2525,
+    "sha256": "724c0979cccb6e12aa236fc2680326458ad98c65778c84189787277fc5e78b13",
+    "git_blob_sha": "f1eaf3ea7f912f18ae9d643cce8f5281a364fa7c"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2526,
+    "sha256": "07d6d9c504b76ace1db0706be4764f1211a4ca565f323a015ba68be4f5444a41",
+    "git_blob_sha": "b742c447477be4f47e7d379c3395312ccaeb6ee0"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2526,
+    "sha256": "0386f9af458baadb8ddd024931cc47ac0542a2f3b915f0d24ed3da79be839fc4",
+    "git_blob_sha": "56ca8df78cbe0ef5ac5cfa1ae66c9f9817b2215b"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2526,
+    "sha256": "d2811ce7d05fedb1e5d842b5551b6d04a971fa07f252a1dab600c8fa02552c76",
+    "git_blob_sha": "ef2710ce32e0c9ffdf7eab84143ca6d7c6d5bd29"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife448_poses.json",
+    "size": 3577,
+    "sha256": "8ad1da84e31c39965e897cce879cada46ecd144a73f924417b37b7183ed520f2",
+    "git_blob_sha": "3af006ee5a3bdf5f0f51e22174c76e9eb8191ff0"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 3008,
+    "sha256": "246ea35fa4e8d219011f6d46eda9a344d05c5b546214380a732e6fb4536d0da7",
+    "git_blob_sha": "cf685d833929345a659d8a9a09eb4df562ca7126"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3010,
+    "sha256": "0e2ebf499f96cfb9c0003b0671baacd5787e77145725f142f165010e7a8e9338",
+    "git_blob_sha": "d1fd138e09d9566e7df441e42d804239755a0136"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3009,
+    "sha256": "e30b4ef2b1756112f7f31592c4b6ce2b49007648030b3a426518cd6cdc859bcd",
+    "git_blob_sha": "75acec8442bbe632cfdc5d23af06233bc5236e12"
+  },
+  {
+    "path": "changjing1_shot_0013/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3009,
+    "sha256": "b8c5d19b7ce8bc2b380dfb8d88e4f137369dbbcb11c72e35dad539a2d915e763",
+    "git_blob_sha": "64877913762a09a2892196228ba36c554085d3ab"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/anysplat.log",
+    "size": 18168,
+    "sha256": "2af48ed4028695ff471017e53e836a8ee55c6027dd80f959d7108f7aa5a12d8b",
+    "git_blob_sha": "3cafd31c60bd8a5fc9ca1dcec54b31d15b448f35"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/evaluate.log",
+    "size": 1002,
+    "sha256": "62005c5261f5c8e37fb4e64ec22eb917bdd5bb32a49f6630c3636b2ba47324bc",
+    "git_blob_sha": "1cd7500332d798692ae3248dae1ac58b0ddef4b5"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/flow.log",
+    "size": 207,
+    "sha256": "67295ead1ccf5640b7bb4d3072d348b098f5bbfa6e0475fe6edf1c94cf728b0b",
+    "git_blob_sha": "1f6ebc1a2e1e9074991db4f85074e949303ee646"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/pixgs.log",
+    "size": 770,
+    "sha256": "40f756d5c6bcdb98792b0ecc7b16b3b48d137fb8409e35264e805926baa7db53",
+    "git_blob_sha": "740753fbb62417d4f2afc41fe6d313ee20e138cb"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/tokens.log",
+    "size": 1883,
+    "sha256": "1d8b3c44340d25c53159d7e51cdeaad65ddaacb6af03408383d65d3d83a92122",
+    "git_blob_sha": "13d8bad630c7edc3cd5c0e82777c37a261f2b4f0"
+  },
+  {
+    "path": "changjing1_shot_0013/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0013/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing1_shot_0013/prepare/prepare.json",
+    "size": 1313,
+    "sha256": "227a2fa1da51215457f47a3d1cd996adf6b3d3ef3514332778b76d43062451b3",
+    "git_blob_sha": "3497bdf14b3378a848f53b6b7a7f637a58787464"
+  },
+  {
+    "path": "changjing1_shot_0013/timing.json",
+    "size": 125,
+    "sha256": "cdad756d051f10c80e917d702f887028cf8982bac2e3c87ae87bf62b24a27334",
+    "git_blob_sha": "b2a9ffb1b955504152b18fa278cfae66b70912e3"
+  },
+  {
+    "path": "changjing1_shot_0013/tokens/tokens.json",
+    "size": 4951,
+    "sha256": "78a1a2cd094654e75dc13fdcbe37a3281215f7471722322923e881c420b9017d",
+    "git_blob_sha": "fb915ae6d6e90fbf6038bf999571a072d8f72b45"
+  },
+  {
+    "path": "changjing1_shot_0022/config.yaml",
+    "size": 7296,
+    "sha256": "ce3004252cfa91b655264a2d5bf622d81d0b11d25b8fb23d253bc468c4ca1018",
+    "git_blob_sha": "2c13ef18795698460e5cdf71b36d48e8ef9afc7c"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/auc.csv",
+    "size": 874,
+    "sha256": "2dc5d35d60b69b22a11bfdca76e04e216b7cd64fb5a255b70e070babd74c2845",
+    "git_blob_sha": "92edab270a02d9a0deace15005f4777bb225f359"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam1_montage.png",
+    "size": 537458,
+    "sha256": "ae966050affa1d01aca166b9903f7c3d4ba331507e2a0f9a7ac54daf4c6e578f",
+    "git_blob_sha": "99573a97423f9f29490bb36961c45f7a9a0736b4"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam1_montage_fullgs.png",
+    "size": 216045,
+    "sha256": "a008f14380b1faca7ad259ebb10300b3d556493187547ca477300fc3e5d27be5",
+    "git_blob_sha": "1202649ac44dda5f626689da8c4838ea7f65ff42"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam2_montage.png",
+    "size": 545892,
+    "sha256": "63e884faddd4a80e03d164ed78f47597b8ef3330fa1d34c6418ae8183825874f",
+    "git_blob_sha": "8bf47b2f31edaaa977ccfada82768815a3c60a2a"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam2_montage_fullgs.png",
+    "size": 223633,
+    "sha256": "0f68dbf2eb779ad719ca2f9dd3cdd993286445a82a914d10d2e52353ad63c1f0",
+    "git_blob_sha": "e0caabbf2ca1e1c8fccb9d63f77d8da037f2c369"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam4_montage.png",
+    "size": 755775,
+    "sha256": "bada8039ba56bbce0aad67212fecd70efc3186811c1b84dde5c169a75f86d2e2",
+    "git_blob_sha": "52e4345220b5d5d30aaf1ac78c4d2c6f3ddb3c26"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/in035/cam4_montage_fullgs.png",
+    "size": 318894,
+    "sha256": "8d7a7db8309a56fe3d1d345dd66cd64ab555e023ce8da8ad3b88990d955f7c8f",
+    "git_blob_sha": "21b8c6444f12172b48323fb2eedf2ed1dc90a2b7"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/metrics.csv",
+    "size": 60077,
+    "sha256": "55aa0661fc37f97be94a06f5e6170d66ec79122db8bbd5cda67869aebf64c68c",
+    "git_blob_sha": "448bb7e2443fa9b381da50d7ede0362996cf5803"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/paste.csv",
+    "size": 6825,
+    "sha256": "2d85fe541179de0826d2294ab96588a3da96b667b7dea1dc195a1cf4dd227064",
+    "git_blob_sha": "878858bb31cc79f549998971462979723784f99e"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/summary.md",
+    "size": 17723,
+    "sha256": "c1d11d4d112fe98dfd82f71bfdf42237e8af496c7807013c1e4e207703b773cd",
+    "git_blob_sha": "dd30d7bb35e0f831e61a82c9bbd550b4175cd986"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/tokchk.csv",
+    "size": 2085,
+    "sha256": "abb505cc93c771905e7b5bba52c6585cb39c1b8d31c5ac6ee50a4657a0e889c8",
+    "git_blob_sha": "34e7c2db0c9eec6d6fc05cefd351a28f09796f04"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/token_ringreg.csv",
+    "size": 1604,
+    "sha256": "f62ddd71a4aad5937f723ab956a692e8986447fc96ff2eb9c94a8d703f486f39",
+    "git_blob_sha": "9d84aafc78ee9a955df1a9298f0a28875ad9cb21"
+  },
+  {
+    "path": "changjing1_shot_0022/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2531,
+    "sha256": "c30a77498b7204116cc5b9020d9e9bb89a82a313e32d40cfdf6faf40c9288af6",
+    "git_blob_sha": "69673d291241eae4a7142d60d0f16fb644ef7804"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2533,
+    "sha256": "b90e56b867bede69e8a80317556f69f00c4aa6886a0f3616ace510e8c67e9c87",
+    "git_blob_sha": "5be066443028f8714ae399f8dd3d52d4fcc3fca8"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2533,
+    "sha256": "e95af5eea9c8c68f35a037f122e5e22b047e201ad605cb76d5952c804e23a1b5",
+    "git_blob_sha": "763706a5a78ff54bbe8b0766c4f184b9fd8c031e"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2532,
+    "sha256": "310072dfa850904328d9f9f12db3d9e3a709428c7ebe77c2ecc70466750e5711",
+    "git_blob_sha": "5b61cc2afc6bb1ca56bc0460bc3bf4126453c5f5"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3617,
+    "sha256": "abe8e8df6df581c8ff6e7a86ac5bdcec34266a2128b4d100788c9479bc02e7c7",
+    "git_blob_sha": "192efc464b7421318d7ea233e00c8d487124ab0c"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 2835,
+    "sha256": "39f80d3a741efac5be64797e8c88f9da46596c0690ffd0f1153d3971cf1ac0bb",
+    "git_blob_sha": "fe0edea12faa0a61561e8cb111f54713f6a4fd0a"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2837,
+    "sha256": "df70e43a2cb40e6bf8d82fd434599d6309574caa84638c2f1cb420538c19b283",
+    "git_blob_sha": "47d58200b6a75552948f462483025e531beb0042"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2835,
+    "sha256": "7c95f330a85cad34f9a018e05d9adeb70cc7e30dae6e401f50523004fce2650a",
+    "git_blob_sha": "14b4709e5ef1f006026176a68f35b9ef49a40ed3"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2836,
+    "sha256": "1bc185779c0d888231f23bde171bee1198d508687fddb6cf5dd887d97e03f623",
+    "git_blob_sha": "aae9991b53954fec659d4f52a8ce28cb8d5555eb"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3164,
+    "sha256": "89e8b629456b2bd633c11ffdbe703df468d6fc5f660ff93b7f48d736534ead04",
+    "git_blob_sha": "204a442490d0664b8d8dcab2ddf5ac6efc67c0de"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3207,
+    "sha256": "f51b3da24768871b4c8a66f55e95ed1bd26fcd34ae544a831377e2336e33e6d2",
+    "git_blob_sha": "cc972a8cd6816e294cd7d67c2b8a3bfe1b96107e"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3372,
+    "sha256": "2a4071dc1038dd81ca38fb1aa570ad87a5af77aa0af044c5a0d5404f3bbf094d",
+    "git_blob_sha": "73cd9d44fc3e1034c2bda19afcfdefb4d3ff137a"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3210,
+    "sha256": "3181750a44f02085807bd2a5ac60f54a46653de2ff90c29920de61a6016eebdb",
+    "git_blob_sha": "4fce3a3fbb205d33c83bc513f6f1add628a08bd7"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3375,
+    "sha256": "a99c20234b2dc6ae8348d7f43fbdd73d49b7740d2e8070b1f332f7af99f3b1a6",
+    "git_blob_sha": "8eb63c8e80e437fef479790064e791ddac3a785f"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3168,
+    "sha256": "e7f0da2eb268a49481db4c32fa0884ade54043281eea646d0b5957f54e647a9b",
+    "git_blob_sha": "f90956e5ecf280c83b4b5baa634130026fbc806a"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3145,
+    "sha256": "ab3fc60e25dbb45de93ee37dccf55329d54ec16ee904e9962d5ec1894767d240",
+    "git_blob_sha": "126f6a87c6e4b9344d22a5b5d05b07398dac9503"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3273,
+    "sha256": "518f876b14fe8c25287ecd2ef5833f48f5158046cbef28129bc316979fc32ac2",
+    "git_blob_sha": "6c76b5f9afffd0731ea55f4b20b978c5a3d6dc2f"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3218,
+    "sha256": "63a9116b49579895f634adc2765225b3984b39b4141c88908434776b2aa9983b",
+    "git_blob_sha": "db644f94a346047a0582378cffe9c4da1ca0b548"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3383,
+    "sha256": "1918e0211226a1245a44a5e0adb64df15e84aa095c4ecb5a45ea648ae85e0cc0",
+    "git_blob_sha": "a23f04dc6016e695cb782e0329aa56335504c0fd"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4580,
+    "sha256": "fc554659bfec48703de506522716411c47a7897787088c753caa057d39f0c10d",
+    "git_blob_sha": "2ba15a15b771910b86f702248f36468428973080"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3544,
+    "sha256": "38a545aa77313fec97fb7ea3fcf6dfc4586df8b4406c816fc3f302af002550d1",
+    "git_blob_sha": "cb0d2044c1b84cd13e927eea6421a2d864f62404"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3672,
+    "sha256": "2996fc12c6820e1283d24904ea54ad35707855bb13c737a17faa35fa62e93798",
+    "git_blob_sha": "b8e93d990ed249ea076fb5b52195376cffb9e707"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1511,
+    "sha256": "46ede5df97326c01d168bb7e7751f41ce55a898e2faf21909242de71b7b00a7b",
+    "git_blob_sha": "f02e42e5940056b4a9b55caf39b1a998b418b2f8"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2530,
+    "sha256": "6bf6c2cf393c93d010816758c0ca74fcb664cfcab11c8acaff9ffbcca84cfb68",
+    "git_blob_sha": "fe526c4ee7759e435cc94b7fa5dd6110a2df7255"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2532,
+    "sha256": "3b07b368f3818725dcf3393907c468c2019e7392b0471e46c7c6c07cc6afc106",
+    "git_blob_sha": "9416d88481eb9101f715a79b5dc6afc050b874fc"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2531,
+    "sha256": "ee04ca4fa60afcd79a89ca7735f661b066ceadaf7d1e5627ef2e5b4da13c7d1b",
+    "git_blob_sha": "6ce0d4e616e97ffe5ab38738677fa2bbcfd8aeb1"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2531,
+    "sha256": "ae99e38607f7e9e2bd6d86ed3fd5af18de862900b6446f9278b531809e703cf1",
+    "git_blob_sha": "516fb22efc8eaacdc0230dbfd13ba6aca0abcd90"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3621,
+    "sha256": "77e0b843b1c71c286de0bacd5a67563198efd71669479ae207a761edbd00f427",
+    "git_blob_sha": "60aef4f2cd18f5139110bcd5b4101ca589afcb0e"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 2836,
+    "sha256": "1cbe0ac375e96e582c06dc50bd58223b4493f4c45dd1d48ef5e2c0008ad85745",
+    "git_blob_sha": "5ba668eea1b55f5c0bea6c9e1ec9e45d9dd746de"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2840,
+    "sha256": "7ac366727986cea895f94730541d9a4b29ca210dc8fa1e1c5f34f4f45b35070b",
+    "git_blob_sha": "8cfabefa15b8725c2199e3e5249e9f39b0283c31"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2839,
+    "sha256": "f80fae73aab775282207cb437eabf1fab7ac8c2d008753da62fd30ac8b19415b",
+    "git_blob_sha": "cfa0a9f6a9c5ff7965696fc0da104173365611e5"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2839,
+    "sha256": "084f0f9877c6eb9e554af4f3ba8391e26f544cfe31147de2b195fbead66cb605",
+    "git_blob_sha": "2bbad791dc64510dd3e3247d53b160cca42b0fff"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1528,
+    "sha256": "a87f7fd48cde9bbbbc13506ff5625c68ee8e934f7fe3776df234bd32506d2ea3",
+    "git_blob_sha": "0cff93e391ff20d39b457be72ee516e99c0693d4"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4557,
+    "sha256": "f260cfc2734ce81e8cbff08141d1ea4ab058c6e490a907e696b72ab13137a1be",
+    "git_blob_sha": "0cce8f29932d316480bcdd3efa4c157ff649087e"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4891,
+    "sha256": "3a588720b8b0853aab9f903f1a10b5d10cef95a5bf820db1109bf6cde8ab6e1a",
+    "git_blob_sha": "61ff8a398b479c70d3e94edc7beed490842e8a73"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 5000,
+    "sha256": "6176a8b3ee54a3aa063d5bb9c12b88bb9ce7032a5f658a812de876b6ae1bb4e7",
+    "git_blob_sha": "9cbdbf9a03fa8c89f656e64d420bd8f78c020786"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4895,
+    "sha256": "669816ba70fa264adfdac89c853c5972c09053f9b77df86f49155edb7380a5ae",
+    "git_blob_sha": "e2cfa29b46cb47fe5511d5911217918a79f295e1"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4895,
+    "sha256": "2077636b9d2108c7d75843d9848a2d631d60ed0896c6b8b64f19dc13a7c0c8f7",
+    "git_blob_sha": "a7a2d9916894bbcad8bf4ac9686a01cc5e780fc6"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2521,
+    "sha256": "bdc6a921f25becad5c6dc55de37ab662e7fcadf30a89468408adaa2d25c2ee4a",
+    "git_blob_sha": "1872ba8195dac094eb1217b4f11d48366991e331"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2524,
+    "sha256": "b10c0c4a8a2909ea681b5fd5cfc3efb5644143bfc4c1c5bad2fef6370e794bf0",
+    "git_blob_sha": "249ec01f84550b3eb8abac6fe232ec9cbc88ab88"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2523,
+    "sha256": "91d70e489d329dcbcfa02d701a6b06e217a24488a07328ac97020bcffee6ba7f",
+    "git_blob_sha": "a60b9157733c9116cd20320fe65f8e0121c62566"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2523,
+    "sha256": "06562cfcffc562e5f244a0b96e59175e6ad35f48783f21ef29149cce1084839a",
+    "git_blob_sha": "45ad5a93868ce23bf44009e34588ec1fbbeeb4db"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife448_poses.json",
+    "size": 3580,
+    "sha256": "74f571dd51531542a693317ca35bc3cf9936f3951ac5c9df411773164ca422de",
+    "git_blob_sha": "e0a6cef842440acb479e816295cd17576aa9903f"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 2983,
+    "sha256": "4323c1087ab0aa235d86d447be6dbe64860ada0a8abf07165c833f97658740c3",
+    "git_blob_sha": "b460c20a0e5a7777f14c99f97cbcc621fc6de5e6"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2985,
+    "sha256": "d26d0ed72eaa88c1c8c315b2116da1df92146796066350c61cd5a9173bae5957",
+    "git_blob_sha": "60d5b52e00c8b3f620e32313503f6fef50fdf9eb"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2984,
+    "sha256": "48595f3128e9f59a49c11bc3ff695f191ccf289e36e4d0309ce806628ad0edbc",
+    "git_blob_sha": "121b4b724d58895bcd473bfe0705d1903169e87a"
+  },
+  {
+    "path": "changjing1_shot_0022/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2984,
+    "sha256": "78c06a6b07fae9a8087bce560ccb21640165724c5d241e1f65ad2e8ee4a69991",
+    "git_blob_sha": "7de2fea2f3230877dbbb27f3b8498a72015c2e2d"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/anysplat.log",
+    "size": 15325,
+    "sha256": "671b96d3c4b02792fef9ff67613360bef5c709f4e8482968d2277bba56124a0f",
+    "git_blob_sha": "bbc35a0339afd374244faacf0bb842c4fc067abc"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/evaluate.log",
+    "size": 1002,
+    "sha256": "e2872c703154355994057d5424a4636a1be74141307374b9797e71a9fbfd291d",
+    "git_blob_sha": "c72c014fe775b02a933ea9a02fc42d463726c01f"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/flow.log",
+    "size": 207,
+    "sha256": "a05e3c61c6dcc871eb41e4bc8acf66c21478e6037c3cd6cf9fa32cd4be91cffa",
+    "git_blob_sha": "f218978682cac77864b91704d5992ff1e5881773"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/pixgs.log",
+    "size": 771,
+    "sha256": "f256bec2e47036a0605b69e0ed176a7872d8a9354197618428b88e21990132d2",
+    "git_blob_sha": "84cc09c7cccd9bb133b833bb3c653a705ad1759c"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/tokens.log",
+    "size": 1883,
+    "sha256": "ba66f8edab823c303e856cd3cc6b476136b90cdd964c5406cb0872c2cdf807a1",
+    "git_blob_sha": "23e13f51be9e5b02176f837aff8c49bc51b5aeb8"
+  },
+  {
+    "path": "changjing1_shot_0022/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing1_shot_0022/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing1_shot_0022/prepare/prepare.json",
+    "size": 1313,
+    "sha256": "ca82678a090500c41d24b20e75bbbb19dccb2d153cde9b19363f6a8109557c3f",
+    "git_blob_sha": "32bd74ae9a6680c957b2a6ce5aeab35036b29151"
+  },
+  {
+    "path": "changjing1_shot_0022/timing.json",
+    "size": 127,
+    "sha256": "2411a04f53d061aecdaf060bd5f2bdb06e0c7d973c1e7f674fb1448a01cf59e5",
+    "git_blob_sha": "a45573f3d49ecffb3ad6e00a2b55429fbd4c7590"
+  },
+  {
+    "path": "changjing1_shot_0022/tokens/tokens.json",
+    "size": 4935,
+    "sha256": "8ef9a293cd70dc15ec61a7b97546648c9632b91010b8b18521130222be9347de",
+    "git_blob_sha": "eed9506331862bbba34a08693c43ee1f47acd6a1"
+  },
+  {
+    "path": "changjing_shot_0000/config.yaml",
+    "size": 7292,
+    "sha256": "37fed19609a4049e7c751a6888edb71495b32ec72244720d81ddfe5fddfa83b5",
+    "git_blob_sha": "0de0c1c130316bc0ffbe8de835adeb8a1dc4ef71"
+  },
+  {
+    "path": "changjing_shot_0000/eval/auc.csv",
+    "size": 898,
+    "sha256": "c9145681f67e8a3737b506139561653948f3b583730843442d80769b0b615467",
+    "git_blob_sha": "3d703b53531476c1dde8d9dd3f10e2219b068ec7"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam1_montage.png",
+    "size": 838324,
+    "sha256": "c7918fd3e1b7d89604fe9a8e83261641f32c9e021187a6a5610f904cea1f93c6",
+    "git_blob_sha": "ffab4c0a2845f6e3305adbe3b89c9498adfa9049"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam1_montage_fullgs.png",
+    "size": 363856,
+    "sha256": "5a6ecb193f7126998d5ba24a45ef1583ae04c18681de36e4d80f7198b6150c36",
+    "git_blob_sha": "9dbc8a9761bcd49fc6d05edf4ee344bc70a4338e"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam2_montage.png",
+    "size": 754545,
+    "sha256": "96a73971873cd6dd50727e345e1ca324b2558e28eb072cc7349f3d18973413d8",
+    "git_blob_sha": "ff6cf3db3b153d68bfdb9839b4606daace88c220"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam2_montage_fullgs.png",
+    "size": 332290,
+    "sha256": "45c86b8815f663ce982b9b1ecccc82666f13afa05575d6ab4531bdbbcc3a22a8",
+    "git_blob_sha": "e916ebfc069a5c25986992d3395eb33470af25cc"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam4_montage.png",
+    "size": 891281,
+    "sha256": "a06b5af6bf3b92d9ea28c2565322e03b43fa13f55cdf94194e2af8202cb25f0e",
+    "git_blob_sha": "f7f63b2ccf40dec018d327944392ffccaa0b658a"
+  },
+  {
+    "path": "changjing_shot_0000/eval/in035/cam4_montage_fullgs.png",
+    "size": 395187,
+    "sha256": "de527556840bd7c48fbfb9a3bde5962d010fd45703173e63a59335983dac92c3",
+    "git_blob_sha": "8264d6e059db98db896197595ecf4b7a73303e10"
+  },
+  {
+    "path": "changjing_shot_0000/eval/metrics.csv",
+    "size": 59990,
+    "sha256": "304675885a098ab8239a67fac5951b0062041b934b310438a585103e13863731",
+    "git_blob_sha": "acf2d60ea0d4e7922b4c14370e26998fe27ee5f4"
+  },
+  {
+    "path": "changjing_shot_0000/eval/paste.csv",
+    "size": 6880,
+    "sha256": "e22ecff5d1f935aae5331b65a5f31aa345b604c8a99d631b76f8a0c73d25abfe",
+    "git_blob_sha": "56a05151c9f1ef5204fedb5d4ac5a0c24fe665f7"
+  },
+  {
+    "path": "changjing_shot_0000/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing_shot_0000/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing_shot_0000/eval/summary.md",
+    "size": 17713,
+    "sha256": "4a0b4a7c19d705f77e90ff978fdabda74b4174a03205b0f514b4640908bf7b93",
+    "git_blob_sha": "5de3d76dfe164a71919256617850ff3156759dd4"
+  },
+  {
+    "path": "changjing_shot_0000/eval/tokchk.csv",
+    "size": 2118,
+    "sha256": "55637d377dbeb8ee4c3fba5c1220b43abdfb75d88a30d8a1357b0caefbc0af09",
+    "git_blob_sha": "97ea346401cd4ac4a30fc6e87feb7d6acc44eb3d"
+  },
+  {
+    "path": "changjing_shot_0000/eval/token_ringreg.csv",
+    "size": 1613,
+    "sha256": "26154f6ea711bada4e227220bcf78fd9b0e0ff09628d1ad7449a8d1a0fc6b3f7",
+    "git_blob_sha": "5f5aaae7716c9ab974719b0a5ea997c7d2967a85"
+  },
+  {
+    "path": "changjing_shot_0000/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2517,
+    "sha256": "ff4cc1678901037714e939a1a18b5e063e4f930e8495353f260446cb651729ce",
+    "git_blob_sha": "e6e9ee9ea36d77f5c08938d9564973c318c63202"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2519,
+    "sha256": "111cc3770da2432b9dcdb39c57b43afa09c4d260047f9b042901d6586f1a0d1a",
+    "git_blob_sha": "b58a47e4956d9fd6cc72cd6b7b33c0a9a65ba775"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2518,
+    "sha256": "3ccf64e378ca22e5e6938ae084d9c0b2c82257a1124c380414385c03f06dce0c",
+    "git_blob_sha": "3557249f67d8cbbaf608ff96b073f5a234890be3"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2518,
+    "sha256": "e8707c3dd77d358ceee6aaca33c37d27e2a690f1166fc556384bfe4dada43a69",
+    "git_blob_sha": "1487704e1c3738f70e942a0420c6a236fdc8c255"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3616,
+    "sha256": "a8f628c44de4ba41f42b3add5450016dab6a2406bc63f9211f1179d90f150d06",
+    "git_blob_sha": "2e935f5c00c46a86f028d674263a8da712f5f51f"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 3021,
+    "sha256": "a992c2a6adff45cfc3d3ed5c8ab2bc73ada24297b395734ea9660c5e62b64c98",
+    "git_blob_sha": "8fe40a038aecfd53c763af58981eca5c36e5dbdb"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3024,
+    "sha256": "2382b2311e7f4d425e43186bc5327284fccaf138fbfdcc595a65b25dd4dd74aa",
+    "git_blob_sha": "14341eff2a741a5c7fa493937b32416718b3a7d6"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3023,
+    "sha256": "a64ba10218354db387c9fa0e962c4710d6a19d8e34ebf17ec33ed604022b1737",
+    "git_blob_sha": "08196548de9cfd34e33c15a8673358fedd5883a0"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3023,
+    "sha256": "e6fd3ede50398d588db6dcd89cb9091d6365791526b9e9f3a7eef1293676d3e6",
+    "git_blob_sha": "6a36732994ea3fc212cbc27a96e5f67a9605c679"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3161,
+    "sha256": "5b593c3f503c4ae7ae5f454fe9dfe846ed6870ec366f56e409b83d59f8d7d9ad",
+    "git_blob_sha": "47b768b0c76b7568b01d1f11e5f84a557f84e1b2"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3253,
+    "sha256": "01dbcb599f87a66f379b75d929c74ce617b4938cd94340198b86c55e8c4eb084",
+    "git_blob_sha": "0a8975dfc7c89a44b43307ce18d8f565c2dd9801"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3418,
+    "sha256": "4b81b5127e42dc1435ddee45927985c52f3e13c7acaa5d7c9da4dc6b2bab835d",
+    "git_blob_sha": "45b89dd41e67f40579c81fe341202c0047a9116b"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3255,
+    "sha256": "ddf7cc6ebedc0e4cfafead5d5623ca38baea5b395cda46e00963fcbc722f375d",
+    "git_blob_sha": "0bfeb1525ef41cbb10052e9cba935782a2953fa0"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3420,
+    "sha256": "8ef5be925e3d58e8cd4d5b6781e6d2f7e9baffb97a192556f0f0565dc537c592",
+    "git_blob_sha": "b24198f1bfbf86ef0857ef5077575df8c462a21c"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3166,
+    "sha256": "9bef1625a683ea492bd4a41c4511470a95290e517c7868aa8b774dd412a6f1b7",
+    "git_blob_sha": "61e95825f906a681ac3bcced4cd5e8402be1914d"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3191,
+    "sha256": "5a9cef54ed0cdfe1f8210f1fd7aed407713a9c7a350d0a4cba7f446dd4651817",
+    "git_blob_sha": "f43b4a28edcb2740b9bb839a338a377f0ea814ed"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3319,
+    "sha256": "cb390bced192a56b69d6ff5c7bf26b8b953b56c635f4351e9a12bcaa738e738b",
+    "git_blob_sha": "1a15a3199600da5396dbdf767b72ccebb391becd"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3260,
+    "sha256": "370b9fbff702a86d9ca68117bb4f2d2da8bfaa1e8a961a9f73e75dfcbda947c5",
+    "git_blob_sha": "88e767bf41d2ff74b0e4ed34931ae6fce5dbdc61"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3425,
+    "sha256": "4f5e3c3bd2a12494f0e5cd6005389f8a361e8bed44c655969055fd8bdddf2c99",
+    "git_blob_sha": "426911bf0b8d8399e97eeb4b4b2aa5d1b83d541f"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4573,
+    "sha256": "d7688eaf5a798a4ec1bde782508b545e9442e03bce5f79bbf7e59834e51e6d7f",
+    "git_blob_sha": "a32ad9b1a7f012632d5f0fa27cbf04e1852ea792"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3530,
+    "sha256": "48e820f582e910fe0d90ae2b30e2f77f23f13e4e8064e56262d0c88cfcfbfea4",
+    "git_blob_sha": "87e9ea156aea1be3bbb83951ef803657e74519a3"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3658,
+    "sha256": "f89683354dd62405025583e7412dc39fd416fbc57d02a180eef787b49f3361b9",
+    "git_blob_sha": "54e320772b337cafafe8cffc7e9272510b905fb3"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1526,
+    "sha256": "f4b3df79ff1a5a0e2cdd267f04d1b6b5187d8395e24d74448d96c3054e22af52",
+    "git_blob_sha": "03b82d21b38be8f05e63c6f7ce3b39e594e2130a"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2530,
+    "sha256": "c97caf7bc643318857e9d26a531642a96ac72cd3e1116329a7bf64bb5d2fcf26",
+    "git_blob_sha": "7e5d638c7c48f1c21f273f1bb2aa7ac6cbf0070e"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2531,
+    "sha256": "f9a9dec0f98d56a90f7a507c1cc5d565af8bf0b721fd4f70e25ef0ef31746601",
+    "git_blob_sha": "097d018c52bcc54d702034f0719b8277d5795579"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2530,
+    "sha256": "41663f7e94c9e79bc5be363b24b14ea1bc62931a5b19074464b9e38f3d7ba700",
+    "git_blob_sha": "937b49ce8ab2e82aa59c0d82c77007fc237259cd"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2530,
+    "sha256": "9bcaca8af50b69c7036841e369a18d25d146ee9f4c036b90919720b0bd7d61f5",
+    "git_blob_sha": "9e76604c825ed637ae860351a050f437ffbb806f"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3612,
+    "sha256": "95249380ca8dd5fa50483b3030c647e5628270c6e7d7219fed040b4ffd7464f1",
+    "git_blob_sha": "0d5fcc31c69fe6ede11548e49f8d17d86b306360"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 3030,
+    "sha256": "7ee35fed21292e75d253e2b93e0e36adbb61c776402957acdfa5a80611b58678",
+    "git_blob_sha": "f51ba6e0b224e6254e76a483eb0200f5bce3d0c3"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 3031,
+    "sha256": "5f3c9b6fde5a42811a4f6064ecfdce5df348e3a332fa8fbd17056ecf833e5a3b",
+    "git_blob_sha": "61589bdb6ecb2d354d0870e7157f811e84ef3570"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 3030,
+    "sha256": "9b337b8dcf25f2a2bc55f110f6c576638592eb31920c5d5a6a34c9811eecb9cd",
+    "git_blob_sha": "541268d1f96cd14b51ea55a0cef5f0de85b1071e"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 3031,
+    "sha256": "1543783b57692544f1f5bad1be3b2ed657a48e8886f020a669a676947044d099",
+    "git_blob_sha": "657ba12b640e4f583cd82328349cb704688c83b3"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1508,
+    "sha256": "fc21a2da7144a6479753c75c8d25ec8eefb448b3ec7c1d4dc6dc42de2a3ecc76",
+    "git_blob_sha": "59bdca0e19520fb6d13d78e7d7354edc4bd3e398"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4546,
+    "sha256": "9756d2bb6b67e1127d7eb7328d0c4894441aca428ba1154dc678a21174c1e77a",
+    "git_blob_sha": "e066de354acc309654f9100c3080227aea058dfe"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4887,
+    "sha256": "30469d4a9a6bb7d3ee8c94207e5c8ca9171b79dfe90fb17f133bdb4a086dd55c",
+    "git_blob_sha": "71fe88765ac8e48df3ccc731637b862806a409f2"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 4996,
+    "sha256": "638a88d041fbbea11e2398bdd68a7062c42284661e421c0a6b116da71694b5a4",
+    "git_blob_sha": "87f5b2239a527efd66780c3525ac543324696210"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4891,
+    "sha256": "4668e677e4c0183b6febbc9eee772a7f953a5fec9e7f502b7918cf0fae03c9d3",
+    "git_blob_sha": "2a6f65a943bc5fcf252cc3b374eabf34089f53fa"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4891,
+    "sha256": "a0e5b76293535cc2986a1be786be2f4f68d733227c7965fddb49935074977485",
+    "git_blob_sha": "1ef682ae5a06373e73e1e4edb4239cc52f2a12db"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2521,
+    "sha256": "ae2c6ce6a4a649d2e103e256f643622af0589221df8077af2c769644a4f171ec",
+    "git_blob_sha": "8ce0e17f8a1ead80ffb4040620a8241654c62ed2"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2523,
+    "sha256": "d20d5271d5d98829d578cf6997979ef935e49992b19e6c1cb01bf81aa1c43441",
+    "git_blob_sha": "ad82bc644dc595a2a3927efbb430490de43823ff"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2521,
+    "sha256": "9929024b06b6ee008309fe5170edbc68428f049cab949da268e8dc42e77c1e02",
+    "git_blob_sha": "76e97962b928d4ae56c3ce177d7219d4676e752e"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2522,
+    "sha256": "a861add99b813ab9cbcd86b1a4f17bda1c6535c7a3b038c923fbb28db6c357be",
+    "git_blob_sha": "6938e8680c72e3529f211bbe9b47b882043a7665"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife448_poses.json",
+    "size": 3615,
+    "sha256": "6d1952dfeb4d86a9f7515fde734d44d3ac8c073fa7bbed46a4af8a231127e54a",
+    "git_blob_sha": "917de352e12a0354b39ab2a3ff059b82daf317f1"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 2826,
+    "sha256": "fa22833da4b509b875478b332984aa3d8cc856f887896da8b35504f656f2cd14",
+    "git_blob_sha": "b8ac7bcfbcfe2a232ab9cc2c85430ead4e8ec52c"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2826,
+    "sha256": "5a76c46a3f3d7067777e160608300a43d7526cf9cbac2cfbce62592a1dec3550",
+    "git_blob_sha": "2341421636648076109373b4578e763632576cc0"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2826,
+    "sha256": "0def1f103b6e9bf7681a63e951d6b0124847b179c45b32722d2fa0f9f467cd70",
+    "git_blob_sha": "2944d11d57e851d9be822185728ef8acf096ddfa"
+  },
+  {
+    "path": "changjing_shot_0000/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2826,
+    "sha256": "978479aa8ad5749099de94a7d792b8f2e1efab6007873d5007b3dad021eaf2af",
+    "git_blob_sha": "30b6fb554d0c4e70403adb250e7444c809513c4b"
+  },
+  {
+    "path": "changjing_shot_0000/logs/anysplat.log",
+    "size": 16749,
+    "sha256": "e2ab5b36601ecc663f1038778f4812cd5710df6793514cef6215061b45a58e83",
+    "git_blob_sha": "932e02a9e32b4d07c7f2ff265e625ddf81de7148"
+  },
+  {
+    "path": "changjing_shot_0000/logs/evaluate.log",
+    "size": 1001,
+    "sha256": "b671fda634fb22dc2f1fcd3b63de07a2f94cbaac082a193c33154790bfe20563",
+    "git_blob_sha": "dee0dc77369050453cac8bc69f347ecfc233299e"
+  },
+  {
+    "path": "changjing_shot_0000/logs/flow.log",
+    "size": 207,
+    "sha256": "c00d716674831ea41bc5b894e7d53503ad80e2d053154e4be107e5d443f1183f",
+    "git_blob_sha": "7492878bec4e66dbf14fba4a9b4fc33330a0bb97"
+  },
+  {
+    "path": "changjing_shot_0000/logs/pixgs.log",
+    "size": 769,
+    "sha256": "fc6cc7b38f1f19bb32d82f8782e24b80d89a02a2683b173f756d780f965eb3b2",
+    "git_blob_sha": "d93e4c09d4a0e74757b56850b4db3a798d0270f8"
+  },
+  {
+    "path": "changjing_shot_0000/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing_shot_0000/logs/tokens.log",
+    "size": 1884,
+    "sha256": "575256950ed0801e1489b5355fe4a3c6769c5ea07e9f72f5b4fdfa08fa28772a",
+    "git_blob_sha": "7c87806050c4a019f685c886b626617b9571fe6c"
+  },
+  {
+    "path": "changjing_shot_0000/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing_shot_0000/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing_shot_0000/prepare/prepare.json",
+    "size": 1322,
+    "sha256": "70f69a7be74cceec15f5412c80d75341c1a921ae9f039136483423cc3f35cf05",
+    "git_blob_sha": "01bd50c772edab3a336daed48aeabbf9698102aa"
+  },
+  {
+    "path": "changjing_shot_0000/timing.json",
+    "size": 127,
+    "sha256": "e025427aa3970a7b9c46eb0f50606282de99db9ea3784dbaebf236bbdaac0744",
+    "git_blob_sha": "fd9135bb7f79807e3c6968480da5a697ddb12e8e"
+  },
+  {
+    "path": "changjing_shot_0000/tokens/tokens.json",
+    "size": 5002,
+    "sha256": "90c11c8c1e50bad6d043c53c7c77ceb9fdfe7d36ff1b94c8ac968f5fcc0884ae",
+    "git_blob_sha": "c1c417a17744e14c50e21e9c485b95072954ca35"
+  },
+  {
+    "path": "changjing_shot_0003/config.yaml",
+    "size": 7292,
+    "sha256": "9931da8285c7debc53c103cdbc034c9d002d0c05d00ec603686acdf2b7e47fde",
+    "git_blob_sha": "989bd12f6df4097825a75fc1e4e5ff054144e751"
+  },
+  {
+    "path": "changjing_shot_0003/eval/auc.csv",
+    "size": 881,
+    "sha256": "e960925439d5fe590ef3d39f33e2ef7bf209b3d9631ef53bf979ba75deb43155",
+    "git_blob_sha": "259d0460d617f02d1ca55ee33d542f3aa197bb6c"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam1_montage.png",
+    "size": 664911,
+    "sha256": "65b97bd5b022c68fc4ad7712f2ad641119c86622d511e49439f0d2c9d44f6839",
+    "git_blob_sha": "07dacee586b5e6174ac3b31354cbb29152a70d30"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam1_montage_fullgs.png",
+    "size": 275251,
+    "sha256": "977f88b2611419f9a2cba85376610931035f81eb9f7e15ef4efbdd79f78683d1",
+    "git_blob_sha": "2fabd198a0e87b11c72834bc006da93df6e7c2ee"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam2_montage.png",
+    "size": 990611,
+    "sha256": "db9b33675cc3beadb3abec2f15a3c4cd34319b55b66571545c391681e143c198",
+    "git_blob_sha": "3cb54de68524b27f620e7e8c1b8acdca335aa3a1"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam2_montage_fullgs.png",
+    "size": 418848,
+    "sha256": "1958cef0594c2d30d29e966046b3676187bdaf1085096613f27bd92022092b7c",
+    "git_blob_sha": "31e8e4129659c984183427595fdbaf712308cfdb"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam4_montage.png",
+    "size": 792317,
+    "sha256": "66ffbbd23fa3dea09b8ddef1e9714625d252b205d65f0b81548f687f8f8d00b0",
+    "git_blob_sha": "1712b48ad2c5b6c7e2c95dfd8ecdef566b04f2dc"
+  },
+  {
+    "path": "changjing_shot_0003/eval/in035/cam4_montage_fullgs.png",
+    "size": 346630,
+    "sha256": "cd207995aca03b2e9225be08fe91f05f6b71c6eb93901196e990fff30eec0852",
+    "git_blob_sha": "0d159e2464bd8946679e8bcf171109270019f128"
+  },
+  {
+    "path": "changjing_shot_0003/eval/metrics.csv",
+    "size": 60037,
+    "sha256": "117284f1d72d02990a844c53696a2fc7aacffeae5e1fb381a239b95ddc0a83c7",
+    "git_blob_sha": "85642a99fe69177bfab28764735458be1377b03c"
+  },
+  {
+    "path": "changjing_shot_0003/eval/paste.csv",
+    "size": 6846,
+    "sha256": "dcf36dde03782acd7293161378d3a7f14795cc3651ed2697c48509a92b2d9884",
+    "git_blob_sha": "3766eaeb15ab91a986c7e5b28800d32e0b561f3e"
+  },
+  {
+    "path": "changjing_shot_0003/eval/registration.csv",
+    "size": 41,
+    "sha256": "084fc41c7cc484c58979b40c093ea45fa8a65eced1a68a9f5c40e39fbea76c69",
+    "git_blob_sha": "f719275492f0a5decdcd4223011382f38cd1484f"
+  },
+  {
+    "path": "changjing_shot_0003/eval/risk_sweep.csv",
+    "size": 62,
+    "sha256": "65813c3ae1c63eeb2aa95d033cbeb4071d5aa71a7ee846f8e4c44ba93fc3533a",
+    "git_blob_sha": "97bf9d63bc7f81122737ab9fc1968aea5070e1fc"
+  },
+  {
+    "path": "changjing_shot_0003/eval/summary.md",
+    "size": 17712,
+    "sha256": "13adf01d92b4b573325c7c2fd45df48a13f0cf3929639cf0d6e24bf1f26b0a14",
+    "git_blob_sha": "f4776ebcbfd0770a49b542e52afc6ca3556111e2"
+  },
+  {
+    "path": "changjing_shot_0003/eval/tokchk.csv",
+    "size": 2108,
+    "sha256": "b99ac33ae70bdeb70df8f5b906a506a6849454d88af235227219a7bf03588c60",
+    "git_blob_sha": "6ccb35c8d6bf38c76e3a0f401d6b7b2f36edd403"
+  },
+  {
+    "path": "changjing_shot_0003/eval/token_ringreg.csv",
+    "size": 1611,
+    "sha256": "b69a0a2ec42674eb9b731db22a56c922ea0baa58f481eab59952deea9b7193c4",
+    "git_blob_sha": "1968fb981445b50b0d54266d623fe055f15efc3b"
+  },
+  {
+    "path": "changjing_shot_0003/eval/validation.json",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn448_nat_dil_al_local/meta.json",
+    "size": 2531,
+    "sha256": "84dffd5193df966fba895f5876c5513d659086bd1d3784ce8ef468eeeef60984",
+    "git_blob_sha": "f520df0293f1587158cdee165fd543b028c170f8"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto100_local/meta.json",
+    "size": 2533,
+    "sha256": "4f066c541739842ccf04d7f2b134818f16456f8752f3f0a6ac86a656342cba29",
+    "git_blob_sha": "bc9a78f59d05781bcf1e31921b5bbba1debb47fd"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto25_local/meta.json",
+    "size": 2531,
+    "sha256": "895428dd25cc90b5a639394fa7033795fcf53b4ac41793ffee2756afaef6c297",
+    "git_blob_sha": "07fc527bb1193cc158464dd696b6b59194cbce2e"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn448_nat_dil_al_tto50_local/meta.json",
+    "size": 2533,
+    "sha256": "81a0b88d3b9ed7eaac8c20f74fa407c63b639e990cf24c8e6c03d55dec8f782b",
+    "git_blob_sha": "817b221c97badf126ecab5330542ec96bae89f23"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn448_poses.json",
+    "size": 3584,
+    "sha256": "b6f768cc88d8b59c5de85286831ee82ef36bf86398f82bbd4056b893b246a8ae",
+    "git_blob_sha": "928b35831a55a7d797f07c7a55e2b9ea5c18cd4c"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_local/meta.json",
+    "size": 2627,
+    "sha256": "e12a75c23becceca58afadf7bc20a08d57c925494e70bd7803e5bcb53101d550",
+    "git_blob_sha": "eda14c3ea69a7734a9f65ea44925f300e512889a"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2629,
+    "sha256": "0027ed05816ea59ab190a7268766427dfef96ab88ab5d89cb398f8b2926ffcae",
+    "git_blob_sha": "75fbb38140c6b9019d62feb7cbb55680cb3fbaf9"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2627,
+    "sha256": "66e39bc8c14ae194663002cade7ec6cd29b74e3e4453d6f568072c9735b28477",
+    "git_blob_sha": "52203a42a842dd14b604b628e2e3fcb63bb8f22e"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2627,
+    "sha256": "82630d80116928710161cdc14eb8c514ed77db31dd4eaa2172e6a0532f1a1c59",
+    "git_blob_sha": "be7f67f7f02efc3c27a002c949deb9b969f9cb21"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_p3h_flw448_p3h_al_local/meta.json",
+    "size": 3147,
+    "sha256": "4cef1ab2b98b1f7d1b793aa27d0c80c0e631160412d29c5b8aa8dbe97a82beb5",
+    "git_blob_sha": "42de1f7d7ad1d9ae3c62d687a40804fe3306a01c"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_p3h_fsl448_p3h_al_local/meta.json",
+    "size": 3193,
+    "sha256": "4544f1e3cfbc7aa8897d6a71b1639a64fbdcad0a272fbd2e721542977647d6c9",
+    "git_blob_sha": "b07336b44405a03465fc61193e16c25512a9016c"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_p3h_fsl_g448_p3h_al_local/meta.json",
+    "size": 3358,
+    "sha256": "dc4fa75375fc27f1c1e94270ce59705cb6b47e9eb39ead5fe117d7e0e0a4a636",
+    "git_blob_sha": "c26289860c10f74516b66d1aefe291ebaeec90b7"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_p3h_fss448_p3h_al_local/meta.json",
+    "size": 3193,
+    "sha256": "a84884c2a491daf0b5dc39e5f8d029bdba6be8538c9622b1df1ac8e33d307c03",
+    "git_blob_sha": "b0bf89763b0ccd590a6b4c3724499d046c5550d4"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_p3h_fss_g448_p3h_al_local/meta.json",
+    "size": 3358,
+    "sha256": "1e42dfd40c7fd555b3fc0934dab915b0c2f52933ab68df6bd6ba45bb69046600",
+    "git_blob_sha": "3524087ff3047459223e46ab0e1e7c0405d109cf"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix2_flw448_pix2_al_local/meta.json",
+    "size": 3153,
+    "sha256": "2d5c22d01375f1d64df450547f00a292f4aa5e75ca81d9b527beb83f7f366218",
+    "git_blob_sha": "cc17dcf405b6a84b84bbd5e926fbbadb9f523639"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix2_fsl448_pix2_al_local/meta.json",
+    "size": 3130,
+    "sha256": "54626ca18d0ac25611f64f8961a403f1374cd9442f3f1f58ed09857603e82c71",
+    "git_blob_sha": "f8c342b4ed896148336974e68d929a71bcbd169e"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix2_fsl_g448_pix2_al_local/meta.json",
+    "size": 3258,
+    "sha256": "3ba24ded58dbdb40c02241ac25eaa5c650b08231013cc010378d6a55f41edec9",
+    "git_blob_sha": "cff692b2e0e8e0bd6acb721300a18e4b1e8bb15a"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix2_fss448_pix2_al_local/meta.json",
+    "size": 3204,
+    "sha256": "905a760301ee9fbd8d38cdc8c7ad24c7f046d4100763dcd32337d81570667123",
+    "git_blob_sha": "922084b0c348a39ba97cb9eb6aa4fec231f5f939"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix2_fss_g448_pix2_al_local/meta.json",
+    "size": 3369,
+    "sha256": "0394a03fd021ef7eb49c8ddc35690b77222cf9d2f56160a7850727121dd4f0cd",
+    "git_blob_sha": "294a6dd964cf116a51225c5469a3fa6d6ae534e1"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4583,
+    "sha256": "d570787ff0eceb9ad15c63d854a2f797244aa4a5681d3086e6fec4877462000e",
+    "git_blob_sha": "e7157a70016e1c36eef3e2985fb41225dd62fdc5"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix3n_fsl448_pix3_al_local/meta.json",
+    "size": 3541,
+    "sha256": "4eec2ab4ac74891c47a10bd84a04828c5210ca39508fd0664b0d3a6902167f4e",
+    "git_blob_sha": "2c4a6cc0babe156c3716806d56be21109b629774"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix3n_fsl_g448_pix3_al_local/meta.json",
+    "size": 3669,
+    "sha256": "ff2ec9251696a0b395fe955f05490c7c9eea26b1f61547c469e9136e6966cb46",
+    "git_blob_sha": "84e6d335263fd4f8b63aef787d9c19a02d0de70a"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_cnn_pix448_pix_al_local/meta.json",
+    "size": 1476,
+    "sha256": "0dbd4beba5545b5af1c6b0e7cab5234f4d02cf0644cb45d81611dc89455c2bc6",
+    "git_blob_sha": "9387734ef994bd2619d57db334e41378153d6a17"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5448_nat_dil_al_local/meta.json",
+    "size": 2527,
+    "sha256": "a16151d2e9cd00b9965819b1ba4092824c4376f0e756973620dd77788f9e6491",
+    "git_blob_sha": "383a75df4a2b45a7ae6309630b1707ef12e24a2a"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto100_local/meta.json",
+    "size": 2528,
+    "sha256": "8571b0575a8de4567e3266571bd9539a8dc24716a70e25c41d68b19613392350",
+    "git_blob_sha": "7b309438710b4b21add77396e7a0cc2ae01e9b1e"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto25_local/meta.json",
+    "size": 2527,
+    "sha256": "ebf96f78ca39ccd2fe08a4424be3f07bc6f0f48a4e071e6d018beb224adcd9d3",
+    "git_blob_sha": "41b8a0725b1a6be67b9046c3377e871e05cfdacf"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5448_nat_dil_al_tto50_local/meta.json",
+    "size": 2527,
+    "sha256": "c80d9836d77b93fbaecc5086a29bcb4f6ffcdb5bb51e07a4e9ef2df8e344064f",
+    "git_blob_sha": "7fd06438150f8162ee218ba67eea7b1f3a080797"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5448_poses.json",
+    "size": 3583,
+    "sha256": "e26f5081139cc4c873aad985b495c4921954f3c5b2a48c63453b5ff89c2cb70b",
+    "git_blob_sha": "890ac0f1194bba677b684335564b5642da2821a7"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_local/meta.json",
+    "size": 2814,
+    "sha256": "81ce981c5754cb7ae42c881445b07436c0d2e0459f035bc9fbc6c60a1cd3ead9",
+    "git_blob_sha": "80d0ed408a3d8c0f15b28897158b639c6c38bba9"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2816,
+    "sha256": "d276adfed1b93f108f548ee7f5ed20ce1208af02aeac42a675972c3fbbe3e01f",
+    "git_blob_sha": "5a283f57acd4574ecb7539fc0bcb1d8513493aea"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2815,
+    "sha256": "b07a8e0279a0dbf6cbaa369ff897a58d4cebd6d8cadd59591d9d2ee9fbed6d3e",
+    "git_blob_sha": "6f2635a799c6f32f8f533481f3dc20e7f447c870"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2814,
+    "sha256": "89493f87b7eab0b36fad393e47f112bc873d1a7ff1264b328b6bc777c783cc56",
+    "git_blob_sha": "80a3f55cb1884186dc9efb998dd9b35fd743e45f"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokcnw_f5_pix448_pix_al_local/meta.json",
+    "size": 1512,
+    "sha256": "e61cdbebf2ede1ed998fb64d2731bc88cce22e1101aef53fc473c1796ba8861e",
+    "git_blob_sha": "e47478bb34148ab9feb6ee2d2b5283e1861d36a0"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokf4rq_pix3_fsl448_pix3_al_local/meta.json",
+    "size": 4562,
+    "sha256": "def05995036e96ae0632f6c1f2694373c3ca21179a5b9023c4d7943da0e4eb64",
+    "git_blob_sha": "096443e96e3e6276df8e732606361b8d02d707b7"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokf4rq_pix3bg_fsl448_pix3_al_local/meta.json",
+    "size": 4897,
+    "sha256": "560a571de3b8639c2fec8e473e78fc6980801599e9b7b15e2729689f846f795b",
+    "git_blob_sha": "9bf4c63e8b6fe65f092a4120c8d77fbf9175c57c"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokf4rq_pix3bg_fsl_g448_pix3_al_local/meta.json",
+    "size": 5006,
+    "sha256": "9cb4febfe7a936135649d2b24094577a18d22b742f239b6cdc611bba960c83ed",
+    "git_blob_sha": "7009c01091c1b39bb5a7347a71dc160b30974e2f"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokf4rq_pix3bg_fsl_s25448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "7b4150a2ef4ce1eaa27db79196da13967e72748cd782ea559ed7d9f5a7211461",
+    "git_blob_sha": "eae9ef1f260a7beeecb2b3e930662951c079d520"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokf4rq_pix3bg_fsl_s50448_pix3_al_local/meta.json",
+    "size": 4901,
+    "sha256": "acf928ed647ed7dd5b4a7ffec0e8c9cf88d43de5b5f8de774aa1d1566627b196",
+    "git_blob_sha": "26eaac04ea49e965d123d551e303bb505bdf5b01"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife448_nat_dil_al_local/meta.json",
+    "size": 2520,
+    "sha256": "637bdb3b592dd996f3be2e502335f76c6d4d2515938e42bb8f2af4269a24f37d",
+    "git_blob_sha": "7443d5b437759e048816a0d6704d486cbc26ded2"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife448_nat_dil_al_tto100_local/meta.json",
+    "size": 2521,
+    "sha256": "bf5e9ab83b31158a49a428a32c505c634f0bb76243112361c8144854841d18e2",
+    "git_blob_sha": "ea248f776886e6630029725f605a3b2149342b1a"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife448_nat_dil_al_tto25_local/meta.json",
+    "size": 2521,
+    "sha256": "9013bcedbc8f2f25e7b0ea9ca46ef82b2aeeb8062c76117df9230dfa667097b5",
+    "git_blob_sha": "030f2c05725a6836acabb4cb3488e25aad3819d5"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife448_nat_dil_al_tto50_local/meta.json",
+    "size": 2521,
+    "sha256": "f1c6c984cdc65d2494d8544d9e88ff99d36edd6fe17ff16f347cef5a22f7001d",
+    "git_blob_sha": "1f87a35e3f96194a55c18e8f4d2720658c8ffc03"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife448_poses.json",
+    "size": 3612,
+    "sha256": "c313817044b92479efd95c7e124f1b282a323b24a949592b0a492de2467f7a7a",
+    "git_blob_sha": "bd3528d02a9b62f9f84f8d6fd623803605104d21"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife_mw448_nat_dil_al_local/meta.json",
+    "size": 2631,
+    "sha256": "b2be88db12db90eb9f51aed3d4085c88ef2a9d9ff7777bad71aa8c493360950c",
+    "git_blob_sha": "5bd4e4ad02c53832dc4f295b4dff286b91c70207"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife_mw448_nat_dil_al_tto100_local/meta.json",
+    "size": 2634,
+    "sha256": "3511152670f62932ec8620646599d3281c5911c9d3386622517d785ed793fe3c",
+    "git_blob_sha": "df49a70f22c52d0dd883d05800172366969a02dd"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife_mw448_nat_dil_al_tto25_local/meta.json",
+    "size": 2632,
+    "sha256": "6d0d6665820397ce57de89c2c8f71743aadf7ed10fc297116ce55148a4fc3fb2",
+    "git_blob_sha": "71c34dfdf5d6456f9ff18d871cdca3bfcdedb8b6"
+  },
+  {
+    "path": "changjing_shot_0003/gs/in035/gs_tokrife_mw448_nat_dil_al_tto50_local/meta.json",
+    "size": 2632,
+    "sha256": "b465fca610786ca20dc5d00b7caabede653484315efb3d16cb3b791dfe2b57ca",
+    "git_blob_sha": "a7877ba9350ed4bbb2eb5f4ed93d5b8709fa872c"
+  },
+  {
+    "path": "changjing_shot_0003/logs/anysplat.log",
+    "size": 11073,
+    "sha256": "4182b28e7a2b90ca593fefd585c535b5354775f3ade1a83880146ece0b5790bd",
+    "git_blob_sha": "d8d293f312be0c89ff9ff21998ba0e7bfa875f4d"
+  },
+  {
+    "path": "changjing_shot_0003/logs/evaluate.log",
+    "size": 1001,
+    "sha256": "fce9c21f07d2a4487f7acfa395ad10a28e4f6b7ae5b7edff700945b01a0ed6be",
+    "git_blob_sha": "f6b769a1c8a5b8b68319a12f005bacbbae8b4d51"
+  },
+  {
+    "path": "changjing_shot_0003/logs/flow.log",
+    "size": 207,
+    "sha256": "7e2819b679a5ef2f14cd28b4f75666953ee41621c8cfe14456ac9d9cea540b23",
+    "git_blob_sha": "452f9151933f54f4ef14b1f9d81081df84df0d6a"
+  },
+  {
+    "path": "changjing_shot_0003/logs/pixgs.log",
+    "size": 771,
+    "sha256": "cbbaff34ef90cd17114740eb001ab8a7824c843d6a3d87a05a3936c4acc900d6",
+    "git_blob_sha": "d211f84040ac0613ec97b1f6f14cdc58f0ceed73"
+  },
+  {
+    "path": "changjing_shot_0003/logs/prepare.log",
+    "size": 288,
+    "sha256": "525b7155c63be16604f3ebe9f76d359004e7a9f9b4fc06e1cf2e7e4150e3aa0c",
+    "git_blob_sha": "d11bf2e99930ecd9e2feb0397bb0dd8cebbcad1c"
+  },
+  {
+    "path": "changjing_shot_0003/logs/tokens.log",
+    "size": 1884,
+    "sha256": "7128836b7e5f205cdf354e0020192fed3578fe1042a162db52ddd578a151865a",
+    "git_blob_sha": "03f228353fdddfbf81784b8b8a2c12fd7f63cd09"
+  },
+  {
+    "path": "changjing_shot_0003/logs/validate.log",
+    "size": 156,
+    "sha256": "fe5720ab2ac5887fab9b1af39873a3c74a87d5bb14096c1a98226a02fed247bc",
+    "git_blob_sha": "f735933a8743b3d79d5d438c1c83c8f9d88c97e5"
+  },
+  {
+    "path": "changjing_shot_0003/poses/in035.json",
+    "size": 252,
+    "sha256": "c95b6821ff06a511d9b692667e8bf4ad51cb9c1cb81bcd5044e9ba956d4eda52",
+    "git_blob_sha": "25c8bc8c44078cba6271474a8b749f107b7c5381"
+  },
+  {
+    "path": "changjing_shot_0003/prepare/prepare.json",
+    "size": 1318,
+    "sha256": "e05d0c212a85074432acba62096146254d1a50fd890e6007ebaa3dbc013acc5e",
+    "git_blob_sha": "47a976522710ef3669e1d500b76b744e013df958"
+  },
+  {
+    "path": "changjing_shot_0003/timing.json",
+    "size": 125,
+    "sha256": "77d94af349be7d51cae595be0906b8f75794c94c14c3153c045b14b64b00319d",
+    "git_blob_sha": "2cc8abee048dd1eb3432981086863c110932a918"
+  },
+  {
+    "path": "changjing_shot_0003/tokens/tokens.json",
+    "size": 4957,
+    "sha256": "03cf82fa1f50b64c6b021d28a95ef288a582891a8d532ffdbe989626870cef1c",
+    "git_blob_sha": "757fade3f4eed8dca9481b39194822640d90fa76"
+  },
+  {
+    "path": "completion_check.json",
+    "size": 2084,
+    "sha256": "f5befee38f49eb91b89844fa331bacf87b86e0c02877441478e36e7a246a8a3e",
+    "git_blob_sha": "9ab698858fba32ff269b9a7f4f57da9b6a8942d8"
+  },
+  {
+    "path": "dataset6_r18.log",
+    "size": 24726,
+    "sha256": "31c47b6fdc7af4331f2bbb4dff694b13f2d2622219c1bb0e3fb5637a7e963b2e",
+    "git_blob_sha": "95658eeaa4ab9ae8b129f0046764d4ecf1add6cd"
+  },
+  {
+    "path": "environment/baseline_round17_environment_and_inputs.json",
+    "size": 1504,
+    "sha256": "f0af1a811c050fb24bb0302afc6ad628962caeb39a4a8128da5988fb8b3c3467",
+    "git_blob_sha": "8ec01bcedf7efa363b23e6c30055d19ab582954f"
+  },
+  {
+    "path": "environment/baseline_round17_manifest.json",
+    "size": 401420,
+    "sha256": "d7476f91b1af848923d4c6f3dc3a56823710d56c9df58c9f8e4280bf32a64fdd",
+    "git_blob_sha": "9d03e48569b2a158984a1ab67bb5b624b3a56f20"
+  },
+  {
+    "path": "environment/baseline_round17_publish_receipt.json",
+    "size": 353,
+    "sha256": "6abb73bebc220915a349d8a14ff43255a38f510d364173c675407377c9056703",
+    "git_blob_sha": "47116995ff0c88b009622ae83586231eccc230b5"
+  },
+  {
+    "path": "environment/benchmark_gpu_processes_before.txt",
+    "size": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+  },
+  {
+    "path": "environment/benchmark_nvidia-smi_before.txt",
+    "size": 1965,
+    "sha256": "cdf1b0704e708e0bce476f8137269f8c3e54fd437b840e5576eaf8f99dde048c",
+    "git_blob_sha": "152abd1a50c0ce418369f2787a4702574e78e468"
+  },
+  {
+    "path": "environment/environment.yml",
+    "size": 6030,
+    "sha256": "8502c46c539b71032bc82bacafeec536f09743bfc8db4548bef8f94552e7a97e",
+    "git_blob_sha": "a2a90b0611735cdce1f4545f7a15416c8fa704df"
+  },
+  {
+    "path": "environment/halfpx-generation.json",
+    "size": 621,
+    "sha256": "a4a364b22250833c03d967f166a3a14492a5e2a7a1422314c158e22d8506d761",
+    "git_blob_sha": "a339c3a3dea880982435af64223c75aacf79a5b3"
+  },
+  {
+    "path": "environment/nvidia-smi.txt",
+    "size": 1965,
+    "sha256": "cb663ad5082b9b86920b64b929955bff8a1f959b719e1487ac4d996411da62c8",
+    "git_blob_sha": "d0d7cddb4367f07c842477c2cf57ecfacf706338"
+  },
+  {
+    "path": "environment/requirements-lock.txt",
+    "size": 4438,
+    "sha256": "e23ef223b9de27aa7716c00608cddd29f24f3a3caa55da8884f3bbb0dab2b630",
+    "git_blob_sha": "aac9f186c9ad32efb44fb67889c90d68af73e5f7"
+  },
+  {
+    "path": "environment/unit-tests-round18.log",
+    "size": 2600,
+    "sha256": "30899809982fc41ed5c9c086edd6be6d33734fbc1f0c99f544e375cae760e27f",
+    "git_blob_sha": "ae1ec759eda6c4d18c8083a046ce05aa0feb2990"
+  },
+  {
+    "path": "environment_and_inputs.json",
+    "size": 9223,
+    "sha256": "acfe5d4439bbf075eaeefac2bd0fb86cbf73a5dd19900e7741dd3f62dc3d0671",
+    "git_blob_sha": "5dc14fcc311dd48b5c7cb3b7dae18b2a4b35572b"
+  },
+  {
+    "path": "run_status.json",
+    "size": 777,
+    "sha256": "e3eec0f6dd334d5cd93f4d1045610bd7379512fb2bb20872927ad987febf8b83",
+    "git_blob_sha": "c341b1a90699389fc8bbba0363ae7d4ba60577f0"
+  },
+  {
+    "path": "summary_all.md",
+    "size": 18098,
+    "sha256": "0bc969cc0195ab8fe844e47a888cfdaaa3800666962dc7cf5ee52d96e0d121d4",
+    "git_blob_sha": "cc44697ac6e2ff17a83f81456e3bbd1ca93768d9"
+  }
+]

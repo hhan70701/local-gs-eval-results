@@ -1,0 +1,307 @@
+[changjing/shot_0000] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0000: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0001 of frame, median |F_t0| = 10.2px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0001 of frame, median |F_t0| = 7.5px
+[in035/rife] pair 0-3: core=0.009 of foreground
+[in035/rife] pair 3-5: core=0.006 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.001 depth=0.002 core=0.008 recon=0.075 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.005 depth=0.010 core=0.016 recon=0.089 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.001 depth=0.001 core=0.005 recon=0.044 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.016 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.005 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.005 depth=0.000 core=0.013 recon=0.124 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.010 depth=0.000 core=0.024 recon=0.198 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.001 depth=0.000 core=0.004 recon=0.060 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.031 of foreground
+[in035/cnw_f5] pair 3-5: core=0.006 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.013 depth=0.000 core=0.031 recon=0.215 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.014 depth=0.000 core=0.036 recon=0.264 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.001 depth=0.000 core=0.005 recon=0.060 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.054 of foreground
+[in035/f4rq] pair 3-5: core=0.006 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.021 depth=0.000 core=0.050 recon=0.291 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.023 depth=0.000 core=0.059 recon=0.347 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.003 depth=0.000 core=0.008 recon=0.075 (fraction of foreground)
+
+===== changjing/shot_0000: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 773219 primitives over 3 views, 1 ms/view (gsplat), prep 691 ms/pair; cam1 t=0.36 both-view=0.45, cam2 t=0.69 both-view=0.45, cam4 t=0.48 both-view=0.79; pair 0-3: build 0.09 s, opt 100 steps 0.92 s (loss 0.0562->0.0364, |dg| 0.65 px); pair 3-5: build 0.01 s, opt 100 steps 0.37 s (loss 0.0351->0.0144, |dg| 0.72 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 1001783 primitives over 3 views, 1 ms/view (gsplat), prep 606 ms/pair; cam1 t=0.36 both-view=0.37 gate=0.24, cam2 t=0.69 both-view=0.37 gate=0.19, cam4 t=0.48 both-view=0.78 gate=0.44; pair 0-3: build 0.02 s, opt 100 steps 0.81 s (loss 0.0640->0.0460, |dg| 0.61 px); pair 3-5: build 0.02 s, opt 100 steps 0.37 s (loss 0.0353->0.0148, |dg| 0.72 px)
+
+===== changjing/shot_0000: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.092 risk=0.251 risk_tuned=0.251 object=0.036
+[in035] cam2: oracle_fail=0.047 risk=0.218 risk_tuned=0.218 object=0.037
+[in035] cam4: oracle_fail=0.015 risk=0.123 risk_tuned=0.123 object=0.000
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0000/eval/summary.md
+
+===== changjing/shot_0000: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing/shot_0003] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing/shot_0003: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0012 of frame, median |F_t0| = 12.5px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0006 of frame, median |F_t0| = 9.6px
+[in035/rife] pair 0-3: core=0.053 of foreground
+[in035/rife] pair 3-5: core=0.033 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.020 depth=0.014 core=0.049 recon=0.298 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.027 depth=0.032 core=0.084 recon=0.408 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.005 depth=0.006 core=0.029 recon=0.256 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.055 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.036 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.023 depth=0.000 core=0.054 recon=0.304 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.034 depth=0.000 core=0.083 recon=0.389 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.010 depth=0.000 core=0.033 recon=0.256 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.081 of foreground
+[in035/cnw_f5] pair 3-5: core=0.062 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.038 depth=0.000 core=0.081 recon=0.403 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.060 depth=0.000 core=0.124 recon=0.469 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.023 depth=0.000 core=0.056 recon=0.332 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.120 of foreground
+[in035/f4rq] pair 3-5: core=0.118 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.062 depth=0.000 core=0.113 recon=0.407 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.098 depth=0.000 core=0.167 recon=0.527 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.059 depth=0.000 core=0.122 recon=0.480 (fraction of foreground)
+
+===== changjing/shot_0003: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 1711825 primitives over 3 views, 2 ms/view (gsplat), prep 1003 ms/pair; cam1 t=0.36 both-view=0.69, cam2 t=0.69 both-view=0.68, cam4 t=0.48 both-view=0.65; pair 0-3: build 0.09 s, opt 100 steps 1.05 s (loss 0.0323->0.0170, |dg| 0.61 px); pair 3-5: build 0.01 s, opt 100 steps 0.85 s (loss 0.0341->0.0205, |dg| 0.62 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 1785504 primitives over 3 views, 2 ms/view (gsplat), prep 898 ms/pair; cam1 t=0.36 both-view=0.69 gate=0.23, cam2 t=0.69 both-view=0.69 gate=0.18, cam4 t=0.48 both-view=0.61 gate=0.23; pair 0-3: build 0.01 s, opt 100 steps 0.86 s (loss 0.0333->0.0170, |dg| 0.61 px); pair 3-5: build 0.02 s, opt 100 steps 0.91 s (loss 0.0390->0.0254, |dg| 0.61 px)
+
+===== changjing/shot_0003: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.068 risk=0.542 risk_tuned=0.542 object=0.021
+[in035] cam2: oracle_fail=0.041 risk=0.416 risk_tuned=0.416 object=0.022
+[in035] cam4: oracle_fail=0.033 risk=0.214 risk_tuned=0.214 object=0.022
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing_shot_0003/eval/summary.md
+
+===== changjing/shot_0003: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0001] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0001: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0028 of frame, median |F_t0| = 90.8px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0045 of frame, median |F_t0| = 66.2px
+[in035/rife] pair 0-3: core=0.382 of foreground
+[in035/rife] pair 3-5: core=0.282 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.499 depth=0.295 core=0.547 recon=0.853 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.258 depth=0.224 core=0.355 recon=0.758 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.188 depth=0.136 core=0.275 recon=0.689 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.820 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.602 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.699 depth=0.000 core=0.824 recon=1.000 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.716 depth=0.000 core=0.844 recon=1.000 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.510 depth=0.000 core=0.677 recon=0.998 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.876 of foreground
+[in035/cnw_f5] pair 3-5: core=0.598 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.849 depth=0.000 core=0.918 recon=1.000 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.747 depth=0.000 core=0.850 recon=1.000 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.494 depth=0.000 core=0.672 recon=0.993 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.848 of foreground
+[in035/f4rq] pair 3-5: core=0.596 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.839 depth=0.000 core=0.904 recon=1.000 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.803 depth=0.000 core=0.884 recon=1.000 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.505 depth=0.000 core=0.607 recon=0.948 (fraction of foreground)
+
+===== changjing1/shot_0001: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 2239613 primitives over 3 views, 2 ms/view (gsplat), prep 1119 ms/pair; cam1 t=0.36 both-view=0.56, cam2 t=0.69 both-view=0.51, cam4 t=0.48 both-view=0.70; pair 0-3: build 0.09 s, opt 100 steps 1.35 s (loss 0.0338->0.0158, |dg| 0.46 px); pair 3-5: build 0.01 s, opt 100 steps 0.79 s (loss 0.0239->0.0082, |dg| 0.56 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 2242050 primitives over 3 views, 2 ms/view (gsplat), prep 984 ms/pair; cam1 t=0.36 both-view=0.57 gate=0.28, cam2 t=0.69 both-view=0.51 gate=0.20, cam4 t=0.48 both-view=0.69 gate=0.18; pair 0-3: build 0.01 s, opt 100 steps 1.14 s (loss 0.0349->0.0156, |dg| 0.46 px); pair 3-5: build 0.01 s, opt 100 steps 0.80 s (loss 0.0241->0.0082, |dg| 0.56 px)
+
+===== changjing1/shot_0001: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.217 risk=1.088 risk_tuned=1.088 object=0.592
+[in035] cam2: oracle_fail=0.145 risk=0.942 risk_tuned=0.942 object=0.520
+[in035] cam4: oracle_fail=0.180 risk=0.505 risk_tuned=0.505 object=0.310
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0001/eval/summary.md
+
+===== changjing1/shot_0001: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0007] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0007: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0016 of frame, median |F_t0| = 7.1px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0001 of frame, median |F_t0| = 5.4px
+[in035/rife] pair 0-3: core=0.030 of foreground
+[in035/rife] pair 3-5: core=0.012 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.005 depth=0.005 core=0.024 recon=0.200 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.016 depth=0.014 core=0.043 recon=0.207 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.001 depth=0.003 core=0.012 recon=0.096 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.039 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.012 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.010 depth=0.000 core=0.030 recon=0.243 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.027 depth=0.000 core=0.055 recon=0.241 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.003 depth=0.000 core=0.009 recon=0.066 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.071 of foreground
+[in035/cnw_f5] pair 3-5: core=0.016 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.024 depth=0.000 core=0.062 recon=0.372 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.042 depth=0.000 core=0.086 recon=0.333 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.003 depth=0.000 core=0.012 recon=0.121 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.061 of foreground
+[in035/f4rq] pair 3-5: core=0.036 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.029 depth=0.000 core=0.065 recon=0.295 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.036 depth=0.000 core=0.074 recon=0.298 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.013 depth=0.000 core=0.032 recon=0.152 (fraction of foreground)
+
+===== changjing1/shot_0007: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 1133362 primitives over 3 views, 1 ms/view (gsplat), prep 787 ms/pair; cam1 t=0.36 both-view=0.69, cam2 t=0.69 both-view=0.71, cam4 t=0.48 both-view=0.46; pair 0-3: build 0.09 s, opt 100 steps 0.96 s (loss 0.0377->0.0193, |dg| 0.63 px); pair 3-5: build 0.01 s, opt 100 steps 0.51 s (loss 0.0686->0.0516, |dg| 0.62 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 1133446 primitives over 3 views, 1 ms/view (gsplat), prep 645 ms/pair; cam1 t=0.36 both-view=0.68 gate=0.27, cam2 t=0.69 both-view=0.70 gate=0.25, cam4 t=0.48 both-view=0.46 gate=0.28; pair 0-3: build 0.01 s, opt 100 steps 0.75 s (loss 0.0371->0.0192, |dg| 0.62 px); pair 3-5: build 0.02 s, opt 100 steps 0.51 s (loss 0.0689->0.0513, |dg| 0.64 px)
+
+===== changjing1/shot_0007: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.074 risk=0.322 risk_tuned=0.322 object=0.035
+[in035] cam2: oracle_fail=0.052 risk=0.288 risk_tuned=0.288 object=0.036
+[in035] cam4: oracle_fail=0.033 risk=0.175 risk_tuned=0.175 object=0.034
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0007/eval/summary.md
+
+===== changjing1/shot_0007: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0013] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0013: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0015 of frame, median |F_t0| = 6.8px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0007 of frame, median |F_t0| = 4.8px
+[in035/rife] pair 0-3: core=0.040 of foreground
+[in035/rife] pair 3-5: core=0.062 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.015 depth=0.011 core=0.042 recon=0.269 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.057 depth=0.042 core=0.097 recon=0.352 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.016 depth=0.015 core=0.046 recon=0.265 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.081 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.057 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.034 depth=0.000 core=0.074 recon=0.315 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.073 depth=0.000 core=0.129 recon=0.425 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.020 depth=0.000 core=0.049 recon=0.319 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.116 of foreground
+[in035/cnw_f5] pair 3-5: core=0.082 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.052 depth=0.000 core=0.108 recon=0.471 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.097 depth=0.000 core=0.168 recon=0.504 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.034 depth=0.000 core=0.075 recon=0.393 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.129 of foreground
+[in035/f4rq] pair 3-5: core=0.132 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.083 depth=0.000 core=0.130 recon=0.366 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.113 depth=0.000 core=0.167 recon=0.406 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.072 depth=0.000 core=0.130 recon=0.396 (fraction of foreground)
+
+===== changjing1/shot_0013: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 1649338 primitives over 3 views, 2 ms/view (gsplat), prep 970 ms/pair; cam1 t=0.36 both-view=0.67, cam2 t=0.69 both-view=0.63, cam4 t=0.48 both-view=0.74; pair 0-3: build 0.09 s, opt 100 steps 1.03 s (loss 0.0315->0.0132, |dg| 0.61 px); pair 3-5: build 0.01 s, opt 100 steps 0.81 s (loss 0.0355->0.0178, |dg| 0.67 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 1666845 primitives over 3 views, 2 ms/view (gsplat), prep 835 ms/pair; cam1 t=0.36 both-view=0.68 gate=0.24, cam2 t=0.69 both-view=0.62 gate=0.13, cam4 t=0.48 both-view=0.74 gate=0.11; pair 0-3: build 0.01 s, opt 100 steps 0.84 s (loss 0.0325->0.0130, |dg| 0.61 px); pair 3-5: build 0.02 s, opt 100 steps 0.81 s (loss 0.0361->0.0178, |dg| 0.66 px)
+
+===== changjing1/shot_0013: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.084 risk=0.454 risk_tuned=0.454 object=0.040
+[in035] cam2: oracle_fail=0.048 risk=0.427 risk_tuned=0.427 object=0.043
+[in035] cam4: oracle_fail=0.032 risk=0.272 risk_tuned=0.272 object=0.045
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0013/eval/summary.md
+
+===== changjing1/shot_0013: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+[changjing1/shot_0022] in035: t from calibration {'1': 0.3574951469700082, '2': 0.6875721512207589, '4': 0.4812086841324973}
+
+===== changjing1/shot_0022: tokens =====
+[in035] pair 0-3: RIFE t=0.5 |W0-W1|>0.2 on 0.0189 of frame, median |F_t0| = 6.2px
+[in035] pair 3-5: RIFE t=0.5 |W0-W1|>0.2 on 0.0177 of frame, median |F_t0| = 5.5px
+[in035/rife] pair 0-3: core=0.132 of foreground
+[in035/rife] pair 3-5: core=0.092 of foreground
+[in035/rife] cam0 (union over pairs): fail=0.086 depth=0.006 core=0.115 recon=0.277 (fraction of foreground)
+[in035/rife] cam3 (union over pairs): fail=0.122 depth=0.025 core=0.152 recon=0.319 (fraction of foreground)
+[in035/rife] cam5 (union over pairs): fail=0.078 depth=0.005 core=0.095 recon=0.177 (fraction of foreground)
+[in035/cnw_cnn] pair 0-3: core=0.140 of foreground
+[in035/cnw_cnn] pair 3-5: core=0.090 of foreground
+[in035/cnw_cnn] cam0 (union over pairs): fail=0.099 depth=0.000 core=0.129 recon=0.326 (fraction of foreground)
+[in035/cnw_cnn] cam3 (union over pairs): fail=0.106 depth=0.000 core=0.164 recon=0.394 (fraction of foreground)
+[in035/cnw_cnn] cam5 (union over pairs): fail=0.065 depth=0.000 core=0.096 recon=0.235 (fraction of foreground)
+[in035/cnw_f5] pair 0-3: core=0.177 of foreground
+[in035/cnw_f5] pair 3-5: core=0.103 of foreground
+[in035/cnw_f5] cam0 (union over pairs): fail=0.124 depth=0.000 core=0.172 recon=0.467 (fraction of foreground)
+[in035/cnw_f5] cam3 (union over pairs): fail=0.125 depth=0.000 core=0.197 recon=0.506 (fraction of foreground)
+[in035/cnw_f5] cam5 (union over pairs): fail=0.075 depth=0.000 core=0.107 recon=0.268 (fraction of foreground)
+[in035/f4rq] pair 0-3: core=0.233 of foreground
+[in035/f4rq] pair 3-5: core=0.122 of foreground
+[in035/f4rq] cam0 (union over pairs): fail=0.157 depth=0.000 core=0.219 recon=0.606 (fraction of foreground)
+[in035/f4rq] cam3 (union over pairs): fail=0.185 depth=0.000 core=0.251 recon=0.622 (fraction of foreground)
+[in035/f4rq] cam5 (union over pairs): fail=0.087 depth=0.000 core=0.119 recon=0.301 (fraction of foreground)
+
+===== changjing1/shot_0022: pixgs =====
+[in035] f4rq_pix3_fsl (pix3, data/disp_fs/{shot}): 1982723 primitives over 3 views, 2 ms/view (gsplat), prep 1004 ms/pair; cam1 t=0.36 both-view=0.68, cam2 t=0.69 both-view=0.66, cam4 t=0.48 both-view=0.78; pair 0-3: build 0.09 s, opt 100 steps 1.26 s (loss 0.0737->0.0392, |dg| 0.75 px); pair 3-5: build 0.01 s, opt 100 steps 0.65 s (loss 0.0935->0.0535, |dg| 0.91 px)
+[in035] f4rq_pix3bg_fsl (pix3, data/disp_fs/{shot}): 2008584 primitives over 3 views, 2 ms/view (gsplat), prep 887 ms/pair; cam1 t=0.36 both-view=0.68 gate=0.54, cam2 t=0.69 both-view=0.66 gate=0.54, cam4 t=0.48 both-view=0.78 gate=0.54; pair 0-3: build 0.01 s, opt 100 steps 1.08 s (loss 0.0727->0.0387, |dg| 0.75 px); pair 3-5: build 0.01 s, opt 100 steps 0.66 s (loss 0.0954->0.0535, |dg| 0.91 px)
+
+===== changjing1/shot_0022: evaluate =====
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.153 risk=0.416 risk_tuned=0.416 object=0.124
+[in035] cam2: oracle_fail=0.148 risk=0.396 risk_tuned=0.396 object=0.129
+[in035] cam4: oracle_fail=0.106 risk=0.276 risk_tuned=0.276 object=0.135
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0022/eval/summary.md
+
+===== changjing1/shot_0022: validate =====
+{
+  "status": "PASS",
+  "metric_rows": 396,
+  "methods": 22,
+  "auc_rows": 15,
+  "warnings": [],
+  "gs_renders": 87,
+  "flow_renders": 3,
+  "montages": 3
+}
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/summary_all.md

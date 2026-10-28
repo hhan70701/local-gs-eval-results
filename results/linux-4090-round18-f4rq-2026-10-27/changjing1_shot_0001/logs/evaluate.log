@@ -1,0 +1,8 @@
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/sang-usb/miniconda3/envs/gspl/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[in035] cam1: oracle_fail=0.217 risk=1.088 risk_tuned=1.088 object=0.592
+[in035] cam2: oracle_fail=0.145 risk=0.942 risk_tuned=0.942 object=0.520
+[in035] cam4: oracle_fail=0.180 risk=0.505 risk_tuned=0.505 object=0.310
+done -> /home/sang-usb/linux-han/local-gs-eval/work/dataset6_round15_pixgs/changjing1_shot_0001/eval/summary.md

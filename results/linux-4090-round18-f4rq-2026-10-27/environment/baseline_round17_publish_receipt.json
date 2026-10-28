@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/hhan70701/local-gs-eval-results",
+  "branch": "experiment/linux-4090-round17-pix3-2026-10-27",
+  "directory": "results/linux-4090-round17-pix3-2026-10-27",
+  "commit": "67708dd9224ec4040c8f86926b75c20a9939d7cd",
+  "files": 1609,
+  "remote_head_verification": "PASS",
+  "manifest_and_git_tree_verification": "PASS"
+}
